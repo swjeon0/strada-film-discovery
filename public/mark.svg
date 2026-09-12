@@ -1,9 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 74" role="img" aria-label="Two riders on a motorcycle carrying flowers">
-<g transform="translate(0 70) scale(1 -1)" stroke="#242820" fill="#242820" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-<g fill="none"><circle cx="20" cy="12" r="11"/><circle cx="79" cy="12" r="11"/><path d="M19 13L37 29H64L78 13H46L37 29M65 31L72 42L82 41"/></g>
-<circle cx="20" cy="12" r="2.5" stroke="none"/><circle cx="79" cy="12" r="2.5" stroke="none"/><rect x="26" y="29" width="36" height="5" rx="2" stroke="none"/>
-<circle cx="36" cy="58" r="6" stroke="none"/><circle cx="54" cy="60" r="6" stroke="none"/>
-<path d="M33 50L30 36L45 30L47 17H54L51 36L43 42V51Z M51 52L45 36L62 29L67 15H74L69 35L59 40L62 46L73 41L76 46L61 54Z" stroke="none"/>
-<path d="M33 44L18 49L14 62M18 49L24 65M18 49L8 60" fill="none" stroke-width="2"/>
-<g fill="#A44A3A" stroke="none"><path d="M13 58C7 58 8 64 11 64C10 69 17 68 16 64C21 63 18 58 15 60Z M23 60C17 60 18 66 21 66C20 71 27 70 26 66C31 65 28 60 25 62Z M8 55C2 55 3 61 6 61C5 66 12 65 11 61C16 60 13 55 10 57Z"/></g>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <title>STRADA — a broad path made of film</title>
+  <desc>A substantial film ribbon follows one gentle S bend. Rectangular sprocket holes run along both edges; the distant end remains broad. Dark olive on a transparent background.</desc>
+  <path fill="#343f32" fill-rule="evenodd" d="M42 8 C50.425 16.667 58 25.333 57 34 C56 42.667 46.425 51.333 36 60 C25.575 68.667 16 77.333 15 86 C14 94.667 21.575 103.333 30 112 H90 C79.575 103.333 70 94.667 69 86 C68 77.333 75.575 68.667 84 60 C92.425 51.333 100 42.667 99 34 C98 25.333 88.425 16.667 78 8 Z
+    M52.287 15.724 L57.541 10.513 L61.273 14.276 L56.018 19.487 Z
+    M73.502 15.724 L78.756 10.513 L82.488 14.276 L77.234 19.487 Z
+    M59.963 26.088 L66.721 23.072 L68.881 27.912 L62.123 30.928 Z
+    M83.948 26.088 L90.705 23.072 L92.865 27.912 L86.108 30.928 Z
+    M61.103 35.340 L68.144 37.618 L66.513 42.660 L59.472 40.382 Z
+    M87.857 35.340 L94.898 37.618 L93.267 42.660 L86.226 40.382 Z
+    M53.647 46.539 L59.064 51.581 L55.454 55.461 L50.037 50.419 Z
+    M83.170 46.539 L88.588 51.581 L84.977 55.461 L79.560 50.419 Z
+    M40.018 58.487 L45.072 63.893 L41.200 67.513 L36.147 62.107 Z
+    M72.311 58.487 L77.364 63.893 L73.493 67.513 L68.439 62.107 Z
+    M26.703 70.738 L32.849 74.860 L29.897 79.262 L23.751 75.140 Z
+    M61.765 70.738 L67.910 74.860 L64.958 79.262 L58.813 75.140 Z
+    M19.252 84.598 L26.636 84.113 L26.983 89.402 L19.599 89.887 Z
+    M57.083 84.598 L64.467 84.113 L64.814 89.402 L57.430 89.887 Z
+    M22.424 99.155 L28.290 94.644 L31.521 98.845 L25.654 103.356 Z
+    M63.024 99.155 L68.890 94.644 L72.121 98.845 L66.254 103.356 Z"/>
+</svg>

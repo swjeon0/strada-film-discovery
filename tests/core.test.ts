@@ -14,3 +14,18 @@ test('invalid saved evidence and unknown restore targets are rejected',()=>{cons
 test('exhausted collection returns an honest empty batch',()=>{const b=recommendCollection([collection[0]],collection.slice(1));assert.deepEqual(b.recommendations,[]);});
 test('source fetches reject private, lookalike, credential-bearing and non-essay URLs',()=>{assert.ok(allowedSourceUrl('https://www.criterion.com/current/posts/123-a-film'));for(const u of ['http://www.criterion.com/current/posts/x','https://localhost/a','https://www.criterion.com.evil.test/current/posts/x','https://x@www.criterion.com/current/posts/x','https://www.criterion.com/films/123'])assert.equal(allowedSourceUrl(u),false);});
 test('supporting span must exist and name its supported films itself',()=>{const span='Close-Up and The Apple use reenactment to reconsider who can represent a life.';assert.ok(supports(span,span,['Close-Up','The Apple']));assert.equal(supports('Close-Up / The Apple. A generic comment about cinema without any named film.','A generic comment about cinema without any named film.',['Close-Up','The Apple']),false);assert.equal(supports(span,'An invented comparison of Close-Up and The Apple.',['Close-Up']),false);});
+
+test('Korean display uses database labels and preserves a title when none exists',async()=>{const {titleOf}=await import('../lib/domain');assert.equal(titleOf(film('closeup'),'ko'),'클로즈업');assert.equal(titleOf({...film('closeup'),titleKo:undefined},'ko'),'Close-Up');});
+test('overlap bonus is modest and duplicate or unknown anchors earn no extra weight',async()=>{const {connectionScore}=await import('../lib/ranking');const template=recommendCollection([film('closeup')],[]).recommendations[0];const edge=template.connections[0];const one={...template,connections:[edge]};const duplicates={...template,connections:[edge,edge,{...edge,anchorId:'unknown'}]};assert.equal(connectionScore(one,[film('closeup')],[]),connectionScore(duplicates,[film('closeup')],[]));const two={...template,connections:[{...edge,anchorId:'closeup',relation:'direct_connection' as const},{...edge,anchorId:'fake',relation:'direct_connection' as const}]};assert.equal(connectionScore(two,[film('closeup'),film('fake')],[]),1.06);});
+test('diversity changes the order of equally supported candidates without losing evidence',async()=>{const {rankRecommendations}=await import('../lib/ranking');const template=recommendCollection([film('closeup')],[]).recommendations[0];const a={...template,film:{...template.film,id:'a',director:'Director A',country:'Iran',year:1990}};const b={...template,film:{...template.film,id:'b',director:'Director A',country:'Iran',year:1991}};const c={...template,film:{...template.film,id:'c',director:'Director C',country:'Japan',year:1960}};const ranked=rankRecommendations([a,b,c],[film('closeup')],[]);assert.deepEqual(ranked.map(r=>r.film.id),['a','c','b']);assert.equal(ranked[0].sourceIds,template.sourceIds);});
+
+import {titleMatches,titleMentioned} from '../lib/server/grounding';
+test('evidence titles preserve boundaries, short names and documented article variants',()=>{
+ assert.equal(titleMentioned('A honeymoon sequence','Moon'),false);
+ assert.equal(titleMentioned('The critic compares Moon and Solaris.','Moon'),true);
+ assert.equal(titleMentioned('A study of M and its sound design.','M'),true);
+ assert.equal(titleMentioned('The road movie tradition','The Road'),true);
+ assert.equal(titleMentioned('a broad palette','The Road'),false);
+ assert.equal(titleMentioned('Close-Up and Moment of Innocence explore reenactment.','A Moment of Innocence'),true);
+ assert.equal(titleMatches('The Moment of Innocence','A Moment of Innocence'),true);
+});

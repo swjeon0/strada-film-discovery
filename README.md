@@ -1,65 +1,69 @@
-# CLOSEUP
+# STRADA
 
-CLOSEUP is a desktop film-discovery app: choose 1–8 starting films, inspect recommendation sources, then follow a film to change the direction of the trail. The interface is designed around a 1440 × 900 desktop viewport.
+A desktop film-discovery app. Choose 1–8 starting films, read why another film connects to them, then continue with that film to change your path. No database, app accounts or social features. The cream interface uses a Bodoni Moda wordmark and a broad film-strip path mark.
 
 ## Run locally
 
-Use Node.js 22.13 or newer. From the `closeup` project directory:
+Use Node.js 22.13 or newer:
 
 ```sh
 npm run install:ci
 npm run dev
 ```
 
-The portable development server starts on port 5173; use the loopback URL printed by the server. For a local production-build check:
+The portable server prints its loopback address on port 5173. Local build commands do not publish the site. Retain the configured Sites execution profile and use the Sites build/package workflow when publishing.
 
-```sh
-npm run build
-npm start
-```
-
-These commands build or preview locally; they do not publish the site. Managed previews should retain the project's configured execution profile and preview supervisor.
-
-## Reference collection and live research
-
-Without provider credentials, CLOSEUP works with its bundled **16-film reference collection**. Search covers those films by title, director, or Korean alias. Recommendations follow the collection's cited comparisons and clearly labeled curatorial readings, with recent follows receiving more influence. The interface identifies this as a reference collection; it is not live AI research. Some trails exhaust the available connections, and a complete 12-film batch is not guaranteed.
-
-Live search and research currently activate only when **both** server credentials are configured. For local development, create an ignored `.env.local` in the project root:
+Create an ignored `.env.local`:
 
 ```dotenv
 OPENAI_API_KEY=your_openai_api_key
-TMDB_READ_ACCESS_TOKEN=your_tmdb_read_access_token
-OPENAI_MODEL=gpt-6-astra
+OPENAI_MODEL=gpt-5.6-luna
+# Optional; Wikimedia search works without this token:
+TMDB_READ_ACCESS_TOKEN=
 ```
 
-The model setting is optional; its default is `gpt-6-astra`. Use a TMDB API Read Access Token, not a browser login cookie. Keep all credentials server-side: never add `NEXT_PUBLIC_`, commit secret values, or put them into a client component. Restart the development server after changing the local environment. For the hosted app, set the same names through its server-secret configuration; local files do not provision production secrets. Cloudflare's Vite plugin supports ignored `.env.local` values for local Worker bindings. [Environment handling](https://developers.cloudflare.com/workers/vite-plugin/reference/cloudflare-environments/).
+Keep credentials server-side; never use NEXT_PUBLIC_ or commit their values. Local environment files do not provision the hosted site's secrets. The existing hosted Site remains owner-private. Its URL is preserved so existing browser history can migrate.
 
-`GET /api/status` reports the configured mode and credential-presence booleans without exposing values. Presence does **not** prove that a key works or that the account can use the selected model. Before enabling live access for visitors, run one real search and one small recommendation request, verify citations, and confirm the host's runtime limits and request-rate controls. The live path has not been exercised with provider credentials in this handoff.
+## Films, language and sources
 
-## Data and evidence limits
+English/Korean controls appear on entry and results. Film names use actual database labels, never AI-generated translations; an unavailable Korean title keeps the database's existing title. Brand text stays STRADA.
 
-CLOSEUP has no database, account system, cloud trail storage, or migration requirement. The current browser saves a versioned session in localStorage (`closeup.session.v2`). Undo and History restore saved batches without another model request. Clearing browser data removes this session; private browsing or storage restrictions can prevent persistence. Live generation sends the selected film context to the server and OpenAI, and retrieves metadata from TMDB.
+Search queries external Wikidata and resolves film entities, years and directors; Wikipedia provides available synopsis excerpts and representative images. This covers films beyond the bundled 16. Coverage, images and Korean descriptions vary. TMDB is an optional alternate provider. No promise of every film ever made or a poster for every result is made.
 
-Live research makes a bounded OpenAI Responses request using web search and a strict output schema. The server checks returned source URLs against search provenance and permitted publisher hosts, inspects readable HTML, checks supporting text, and resolves film identities through TMDB. Unreadable, unsupported, ambiguous, or duplicate candidates are excluded; partial batches are expected. PDFs, paywalled full texts, client-rendered pages and pages beyond the reader's size/time limits may not qualify.
+Movie details prioritize a genuine Plot/Synopsis excerpt, with linked attribution. If one is unavailable, the introductory description is shown. Wikipedia text is CC BY-SA; Wikidata structured data is CC 0; images and criticism retain their original rights. The Credits dialog exposes these links. Bodoni Moda's OFL license is included with its local font.
 
-Text/provenance checks reduce unsupported claims; they do not prove the semantic truth of a recommendation. Direct comparisons, contextual material and CLOSEUP interpretations must remain distinguishable. Source summaries should be checked against the linked originals before treating them as research conclusions. Source availability, provider model access, latency and quotas can change. A failed or canceled Follow keeps the committed trail unchanged.
+Without an OpenAI key, the cited 16-film reference collection remains usable and visibly identified. Live metadata search and synopsis do not require an OpenAI key. The optional TMDB credential path has not been exercised with a real token.
 
-Film posters and source texts retain their original rights. The Credits dialog identifies source/metadata providers. Live TMDB use requires its approved attribution and the appropriate terms for the intended deployment.
+## Recommendation pipeline and cost controls
 
-## Implementation
+The default model is gpt-5.6-luna: a low-cost model supporting Responses, web search and structured output, with reasoning disabled. The server performs two bounded passes:
 
-- React and Vinext on a Cloudflare Worker; route handlers keep credentials off the client.
-- `lib/curated-catalog.json`: 16 films, 22 sources and 32 bidirectional relationships. `lib/catalogue.ts` ranks only these verified relationships in collection mode.
-- `lib/domain.ts`: versioned snapshots, recency weights, validation and history. Seeds share an initial weight of one; each Follow decays existing raw weights by 0.7 and adds the latest film at one, then normalizes. No visible score or rating is shown.
-- `lib/server/research.ts`: searched sources, strict structured output, per-anchor evidence gates and film identity resolution. The private supporting span must name the supported films and occur in inspected source text. Validation is conservative and may return fewer films.
-- `app/page.tsx`: one entry/result surface, evidence drawer and shared UI/WebMCP actions. There is no database or app-owned authentication. The deployment itself is owner-private.
+1. Discover criticism, scholarship or substantive festival writing, using a web-search request with max_tool_calls 1 and up to 1600 output tokens. Retain URLs with real search provenance; known seed essays can supplement them.
+2. Fetch at most 8 allowed public HTML pages, under a shared request/size/time budget. Give the model numbered, real source passages; request at most 8 candidates and 7000 output tokens without additional tools.
 
-A trail accepts 1–8 unique seeds and at most 30 Follow steps. Follow commits only a nonempty verified batch. Undo moves a cursor without deleting later steps; following from an earlier step replaces that suffix only after success. Starting a new trail replaces the saved trail only after successful generation. Draft seeds and history are stored in this browser.
+The server verifies source/page identities, passage references and film mentions for each candidate/anchor, then resolves movie identity through the film database. Explicit comparisons require both films in one cited passage; interpreted routes are distinguished. Invalid optional connections do not earn overlap credit. An unsupported primary connection drops the candidate. Partial or empty results are intentional; the app never invents filler.
 
-Live work has a 115-second total deadline and a shared upstream-call budget. A local guard allows two concurrent research calls and 12 starts per caller in ten minutes per Worker isolate; it is not a distributed quota. Configure a platform rate limit before broadening access to a public live app. Request bodies and source streams are capped while reading.
+These mechanical checks establish provenance and textual support, not semantic certainty. Interpretation and source summaries remain model-written readings that users can inspect against the linked original. Inaccessible pages, PDFs and ambiguity can shorten a batch.
+
+Why text is generated in English and Korean together, targeting 70–100 English words. Language changes, synopsis reads, Undo and History do not call GPT. Only initial discovery and a successful continuation request initiate research. There are no automatic paid retries or model escalation. Identical ordered seeds/trail reuse a bounded 30-minute in-memory cache, including empty batches; concurrent identical requests share work. This is per Worker instance and is not durable across restarts. Usage estimates are returned without secrets; cached responses report zero new usage.
+
+Measured development attempts cost an estimated US$0.011–0.031 each, including search and tokens; actual charges depend on provider usage/pricing and retrieval behavior. The tool-call limit is sent to the provider; returned web-search actions are counted for estimates. This is not an account-level spending cap.
+
+Recency uses 0.7 decay. Genuine support from multiple distinct anchors earns a modest 6%bonus per extra anchor, capped at 12%. Greedy ranking then reduces repetition by director, country, decade and genre, with a small penalty for recently seen suggestions. No visible numerical score is shown.
+
+## State and boundaries
+
+`strada.session.v2` in localStorage holds validated snapshots and the draft. Existing `closeup.session.v2` data is migrated without changing film identities. Failed/canceled Follow keeps the committed path. Undo moves the cursor; History restores exact saved films and evidence without research. A successful branch replaces later snapshots only after its new batch arrives. Limits:8 seeds and 30 follows.
+
+The app uses React/Vinext on a Cloudflare Worker. Metadata and research routes keep keys off the client. The research deadline is 115 seconds. Request bodies and source streams are capped. Per-instance controls allow 2 concurrent calls and 12 starts per caller in 10 minutes; these are not distributed quotas. Broader public use would need platform-level controls.
+
+WebMCP tools share UI actions. Registration, read, language, staging and intentional failure paths were checked in the supported browser. Long-running discovery exceeded that browser tool's execution deadline; the full successful WebMCP Follow/Undo cycle remains unverified. UI snapshot branching is covered by unit tests.
 
 ## Validation
 
-`node --import tsx --test tests/core.test.ts` checks catalogue integrity, exclusion, recency weighting, history branching, storage validation and evidence URL/span gates. `node node_modules/typescript/bin/tsc --noEmit` checks types. Run the standard Sites build before publishing.
+```sh
+node --import tsx --test tests/core.test.ts
+node node_modules/typescript/bin/tsc --noEmit --incremental false
+```
 
-Live OpenAI/TMDB credentials were unavailable at delivery; model calls and deployed live source retrieval remain activation checks. The finite collection is functional and does not consume model tokens.
+Checks cover history, storage, exclusion, recency, overlap/diversity and evidence gates. Real external searches found Interstellar, Parasite and Inception, including database Korean labels. The OpenAI key/model authenticated. Captured real model output was replayed through the repaired evidence/metadata pipeline with paid calls disabled: A Moment of Innocence and Citizen Kane passed with two readable criticism sources and 81/83-word explanations. Development fixtures remain outside the deployment source.

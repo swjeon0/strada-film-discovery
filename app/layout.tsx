@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CLOSEUP — Follow a film",
-  description: "Discover films through criticism, scholarship and festival writing. Find a connection. Follow it somewhere new.",
+  title: "STRADA — Find your way through film",
+  description: "Discover films through criticism, scholarship and festival writing. One film leads to another. Find your own route through cinema.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
