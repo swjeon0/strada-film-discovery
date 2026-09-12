@@ -1,0 +1,20 @@
+"use client";
+import {useEffect,useState,useRef} from 'react';
+import {Search,LoaderCircle} from 'lucide-react';
+import {Combobox,ComboboxInput,ComboboxContent,ComboboxList,ComboboxItem,ComboboxEmpty} from '@/components/ui/combobox';
+import {searchCollection} from '@/lib/catalogue';
+import type {Film} from '@/lib/domain';
+import {FilmPoster} from './film-poster';
+export function FilmSearch({seeds,onAdd,disabled,mode}:{seeds:Film[],onAdd:(film:Film)=>void,disabled:boolean,mode:'collection'|'live'}){
+ const [selecting,setSelecting]=useState(false);const [query,setQuery]=useState('');const [items,setItems]=useState<Film[]>(searchCollection(''));const [loading,setLoading]=useState(false);const [error,setError]=useState('');const [open,setOpen]=useState(false);const [retry,setRetry]=useState(0);const input=useRef<HTMLInputElement>(null);const selectedRequest=useRef(0);
+ useEffect(()=>{const controller=new AbortController();setError('');if(mode==='collection'||query.trim().length<2){setItems(searchCollection(query));setLoading(false);return()=>controller.abort();}setLoading(true);const t=setTimeout(async()=>{try{const r=await fetch(`/api/films/search?q=${encodeURIComponent(query.trim())}`,{signal:controller.signal});const data=await r.json() as {error?:{message?:string},films:Film[],film:Film};if(!r.ok)throw new Error(data.error?.message||'Search is unavailable.');if(!controller.signal.aborted)setItems(data.films);}catch(e){if(!controller.signal.aborted){setItems([]);setError(e instanceof Error?e.message:'Search is unavailable.');}}finally{if(!controller.signal.aborted)setLoading(false);}},300);return()=>{clearTimeout(t);controller.abort();}},[query,mode,retry]);
+ async function select(f:Film|null){if(!f||disabled||selecting||seeds.some(s=>s.id===f.id))return;const n=++selectedRequest.current;setSelecting(true);setLoading(true);try{let film=f;if(f.id.startsWith('tmdb:')){const r=await fetch(`/api/films/${encodeURIComponent(f.id)}`);const data=await r.json() as {error?:{message?:string},films:Film[],film:Film};if(!r.ok)throw new Error(data.error?.message||'Could not identify this film.');film=data.film;}if(n!==selectedRequest.current)return;onAdd(film);setQuery('');setOpen(false);input.current?.focus();}catch(e){setError(e instanceof Error?e.message:'Could not add this film.');}finally{if(n===selectedRequest.current){setLoading(false);setSelecting(false);requestAnimationFrame(()=>input.current?.focus());}}}
+ return <div className="film-search"><Combobox items={items} filter={null} value={null} inputValue={query} onInputValueChange={setQuery} onValueChange={select} itemToStringLabel={(f:Film)=>f.title} open={open&&!disabled} onOpenChange={setOpen}>
+  {loading?<LoaderCircle className="search-icon spinning" size={20}/>:<Search className="search-icon" size={20}/>}<ComboboxInput ref={input} className="film-search-input" placeholder={disabled?'Remove a film to add another':'Search for a film…'} aria-label="Search for a film" showTrigger={false} disabled={disabled||selecting} maxLength={100}/>
+  <ComboboxContent className="film-search-results" aria-label="Film suggestions">
+   <div className="suggestion-heading">{query?'MATCHING FILMS':mode==='collection'?'IN THE COLLECTION':'STARTING POINTS'}{loading&&<span>Searching…</span>}</div>
+   {error?<div className="search-feedback" role="alert">{error}<button onClick={()=>setRetry(n=>n+1)}>Try again</button></div>:<><ComboboxEmpty>{loading?'Finding films…':mode==='collection'?'No matching film in this 16-film collection. Try a director or another title.':'No films found. Try another title or year.'}</ComboboxEmpty><ComboboxList>{(f:Film)=><ComboboxItem key={f.id} value={f} disabled={seeds.some(s=>s.id===f.id)} className="search-option"><FilmPoster film={f}/><span><strong>{f.title}</strong><small>{f.year}{f.director&&` · ${f.director}`}</small></span>{seeds.some(s=>s.id===f.id)&&<em>Added</em>}</ComboboxItem>}</ComboboxList></>}
+   <div className="search-keys"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> add film</span><span><kbd>esc</kbd> close</span></div>
+  </ComboboxContent>
+ </Combobox></div>
+}

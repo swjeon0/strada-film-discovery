@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 74" role="img" aria-label="Two riders on a motorcycle carrying flowers">
+<g transform="translate(0 70) scale(1 -1)" stroke="#242820" fill="#242820" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<g fill="none"><circle cx="20" cy="12" r="11"/><circle cx="79" cy="12" r="11"/><path d="M19 13L37 29H64L78 13H46L37 29M65 31L72 42L82 41"/></g>
+<circle cx="20" cy="12" r="2.5" stroke="none"/><circle cx="79" cy="12" r="2.5" stroke="none"/><rect x="26" y="29" width="36" height="5" rx="2" stroke="none"/>
+<circle cx="36" cy="58" r="6" stroke="none"/><circle cx="54" cy="60" r="6" stroke="none"/>
+<path d="M33 50L30 36L45 30L47 17H54L51 36L43 42V51Z M51 52L45 36L62 29L67 15H74L69 35L59 40L62 46L73 41L76 46L61 54Z" stroke="none"/>
+<path d="M33 44L18 49L14 62M18 49L24 65M18 49L8 60" fill="none" stroke-width="2"/>
+<g fill="#A44A3A" stroke="none"><path d="M13 58C7 58 8 64 11 64C10 69 17 68 16 64C21 63 18 58 15 60Z M23 60C17 60 18 66 21 66C20 71 27 70 26 66C31 65 28 60 25 62Z M8 55C2 55 3 61 6 61C5 66 12 65 11 61C16 60 13 55 10 57Z"/></g>
+</g></svg>

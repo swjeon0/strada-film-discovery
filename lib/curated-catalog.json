@@ -1,0 +1,1071 @@
+{
+  "version": 1,
+  "mode": "reference",
+  "verifiedOn": "2026-09-12",
+  "description": "A small hand-curated collection of 16 films and explicitly evidenced routes. Rankings are editorial, not personalized predictions or a complete film catalogue.",
+  "relationshipRules": {
+    "direct_connection": "A retrieved critic or scholar explicitly compares or groups these films on substantive grounds; this does not imply filmmaker-confirmed influence.",
+    "curatorial_association": "A publisher explicitly links the titles in its catalogue. The source's association is identified as curation, not scholarship or proof of influence.",
+    "grounded_interpretation": "CLOSEUP supplies the comparison. Each cited source supports one or both film-specific premises. Display the interpretation label.",
+    "bidirectional": "Pairs may be navigated either way. Reversing a route does not reverse historical influence.",
+    "noPadding": "Return only adjacent evidenced candidates for one or more trail films. Exclude every current trail film. Never fill empty results with unrelated catalogue items.",
+    "noInferenceFromProgramme": "Festival selection or awards alone do not establish an edge."
+  },
+  "limitations": [
+    "Korean aliases are practical search aliases, not a claim that every variant is an official Korean release title.",
+    "Source dates are null when no publication date was displayed. Festival dates denote the programme edition.",
+    "The Apple is consistently 1998 here; some catalogues use 1997. F for Fake appears as 1973, 1974 or 1975 across sources; this collection uses 1973, matching the supplied poster collection. Symbiopsychotaxiplasm: Take One uses its 1968 production date; first screening was 1971.",
+    "Country and runtime metadata follow the cited catalogue's edition where available and may differ across releases; omitted runtimes are intentional.",
+    "All active evidence URLs were opened successfully for this catalogue. Sprio 2016 uses only the public abstract. Full text was retrieved for the 2009 Wide Screen paper.",
+    "Cannes's English The Apple route failed; the verified French official page is used with a translated summary. Unreliable NFB and Locarno routes are omitted from active evidence.",
+    "The catalogue is finite; trails can exhaust its evidenced neighbors. A source card describing only programme context must not be presented as a reason for a recommendation.",
+    "An edge's sourceIds describe that pair. A film's sourceIds include additional reading; do not display unrelated evidence as support for the selected edge.",
+    "Poster rights and production permission are outside this research file; posterAsset points to the existing supplied work assets."
+  ],
+  "films": [
+    {
+      "key": "closeup",
+      "title": "Close-Up",
+      "year": 1990,
+      "director": "Abbas Kiarostami",
+      "country": "Iran",
+      "runtime": 98,
+      "aliasesKo": [
+        "클로즈업",
+        "클로즈 업"
+      ],
+      "sourceIds": [
+        "criterionclose",
+        "sprio2009",
+        "rapfogel2001close"
+      ],
+      "posterAsset": "closeup.jpg"
+    },
+    {
+      "key": "fake",
+      "title": "F for Fake",
+      "year": 1973,
+      "director": "Orson Welles",
+      "country": "France / Iran / West Germany",
+      "aliasesKo": [
+        "거짓과 진실",
+        "에프 포 페이크"
+      ],
+      "sourceIds": [
+        "andrew2012",
+        "rosenbaum2007"
+      ],
+      "posterAsset": "fake.jpg"
+    },
+    {
+      "key": "apple",
+      "title": "The Apple",
+      "year": 1998,
+      "director": "Samira Makhmalbaf",
+      "country": "Iran / France",
+      "runtime": 86,
+      "aliasesKo": [
+        "사과",
+        "씨브"
+      ],
+      "sourceIds": [
+        "danks2002",
+        "sprio2009",
+        "sprio2016",
+        "cannesapple"
+      ],
+      "posterAsset": "apple.jpg"
+    },
+    {
+      "key": "innocence",
+      "title": "A Moment of Innocence",
+      "year": 1996,
+      "director": "Mohsen Makhmalbaf",
+      "country": "Iran",
+      "aliasesKo": [
+        "순수의 순간",
+        "빵과 꽃"
+      ],
+      "sourceIds": [
+        "rapfogel2001close",
+        "danks2002"
+      ],
+      "posterAsset": "innocence.jpg"
+    },
+    {
+      "key": "salaam",
+      "title": "Salaam Cinema",
+      "year": 1995,
+      "director": "Mohsen Makhmalbaf",
+      "country": "Iran",
+      "runtime": 75,
+      "aliasesKo": [
+        "살람 시네마",
+        "살람시네마"
+      ],
+      "sourceIds": [
+        "iffrsalaam",
+        "danks2002"
+      ],
+      "posterAsset": "salaam.jpg"
+    },
+    {
+      "key": "mirror",
+      "title": "The Mirror",
+      "year": 1997,
+      "director": "Jafar Panahi",
+      "country": "Iran",
+      "aliasesKo": [
+        "거울",
+        "아예네"
+      ],
+      "sourceIds": [
+        "rapfogel2001panahi",
+        "rapfogel2001close"
+      ],
+      "posterAsset": "mirror.jpg"
+    },
+    {
+      "key": "copy",
+      "title": "Certified Copy",
+      "year": 2010,
+      "director": "Abbas Kiarostami",
+      "country": "Iran / Italy",
+      "runtime": 106,
+      "aliasesKo": [
+        "사랑을 카피하다",
+        "서티파이드 카피"
+      ],
+      "sourceIds": [
+        "criterioncopy"
+      ],
+      "posterAsset": "copy.jpg"
+    },
+    {
+      "key": "symbio",
+      "title": "Symbiopsychotaxiplasm: Take One",
+      "year": 1968,
+      "director": "William Greaves",
+      "country": "United States",
+      "aliasesKo": [
+        "심비오사이코택시플라즘",
+        "심비오사이코택시플라즘 테이크 원"
+      ],
+      "sourceIds": [
+        "taubin2006",
+        "criterionclose"
+      ],
+      "posterAsset": "symbio.jpg"
+    },
+    {
+      "key": "camera",
+      "title": "Cameraperson",
+      "year": 2016,
+      "director": "Kirsten Johnson",
+      "country": "United States",
+      "runtime": 102,
+      "aliasesKo": [
+        "카메라퍼슨",
+        "카메라 퍼슨"
+      ],
+      "sourceIds": [
+        "almereyda2017",
+        "criterioncamera"
+      ],
+      "posterAsset": "camera.jpg"
+    },
+    {
+      "key": "stories",
+      "title": "Stories We Tell",
+      "year": 2012,
+      "director": "Sarah Polley",
+      "country": "Canada",
+      "aliasesKo": [
+        "우리가 들려줄 이야기",
+        "스토리즈 위 텔"
+      ],
+      "sourceIds": [
+        "hall2012"
+      ],
+      "posterAsset": "stories.jpg"
+    },
+    {
+      "key": "wind",
+      "title": "The Wind Will Carry Us",
+      "year": 1999,
+      "director": "Abbas Kiarostami",
+      "country": "Iran / France",
+      "runtime": 118,
+      "aliasesKo": [
+        "바람이 우리를 데려다 주리라",
+        "바람이 우리를 데려다주리라"
+      ],
+      "sourceIds": [
+        "akbar2025",
+        "criterionwind",
+        "zipper2000"
+      ],
+      "posterAsset": "wind.jpg"
+    },
+    {
+      "key": "olive",
+      "title": "Through the Olive Trees",
+      "year": 1994,
+      "director": "Abbas Kiarostami",
+      "country": "Iran",
+      "runtime": 103,
+      "aliasesKo": [
+        "올리브 나무 사이로",
+        "올리브나무 사이로"
+      ],
+      "sourceIds": [
+        "criterionolive"
+      ],
+      "posterAsset": "olive.jpg"
+    },
+    {
+      "key": "house",
+      "title": "The House Is Black",
+      "year": 1963,
+      "director": "Forough Farrokhzad",
+      "country": "Iran",
+      "runtime": 22,
+      "aliasesKo": [
+        "집은 검다",
+        "검은 집"
+      ],
+      "sourceIds": [
+        "criterionhouse"
+      ],
+      "posterAsset": "house.jpg"
+    },
+    {
+      "key": "soleil",
+      "title": "Sans Soleil",
+      "year": 1983,
+      "director": "Chris Marker",
+      "country": "France",
+      "runtime": 103,
+      "aliasesKo": [
+        "태양 없이",
+        "상 솔레이유"
+      ],
+      "sourceIds": [
+        "rosenbaum2007",
+        "almereyda2017"
+      ],
+      "posterAsset": "soleil.jpg"
+    },
+    {
+      "key": "boards",
+      "title": "Blackboards",
+      "year": 2000,
+      "director": "Samira Makhmalbaf",
+      "country": "Iran / Italy",
+      "runtime": 85,
+      "aliasesKo": [
+        "칠판",
+        "블랙보드"
+      ],
+      "sourceIds": [
+        "zipper2000",
+        "danks2002",
+        "cannesboards"
+      ],
+      "posterAsset": "boards.jpg"
+    },
+    {
+      "key": "balloon",
+      "title": "The White Balloon",
+      "year": 1995,
+      "director": "Jafar Panahi",
+      "country": "Iran",
+      "aliasesKo": [
+        "하얀 풍선",
+        "하얀풍선",
+        "흰 풍선"
+      ],
+      "sourceIds": [
+        "rapfogel2001panahi",
+        "miffballoon"
+      ],
+      "posterAsset": "balloon.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sprio2009",
+      "title": "Filmic Performance – Authenticity and The Apple",
+      "publisher": "Wide Screen",
+      "author": "Margherita Sprio",
+      "date": "2009-04",
+      "url": "https://widescreenjournal.org/wp-content/uploads/2021/06/filmic-performance-authenticity-and-the-apple.pdf",
+      "type": "academic",
+      "scope": "direct_connection",
+      "filmKeys": [
+        "apple",
+        "closeup"
+      ],
+      "summary": "Sprio pairs The Apple and Close-Up as works in which nonprofessionals restage lived experiences, raising questions about truth, performance and the director's power.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Abstract, PDF page 1; discussion of The Apple on pages 3–6."
+    },
+    {
+      "id": "sprio2016",
+      "title": "Performing History: Girlhood and Sib/The Apple (Samira Makhmalbaf, 1998)",
+      "publisher": "Palgrave Macmillan",
+      "author": "Margherita Sprio",
+      "date": "2016",
+      "url": "https://link.springer.com/chapter/10.1057/9781137388926_13",
+      "type": "academic",
+      "scope": "film_context",
+      "filmKeys": [
+        "apple"
+      ],
+      "summary": "The public abstract studies The Apple through reenactment, nonprofessional child actors, performance and girlhood.",
+      "accessLevel": "abstract",
+      "verifiedOn": "2026-09-12",
+      "locator": "Public Abstract section; chapter body is subscription content."
+    },
+    {
+      "id": "danks2002",
+      "title": "The House that Mohsen Built: The Films of Samira Makhmalbaf and Marzieh Meshkini",
+      "publisher": "Senses of Cinema",
+      "author": "Adrian Danks",
+      "date": "2002-10",
+      "url": "https://www.sensesofcinema.com/2002/filmmaker-profiles/makhmalbaf/",
+      "type": "criticism",
+      "scope": "direct_connection",
+      "filmKeys": [
+        "apple",
+        "innocence",
+        "closeup",
+        "salaam",
+        "boards"
+      ],
+      "summary": "Danks connects The Apple with Close-Up and A Moment of Innocence through reenactment, and with Salaam Cinema through cinema's involvement in Iranian community life.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Later section on documentation and reenactment, followed by discussion of access to real participants."
+    },
+    {
+      "id": "rapfogel2001close",
+      "title": "A Mirror Facing a Mirror",
+      "publisher": "Senses of Cinema",
+      "author": "Jared Rapfogel",
+      "date": "2001-11",
+      "url": "https://www.sensesofcinema.com/2001/abbas-kiarostami-remembered/close_up/",
+      "type": "criticism",
+      "scope": "direct_connection",
+      "filmKeys": [
+        "closeup",
+        "innocence",
+        "apple",
+        "mirror"
+      ],
+      "summary": "Rapfogel examines self-reflexive storytelling in Close-Up and A Moment of Innocence, locating The Apple and The Mirror within a related Iranian fiction-documentary practice.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Opening discussion after the Close-Up synopsis; paragraphs on stories within stories."
+    },
+    {
+      "id": "rapfogel2001panahi",
+      "title": "Don't Look at the Camera: Becoming a Woman in Jafar Panahi's Iran",
+      "publisher": "Senses of Cinema",
+      "author": "Jared Rapfogel",
+      "date": "2001-07",
+      "url": "https://www.sensesofcinema.com/2001/jafar-panahi/panahi_jared/",
+      "type": "criticism",
+      "scope": "direct_connection",
+      "filmKeys": [
+        "mirror",
+        "balloon",
+        "closeup",
+        "wind"
+      ],
+      "summary": "Rapfogel reads The Mirror as a response to The White Balloon: similar journeys through Tehran become a challenge to cinematic performance and adult authority.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Opening comparison of Panahi's first three features and subsequent The Mirror analysis."
+    },
+    {
+      "id": "zipper2000",
+      "title": "Iranian Cinema at MIFF 2000",
+      "publisher": "Senses of Cinema",
+      "author": "Ben Zipper",
+      "date": "2000-09",
+      "url": "https://www.sensesofcinema.com/2000/festival-reports/iranian/",
+      "type": "criticism",
+      "scope": "direct_connection",
+      "filmKeys": [
+        "apple",
+        "boards",
+        "wind"
+      ],
+      "summary": "Zipper compares the restraint of Blackboards with The Apple and The Wind Will Carry Us, distinguishing Samira Makhmalbaf's moral tensions and settings.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Final five paragraphs on The Apple and Blackboards; final comparison with The Wind Will Carry Us."
+    },
+    {
+      "id": "criterionclose",
+      "title": "Close-up — film catalogue",
+      "publisher": "The Criterion Collection",
+      "author": null,
+      "date": null,
+      "url": "https://www.criterion.com/films/1092-close-up",
+      "type": "catalogue",
+      "scope": "curatorial_association",
+      "filmKeys": [
+        "closeup",
+        "fake",
+        "symbio"
+      ],
+      "summary": "The catalogue describes real participants playing themselves, and lists F for Fake and the Symbiopsychotaxiplasm collection among its related films.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Synopsis, Film Info and Related Films sections. The Symbiopsychotaxiplasm link is to a collection containing Take One and Take 2½."
+    },
+    {
+      "id": "criterioncopy",
+      "title": "Certified Copy — film catalogue",
+      "publisher": "The Criterion Collection",
+      "author": null,
+      "date": null,
+      "url": "https://www.criterion.com/films/28353-certified-copy",
+      "type": "catalogue",
+      "scope": "curatorial_association",
+      "filmKeys": [
+        "copy",
+        "closeup",
+        "fake"
+      ],
+      "summary": "The catalogue frames Certified Copy around authenticity in art and relationships; its related films include Close-Up and F for Fake.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Synopsis and Related Films sections."
+    },
+    {
+      "id": "criterionolive",
+      "title": "Through the Olive Trees — film catalogue",
+      "publisher": "The Criterion Collection",
+      "author": null,
+      "date": null,
+      "url": "https://www.criterion.com/films/28077-through-the-olive-trees",
+      "type": "catalogue",
+      "scope": "curatorial_association",
+      "filmKeys": [
+        "olive",
+        "closeup",
+        "copy"
+      ],
+      "summary": "A film shoot and its actors' romantic lives overlap in the synopsis. The catalogue explicitly links Close-Up and Certified Copy as related films.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Synopsis, credits and Related Films sections."
+    },
+    {
+      "id": "criterionwind",
+      "title": "The Wind Will Carry Us — film catalogue",
+      "publisher": "The Criterion Collection",
+      "author": null,
+      "date": null,
+      "url": "https://www.criterion.com/films/30369-the-wind-will-carry-us",
+      "type": "catalogue",
+      "scope": "curatorial_association",
+      "filmKeys": [
+        "wind",
+        "closeup"
+      ],
+      "summary": "The synopsis follows a documentarian whose assignment is disrupted by village life. Close-Up is listed as a related film.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Synopsis and Related Films sections."
+    },
+    {
+      "id": "andrew2012",
+      "title": "F for Fake: all's well that ends with Welles...",
+      "publisher": "BFI",
+      "author": "Geoff Andrew",
+      "date": "2012-08-23",
+      "url": "https://www.bfi.org.uk/features/f-fake-alls-well-ends-welles",
+      "type": "criticism",
+      "scope": "film_context",
+      "filmKeys": [
+        "fake"
+      ],
+      "summary": "Andrew discusses Welles's editing, authorship and playful uncertainty about documentary truth, describing a work that turns its inquiry toward its own maker.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Middle section on mixed footage, narrative construction and the essay-film form."
+    },
+    {
+      "id": "taubin2006",
+      "title": "Symbiopsychotaxiplasm: Still No Answers",
+      "publisher": "The Criterion Collection",
+      "author": "Amy Taubin",
+      "date": "2006-12-04",
+      "url": "https://www.criterion.com/current/posts/460-symbiopsychotaxiplasm-still-no-answers",
+      "type": "criticism",
+      "scope": "film_context",
+      "filmKeys": [
+        "symbio"
+      ],
+      "summary": "Taubin examines Take One's repeated screen tests and crew conflict as questions about filmmaking, fiction, documentary and the director's authority.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Section beginning the analysis of Take One's theme-and-variation structure, before the separate Take 2½ discussion."
+    },
+    {
+      "id": "almereyda2017",
+      "title": "Cameraperson: Getting Close",
+      "publisher": "The Criterion Collection",
+      "author": "Michael Almereyda",
+      "date": "2017-02-05",
+      "url": "https://www.criterion.com/current/posts/4420-cameraperson-getting-close",
+      "type": "criticism",
+      "scope": "direct_connection",
+      "filmKeys": [
+        "camera",
+        "soleil"
+      ],
+      "summary": "Almereyda explicitly compares Cameraperson with Sans Soleil as assembled documentary experiments, while distinguishing Johnson's exposed personal history and ethical encounters.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Comparison with Sans Soleil after the Vertov discussion; later passages on voyeurism and returning images to subjects."
+    },
+    {
+      "id": "criterioncamera",
+      "title": "Cameraperson — film catalogue",
+      "publisher": "The Criterion Collection",
+      "author": null,
+      "date": null,
+      "url": "https://www.criterion.com/films/29003-cameraperson",
+      "type": "catalogue",
+      "scope": "film_context",
+      "filmKeys": [
+        "camera",
+        "soleil"
+      ],
+      "summary": "The synopsis emphasizes filmmaker-subject relationships, camera intervention and a memoir assembled from documentary footage. Sans Soleil appears in Related Films.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Synopsis, Film Info and Related Films."
+    },
+    {
+      "id": "hall2012",
+      "title": "Stories We Tell",
+      "publisher": "Hammer to Nail",
+      "author": "Tom Hall",
+      "date": "2012-09-07",
+      "url": "https://www.hammertonail.com/reviews/stories-we-tell-film-review/",
+      "type": "criticism",
+      "scope": "film_context",
+      "filmKeys": [
+        "stories"
+      ],
+      "summary": "Hall describes Polley's mixture of recreated scenes, interviews and home footage, showing how a family constructs memory and questions the telling of its own story.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Main review paragraphs on collective memory and the film's self-questioning. Page dated May 13, 2013; note states first publication September 7, 2012."
+    },
+    {
+      "id": "rosenbaum2007",
+      "title": "Personal Effects: The Guarded Intimacy of Sans Soleil",
+      "publisher": "The Criterion Collection",
+      "author": "Jonathan Rosenbaum",
+      "date": "2007-06-25",
+      "url": "https://www.criterion.com/current/posts/484-personal-effects-the-guarded-intimacy-of-sans-soleil",
+      "type": "criticism",
+      "scope": "direct_connection",
+      "filmKeys": [
+        "soleil",
+        "fake"
+      ],
+      "summary": "Rosenbaum explicitly compares Sans Soleil and F for Fake as personal philosophical essays that use fiction, roaming perspectives and musical structures.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Final discussion comparing Sans Soleil with F for Fake; earlier analysis of fictional narrator and cameraman."
+    },
+    {
+      "id": "criterionhouse",
+      "title": "The House Is Black — film catalogue",
+      "publisher": "The Criterion Channel",
+      "author": null,
+      "date": null,
+      "url": "https://www.criterionchannel.com/videos/the-house-is-black",
+      "type": "catalogue",
+      "scope": "film_context",
+      "filmKeys": [
+        "house"
+      ],
+      "summary": "The synopsis describes Farrokhzad's pairing of poetry and direct observation, portraying everyday life in a leprosy settlement and affirming its residents' humanity.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Full public synopsis and director/year line."
+    },
+    {
+      "id": "akbar2025",
+      "title": "The Wind Will Carry Us: Dust to Dust",
+      "publisher": "The Criterion Collection",
+      "author": "Kaveh Akbar",
+      "date": "2025-05-13",
+      "url": "https://www.criterion.com/current/posts/8803-the-wind-will-carry-us-dust-to-dust",
+      "type": "criticism",
+      "scope": "film_context",
+      "filmKeys": [
+        "wind",
+        "olive"
+      ],
+      "summary": "Akbar studies the ethics of a filmmaker entering rural lives, and identifies the Farrokhzad poem recited in the film as the source of its title.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Passages on the documentarian's intrusion, the Koker Trilogy and Farrokhzad's poem."
+    },
+    {
+      "id": "iffrsalaam",
+      "title": "Salaam Cinema — IFFR 1996 programme",
+      "publisher": "International Film Festival Rotterdam",
+      "author": null,
+      "date": "1996",
+      "url": "https://iffr.com/en/iffr/1996/films/salaam-cinema",
+      "type": "festival",
+      "scope": "film_context",
+      "filmKeys": [
+        "salaam"
+      ],
+      "summary": "IFFR's substantive programme note describes casting sessions between documentary and fiction, with Makhmalbaf examining his own power over would-be performers.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Programme synopsis after film title, especially paragraphs on improvisation and the director's role."
+    },
+    {
+      "id": "miffballoon",
+      "title": "The White Balloon — MIFF 2006 programme",
+      "publisher": "Melbourne International Film Festival",
+      "author": null,
+      "date": "2006",
+      "url": "https://miff.com.au/festival-archive/films/12208/white-balloon-the",
+      "type": "festival",
+      "scope": "film_context",
+      "filmKeys": [
+        "balloon"
+      ],
+      "summary": "The programme describes a child's disrupted errand through Tehran and the near-documentary texture of Panahi's treatment of Kiarostami's screenplay.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Film-specific description below archive heading; final critical paragraph."
+    },
+    {
+      "id": "cannesapple",
+      "title": "La Pomme — Un Certain Regard 1998",
+      "publisher": "Festival de Cannes",
+      "author": null,
+      "date": "1998",
+      "url": "https://www.festival-cannes.com/f/la-pomme/",
+      "type": "festival",
+      "scope": "programme_context",
+      "filmKeys": [
+        "apple"
+      ],
+      "summary": "The official French archive confirms Samira Makhmalbaf's debut in Un Certain Regard and identifies the Tehran family at the centre of the film.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "French archive, title through cast. English route failed; the French page was opened and read. Summary translated."
+    },
+    {
+      "id": "cannesboards",
+      "title": "Takhte Siah — Official Competition 2000",
+      "publisher": "Festival de Cannes",
+      "author": null,
+      "date": "2000",
+      "url": "https://www.festival-cannes.com/en/f/takhte-siah/",
+      "type": "festival",
+      "scope": "programme_context",
+      "filmKeys": [
+        "boards"
+      ],
+      "summary": "The official archive records Blackboards in competition, its shared Jury Prize, and its story of teachers crossing Kurdish border regions.",
+      "accessLevel": "full_text",
+      "verifiedOn": "2026-09-12",
+      "locator": "Film-specific selection, synopsis and credits."
+    }
+  ],
+  "edges": [
+    {
+      "id": "apple--closeup",
+      "from": "closeup",
+      "to": "apple",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "sprio2009",
+        "danks2002"
+      ],
+      "why": "Sprio and Danks explicitly connect these films through real people reenacting their experiences for a camera."
+    },
+    {
+      "id": "apple--innocence",
+      "from": "apple",
+      "to": "innocence",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "danks2002"
+      ],
+      "why": "Danks links their blurred boundary between lived events and reenactment, while emphasizing The Apple's more immediate approach."
+    },
+    {
+      "id": "closeup--innocence",
+      "from": "closeup",
+      "to": "innocence",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "rapfogel2001close"
+      ],
+      "why": "Rapfogel compares their nested stories: an event, its retelling, and the making of a film about that retelling."
+    },
+    {
+      "id": "closeup--mirror",
+      "from": "closeup",
+      "to": "mirror",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "rapfogel2001close"
+      ],
+      "why": "Rapfogel locates The Mirror within the self-reflexive fiction-documentary practice exemplified by Close-Up."
+    },
+    {
+      "id": "apple--salaam",
+      "from": "apple",
+      "to": "salaam",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "danks2002"
+      ],
+      "why": "Danks associates both with cinema's exceptional access to real people and its place in Iranian community life."
+    },
+    {
+      "id": "closeup--salaam",
+      "from": "closeup",
+      "to": "salaam",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "danks2002"
+      ],
+      "why": "Danks names both while discussing cinema's power to involve everyday people in its own making."
+    },
+    {
+      "id": "apple--boards",
+      "from": "apple",
+      "to": "boards",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "zipper2000"
+      ],
+      "why": "Zipper directly compares their restraint toward characters facing urgent social pressures, despite different settings."
+    },
+    {
+      "id": "boards--wind",
+      "from": "boards",
+      "to": "wind",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "zipper2000"
+      ],
+      "why": "Zipper explicitly compares their directorial restraint, while distinguishing the moral tensions in Blackboards."
+    },
+    {
+      "id": "balloon--mirror",
+      "from": "mirror",
+      "to": "balloon",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "rapfogel2001panahi"
+      ],
+      "why": "Rapfogel reads The Mirror as a response to The White Balloon, transforming a child's city journey through self-reflexive filmmaking."
+    },
+    {
+      "id": "closeup--fake",
+      "from": "closeup",
+      "to": "fake",
+      "bidirectional": true,
+      "relation": "curatorial_association",
+      "sourceIds": [
+        "criterionclose",
+        "andrew2012"
+      ],
+      "why": "Criterion explicitly lists F for Fake beside Close-Up. The pairing invites attention to performance, authorship and uncertain truth."
+    },
+    {
+      "id": "closeup--symbio",
+      "from": "closeup",
+      "to": "symbio",
+      "bidirectional": true,
+      "relation": "curatorial_association",
+      "sourceIds": [
+        "criterionclose",
+        "taubin2006"
+      ],
+      "why": "Criterion links Close-Up to the Symbiopsychotaxiplasm collection containing Take One; Taubin explains Take One's filmmaking-within-filmmaking."
+    },
+    {
+      "id": "closeup--copy",
+      "from": "copy",
+      "to": "closeup",
+      "bidirectional": true,
+      "relation": "curatorial_association",
+      "sourceIds": [
+        "criterioncopy",
+        "criterionclose"
+      ],
+      "why": "Criterion explicitly connects the two titles, opening a route from performed identity to authenticity in art and relationships."
+    },
+    {
+      "id": "copy--fake",
+      "from": "copy",
+      "to": "fake",
+      "bidirectional": true,
+      "relation": "curatorial_association",
+      "sourceIds": [
+        "criterioncopy",
+        "andrew2012"
+      ],
+      "why": "Criterion lists F for Fake as related to Certified Copy. Both source accounts make artistic authenticity central."
+    },
+    {
+      "id": "closeup--olive",
+      "from": "olive",
+      "to": "closeup",
+      "bidirectional": true,
+      "relation": "curatorial_association",
+      "sourceIds": [
+        "criterionolive",
+        "criterionclose"
+      ],
+      "why": "Criterion explicitly pairs them; the accompanying synopses describe lives that become entangled with film performance."
+    },
+    {
+      "id": "copy--olive",
+      "from": "olive",
+      "to": "copy",
+      "bidirectional": true,
+      "relation": "curatorial_association",
+      "sourceIds": [
+        "criterionolive",
+        "criterioncopy"
+      ],
+      "why": "Criterion lists Certified Copy beside Through the Olive Trees, moving between performed relationships and their uncertain realities."
+    },
+    {
+      "id": "closeup--wind",
+      "from": "wind",
+      "to": "closeup",
+      "bidirectional": true,
+      "relation": "curatorial_association",
+      "sourceIds": [
+        "criterionwind",
+        "criterionclose"
+      ],
+      "why": "Criterion explicitly links these titles, connecting two different encounters between filmmakers and the lives they film."
+    },
+    {
+      "id": "camera--soleil",
+      "from": "camera",
+      "to": "soleil",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "almereyda2017"
+      ],
+      "why": "Almereyda compares their assembled documentary fragments and reflective camerawork, while distinguishing Johnson's personal exposure."
+    },
+    {
+      "id": "fake--soleil",
+      "from": "soleil",
+      "to": "fake",
+      "bidirectional": true,
+      "relation": "direct_connection",
+      "sourceIds": [
+        "rosenbaum2007"
+      ],
+      "why": "Rosenbaum explicitly compares their philosophical essay forms, deceptive uses of fiction and musical arrangement of personal experience."
+    },
+    {
+      "id": "camera--wind",
+      "from": "camera",
+      "to": "wind",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "criterioncamera",
+        "akbar2025"
+      ],
+      "why": "CLOSEUP interpretation: both accounts question what a camera's presence does to the people it observes."
+    },
+    {
+      "id": "camera--house",
+      "from": "camera",
+      "to": "house",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "criterioncamera",
+        "criterionhouse"
+      ],
+      "why": "CLOSEUP interpretation: move between two approaches to filming vulnerable people, attending to the observer's responsibility and the subject's humanity."
+    },
+    {
+      "id": "camera--stories",
+      "from": "camera",
+      "to": "stories",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "almereyda2017",
+        "hall2012"
+      ],
+      "why": "CLOSEUP interpretation: both remake recorded material into personal histories while exposing the choices involved in telling them."
+    },
+    {
+      "id": "fake--stories",
+      "from": "stories",
+      "to": "fake",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "hall2012",
+        "andrew2012"
+      ],
+      "why": "CLOSEUP interpretation: both source accounts describe films that investigate truth while drawing attention to their own storytelling methods."
+    },
+    {
+      "id": "innocence--stories",
+      "from": "stories",
+      "to": "innocence",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "hall2012",
+        "rapfogel2001close"
+      ],
+      "why": "CLOSEUP interpretation: compare a family's reconstructed memory with a filmmaker and former policeman revisiting a shared past."
+    },
+    {
+      "id": "apple--balloon",
+      "from": "apple",
+      "to": "balloon",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "sprio2016",
+        "miffballoon"
+      ],
+      "why": "CLOSEUP interpretation: a route through children's experience of Tehran, connecting questions of girlhood with an everyday journey seen at a child's scale."
+    },
+    {
+      "id": "apple--mirror",
+      "from": "apple",
+      "to": "mirror",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "sprio2016",
+        "rapfogel2001panahi"
+      ],
+      "why": "CLOSEUP interpretation: both readings bring girlhood into contact with performance, asking how a young person's experience enters a film."
+    },
+    {
+      "id": "salaam--symbio",
+      "from": "salaam",
+      "to": "symbio",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "iffrsalaam",
+        "taubin2006"
+      ],
+      "why": "CLOSEUP interpretation: auditions and screen tests expose the filmmaker's authority, letting production itself become the subject."
+    },
+    {
+      "id": "olive--symbio",
+      "from": "olive",
+      "to": "symbio",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "criterionolive",
+        "taubin2006"
+      ],
+      "why": "CLOSEUP interpretation: both turn a troubled film production into a means of inspecting the boundary between performance and life."
+    },
+    {
+      "id": "house--soleil",
+      "from": "house",
+      "to": "soleil",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "criterionhouse",
+        "rosenbaum2007"
+      ],
+      "why": "CLOSEUP interpretation: compare poetry joined to observed lives with an essay that reshapes documentary travel through a fictional voice."
+    },
+    {
+      "id": "mirror--symbio",
+      "from": "mirror",
+      "to": "symbio",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "rapfogel2001panahi",
+        "taubin2006"
+      ],
+      "why": "CLOSEUP interpretation: both challenge a director's control by making the conditions and resistance of performance visible."
+    },
+    {
+      "id": "house--wind",
+      "from": "house",
+      "to": "wind",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "criterionhouse",
+        "akbar2025"
+      ],
+      "why": "CLOSEUP interpretation: The Wind Will Carry Us quotes Forough Farrokhzad; The House Is Black offers her own filmmaking. This is a shared-poet route, not a claimed film influence."
+    },
+    {
+      "id": "camera--closeup",
+      "from": "closeup",
+      "to": "camera",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "sprio2009",
+        "criterioncamera"
+      ],
+      "why": "CLOSEUP interpretation: both accounts put the filmmaker-subject relationship under scrutiny, from reenacted lives to a cinematographer's working encounters."
+    },
+    {
+      "id": "balloon--boards",
+      "from": "boards",
+      "to": "balloon",
+      "bidirectional": true,
+      "relation": "grounded_interpretation",
+      "sourceIds": [
+        "zipper2000",
+        "miffballoon"
+      ],
+      "why": "CLOSEUP interpretation: ordinary journeys expose wider social conditions, shifting from a child's city errand to teachers and young people crossing dangerous borders."
+    }
+  ]
+}
