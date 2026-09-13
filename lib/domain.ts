@@ -3,7 +3,7 @@ import {cleanDisplayProse} from "./prose";
 export type Language='en'|'ko';
 export const ResearchIntentSchema=z.enum(['initial','follow','manual','regenerate']);
 export type ResearchIntent=z.infer<typeof ResearchIntentSchema>;
-export type ResearchOptions={intent:ResearchIntent;previousIds:string[];language:Language};
+export type ResearchOptions={intent:ResearchIntent;previousIds:string[];language:Language;preparationToken?:string};
 export const MAX_SESSION_SNAPSHOTS=64;
 export const MAX_SEEN_FILMS=5000;
 // localStorage commonly accounts for UTF-16; leave room for other application data.
@@ -17,7 +17,7 @@ export const ConnectionSchema=z.object({anchorId:z.string(),anchorTitle:z.string
 export type Connection=z.infer<typeof ConnectionSchema>;
 export const RecommendationSchema=z.object({film:FilmSchema,connections:z.array(ConnectionSchema).min(1),sourceIds:z.array(z.string()),contextScope:z.literal('discovery').optional(),curation:z.object({lens:z.string().max(1000).transform(cleanDisplayProse),bridge:z.string().max(2000).transform(cleanDisplayProse),contrast:z.string().max(2000).transform(cleanDisplayProse)}).optional(),detailToken:z.string().max(16000).optional()}).refine(r=>r.connections.every(c=>c.relation==='ai_inference'?c.sourceIds.length===0:c.sourceIds.length>0)&&r.connections.every(c=>c.sourceIds.every(id=>r.sourceIds.includes(id)))&&(!r.connections.every(c=>c.relation==='ai_inference')||r.sourceIds.length===0),'Evidence is required for sourced recommendations; AI interpretations must not invent citations.');
 export type Recommendation=z.infer<typeof RecommendationSchema>;
-export const SnapshotSchema=z.object({id:z.string(),createdAt:z.string(),seeds:z.array(FilmSchema).min(1).max(8),trail:z.array(FilmSchema).max(30),recommendations:z.array(RecommendationSchema).min(1).max(12),sources:z.array(SourceSchema).max(48),language:z.enum(['en','ko']).optional(),action:ResearchIntentSchema.optional(),notice:z.literal('partial').optional(),mode:z.enum(['collection','live'])});
+export const SnapshotSchema=z.object({id:z.string(),createdAt:z.string(),seeds:z.array(FilmSchema).min(1).max(8),trail:z.array(FilmSchema).max(30),recommendations:z.array(RecommendationSchema).min(1).max(12),sources:z.array(SourceSchema).max(48),language:z.enum(['en','ko']).optional(),action:ResearchIntentSchema.optional(),preparationToken:z.string().max(220000).optional(),reserveCount:z.number().int().min(0).max(32).optional(),notice:z.literal('partial').optional(),mode:z.enum(['collection','live'])});
 export type Snapshot=z.infer<typeof SnapshotSchema>;
 export const SessionSchema=z.object({version:z.literal(2),seedDraft:z.array(FilmSchema).max(8),snapshots:z.array(SnapshotSchema).max(MAX_SESSION_SNAPSHOTS),archivedSeenIds:z.array(FilmIdSchema).max(MAX_SEEN_FILMS).optional(),cursor:z.number().int().min(-1)}).refine(s=>s.cursor<s.snapshots.length && (s.snapshots.length===0?s.cursor===-1:s.cursor>=0));
 export type Session=z.infer<typeof SessionSchema>;
@@ -25,7 +25,7 @@ export const EMPTY_SESSION:Session={version:2,seedDraft:[],snapshots:[],cursor:-
 export const STORAGE_KEY='strada.session.v2';
 export const LEGACY_STORAGE_KEY='closeup.session.v2';
 export const titleOf=(film:Film,language:Language)=>language==='ko'&&film.titleKo?film.titleKo:film.title;
-export type Batch={recommendations:Recommendation[];sources:Source[];mode:'collection'|'live';notice?:'partial'};
+export type Batch={recommendations:Recommendation[];sources:Source[];mode:'collection'|'live';notice?:'partial';preparationToken?:string;reserveCount?:number};
 export function weights(seeds:Film[],trail:Film[]){
  const films=[...new Map([...seeds,...trail].map(film=>[film.id,film])).values()];return films.map(film=>({film,weight:1/films.length}));
 }

@@ -11,7 +11,8 @@
     "start": "next start --hostname 127.0.0.1 --port 5173",
     "lint": "eslint app components lib hooks tests --ignore-pattern dist --ignore-pattern .next",
     "test": "node --import tsx --test tests/*.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "benchmark": "node --import tsx scripts/benchmark-curation.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

@@ -1,6 +1,7 @@
+import {curationSettings} from './curation-settings';
 export function config(){
- const searchModel=process.env.OPENAI_SEARCH_MODEL||process.env.OPENAI_MODEL||'gpt-4.1-mini';
- return {openai:process.env.OPENAI_API_KEY,tmdb:process.env.TMDB_READ_ACCESS_TOKEN,model:searchModel,searchModel,curatorModel:process.env.OPENAI_CURATOR_MODEL||'gpt-5.4-mini'};
+ const settings=curationSettings(),searchModel=settings.stages.search.model;
+ return {openai:process.env.OPENAI_API_KEY,tmdb:process.env.TMDB_READ_ACCESS_TOKEN,model:searchModel,searchModel,curatorModel:settings.stages.draft.model,draftModel:settings.stages.draft.model,selectModel:settings.stages.curate.model,writeModel:settings.stages.write.model,detailModel:settings.stages.detail.model,settingsFingerprint:settings.fingerprint};
 }
 export class AppError extends Error{constructor(public code:string,message:string,public status=502){super(message)}}
 export function errorResponse(e:unknown){if(!(e instanceof AppError))console.error('STRADA server error',e instanceof Error?{name:e.name,message:e.message}:String(e));const err=e instanceof DOMException&&e.name==='TimeoutError'?new AppError('TIMEOUT','Research took too long. Your current trail is safe; please try again.',504):e instanceof DOMException&&e.name==='AbortError'?new AppError('CANCELED','Research was canceled. Your trail is unchanged.',499):e instanceof AppError?e:new AppError('UPSTREAM_ERROR','The service could not finish this request. Please try again.');return Response.json({error:{code:err.code,message:err.message,retryable:err.status!==400&&err.status!==503}},{status:err.status});}

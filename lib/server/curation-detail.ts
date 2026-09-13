@@ -1,3 +1,4 @@
+import {curationSettings} from './curation-settings';
 import {createHash,createHmac,timingSafeEqual} from 'node:crypto';
 import {z} from 'zod';
 import {type Film,type Language,type Recommendation,type Source} from '../domain';
@@ -31,7 +32,7 @@ type DetailJob={promise:Promise<DetailResult>,controller:AbortController,subscri
 const inFlight=new Map<string,DetailJob>();
 export async function explainFilm(token:string,language:Language,signal:AbortSignal):Promise<DetailResult>{
  signal.throwIfAborted();
- const packet=readDetailToken(token),fingerprint=createHash('sha256').update(token).digest('hex'),key=fingerprint+':'+language+':'+config().curatorModel,old=cache.get(key);
+ const packet=readDetailToken(token),fingerprint=createHash('sha256').update(token).digest('hex'),key=fingerprint+':'+language+':'+curationSettings().stageFingerprints.detail,old=cache.get(key);
  if(old&&Date.now()-old.at<86400_000)return {paragraphs:old.paragraphs,language,cached:true};
  let job=inFlight.get(key);if(job?.controller.signal.aborted){inFlight.delete(key);job=undefined;}
  if(!job){

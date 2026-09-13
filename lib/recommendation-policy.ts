@@ -11,7 +11,7 @@ export function discoveryModelContext(selected:Film[],discovered:DiscoveredFilm[
  return [...unique.values()].sort((a,b)=>a.id.localeCompare(b.id)).map((film,i)=>({code:`d${i}`,...film,weight:1/unique.size}));
 }
 export function discoveryCacheKey(model:string,seedIds:string[],trailIds:string[],discovered:DiscoveredFilm[],options?:ResearchOptions,seenIds:string[]=[]){
- return JSON.stringify(['strada-v20-curation-freshness',model,[...seedIds].sort(),[...trailIds].sort(),[...new Set([...seenIds,...discovered.map(f=>f.id)])].sort(),options?{...options,previousIds:[...new Set(options.previousIds)].sort()}:null]);
+ return JSON.stringify(['strada-v20-curation-freshness',model,[...seedIds].sort(),[...trailIds].sort(),[...new Set([...seenIds,...discovered.map(f=>f.id)])].sort(),options?{intent:options.intent,language:options.language,previousIds:[...new Set(options.previousIds)].sort()}:null]);
 }
 export function coversDiscoveryContext(basis:string[],context:{code:string}[]){
  const allowed=new Set(context.map(f=>f.code));

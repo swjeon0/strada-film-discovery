@@ -50,6 +50,10 @@ function setup(t:TestContext,name:string,scenario:Scenario={}){
      return {candidate:row.code,lens:'Duration and testimony',anchors:request.selected.map((film:{code:string})=>film.code).slice(0,4),why:`${row.title} extends the selected films through a specific relationship between duration and performance.`,bridge:'An explicit formal relationship.',contrast:'A distinct question for the next viewing.',evidence};
     }),rejected:[]});
    }
+   if(stage?.startsWith('strada_write_')){
+    const request=JSON.parse(body.input.find(row=>row.role==='user')!.content);
+    return output({recommendations:request.approvedConnections.map((row:{candidate:string;decision:string})=>({candidate:row.candidate,why:row.decision}))});
+   }
    if(!stage){
     calls.search++;
     if(scenario.sources!=='actual')return new Response('',{status:503});
