@@ -21,7 +21,6 @@ test('diversity changes the order of equally supported candidates without losing
 
 import {titleMatches,titleMentioned} from '../lib/server/grounding';
 import {RecommendationSchema,safePoster} from '../lib/domain';
-import {allocateQuota} from '../lib/server/quota-policy';
 test('AI-only recommendations persist honestly and cannot carry fabricated evidence',()=>{
  const template=recommendCollection([film('closeup')],[]).recommendations[0];
  const ai={...template,sourceIds:[],connections:[{...template.connections[0],relation:'ai_inference',sourceIds:[]}]};
@@ -31,15 +30,6 @@ test('AI-only recommendations persist honestly and cannot carry fabricated evide
  assert.equal(RecommendationSchema.safeParse({...ai,connections:[{...ai.connections[0],relation:'grounded_interpretation'}]}).success,false);
  const state=commitSnapshot(EMPTY_SESSION,{...snapshot('ai'),recommendations:[RecommendationSchema.parse(ai)],sources:[]},true);
  assert.equal(parseSession(JSON.stringify(state)).snapshots[0].recommendations[0].connections[0].relation,'ai_inference');
-});
-test('public cost cap applies per caller, resets by UTC day, and does not mutate previous state',()=>{
- const now=Date.parse('2026-09-12T23:59:00Z');let state;
- for(let i=0;i<6;i++){const result=allocateQuota(state,'caller',now,10);assert.ok(result.allowed);state=result.state;}
- const saved=JSON.stringify(state);assert.equal(allocateQuota(state,'caller',now,10).code,'RATE_LIMIT');assert.equal(JSON.stringify(state),saved);
- for(let i=0;i<4;i++){const result=allocateQuota(state,`other-${i}`,now,10);assert.ok(result.allowed);state=result.state;}
- assert.equal(allocateQuota(state,'another',now,10).code,'DAILY_LIMIT');
- const tomorrow=allocateQuota(state,'caller',now+60000,10);assert.ok(tomorrow.allowed);assert.equal(tomorrow.state.total,1);
- assert.ok(allocateQuota({day:'2026-09-12',total:6,callers:{caller:{at:now-600000,count:6}}},'caller',now,10).allowed);
 });
 test('poster proxy accepts only trusted image hosts and valid local poster paths',()=>{
  assert.equal(safePoster('https://image.tmdb.org/t/p/w500/test.jpg'),'https://image.tmdb.org/t/p/w500/test.jpg');

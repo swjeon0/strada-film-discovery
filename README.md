@@ -14,7 +14,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-`.env.local`의 `OPENAI_API_KEY`, `TMDB_READ_ACCESS_TOKEN`을 채웁니다. 로컬 개인 개발에서는 `PUBLIC_MODE=false`로 설정할 수 있습니다. 서버 주소는 http://127.0.0.1:5173 입니다.
+`.env.local`의 `OPENAI_API_KEY`, `TMDB_READ_ACCESS_TOKEN`을 채웁니다. 서버 주소는 http://127.0.0.1:5173 입니다.
 
 ## GitHub + Vercel 배포
 
@@ -28,13 +28,10 @@ Production과 Preview 환경변수에는 다음 값을 등록합니다. API 키�
 - `OPENAI_SEARCH_MODEL=gpt-4.1-mini` (웹 출처 검색; 기존 `OPENAI_MODEL`도 검색용 별칭으로 지원)
 - `OPENAI_CURATOR_MODEL=gpt-5.4-mini` (공동 해석, 후보 선별, 상세 설명; 추론 강도 low)
 - `TMDB_READ_ACCESS_TOKEN`
-- `QUOTA_SERVICE_URL`
-- `QUOTA_SERVICE_SECRET`
-- `PUBLIC_MODE=true`
 
-앱과 모든 영화 API는 Vercel의 Node.js 서버에서 실행됩니다. 비용 제한 카운터만 기존 Cloudflare Durable Object에 유지합니다. `infra/quota`는 Vercel 서버에서 이 카운터에 접근하는 인증 전용 연결입니다. 기존 `strada-film-discovery`의 `AiQuota`와 `strada-ai-budget` 객체를 그대로 사용하므로 기존 날짜별 제한이 보존됩니다. 이 기존 객체를 삭제하면 비용 확인이 실패하며 GPT 호출도 차단됩니다.
+앱과 모든 영화 API는 Vercel의 Node.js 서버에서 실행됩니다. 앱 자체의 일일·사용자별 AI 탐색 횟수 제한과 동시 요청 개수 제한은 없습니다. 추천·재생성·상세 설명은 이전 사용 횟수와 관계없이 실행하며, Cloudflare 비용 카운터를 호출하지 않습니다. 기존 `PUBLIC_MODE`, `QUOTA_SERVICE_URL`, `QUOTA_SERVICE_SECRET` 설정이 남아 있어도 사용하지 않습니다. `infra/quota`는 예전 배포의 보관용 코드이며 현재 Vercel 앱의 의존성이 아닙니다.
 
-이 카운터에는 영화 기록이나 원본 IP를 저장하지 않습니다. 날짜와 호출 범위를 해시한 식별자, 횟수와 시간만 저장합니다. 서비스 전체 하루 50회의 새 탐색·상세 확장을 허용하며, 새 탐색은 사용자별 10분에 6회입니다. 상세 확장은 서버가 서명한 연결별 범위를 사용해 탐색 횟수를 소진하지 않으며, 로컬 사용자 제한은 별도로 10분에 24회입니다. 상세 확장도 같은 전역 일일 한도를 차감합니다. 한 번의 탐색에는 여러 모델 호출이 포함되며 캐시 재사용은 새 유료 호출을 만들지 않습니다. 비용 값은 API 사용량 기반 추정치이며 중단된 호출에서 사용량을 받지 못하면 실제 청구가 더 클 수 있습니다.
+요청당 시간·출력 길이·검색 범위 제한, 같은 요청 공유, 캐시는 유지합니다. OpenAI 계정 자체의 잔액과 공급자 요청 제한은 그대로 적용됩니다. 비용 값은 API 사용량 기반 추정치이며 중단된 호출에서 사용량을 받지 못하면 실제 청구가 더 클 수 있습니다.
 
 `.env.local`, `.vercel`, 인증 파일, 개발 로그는 GitHub에 올리지 않습니다. 저장소와 ZIP에도 비밀 키를 포함하지 않습니다.
 

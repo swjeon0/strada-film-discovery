@@ -2,7 +2,6 @@ import type {DiscoveredFilm} from '../discovery-context';
 import {RECOMMENDATION_COUNT,discoveryCacheKey,selectFreshRecommendations,validateFreshRecommendations} from '../recommendation-policy';
 import {weights,titleOf,type Film,type Batch,type Source,type Recommendation,type ResearchOptions} from '../domain';
 import {CuratorialCandidate,DraftSchema,CurationSchema,CuratedFilm,EvidenceNote,curationDraftSchema,curationSelectionSchema,CURATOR_DRAFT_PROMPT,CURATOR_SELECT_PROMPT,type Candidate} from '../curation-contract';
-import {claimPublicQuota} from './claim-quota';
 import {config,AppError} from './config';
 import {getFilms,resolveCandidates} from './metadata';
 import type {Budget} from './tmdb';
@@ -18,14 +17,14 @@ const completed=new Map<string,{at:number,value:ResearchResult,requestedIds:stri
 type ResearchJob={promise:Promise<ResearchResult>,controller:AbortController,subscribers:number,settled:boolean,requestedIds:string[]};
 const inFlight=new Map<string,ResearchJob>();
 
-export async function research(seedIds:string[],trailIds:string[],signal:AbortSignal,seenIds:string[]=[],callerIp='local',discoveredFilms:DiscoveredFilm[]=[],options:ResearchOptions={intent:trailIds.length?'follow':'initial',previousIds:[],language:'en'}):Promise<ResearchResult>{
+export async function research(seedIds:string[],trailIds:string[],signal:AbortSignal,seenIds:string[]=[],discoveredFilms:DiscoveredFilm[]=[],options:ResearchOptions={intent:trailIds.length?'follow':'initial',previousIds:[],language:'en'}):Promise<ResearchResult>{
  signal.throwIfAborted();
  const conf=config(),allSeen=[...new Set([...seenIds,...discoveredFilms.map(f=>f.id)])];
  const key=discoveryCacheKey(conf.curatorModel+':'+conf.searchModel,seedIds,trailIds,discoveredFilms,options,allSeen),old=completed.get(key);
  const ordered=(result:ResearchResult,requestedIds:string[])=>{const responseFilms=[...result.seeds,...result.trail],films=new Map(requestedIds.map((id,index)=>[id,responseFilms[index]]));return {...result,seeds:seedIds.map(id=>films.get(id)!),trail:trailIds.map(id=>films.get(id)!)};};
  if(old&&Date.now()-old.at<1_800_000)return ordered({...old.value,usage:{...emptyUsage(old.value.usage.model),cached:true}},old.requestedIds);
  let job=inFlight.get(key);if(job?.controller.signal.aborted){inFlight.delete(key);job=undefined;}
- if(!job){const controller=new AbortController();const created:ResearchJob={promise:runResearch(seedIds,trailIds,allSeen,callerIp,discoveredFilms,options,controller.signal),controller,subscribers:0,settled:false,requestedIds:[...seedIds,...trailIds]};job=created;inFlight.set(key,created);
+ if(!job){const controller=new AbortController();const created:ResearchJob={promise:runResearch(seedIds,trailIds,allSeen,discoveredFilms,options,controller.signal),controller,subscribers:0,settled:false,requestedIds:[...seedIds,...trailIds]};job=created;inFlight.set(key,created);
   void created.promise.then(value=>{created.settled=true;if(!controller.signal.aborted){if(completed.size>=30)completed.delete(completed.keys().next().value!);completed.set(key,{at:Date.now(),value,requestedIds:created.requestedIds});}},()=>{created.settled=true;}).finally(()=>{if(inFlight.get(key)===created)inFlight.delete(key);});
  }
  job.subscribers++;try{return ordered(await waitForRequest(job.promise,signal),job.requestedIds);}finally{job.subscribers--;if(!job.subscribers&&!job.settled)job.controller.abort(new DOMException('The discovery request was canceled.','AbortError'));}
@@ -36,11 +35,11 @@ async function waitForRequest<T>(job:Promise<T>,signal:AbortSignal){
 }
 function supportsPassage(ref:Reference,passage:string){const needle=normalizedText(passage);return needle.length>=25&&normalizedText(ref.text).includes(needle);}
 type Verified={code:string,draft:Candidate,film:Film};
-async function runResearch(seedIds:string[],trailIds:string[],seenIds:string[],callerIp:string,discoveredFilms:DiscoveredFilm[],options:ResearchOptions,requestSignal:AbortSignal):Promise<ResearchResult>{
+async function runResearch(seedIds:string[],trailIds:string[],seenIds:string[],discoveredFilms:DiscoveredFilm[],options:ResearchOptions,requestSignal:AbortSignal):Promise<ResearchResult>{
  const conf=config();if(!conf.openai)throw new AppError('SETUP_REQUIRED','AI discovery is not connected.',503);
  const started=Date.now(),deadline=started+90_000,signal=AbortSignal.any([requestSignal,AbortSignal.timeout(90_000)]);
  const budget:Budget={remaining:160,signal};
- const [films]=await Promise.all([getFilms([...seedIds,...trailIds],budget),claimPublicQuota(callerIp)]);
+ const films=await getFilms([...seedIds,...trailIds],budget);
  signal.throwIfAborted();
  const seeds=films.slice(0,seedIds.length),trail=films.slice(seedIds.length),selectedIds=films.map(f=>f.id);
  if(!films.length)throw new AppError('INVALID_INPUT','Choose starting films first.',400);

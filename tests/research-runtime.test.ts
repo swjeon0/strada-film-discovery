@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {RecommendationSchema,type Film,type ResearchOptions} from '../lib/domain';
 import {research} from '../lib/server/research';
+import {POST} from '../app/api/recommendations/route';
 import {filmById} from '../lib/catalogue';
 
 type TestContext={after:(fn:()=>void)=>void};
@@ -78,7 +79,7 @@ const signal=()=>new AbortController().signal;
 
 test('failed live source searches still produce 12 verified AI recommendations with current-language curation',async t=>{
  const fixture=setup(t,'source-failure');
- const result=await research(['closeup'],[],signal(),[],'test',[],options());
+ const result=await research(['closeup'],[],signal(),[],[],options());
  assert.equal(result.batch.recommendations.length,12);
  assert.equal(new Set(resultIds(result)).size,12);
  assert.deepEqual(result.batch.sources,[]);
@@ -91,7 +92,7 @@ test('failed live source searches still produce 12 verified AI recommendations w
 
 test('only exact fetched passages and real reference codes become sourced connections',async t=>{
  const fixture=setup(t,'grounded-passages',{sources:'actual',final:'mixed-evidence'});
- const result=await research(['closeup'],[],signal(),[],'test',[],options());
+ const result=await research(['closeup'],[],signal(),[],[],options());
  assert.equal(result.batch.recommendations.length,12);
  assert.equal(result.batch.sources.length,1);
  assert.equal(result.batch.sources[0].url,fixture.articleUrl);
@@ -106,7 +107,7 @@ test('only exact fetched passages and real reference codes become sourced connec
 
 test('readable sources do not become evidence when every offered quotation is fabricated',async t=>{
  setup(t,'false-passages',{sources:'actual',final:'false-evidence'});
- const result=await research(['closeup'],[],signal(),[],'test',[],options());
+ const result=await research(['closeup'],[],signal(),[],[],options());
  assert.equal(result.batch.recommendations.length,12);
  assert.deepEqual(result.batch.sources,[]);
  assert.ok(result.batch.recommendations.every(rec=>rec.sourceIds.length===0&&rec.contextScope==='discovery'));
@@ -114,22 +115,22 @@ test('readable sources do not become evidence when every offered quotation is fa
 
 test('failed final curation preserves verified draft candidates with honest source-free fallback explanations',async t=>{
  const fixture=setup(t,'curation-fallback',{sources:'actual',final:'fail'});
- const result=await research(['closeup'],[],signal(),[],'test',[],options());
+ const result=await research(['closeup'],[],signal(),[],[],options());
  assert.deepEqual(resultIds(result),ids(fixture.films.slice(0,12)));
  assert.deepEqual(result.batch.sources,[]);
  assert.ok(result.batch.recommendations.every(rec=>rec.connections[0].why.includes('provisional relation')&&rec.connections[0].why.includes('different framing')));
- const cached=await research(['closeup'],[],signal(),[],'test',[],options());
+ const cached=await research(['closeup'],[],signal(),[],[],options());
  assert.equal(cached.usage.cached,true);assert.equal(fixture.calls.draft,1);assert.equal(fixture.calls.curate,1);
 });
 
 test('regeneration excludes the entire active history and a changed exclusion set cannot reuse its cached batch',async t=>{
  const fixture=setup(t,'regenerate');
  const seen=ids(fixture.films.slice(0,8)),discovered=fixture.films.slice(8,12),previous=ids(fixture.films.slice(6,12));
- const first=await research(['closeup'],[],signal(),seen,'test',discovered,options('regenerate',previous));
+ const first=await research(['closeup'],[],signal(),seen,discovered,options('regenerate',previous));
  assert.deepEqual(resultIds(first),ids(fixture.films.slice(12,24)));
- const cached=await research(['closeup'],[],signal(),[...seen].reverse(),'test',[...discovered].reverse(),options('regenerate',[...previous].reverse()));
+ const cached=await research(['closeup'],[],signal(),[...seen].reverse(),[...discovered].reverse(),options('regenerate',[...previous].reverse()));
  assert.equal(cached.usage.cached,true);assert.equal(fixture.calls.draft,1);
- const next=await research(['closeup'],[],signal(),[...seen,fixture.films[12].id],'test',discovered,options('regenerate',previous));
+ const next=await research(['closeup'],[],signal(),[...seen,fixture.films[12].id],discovered,options('regenerate',previous));
  assert.equal(next.usage.cached,undefined);assert.equal(fixture.calls.draft,2);
  assert.deepEqual(resultIds(next),ids(fixture.films.slice(13,24)));
  assert.equal(next.batch.notice,'partial');
@@ -139,7 +140,7 @@ test('regeneration excludes the entire active history and a changed exclusion se
 for(const intent of ['follow','manual'] as const){
  test(`${intent} filters a repeat-heavy curator order to at least seven fresh films`,async t=>{
   const fixture=setup(t,`${intent}-freshness`),previous=ids(fixture.films.slice(0,12));
-  const result=await research(['closeup'],[fixture.films[40].id],signal(),previous,'test',fixture.films.slice(0,12),options(intent,previous));
+  const result=await research(['closeup'],[fixture.films[40].id],signal(),previous,fixture.films.slice(0,12),options(intent,previous));
   assert.deepEqual(resultIds(result),[...ids(fixture.films.slice(0,5)),...ids(fixture.films.slice(12,19))]);
   assert.equal(resultIds(result).filter(id=>previous.includes(id)).length,5);
   assert.ok(fixture.modelInputs[0].input.selected.every((film:{weight:number})=>film.weight===.5));
@@ -149,8 +150,8 @@ for(const intent of ['follow','manual'] as const){
 
 test('shared cached selections retain the seed and trail order of each caller',async t=>{
  const fixture=setup(t,'ordered-cache');
- const first=await research(['closeup','fake'],['apple','boards'],signal(),[],'test',[],options('manual'));
- const second=await research(['fake','closeup'],['boards','apple'],signal(),[],'test',[],options('manual'));
+ const first=await research(['closeup','fake'],['apple','boards'],signal(),[],[],options('manual'));
+ const second=await research(['fake','closeup'],['boards','apple'],signal(),[],[],options('manual'));
  assert.equal(second.usage.cached,true);assert.equal(fixture.calls.draft,1);
  assert.deepEqual(first.seeds.map(film=>film.id),['closeup','fake']);
  assert.deepEqual(second.seeds.map(film=>film.id),['fake','closeup']);
@@ -160,11 +161,11 @@ test('shared cached selections retain the seed and trail order of each caller',a
 
 test('TMDB aliases resolving to catalogue identities preserve seed and trail objects on fresh and reordered cache responses',async t=>{
  const fixture=setup(t,'canonical-aliases',{aliases:[{...filmById('closeup')!,id:'tmdb:30017'},{...filmById('fake')!,id:'tmdb:43003'}]});
- const first=await research(['tmdb:30017','apple'],['tmdb:43003','boards'],signal(),[],'test',[],options('manual'));
+ const first=await research(['tmdb:30017','apple'],['tmdb:43003','boards'],signal(),[],[],options('manual'));
  assert.deepEqual(first.seeds.map(film=>film?.id),['closeup','apple']);
  assert.deepEqual(first.trail.map(film=>film?.id),['fake','boards']);
  assert.ok([...first.seeds,...first.trail].every(film=>film?.title&&film?.director));
- const reordered=await research(['apple','tmdb:30017'],['boards','tmdb:43003'],signal(),[],'test',[],options('manual'));
+ const reordered=await research(['apple','tmdb:30017'],['boards','tmdb:43003'],signal(),[],[],options('manual'));
  assert.equal(reordered.usage.cached,true);assert.equal(fixture.calls.draft,1);
  assert.deepEqual(reordered.seeds.map(film=>film?.id),['apple','closeup']);
  assert.deepEqual(reordered.trail.map(film=>film?.id),['boards','fake']);
@@ -178,11 +179,23 @@ test('canceling one shared viewer preserves the job while canceling the last vie
   upstreamSignal.addEventListener('abort',()=>{upstreamAborted=true;reject(upstreamSignal.reason);},{once:true});started();
  })});
  const first=new AbortController(),second=new AbortController();
- const firstJob=research(['fake'],[],first.signal,[],'test',[],options());
- const secondJob=research(['fake'],[],second.signal,[],'test',[],options());
+ const firstJob=research(['fake'],[],first.signal,[],[],options());
+ const secondJob=research(['fake'],[],second.signal,[],[],options());
  const firstRejected=assert.rejects(firstJob,{name:'AbortError'}),secondRejected=assert.rejects(secondJob,{name:'AbortError'});
  await ready;first.abort();await firstRejected;
  assert.equal(upstreamAborted,false);assert.equal(fixture.calls.draft,1);
  second.abort();await secondRejected;
  assert.equal(upstreamAborted,true);
+});
+
+
+test('production discovery accepts more than the former daily and caller limits without a quota service',async t=>{
+ const fixture=setup(t,'unlimited-discovery');
+ process.env.PUBLIC_MODE='true';process.env.VERCEL='1';
+ for(let i=0;i<60;i++){
+  const request=new Request('https://strada.example.net/api/recommendations',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://strada.example.net','x-vercel-forwarded-for':'192.0.2.1'},body:JSON.stringify({requestId:`unlimited-${i}`,baseSnapshotId:null,seeds:['closeup'],trail:[],seenIds:[`tmdb:${9000000+i}`],language:'ko'})});
+  const response=await POST(request);assert.equal(response.status,200);
+  assert.equal((await response.json()).recommendations.length,12);
+ }
+ assert.equal(fixture.calls.draft,60);assert.equal(fixture.calls.curate,60);
 });
