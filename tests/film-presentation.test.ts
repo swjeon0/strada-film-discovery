@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {mergeFilmPresentation,retainSelectedPosters} from '../lib/film-presentation';
 import type {Film} from '../lib/domain';
+import {localizeTitles} from '../lib/i18n';
 const search:Film={id:'tmdb:123',title:'Search title',titleKo:'DB 한국어 제목',year:2000,director:'',poster:'https://image.tmdb.org/t/p/w500/korean-poster.jpg'};
 const details:Film={id:'canonical-film',title:'Full database title',year:2000,director:'Verified director',poster:'/posters/english-poster.jpg',synopsisEn:'A verified synopsis.',genres:['18'],titleKo:'검증된 한국어 제목',titleKoSource:'https://www.themoviedb.org/movie/123'};
 
@@ -35,4 +36,12 @@ test('generation and catalogue restoration preserve chosen artwork by film ID wi
  assert.equal(merged[0].director,server.director);
  assert.equal(merged[1],unrelated);
  assert.equal(mergeFilmPresentation(selected,server).poster,search.poster);
+});
+
+test('Korean curation uses the database title once without English-parenthetical duplicates',()=>{
+ const film:Film={...details,title:'Late Spring',titleKo:'만춘'};
+ const text='Late Spring (만춘) and Late Spring(만춘) organize duration differently; 만춘 (만춘) is the same film.';
+ assert.equal(localizeTitles(text,[film],'ko'),'만춘 and 만춘 organize duration differently; 만춘 is the same film.');
+ assert.equal(localizeTitles(text,[film],'en'),text);
+ assert.equal(localizeTitles('Late Spring preserves its DB name.',[{...film,titleKo:undefined}],'ko'),'Late Spring preserves its DB name.');
 });

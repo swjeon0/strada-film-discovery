@@ -12,8 +12,10 @@ export function requestIp(request:Request){
 }
 // Local concurrency guard; a shared authenticated service enforces the public daily budget.
 const callers=new Map<string,{started:number,count:number}>();let active=0;
-export function reserveResearch(request:Request){
- const now=Date.now();const key=requestIp(request);const previous=callers.get(key);const bucket=previous&&now-previous.started<600000?previous:{started:now,count:0};
- if(active>=2||bucket.count>=12)throw new AppError('RATE_LIMIT','Research is busy. Please try again in a few minutes.',429);
+export function reserveResearch(request:Request){return reserveOperation(request,'discovery',12);}
+export function reserveDetail(request:Request){return reserveOperation(request,'detail',24);}
+function reserveOperation(request:Request,kind:'discovery'|'detail',limit:number){
+ const now=Date.now();const key=kind+':'+requestIp(request);const previous=callers.get(key);const bucket=previous&&now-previous.started<600000?previous:{started:now,count:0};
+ if(active>=2||bucket.count>=limit)throw new AppError('RATE_LIMIT','Research is busy. Please try again in a few minutes.',429);
  if(callers.size>1000)callers.clear();bucket.count++;callers.set(key,bucket);active++;let released=false;return()=>{if(!released){active--;released=true;}};
 }

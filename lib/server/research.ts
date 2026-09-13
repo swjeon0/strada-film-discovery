@@ -1,125 +1,109 @@
 import type {DiscoveredFilm} from '../discovery-context';
-import {RECOMMENDATION_COUNT,discoveryModelContext,discoveryCacheKey,coversDiscoveryContext} from '../recommendation-policy';
+import {RECOMMENDATION_COUNT,discoveryCacheKey,selectFreshRecommendations,validateFreshRecommendations} from '../recommendation-policy';
+import {weights,titleOf,type Film,type Batch,type Source,type Recommendation,type ResearchOptions} from '../domain';
+import {CuratorialCandidate,DraftSchema,CurationSchema,CuratedFilm,EvidenceNote,curationDraftSchema,curationSelectionSchema,CURATOR_DRAFT_PROMPT,CURATOR_SELECT_PROMPT,type Candidate} from '../curation-contract';
 import {claimPublicQuota} from './claim-quota';
 import {config,AppError} from './config';
-import {weights,type Film,type Batch,type Source,type Recommendation} from '../domain';
 import {getFilms,resolveCandidates} from './metadata';
 import type {Budget} from './tmdb';
-import {normalizedText} from './grounding';
-import {sourceLibrary} from '../catalogue';
-import {rankRecommendations} from '../ranking';
-import {enrichPosterBatch} from './wikimedia';
-import {PlanCandidate,PlanEnvelope,ExplanationOutput,ExplanationEnvelope,SourceNote,parseResearchOutput,recommendationPlanSchema,recommendationExplanationSchema,RESEARCH_PROMPT,EXPLANATION_PROMPT} from '../research-contract';
-import {findFilmReferences,emptyUsage,responseUsage,sumUsage,type Reference,type ResearchUsage} from './source-search';
-export {RESEARCH_PROMPT};
+import {normalizedText,filmMentioned} from './grounding';
+import {findCuratorialReferences,emptyUsage,sumUsage,type Reference,type ResearchUsage,type CuratorialQuery} from './source-search';
+import {curatorResponse} from './curator-model';
+import {issueDetailToken} from './curation-detail';
+import {localizeTitles} from '../i18n';
+
+export const RESEARCH_PROMPT=CURATOR_DRAFT_PROMPT;
 export type ResearchResult={batch:Batch,seeds:Film[],trail:Film[],usage:ResearchUsage};
-const completed=new Map<string,{at:number,value:ResearchResult}>();
-type ResearchJob={promise:Promise<ResearchResult>,controller:AbortController,subscribers:number,settled:boolean};
+const completed=new Map<string,{at:number,value:ResearchResult,requestedIds:string[]}>();
+type ResearchJob={promise:Promise<ResearchResult>,controller:AbortController,subscribers:number,settled:boolean,requestedIds:string[]};
 const inFlight=new Map<string,ResearchJob>();
-export async function research(seedIds:string[],trailIds:string[],signal:AbortSignal,seenIds:string[]=[],callerIp='local',discoveredFilms:DiscoveredFilm[]=[]):Promise<ResearchResult>{
+
+export async function research(seedIds:string[],trailIds:string[],signal:AbortSignal,seenIds:string[]=[],callerIp='local',discoveredFilms:DiscoveredFilm[]=[],options:ResearchOptions={intent:trailIds.length?'follow':'initial',previousIds:[],language:'en'}):Promise<ResearchResult>{
  signal.throwIfAborted();
- const key=discoveryCacheKey(config().model,seedIds,trailIds,discoveredFilms),old=completed.get(key);
- if(old&&Date.now()-old.at<1_800_000)return {...old.value,usage:{...emptyUsage(old.value.usage.model),cached:true},batch:{...old.value.batch,recommendations:rankRecommendations(old.value.batch.recommendations,old.value.seeds,old.value.trail,seenIds,RECOMMENDATION_COUNT)}};
+ const conf=config(),allSeen=[...new Set([...seenIds,...discoveredFilms.map(f=>f.id)])];
+ const key=discoveryCacheKey(conf.curatorModel+':'+conf.searchModel,seedIds,trailIds,discoveredFilms,options,allSeen),old=completed.get(key);
+ const ordered=(result:ResearchResult,requestedIds:string[])=>{const responseFilms=[...result.seeds,...result.trail],films=new Map(requestedIds.map((id,index)=>[id,responseFilms[index]]));return {...result,seeds:seedIds.map(id=>films.get(id)!),trail:trailIds.map(id=>films.get(id)!)};};
+ if(old&&Date.now()-old.at<1_800_000)return ordered({...old.value,usage:{...emptyUsage(old.value.usage.model),cached:true}},old.requestedIds);
  let job=inFlight.get(key);if(job?.controller.signal.aborted){inFlight.delete(key);job=undefined;}
- if(!job){
-  const controller=new AbortController();
-  const created:ResearchJob={promise:runResearch(seedIds,trailIds,seenIds,callerIp,discoveredFilms,controller.signal),controller,subscribers:0,settled:false};
-  job=created;inFlight.set(key,created);
-  void created.promise.then(value=>{created.settled=true;if(!controller.signal.aborted){if(completed.size>=40)completed.delete(completed.keys().next().value!);completed.set(key,{at:Date.now(),value});}},()=>{created.settled=true;}).finally(()=>{if(inFlight.get(key)===created)inFlight.delete(key);});
+ if(!job){const controller=new AbortController();const created:ResearchJob={promise:runResearch(seedIds,trailIds,allSeen,callerIp,discoveredFilms,options,controller.signal),controller,subscribers:0,settled:false,requestedIds:[...seedIds,...trailIds]};job=created;inFlight.set(key,created);
+  void created.promise.then(value=>{created.settled=true;if(!controller.signal.aborted){if(completed.size>=30)completed.delete(completed.keys().next().value!);completed.set(key,{at:Date.now(),value,requestedIds:created.requestedIds});}},()=>{created.settled=true;}).finally(()=>{if(inFlight.get(key)===created)inFlight.delete(key);});
  }
- job.subscribers++;
- try{return await waitForRequest(job.promise,signal);}
- finally{job.subscribers--;if(!job.subscribers&&!job.settled)job.controller.abort(new DOMException('The discovery request was canceled.','AbortError'));}
+ job.subscribers++;try{return ordered(await waitForRequest(job.promise,signal),job.requestedIds);}finally{job.subscribers--;if(!job.subscribers&&!job.settled)job.controller.abort(new DOMException('The discovery request was canceled.','AbortError'));}
 }
 async function waitForRequest<T>(job:Promise<T>,signal:AbortSignal){
  if(signal.aborted)throw signal.reason;let abort=()=>{};
- try{return await Promise.race([job,new Promise<never>((_,reject)=>{abort=()=>reject(signal.reason??new DOMException('Aborted','AbortError'));signal.addEventListener('abort',abort,{once:true});})]);}
- finally{signal.removeEventListener('abort',abort);}
+ try{return await Promise.race([job,new Promise<never>((_,reject)=>{abort=()=>reject(signal.reason??new DOMException('Aborted','AbortError'));signal.addEventListener('abort',abort,{once:true});})]);}finally{signal.removeEventListener('abort',abort);}
 }
 function supportsPassage(ref:Reference,passage:string){const needle=normalizedText(passage);return needle.length>=25&&normalizedText(ref.text).includes(needle);}
-async function phase<T>(name:string,action:()=>Promise<T>){
- const started=Date.now();
- try{const value=await action();console.info('STRADA research phase',{phase:name,elapsedMs:Date.now()-started,status:'ok'});return value;}
- catch(error){console.warn('STRADA research phase',{phase:name,elapsedMs:Date.now()-started,status:'failed',error:error instanceof AppError?error.code:error instanceof Error?error.name:'unknown'});throw error;}
-}
-async function modelResponse(key:string,schema:unknown,name:string,prompt:string,input:unknown,signal:AbortSignal,maxTokens:number){
- const model='gpt-4o-mini',stage=name.startsWith('strada_plan_')?'plan':'explanation';
- const stageSignal=AbortSignal.any([signal,AbortSignal.timeout(stage==='plan'?60000:65000)]);
- let response:Response;
- try{response=await fetch('https://api.openai.com/v1/responses',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},signal:stageSignal,body:JSON.stringify({model,store:false,max_output_tokens:maxTokens,text:{format:{type:'json_schema',name,strict:true,schema}},input:[{role:'system',content:prompt},{role:'user',content:JSON.stringify(input)}]})});}
- catch(error){if(signal.aborted)throw signal.reason;if(stageSignal.aborted)throw new AppError('TIMEOUT','AI discovery took too long. Please try again.',504);throw new AppError('RESEARCH_ERROR','The AI connection was interrupted. Please try again.');}
- if(!response.ok)throw new AppError(response.status===429?'RATE_LIMIT':response.status===401?'SETUP_REQUIRED':'RESEARCH_ERROR','AI discovery could not finish. Your path is unchanged.',response.status===429?429:502);
- let data:any;try{data=await response.json();}catch{if(signal.aborted)throw signal.reason;if(stageSignal.aborted)throw new AppError('TIMEOUT','AI discovery took too long. Please try again.',504);throw new AppError('INVALID_RESEARCH','The AI response could not be read.');}
- if(data.status!=='completed'&&data.status!=='incomplete')throw new AppError('INCOMPLETE','The recommendation response was incomplete.');
- const raw=(Array.isArray(data.output)?data.output:[]).filter((x:any)=>x?.type==='message').flatMap((x:any)=>Array.isArray(x.content)?x.content:[]).filter((x:any)=>x?.type==='output_text'&&typeof x.text==='string').map((x:any)=>x.text).join('');
- const output=parseResearchOutput(raw,stage);if(output===null)throw new AppError('INVALID_RESEARCH','The recommendation response could not be read.');
- if(data.status==='incomplete')console.info('STRADA partial model response',{phase:stage,reason:data.incomplete_details?.reason??'unknown'});
- return {output,usage:responseUsage(data,model)};
-}
-async function runResearch(seedIds:string[],trailIds:string[],seenIds:string[],callerIp:string,discoveredFilms:DiscoveredFilm[],requestSignal:AbortSignal):Promise<ResearchResult>{
+type Verified={code:string,draft:Candidate,film:Film};
+async function runResearch(seedIds:string[],trailIds:string[],seenIds:string[],callerIp:string,discoveredFilms:DiscoveredFilm[],options:ResearchOptions,requestSignal:AbortSignal):Promise<ResearchResult>{
  const conf=config();if(!conf.openai)throw new AppError('SETUP_REQUIRED','AI discovery is not connected.',503);
- const signal=AbortSignal.any([requestSignal,AbortSignal.timeout(270000)]),budget:Budget={remaining:120,signal};
- const films=await phase('selected-metadata',()=>getFilms([...seedIds,...trailIds],budget)),seeds=films.slice(0,seedIds.length),trail=films.slice(seedIds.length);
- if(new Set(films.map(f=>f.id)).size!==films.length)throw new AppError('DUPLICATE_FILM','Each film can appear only once.',400);
- const active=weights(seeds,trail).sort((a,b)=>a.film.id.localeCompare(b.film.id));
- const anchors=new Map(active.map((x,i)=>[`a${i}`,x]));
- const discoveryContext=discoveryModelContext(films,discoveredFilms);
- // Previously reviewed source summaries are context; stored recommendation prose is never evidence.
- const known:Reference[]=sourceLibrary.filter(s=>s.type!=='catalogue'&&active.some(x=>x.film.sourceIds?.includes(s.id))).map(source=>({source,text:source.summary,anchorIds:active.filter(x=>x.film.sourceIds?.includes(source.id)).map(x=>x.film.id)}));
- await claimPublicQuota(callerIp);
- const sourceSignal=AbortSignal.any([signal,AbortSignal.timeout(35000)]);
- const live=await phase('sources',()=>findFilmReferences(active.map(x=>x.film).filter(f=>!known.some(r=>r.anchorIds.includes(f.id))),budget,sourceSignal));
+ const started=Date.now(),deadline=started+90_000,signal=AbortSignal.any([requestSignal,AbortSignal.timeout(90_000)]);
+ const budget:Budget={remaining:160,signal};
+ const [films]=await Promise.all([getFilms([...seedIds,...trailIds],budget),claimPublicQuota(callerIp)]);
  signal.throwIfAborted();
- const references=new Map([...known,...live.references].slice(0,16).map((ref,i)=>[`s${i}`,ref]));
- const anchorInput=[...anchors].map(([code,x])=>({code,title:x.film.title,year:x.film.year,director:x.film.director,weight:x.weight}));
- const referenceInput=[...references].map(([code,ref])=>({code,title:ref.source.title,kind:ref.source.type,anchorCodes:[...anchors].filter(([,x])=>ref.anchorIds.includes(x.film.id)).map(([id])=>id),excerpt:ref.text.slice(0,5000)}));
- const excluded=new Set(films.map(f=>f.id)),generated:Recommendation[]=[],usedSources=new Map<string,Source>();
- const plansByFilm=new Map<string,{rationale:string,discoveryBasis:string[]}>();
- const attempted=new Set<string>(),rejected:string[]=[];let usage=live.usage,planCount=0;
- // Verify short proposals before spending tokens on bilingual prose. Repair at most once if necessary.
- for(let pass=0;pass<2&&generated.length<RECOMMENDATION_COUNT;pass++){
-  signal.throwIfAborted();
-  const planned=await phase(`plan-${pass+1}`,()=>modelResponse(conf.openai!,recommendationPlanSchema([...anchors.keys()],[...references.keys()],discoveryContext.map(f=>f.code)),'strada_plan_v1',RESEARCH_PROMPT,{anchors:anchorInput,discoveryContext,references:referenceInput,exclude:[...films,...generated.map(r=>r.film)].map(f=>({title:f.title,year:f.year})),previouslyUnresolved:rejected,needed:RECOMMENDATION_COUNT-generated.length},signal,6500));
-  usage=sumUsage(usage,planned.usage);planCount++;
-  const parsedPlan=PlanEnvelope.safeParse(planned.output);if(!parsedPlan.success)throw new AppError('INVALID_RESEARCH','The generated film plan could not be read.');
-  const candidates=parsedPlan.data.candidates.map(c=>PlanCandidate.safeParse(c)).filter(c=>c.success).map(c=>c.data).filter(c=>{const key=normalizedText(c.title)+'|'+c.year;if(attempted.has(key))return false;attempted.add(key);return true;});
-  for(let start=0;start<candidates.length&&generated.length<RECOMMENDATION_COUNT;start+=4){
-   signal.throwIfAborted();
-   const chunk=candidates.slice(start,start+4),resolved=await phase('candidate-metadata',()=>resolveCandidates(chunk,budget));
-   chunk.forEach((candidate,i)=>{
-    const film=resolved[i];if(!film){rejected.push(`${candidate.title} (${candidate.year}, ${candidate.director})`);return;}if(excluded.has(film.id))return;
-    const valid=candidate.connections.filter((c,j,all)=>anchors.has(c.anchor)&&all.findIndex(x=>x.anchor===c.anchor)===j);if(!valid.length)return;
-    const connections=valid.map(edge=>{
-     const anchor=anchors.get(edge.anchor)!;const ids=[...new Set(edge.evidence.filter(e=>references.get(e.ref)?.anchorIds.includes(anchor.film.id)).map(e=>e.ref))];
-     for(const id of ids){const ref=references.get(id)!;usedSources.set(id,{...ref.source,id:`ref:${id}`,scope:'interpretive_context'});}
-     return {anchorId:anchor.film.id,anchorTitle:anchor.film.title,relation:ids.length?'grounded_interpretation' as const:'ai_inference' as const,why:edge.reason||candidate.rationale,whyKo:edge.reasonKo||undefined,sourceIds:ids.map(id=>`ref:${id}`)};
-    }).sort((a,b)=>Number(b.sourceIds.length>0)-Number(a.sourceIds.length>0));
-    const sourceIds=[...new Set(connections.flatMap(c=>c.sourceIds))];if(!sourceIds.length&&!coversDiscoveryContext(candidate.discoveryBasis,discoveryContext))return;
-    excluded.add(film.id);generated.push({film,connections,sourceIds,...!sourceIds.length?{contextScope:'discovery' as const}:{}});plansByFilm.set(film.id,{rationale:candidate.rationale,discoveryBasis:candidate.discoveryBasis});
-   });
-  }
- }
- if(generated.length<RECOMMENDATION_COUNT)throw new AppError('FILM_RESOLUTION_FAILED','Twelve distinct film suggestions could not be matched to the movie database. Please retry.');
- const ranked=rankRecommendations(generated,seeds,trail,seenIds,RECOMMENDATION_COUNT),used=new Set(ranked.flatMap(r=>r.sourceIds));
- let explanationRows:Record<string,unknown>={},sourceNotes:unknown[]=[];
+ const seeds=films.slice(0,seedIds.length),trail=films.slice(seedIds.length),selectedIds=films.map(f=>f.id);
+ if(!films.length)throw new AppError('INVALID_INPUT','Choose starting films first.',400);
+ if(new Set(selectedIds).size!==films.length)throw new AppError('DUPLICATE_FILM','Each film can appear only once.',400);
+ const anchors=new Map(weights(seeds,trail).sort((a,b)=>a.film.id.localeCompare(b.film.id)).map((item,i)=>[`a${i}`,item]));
+ const anchorInput=[...anchors].map(([code,item])=>({code,id:item.film.id,title:item.film.title,titleKo:item.film.titleKo,displayTitle:titleOf(item.film,options.language),year:item.film.year,director:item.film.director,weight:item.weight,overview:(item.film.overviewEn||item.film.synopsisEn||item.film.overviewKo||'').slice(0,1100),country:item.film.country}));
+ const forbidden=new Set(selectedIds);if(options.intent==='regenerate')for(const id of [...seenIds,...options.previousIds])forbidden.add(id);
+ // All historical IDs remain hard exclusions on regenerate. Displayed titles are not positive taste.
+ const avoid=discoveredFilms.slice(-120).map(f=>({title:f.title,year:f.year,director:f.director}));
+ const planned=await curatorResponse('draft',curationDraftSchema([...anchors.keys()]),CURATOR_DRAFT_PROMPT,{language:options.language,intent:options.intent,selected:anchorInput,avoidPreviouslyDisplayed:avoid},signal,6500,Math.min(35_000,deadline-Date.now()-35_000));
+ let usage=planned.usage;
+ const draftResult=DraftSchema.safeParse(planned.output);if(!draftResult.success)throw new AppError('INVALID_RESEARCH','The curator’s film plan could not be read.');
+ const draft=draftResult.data,lenses=new Map(draft.lenses.map(l=>[l.id,l]));
+ const candidateKeys=new Set<string>();
+ const candidates=draft.candidates.map(row=>CuratorialCandidate.safeParse(row)).filter(row=>row.success).map(row=>row.data).filter(row=>{const key=normalizedText(row.title)+'|'+row.year;if(candidateKeys.has(key)||!lenses.has(row.lens)||!row.anchors.some(a=>anchors.has(a)))return false;candidateKeys.add(key);return true;});
+ if(!candidates.length)throw new AppError('INVALID_RESEARCH','No complete film candidates were generated.');
+ const provisional:Film[]=candidates.map((candidate,i)=>({id:`candidate:${i}`,title:candidate.title,year:candidate.year,director:candidate.director,poster:''}));
+ const queries:CuratorialQuery[]=draft.queries.map(query=>({query:query.query,purpose:query.purpose,filmIds:[...new Set([...query.anchors.map(code=>anchors.get(code)?.film.id).filter((id):id is string=>!!id),...provisional.filter(f=>filmMentioned(query.query,f)).map(f=>f.id)])]}));
+ if(!queries.length){for(const film of films.slice(0,2))queries.push({query:`${film.title} ${film.year} ${film.director} criticism cinematic form`,purpose:'anchor',filmIds:[film.id]});queries.push({query:draft.lenses[0].question+' film criticism',purpose:'lens',filmIds:[]});}
+ const sourceMs=Math.min(18_000,Math.max(1,deadline-Date.now()-30_000));
+ const sourceSignal=AbortSignal.any([signal,AbortSignal.timeout(sourceMs)]);
+ const metadataSignal=AbortSignal.any([signal,AbortSignal.timeout(Math.min(20_000,Math.max(1,deadline-Date.now()-28_000)))]);
+ const [resolved,live]=await Promise.all([
+  resolveCandidates(candidates,{remaining:110,signal:metadataSignal}),
+  findCuratorialReferences([...films,...provisional],queries,{remaining:32,signal:sourceSignal},sourceSignal).catch(error=>{console.warn('STRADA evidence fallback',{error:error instanceof Error?error.name:'unknown'});return {references:[] as Reference[],usage:emptyUsage(conf.searchModel)};}),
+ ]);
+ signal.throwIfAborted();usage=sumUsage(usage,live.usage);
+ const identityMap=new Map<string,string>();resolved.forEach((film,i)=>{if(film)identityMap.set(`candidate:${i}`,film.id);});
+ const duplicate=new Set<string>();
+ const verified:Verified[]=resolved.flatMap((film,i)=>{if(!film||forbidden.has(film.id)||duplicate.has(film.id))return [];duplicate.add(film.id);return [{code:`c${i}`,draft:candidates[i],film}];});
+ if(!verified.length)throw new AppError(options.intent==='regenerate'?'NO_NEW_FILMS':'FILM_RESOLUTION_FAILED','No new verified films were found. Your current path is unchanged.');
+ const references=new Map(live.references.slice(0,8).map((reference,i)=>[`s${i}`,{...reference,anchorIds:reference.anchorIds.map(id=>identityMap.get(id)||id)}]));
+ const referenceInput=[...references].map(([code,reference])=>({code,title:reference.source.title,kind:reference.source.type,discussedFilmIds:reference.anchorIds,excerpt:reference.text}));
+ const byCode=new Map(verified.map(row=>[row.code,row]));
+ let ranking=verified.map(row=>row.code),rejected=new Set<string>(),curated=new Map<string,ReturnType<typeof CuratedFilm.parse>>(),curationFallback=false;
  try{
- const explained=await phase('explanations',()=>modelResponse(conf.openai!,recommendationExplanationSchema(ranked.map((_,i)=>`r${i}`),[...used].map(id=>id.slice(4))),'strada_explanations_v1',EXPLANATION_PROMPT,{
-  anchors:anchorInput,discoveryContext,references:referenceInput.filter(r=>used.has(`ref:${r.code}`)),
-  verifiedFilms:ranked.map((r,i)=>({code:`r${i}`,film:{id:r.film.id,title:r.film.title,titleKo:r.film.titleKo,year:r.film.year,director:r.film.director},scope:r.contextScope==='discovery'?'discovery':'sourced',...plansByFilm.get(r.film.id),connections:r.connections.map(c=>({anchor:[...anchors].find(([,a])=>a.film.id===c.anchorId)?.[0],reason:c.why,sourceCodes:c.sourceIds.map(id=>id.slice(4))}))}))
- },signal,10500));
- usage=sumUsage(usage,explained.usage);const parsed=ExplanationEnvelope.safeParse(explained.output);
- if(parsed.success){explanationRows=parsed.data.explanations;sourceNotes=parsed.data.sourceNotes;}
- }catch(error){if(requestSignal.aborted)throw requestSignal.reason;console.warn('STRADA explanation fallback',{error:error instanceof AppError?error.code:error instanceof Error?error.name:'unknown'});}
- let explanationFallbacks=0;
- for(const [i,rec] of ranked.entries()){
-  const explanation=ExplanationOutput.safeParse(explanationRows[`r${i}`]);
-  if(explanation.success){const why=explanation.data.paragraphs.map(p=>p.en).filter(Boolean).join('\n\n'),whyKo=explanation.data.paragraphs.map(p=>p.ko).filter(Boolean).join('\n\n');rec.connections[0]={...rec.connections[0],why:why||whyKo,whyKo:whyKo||undefined};}
-  else{explanationFallbacks++;const why=plansByFilm.get(rec.film.id)?.rationale||rec.connections[0].why;rec.connections[0]={...rec.connections[0],why,whyKo:rec.contextScope==='discovery'?undefined:rec.connections[0].whyKo};}
- }
- for(const input of sourceNotes){const note=SourceNote.safeParse(input);if(!note.success)continue;const ref=references.get(note.data.ref),source=usedSources.get(note.data.ref);if(ref&&source&&supportsPassage(ref,note.data.passage))usedSources.set(note.data.ref,{...source,summary:note.data.summary||source.summary,summaryKo:note.data.summaryKo||source.summaryKo});}
+  const selected=await curatorResponse('curate',curationSelectionSchema([...byCode.keys()],[...anchors.keys()],[...references.keys()]),CURATOR_SELECT_PROMPT,{
+   language:options.language,intent:options.intent,selected:anchorInput,lenses:draft.lenses,references:referenceInput,
+   freshness:{previousIds:options.previousIds,maximumPreviousOverlap:options.intent==='follow'||options.intent==='manual'?5:0},
+   verifiedCandidates:verified.map(row=>({code:row.code,id:row.film.id,...row.draft,title:row.film.title,titleKo:row.film.titleKo,displayTitle:titleOf(row.film,options.language),year:row.film.year,director:row.film.director,overview:(row.film.overviewEn||row.film.synopsisEn||'').slice(0,700),previouslyShown:seenIds.includes(row.film.id),inPreviousList:options.previousIds.includes(row.film.id)})),
+  },signal,5500,Math.min(27_000,Math.max(1,deadline-Date.now()-1500)));
+  usage=sumUsage(usage,selected.usage);const output=CurationSchema.safeParse(selected.output);if(!output.success)throw new AppError('INVALID_RESEARCH','The final curation was incomplete.');
+  ranking=[...new Set([...output.data.ranking,...ranking])].filter(code=>byCode.has(code));rejected=new Set(output.data.rejected.filter(code=>byCode.has(code)));
+  curated=new Map(output.data.recommendations.flatMap(value=>{const row=CuratedFilm.safeParse(value);return row.success&&byCode.has(row.data.candidate)?[[row.data.candidate,row.data] as const]:[];}));
+ }catch(error){if(requestSignal.aborted)throw requestSignal.reason;curationFallback=true;console.warn('STRADA final curation fallback',{error:error instanceof AppError?error.code:error instanceof Error?error.name:'unknown'});}
+ const sources=new Map<string,Source>();
+ const recommendations:Recommendation[]=ranking.filter(code=>!rejected.has(code)).map(code=>{
+  const verifiedFilm=byCode.get(code)!,row=curated.get(code),plan=verifiedFilm.draft;
+  const anchorCodes=[...new Set((row?.anchors??plan.anchors).filter(a=>anchors.has(a)))];if(!anchorCodes.length)anchorCodes.push(plan.anchors.find(a=>anchors.has(a))!);
+  const sourceIds:string[]=[];
+  for(const value of row?.evidence??[]){const parsed=EvidenceNote.safeParse(value);if(!parsed.success)continue;const note=parsed.data,reference=references.get(note.ref);if(!reference||!supportsPassage(reference,note.passage)||!note.point)continue;
+   const id=`ref:${note.ref}:${code}`;if(sourceIds.includes(id))continue;sources.set(id,{...reference.source,id,scope:'interpretive_context',excerpt:note.passage,summary:note.point,...options.language==='ko'?{summaryKo:note.point}:{}});sourceIds.push(id);
+  }
+  const localize=(text:string)=>localizeTitles(text,[...films,...verified.map(v=>v.film)],options.language);
+  const why=localize(row?.why||[plan.bridge,plan.contrast].filter(Boolean).join(' '));
+  return {film:verifiedFilm.film,sourceIds,contextScope:sourceIds.length?undefined:'discovery',curation:{lens:localize(row?.lens||lenses.get(plan.lens)!.label),bridge:localize(row?.bridge||plan.bridge),contrast:localize(row?.contrast||plan.contrast)},connections:anchorCodes.map((anchorCode,index)=>{const anchor=anchors.get(anchorCode)!.film;const ids=index===0?sourceIds:[];return {anchorId:anchor.id,anchorTitle:anchor.title,relation:ids.length?'grounded_interpretation' as const:'ai_inference' as const,why,...options.language==='ko'?{whyKo:why}:{},sourceIds:ids};})};
+ });
+ const fresh=selectFreshRecommendations(recommendations,selectedIds,seenIds,options.previousIds,options.intent,RECOMMENDATION_COUNT);
+ const validation=validateFreshRecommendations(fresh,selectedIds,seenIds,options.previousIds,options.intent,RECOMMENDATION_COUNT,false);
+ if(!validation.valid)throw new AppError('NO_NEW_FILMS','More new films could not be found. Your path is unchanged.');
+ const used=new Set(fresh.flatMap(rec=>rec.sourceIds)),usedSources=[...sources.values()].filter(source=>used.has(source.id));
+ for(const rec of fresh)rec.detailToken=issueDetailToken(rec,films,usedSources);
  requestSignal.throwIfAborted();
- if(!signal.aborted)try{const posters=await enrichPosterBatch(ranked.map(r=>r.film),budget);for(const rec of ranked)rec.film=posters.find(f=>f.id===rec.film.id)??rec.film;}catch{}
- const sources=[...usedSources.values()].filter(s=>used.has(s.id));
- console.info('STRADA recommendation audit',JSON.stringify({anchors:films.map(f=>f.title),references:references.size,discoveryContextCount:discoveryContext.length,weights:active.map(x=>({id:x.film.id,weight:x.weight})),planCount,rejected,count:ranked.length,sourced:ranked.filter(r=>r.sourceIds.length).length,globalAI:ranked.filter(r=>r.contextScope==='discovery').length,explanationFallbacks,usage}));
- return {batch:{recommendations:ranked,sources,mode:'live'},seeds,trail,usage};
+ console.info('STRADA curation audit',{elapsedMs:Date.now()-started,intent:options.intent,selectedCount:films.length,proposed:candidates.length,verified:verified.length,references:references.size,count:fresh.length,sourced:fresh.filter(r=>r.sourceIds.length).length,fresh:validation.freshCount,overlap:validation.overlapCount,curationFallback,usage});
+ return {batch:{recommendations:fresh,sources:usedSources,mode:'live',...(fresh.length<RECOMMENDATION_COUNT?{notice:'partial' as const}:{})},seeds,trail,usage};
 }

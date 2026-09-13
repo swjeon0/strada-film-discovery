@@ -7,6 +7,9 @@
   "functions": {
     "app/api/recommendations/route.ts": {
       "supportsCancellation": true
+    },
+    "app/api/recommendations/explain/route.ts": {
+      "supportsCancellation": true
     }
   }
 }
