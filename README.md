@@ -1,69 +1,62 @@
 # STRADA
 
-A desktop film-discovery app. Choose 1–8 starting films, read why another film connects to them, then continue with that film to change your path. No database, app accounts or social features. The cream interface uses a Bodoni Moda wordmark and a broad film-strip path mark.
+영화에서 다음 영화로 이어지는 디깅 서비스입니다. 검색·포스터·한국어 제목·줄거리는 TMDB의 실제 메타데이터를 사용합니다. 추천은 GPT가 읽을 수 있는 비평, 영화제 프로그램과 학술 자료를 참고해 생성합니다. 가입이나 영화 데이터베이스 없이 브라우저에 경로를 저장합니다.
 
-## Run locally
+## 실행
 
-Use Node.js 22.13 or newer:
+Node.js 22와 npm을 사용합니다.
 
 ```sh
-npm run install:ci
+npm ci
+cp .env.example .env.local
 npm run dev
 ```
 
-The portable server prints its loopback address on port 5173. Local build commands do not publish the site. Retain the configured Sites execution profile and use the Sites build/package workflow when publishing.
+`.env.local`의 `OPENAI_API_KEY`, `TMDB_READ_ACCESS_TOKEN`을 채웁니다. 로컬 개인 개발에서는 `PUBLIC_MODE=false`로 설정할 수 있습니다. 서버 주소는 http://127.0.0.1:5173 입니다.
 
-Create an ignored `.env.local`:
+## GitHub + Vercel 배포
 
-```dotenv
-OPENAI_API_KEY=your_openai_api_key
-OPENAI_MODEL=gpt-5.6-luna
-# Optional; Wikimedia search works without this token:
-TMDB_READ_ACCESS_TOKEN=
-```
+GitHub 비공개 저장소: https://github.com/swjeon0/strada-film-discovery
 
-Keep credentials server-side; never use NEXT_PUBLIC_ or commit their values. Local environment files do not provision the hosted site's secrets. The existing hosted Site remains owner-private. Its URL is preserved so existing browser history can migrate.
+Vercel의 STRADA 팀에서 이 저장소를 연결합니다. Framework는 Next.js, 프로젝트 루트는 저장소 루트입니다. `main` 브랜치 변경을 Production에 자동 배포합니다. `npm run build`는 동일한 표준 Next.js 배포 빌드입니다.
 
-## Films, language and sources
+Production과 Preview 환경변수에는 다음 값을 등록합니다. API 키에는 `NEXT_PUBLIC_` 접두사를 붙이지 않습니다.
 
-English/Korean controls appear on entry and results. Film names use actual database labels, never AI-generated translations; an unavailable Korean title keeps the database's existing title. Brand text stays STRADA.
+- `OPENAI_API_KEY`
+- `OPENAI_MODEL=gpt-4.1-mini` (웹 출처 검색용; 추천 계획·설명은 저렴한 `gpt-4o-mini` 사용)
+- `TMDB_READ_ACCESS_TOKEN`
+- `QUOTA_SERVICE_URL`
+- `QUOTA_SERVICE_SECRET`
+- `PUBLIC_MODE=true`
 
-Search queries external Wikidata and resolves film entities, years and directors; Wikipedia provides available synopsis excerpts and representative images. This covers films beyond the bundled 16. Coverage, images and Korean descriptions vary. TMDB is an optional alternate provider. No promise of every film ever made or a poster for every result is made.
+앱과 모든 영화 API는 Vercel의 Node.js 서버에서 실행됩니다. 비용 제한 카운터만 기존 Cloudflare Durable Object에 유지합니다. `infra/quota`는 Vercel 서버에서 이 카운터에 접근하는 인증 전용 연결입니다. 기존 `strada-film-discovery`의 `AiQuota`와 `strada-ai-budget` 객체를 그대로 사용하므로 기존 날짜별 제한이 보존됩니다. 이 기존 객체를 삭제하면 비용 확인이 실패하며 GPT 호출도 차단됩니다.
 
-Movie details prioritize a genuine Plot/Synopsis excerpt, with linked attribution. If one is unavailable, the introductory description is shown. Wikipedia text is CC BY-SA; Wikidata structured data is CC 0; images and criticism retain their original rights. The Credits dialog exposes these links. Bodoni Moda's OFL license is included with its local font.
+이 카운터에는 영화 기록이나 원본 IP를 저장하지 않습니다. UTC 날짜와 IP를 해시한 식별자, 횟수와 시간만 저장합니다. 하루 서비스 전체 50회, 사용자별 10분에 6회의 새 탐색을 허용합니다. 한 번의 탐색에는 출처 검색과 추천 생성 등 여러 모델 호출이 포함됩니다. 메모리 캐시 재사용에는 새 유료 호출을 만들지 않습니다.
 
-Without an OpenAI key, the cited 16-film reference collection remains usable and visibly identified. Live metadata search and synopsis do not require an OpenAI key. The optional TMDB credential path has not been exercised with a real token.
+`.env.local`, `.vercel`, 인증 파일, 개발 로그는 GitHub에 올리지 않습니다. 저장소와 ZIP에도 비밀 키를 포함하지 않습니다.
 
-## Recommendation pipeline and cost controls
+## 추천 동작
 
-The default model is gpt-5.6-luna: a low-cost model supporting Responses, web search and structured output, with reasoning disabled. The server performs two bounded passes:
+추천은 12편입니다. 짧은 후보 최대 24편을 만든 뒤 TMDB에서 제목·연도·감독을 대조하고, 확인된 12편의 긴 한·영 설명을 작성합니다. 검증된 비평 자료가 있으면 출처를 참고한 후보 12편을 먼저 확인하고, AI 보충 후보를 예비로 사용합니다. 후보가 중복되거나 실재 영화로 확인되지 않을 때만 계획 보충을 최대 한 번 수행합니다.
 
-1. Discover criticism, scholarship or substantive festival writing, using a web-search request with max_tool_calls 1 and up to 1600 output tokens. Retain URLs with real search provenance; known seed essays can supplement them.
-2. Fetch at most 8 allowed public HTML pages, under a shared request/size/time budget. Give the model numbered, real source passages; request at most 8 candidates and 7000 output tokens without additional tools.
+모든 시작 영화와 이어서 선택한 영화는 추가 순서와 관계없이 같은 비중을 갖습니다. 여러 선택과 연결되는 작품에 소폭 가산점을 주고 감독·국가·시대의 다양성을 고려합니다. AI 보충 추천에는 현재 경로에서 이전에 표시된 영화도 모두 함께 전달합니다. 되돌린 지점 이후의 다른 분기는 포함하지 않습니다.
 
-The server verifies source/page identities, passage references and film mentions for each candidate/anchor, then resolves movie identity through the film database. Explicit comparisons require both films in one cited passage; interpreted routes are distinguished. Invalid optional connections do not earn overlap credit. An unsupported primary connection drops the candidate. Partial or empty results are intentional; the app never invents filler.
+비평은 모델이 실제로 읽은 출처의 맥락입니다. 추천 영화와의 비교는 STRADA의 해석이며, 비평가가 그 비교를 직접 했다는 뜻이 아닙니다. 출처가 없으면 AI 해석으로 표시하고 가짜 인용은 만들지 않습니다.
 
-These mechanical checks establish provenance and textual support, not semantic certainty. Interpretation and source summaries remain model-written readings that users can inspect against the linked original. Inaccessible pages, PDFs and ambiguity can shorten a batch.
+## 실패 복구와 이미지
 
-Why text is generated in English and Korean together, targeting 70–100 English words. Language changes, synopsis reads, Undo and History do not call GPT. Only initial discovery and a successful continuation request initiate research. There are no automatic paid retries or model escalation. Identical ordered seeds/trail reuse a bounded 30-minute in-memory cache, including empty batches; concurrent identical requests share work. This is per Worker instance and is not durable across restarts. Usage estimates are returned without secrets; cached responses report zero new usage.
+출처 검색 35초, 계획 작성 60초, 긴 설명 작성 65초의 단계별 제한을 둡니다. 서버 전체는 270초, 브라우저는 285초, Vercel 함수는 최대 300초입니다. 정상 요청을 일부러 이 시간만큼 기다리게 하는 설정은 아닙니다.
 
-Measured development attempts cost an estimated US$0.011–0.031 each, including search and tokens; actual charges depend on provider usage/pricing and retrieval behavior. The tool-call limit is sent to the provider; returned web-search actions are counted for estimates. This is not an account-level spending cap.
+응답 끝부분이 잘리더라도 완성된 영화·설명 항목을 복구합니다. 긴 설명 작성만 실패하면 이미 GPT가 고르고 DB 대조가 끝난 12편과 짧은 계획 설명을 보여줍니다. 완성되지 않은 영화 제목을 임의로 만들거나 실패한 연결을 출처로 표시하지 않습니다. 모든 요청자가 취소하면 진행 중인 모델 연결도 중단합니다.
 
-Recency uses 0.7 decay. Genuine support from multiple distinct anchors earns a modest 6%bonus per extra anchor, capped at 12%. Greedy ranking then reduces repetition by director, country, decade and genre, with a small penalty for recently seen suggestions. No visible numerical score is shown.
+검색에서 고른 포스터는 선택 후 상세 정보 조회, 추천 생성, 새로고침에도 유지합니다. 이미지가 실제로 로딩되지 않을 때는 검증된 상세 정보의 대체 포스터를 사용합니다.
 
-## State and boundaries
-
-`strada.session.v2` in localStorage holds validated snapshots and the draft. Existing `closeup.session.v2` data is migrated without changing film identities. Failed/canceled Follow keeps the committed path. Undo moves the cursor; History restores exact saved films and evidence without research. A successful branch replaces later snapshots only after its new batch arrives. Limits:8 seeds and 30 follows.
-
-The app uses React/Vinext on a Cloudflare Worker. Metadata and research routes keep keys off the client. The research deadline is 115 seconds. Request bodies and source streams are capped. Per-instance controls allow 2 concurrent calls and 12 starts per caller in 10 minutes; these are not distributed quotas. Broader public use would need platform-level controls.
-
-WebMCP tools share UI actions. Registration, read, language, staging and intentional failure paths were checked in the supported browser. Long-running discovery exceeded that browser tool's execution deadline; the full successful WebMCP Follow/Undo cycle remains unverified. UI snapshot branching is covered by unit tests.
-
-## Validation
+## 확인
 
 ```sh
-node --import tsx --test tests/core.test.ts
-node node_modules/typescript/bin/tsc --noEmit --incremental false
+npm test
+npm run typecheck
+npm run build
 ```
 
-Checks cover history, storage, exclusion, recency, overlap/diversity and evidence gates. Real external searches found Interstellar, Parasite and Inception, including database Korean labels. The OpenAI key/model authenticated. Captured real model output was replayed through the repaired evidence/metadata pipeline with paid calls disabled: A Moment of Innocence and Citizen Kane passed with two readable criticism sources and 81/83-word explanations. Development fixtures remain outside the deployment source.
+새 배포 주소는 기존 Cloudflare 주소와 다른 출처이므로 브라우저 저장 공간도 분리됩니다. 기존 경로는 원래 주소의 브라우저 저장소에 남아 있습니다.
