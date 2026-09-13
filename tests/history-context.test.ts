@@ -18,15 +18,16 @@ test('discovery history retains all 372 possible films with compact database ide
  assert.ok(context.discoveredFilms.length<=MAX_DISCOVERED_FILMS);
 });
 
-test('undo excludes future snapshots while retaining the active branch and deduplicating films',()=>{
+test('undo retains all previously displayed films including future snapshots without double counting',()=>{
  const snapshots=[snapshot(0),snapshot(1),snapshot(2)];
  snapshots[1].recommendations[0]=snapshots[0].recommendations[0];
  const context=discoveryHistoryContext({snapshots,cursor:1},true);
- assert.equal(context.discoveredFilms.length,23);
+ assert.equal(context.discoveredFilms.length,35);
  assert.deepEqual(context.seenIds,context.discoveredFilms.map(f=>f.id));
  assert.ok(context.seenIds.includes('film-0'));
  assert.ok(context.seenIds.includes('film-23'));
- assert.ok(!context.seenIds.includes('film-24'));
+ assert.ok(context.seenIds.includes('film-24'));
+ assert.ok(context.seenIds.includes('film-35'));
 });
 
 test('starting a new path never imports films from an unrelated saved path',()=>{
@@ -48,21 +49,24 @@ test('more than 31 regeneration steps survive reload and retain exclusion IDs af
  assert.ok(context.seenIds.includes('film-839'));
 });
 
-test('undo and branching keep archived ancestors but exclude abandoned future discoveries',()=>{
+test('undo and branching keep all displayed exclusions including archived ancestors and abandoned future discoveries',()=>{
  let session=EMPTY_SESSION;
  for(let step=0;step<70;step++)session=commitSnapshot(session,snapshot(step),step===0);
  session=restoreSnapshot(session,1);
  const before=discoveryHistoryContext(session,true);
- assert.equal(before.seenIds.length,96);
+ assert.equal(before.seenIds.length,840);
  assert.ok(before.seenIds.includes('film-0'));
  assert.ok(before.seenIds.includes('film-95'));
- assert.ok(!before.seenIds.includes('film-96'));
+ assert.ok(before.seenIds.includes('film-96'));
+ assert.ok(before.seenIds.includes('film-839'));
  session=commitSnapshot(session,{...snapshot(100),action:'manual'},false);
  const after=discoveryHistoryContext(session,true);
  assert.deepEqual(session.snapshots.map(sn=>sn.id),['step-6','step-7','step-100']);
- assert.equal(after.seenIds.length,108);
+ assert.equal(after.seenIds.length,852);
  assert.ok(after.seenIds.includes('film-1200'));
- assert.ok(!after.seenIds.includes('film-839'));
+ assert.ok(after.seenIds.includes('film-839'));
+ assert.ok(session.archivedSeenIds?.includes('film-839'));
+ assert.equal(discoveryHistoryContext(parseSession(JSON.stringify(session)),true).seenIds.length,852);
  const fresh=commitSnapshot(session,snapshot(200),true);
  assert.equal(fresh.archivedSeenIds,undefined);
  assert.deepEqual(discoveryHistoryContext(fresh,true).seenIds,snapshot(200).recommendations.map(rec=>rec.film.id));
@@ -93,5 +97,5 @@ test('v2 saved paths without new action or curation fields remain readable',()=>
  const old={version:2,seedDraft:snapshot(0).seeds,snapshots:[snapshot(0),snapshot(1)],cursor:0};
  const restored=parseSession(JSON.stringify(old));
  assert.equal(restored.snapshots[0].action,undefined);
- assert.deepEqual(discoveryHistoryContext(restored,true).seenIds,snapshot(0).recommendations.map(rec=>rec.film.id));
+ assert.deepEqual(discoveryHistoryContext(restored,true).seenIds,[...snapshot(0).recommendations,...snapshot(1).recommendations].map(rec=>rec.film.id));
 });

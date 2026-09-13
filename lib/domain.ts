@@ -33,6 +33,9 @@ export function commitSnapshot(s:Session,snapshot:Snapshot,newTrail:boolean):Ses
  if(!snapshot.recommendations.length)throw new Error('Cannot commit an empty recommendation batch.');
  const snapshots=newTrail?[snapshot]:[...s.snapshots.slice(0,s.cursor+1),snapshot];
  const archived=new Set(newTrail?[]:s.archivedSeenIds??[]);
+ // Undo changes the selected path, but cannot make already displayed films unseen.
+ // Preserve abandoned branch IDs before their full snapshots are discarded.
+ if(!newTrail)for(const discarded of s.snapshots.slice(s.cursor+1))for(const rec of discarded.recommendations)archived.add(rec.film.id);
  const seen=new Set([...archived,...snapshots.flatMap(sn=>sn.recommendations.map(rec=>rec.film.id))]);
  if(seen.size>MAX_SEEN_FILMS)throw new Error('This path has reached its discovery history limit. Start a new path to continue.');
  const result:Session={...s,seedDraft:snapshot.seeds,snapshots,cursor:snapshots.length-1};
