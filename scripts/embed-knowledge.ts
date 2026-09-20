@@ -21,7 +21,7 @@ export function nearestNeighbors(rows:{id:string;vector:number[]}[],count=10):Se
  let randomState=3719;const random=()=>{randomState^=randomState<<13;randomState^=randomState>>>17;randomState^=randomState<<5;return (randomState>>>0)/4294967296-0.5;};
  const planes=Array.from({length:48},()=>Array.from({length:rows[0]?.vector.length??0},random));
  const signatures=vectors.length>512?vectors.map(row=>Array.from({length:4},(_,band)=>planes.slice(band*12,band*12+12).reduce((bits,plane,bit)=>bits|(row.vector.reduce((sum,x,i)=>sum+x*plane[i],0)>=0?1<<bit:0),0))):[];
- const buckets=new Map<string,number[]>();for(const [i,signature] of signatures.entries())for(const [band,bits] of signature.entries()){const key=`${band}:${bits}`;buckets.set(key,[...buckets.get(key)??[],i]);}
+ const buckets=new Map<string,number[]>();for(const [i,signature] of signatures.entries())for(const [band,bits] of signature.entries()){const key=`${band}:${bits}`;const bucket=buckets.get(key)??[];bucket.push(i);buckets.set(key,bucket);}
  return Object.fromEntries(vectors.map((row,i)=>{
   let pool=vectors;
   if(signatures.length){const candidates=new Set<number>();for(let distance=0;distance<2;distance++)for(const [band,bits] of signatures[i].entries())for(let bit=0;bit<(distance?12:1);bit++){for(const index of buckets.get(`${band}:${distance?bits^(1<<bit):bits}`)??[]){if(candidates.size>=768)break;candidates.add(index);}}pool=[...candidates].map(index=>vectors[index]);}

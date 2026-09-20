@@ -40,7 +40,7 @@ export class CorpusKnowledgeRepository implements KnowledgeRepository{
     if(!observation.passageIds.some(id=>document.passages.some(p=>p.id===id)))continue;
     const id=observationKey(document.id,observation.id),entry:Entry={id,document,observation,terms:new Set(searchTerms([observation.summary,observation.summaryKo,...observation.subjects].join(' ')))};
     this.entries.set(id,entry);
-    for(const key of observation.filmKeys)this.byFilm.set(key,[...this.byFilm.get(key)??[],entry]);
+    for(const key of observation.filmKeys){const bucket=this.byFilm.get(key)??[];bucket.push(entry);this.byFilm.set(key,bucket);}
     for(const term of entry.terms)this.addPosting(this.byTerm,term,id);
    }
   }

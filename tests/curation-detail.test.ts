@@ -7,7 +7,7 @@ import {AppError} from '../lib/server/config';
 
 const TEST_KEY='strada-unit-test-signing-key-never-sent';
 const selected:Film={id:'tmdb:1',title:'Selected Film',titleKo:'선택한 영화',year:1990,director:'Selected Director',poster:''};
-const recommended:Film={id:'tmdb:2',title:'Recommended Film',titleKo:'추천 영화',year:2000,director:'Recommended Director',poster:''};
+const recommended:Film={id:'tmdb:2',title:'Recommended Film',titleKo:'추천 영화',year:2000,director:'Recommended Director',poster:'',overviewEn:'A film about a mountain journey.'};
 const rec:Recommendation={film:recommended,connections:[{anchorId:selected.id,anchorTitle:selected.title,relation:'grounded_interpretation',why:'A specific proposed relationship.',sourceIds:['s0']}],sourceIds:['s0'],curation:{lens:'A formal question',bridge:'A concrete connection.',contrast:'A productive difference.'}};
 const source:Source={id:'s0',title:'A verified essay',publisher:'Journal',author:'A critic',date:null,url:'https://example.org/essay',type:'criticism',scope:'Selected Film',summary:'What the exact passage supports.',excerpt:'The actual supplied passage.',accessLevel:'open',boundary:'This does not establish influence.',locator:'Page 3, paragraph 2',reviewStatus:'agent_reviewed'};
 
@@ -32,6 +32,7 @@ test('detail tokens retain verified identities and only evidence actually linked
  const packet=readDetailToken(issued);
  assert.equal(packet.version,2);
  assert.equal(packet.film.id,recommended.id);
+ assert.equal(packet.film.overview,recommended.overviewEn,'the recommended film’s own synopsis constrains expansion of the draft');
  assert.equal(packet.selected[0].titleKo,selected.titleKo);
  assert.equal(packet.bridge,rec.curation?.bridge);
  assert.deepEqual(packet.evidence,[{title:source.title,url:source.url,excerpt:source.excerpt,point:source.summary,access:source.accessLevel,boundary:source.boundary,locator:source.locator,review:source.reviewStatus,type:source.type}]);
