@@ -14,7 +14,7 @@ export function responseUsage(data:any,model:string):ResearchUsage{
  const number=(value:unknown)=>typeof value==='number'&&Number.isFinite(value)?Math.max(0,value):0;
  const actual=typeof data?.model==='string'?data.model:model,inputTokens=number(data?.usage?.input_tokens),outputTokens=number(data?.usage?.output_tokens),cachedInputTokens=Math.min(inputTokens,number(data?.usage?.input_tokens_details?.cached_tokens));
  const searchCalls=(Array.isArray(data?.output)?data.output:[]).filter((o:any)=>o?.type==='web_search_call').length;
- const [inputRate,cachedRate,outputRate]=actual.includes('5.6-sol')?[4,.4,20]:actual.includes('5.6-terra')?[2,.2,12]:actual.includes('5.6-luna')?[.2,.02,1.2]:actual.includes('5.4-mini')?[.75,.075,4.5]:actual.includes('4.1-mini')?[.4,.1,1.6]:[.15,.075,.6];
+ const [inputRate,cachedRate,outputRate]=actual.includes('5.6-sol')?[4,.4,20]:actual.includes('5.6-terra')?[2,.2,12]:actual.includes('5.6-luna')?[.2,.02,1.2]:actual.includes('5.4-mini')?[.75,.075,4.5]:actual.includes('5.4')?[2.5,.25,15]:actual.includes('4.1-mini')?[.4,.1,1.6]:[.15,.075,.6];
  // OpenAI bills non-preview mini search content in 8k-token blocks. Some usage
  // responses omit those blocks; add them only when the reported total cannot contain them.
  // This remains an estimate, not an invoice, especially for larger search prompts.

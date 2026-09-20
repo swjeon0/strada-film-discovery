@@ -99,3 +99,7 @@ test('v2 saved paths without new action or curation fields remain readable',()=>
  assert.equal(restored.snapshots[0].action,undefined);
  assert.deepEqual(discoveryHistoryContext(restored,true).seenIds,[...snapshot(0).recommendations,...snapshot(1).recommendations].map(rec=>rec.film.id));
 });
+
+test('a newly committed live batch must contain exactly twelve films',()=>{
+ assert.throws(()=>commitSnapshot(EMPTY_SESSION,{...snapshot(0),recommendations:snapshot(0).recommendations.slice(0,11)},true),/exactly twelve/);
+});

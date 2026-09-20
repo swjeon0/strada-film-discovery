@@ -44,3 +44,14 @@
  .seed-popover,.history-popover{max-width:calc(100vw - 32px)!important}
 }
 @media(max-width:700px){.entry-page{position:relative}.entry-page .app-footer{position:absolute}}
+
+.run-inspector { margin: 0 0 24px; color: var(--muted-foreground); font-size: 12px; max-width: 100%; }
+.run-inspector summary { width: fit-content; cursor: pointer; padding: 7px 0; }
+.run-inspector-content { border-top: 1px solid var(--border); margin-top: 6px; padding: 14px 0; max-width: 680px; overflow-wrap: anywhere; }
+.run-inspector-content p { line-height: 1.7; margin: 5px 0; }
+.run-inspector-content dl { display: flex; flex-wrap: wrap; gap: 10px 25px; margin: 12px 0; }
+.run-inspector-content dl div { display: flex; gap: 10px; }
+.run-inspector-content dd { margin: 0; color: var(--foreground); font-variant-numeric: tabular-nums; }
+.run-inspector-content .text-button { margin-top: 10px; }
+.run-version { font-family: monospace; font-size: 11px; }
+.source-locator { font-size: 11px; color: var(--muted-foreground); line-height: 1.55; overflow-wrap: anywhere; margin-top: 9px; }

@@ -67,13 +67,13 @@ test('maximum portable pool tokens survive browser persistence while trimmed his
  assert.equal(discoveryHistoryContext(restored,true).seenIds.length,120);
 });
 
-test('continuing requests carry the parent source packet even with an exhausted candidate reserve',()=>{
- const snapshot:Snapshot={id:'parent',createdAt:'2026-09-13T00:00:00Z',seeds:[film],trail:[],sources:[],mode:'live',preparationToken:'parent-sources',reserveCount:0,recommendations:[{film:{...film,id:'tmdb:2'},connections:[{anchorId:film.id,anchorTitle:film.title,relation:'ai_inference',why:'A relationship.',sourceIds:[]}],sourceIds:[]}]};
+test('current discovery requests do not carry a retired preparation packet',()=>{
+ const snapshot:Snapshot={id:'parent',createdAt:'2026-09-13T00:00:00Z',seeds:[film],trail:[],sources:[],mode:'live',preparationToken:'parent-sources',reserveCount:0,recommendations:Array.from({length:12},(_,index)=>({film:{...film,id:`tmdb:${index+2}`},connections:[{anchorId:film.id,anchorTitle:film.title,relation:'ai_inference',why:'A relationship.',sourceIds:[]}],sourceIds:[]}))};
  const session=commitSnapshot(EMPTY_SESSION,snapshot,true);
  assert.equal(discoveryInput(session,'ko','initial').preparationToken,undefined);
  for(const intent of ['regenerate','follow','manual'] as const){
   const request=discoveryInput(session,'ko',intent,intent==='regenerate'?undefined:{...film,id:'tmdb:3'});
-  assert.equal(request.preparationToken,'parent-sources');
+  assert.equal(request.preparationToken,undefined);
   assert.equal(preparationKey(request),preparationKey({...request,preparationToken:'replacement-sources'}));
  }
 });

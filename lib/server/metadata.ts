@@ -12,13 +12,13 @@ export async function searchFilms(query:string,language:Language,budget?:Budget)
 export async function getFilm(id:string,budget?:Budget):Promise<Film>{const known=filmById(id);if(known)return known;if(id.startsWith('wd:'))return canonicalFilm(await getWikimediaFilm(id,budget));if(id.startsWith('tmdb:'))return getTmdb(id,budget);throw new AppError('INVALID_FILM','This film could not be identified.',400);}
 export async function getFilms(ids:string[],budget?:Budget){const wd=ids.filter(id=>id.startsWith('wd:'));const wikidata=wd.length?await getWikimediaFilms(wd,budget):[];return mapLimited(ids,4,async id=>id.startsWith('wd:')?canonicalFilm(wikidata.find(f=>f.id===id)!):await getFilm(id,budget));}
 export async function getFilmDetails(id:string,language:Language,budget?:Budget){const film=await getFilm(id,budget);if(film.wikidataId){const enriched=await enrichWikipedia(film,language,budget);return enriched;}return film;}
-export async function resolveCandidate(title:string,year:number,director:string,budget:Budget){const local=collection.find(f=>titleMatches(f.title,title)&&Math.abs(f.year-year)<=1&&f.director.toLowerCase()===director.toLowerCase());if(local)return local;return canonicalNullable(config().tmdb?await resolveTmdb(title,year,director,budget):await resolveWikimediaCandidate(title,year,director,budget));}
+export async function resolveCandidate(title:string,year:number,director:string,budget:Budget){const local=collection.find(f=>titleMatches(f.title,title)&&Math.abs(f.year-year)<=1&&directorMatches(f.director,director));if(local)return local;return canonicalNullable(config().tmdb?await resolveTmdb(title,year,director,budget):await resolveWikimediaCandidate(title,year,director,budget));}
 function canonicalNullable(f:Film|null){return f?canonicalFilm(f):null;}
 
 export async function resolveCandidates(candidates:{title:string,year:number,director:string}[],budget:Budget){
  const {wikiApi,filmsFromQids}=await import('./wikimedia');
  const found=new Map<number,Film>();const pending:number[]=[];
- for(const [i,c] of candidates.entries()){const local=collection.find(f=>titleMatches(f.title,c.title)&&Math.abs(f.year-c.year)<=1&&normalizeName(f.director)===normalizeName(c.director));if(local)found.set(i,local);else pending.push(i);}
+ for(const [i,c] of candidates.entries()){const local=collection.find(f=>titleMatches(f.title,c.title)&&Math.abs(f.year-c.year)<=1&&directorMatches(f.director,c.director));if(local)found.set(i,local);else pending.push(i);}
  if(!pending.length)return candidates.map((_,i)=>found.get(i)??null);
  if(config().tmdb){const failures:unknown[]=[];await mapLimited(pending,3,async i=>{try{const film=await resolveCandidate(candidates[i].title,candidates[i].year,candidates[i].director,budget);if(film)found.set(i,film);}catch(error){failures.push(error);}});if(!found.size&&failures.length)throw failures[0];}
  else{
@@ -36,4 +36,6 @@ export async function resolveCandidates(candidates:{title:string,year:number,dir
  return candidates.map((_,i)=>found.get(i)??null);
 }
 function normalizeName(value:string){return value.normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');}
+function personTokens(value:string){return (value.normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().match(/[\p{L}\p{N}]+/gu)??[]).sort();}
+export function directorMatches(a:string,b:string){const left=personTokens(a),right=personTokens(b);return left.length>0&&left.length===right.length&&left.every((token,index)=>token===right[index]);}
 export async function mapLimited<T,R>(items:T[],limit:number,fn:(item:T,index:number)=>Promise<R>):Promise<R[]>{const result:R[]=[];let cursor=0;await Promise.all(Array.from({length:Math.min(limit,items.length)},async()=>{while(cursor<items.length){const i=cursor++;result[i]=await fn(items[i],i);}}));return result;}

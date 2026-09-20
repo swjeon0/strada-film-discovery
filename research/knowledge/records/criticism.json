@@ -1,0 +1,1739 @@
+[
+  {
+    "id": "criterion-close-up-prison-escape",
+    "url": "https://www.criterion.com/current/posts/1492-close-up-prison-and-escape",
+    "title": "Close-up: Prison and Escape",
+    "author": "Godfrey Cheshire",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2010-06-22",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: close reading of the taxi arrival, withheld arrest, flowers and can; subsequent discussion of staged documentation.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "close-up-1990-kiarostami",
+        "title": "Close-Up",
+        "year": 1990,
+        "director": "Abbas Kiarostami",
+        "aliases": [
+          "Nema-ye Nazdik",
+          "클로즈업"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "the camera doesn’t follow them. Rather, it stays with the driver",
+        "locator": "Article body: close reading of the taxi arrival, withheld arrest, flowers and can; subsequent discussion of staged documentation."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Cheshire reads the withheld arrest and attention to the taxi driver, flowers, and rolling can as an invitation for spectators to complete an unfinished account. Narrative importance shifts away from the expected news event.",
+        "summaryKo": "체셔는 체포를 보여주지 않고 운전사·꽃·굴러가는 통을 따라가는 장면이 관객에게 서사의 빈자리를 완성하게 한다고 읽는다.",
+        "boundary": "A reading of this sequence, not evidence that any other film shares its devices.",
+        "filmKeys": [
+          "close-up-1990-kiarostami"
+        ],
+        "subjects": [
+          "offscreen event",
+          "spectator participation",
+          "incidental gesture"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      },
+      {
+        "id": "o2",
+        "summary": "The essay cautions that even apparently documentary scenes were shaped by Kiarostami: real participants and materials form a constructed fiction rather than an untouched record.",
+        "summaryKo": "다큐멘터리처럼 보이는 장면도 키아로스타미가 구성했다는 점에서 실존 인물과 사건은 무가공 기록이 아니라 허구의 재료가 된다.",
+        "boundary": "The author makes this production and formal claim; it does not license treating every scene as spontaneous.",
+        "filmKeys": [
+          "close-up-1990-kiarostami"
+        ],
+        "subjects": [
+          "reenactment",
+          "documentary fiction",
+          "self representation"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-brighter-summer-day-coming-age",
+    "url": "https://www.criterion.com/current/posts/3981-a-brighter-summer-day-coming-of-age-in-taipei",
+    "title": "A Brighter Summer Day: Coming of Age in Taipei",
+    "author": "Godfrey Cheshire",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2016-03-21",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: theft of the flashlight and subsequent interpretation of visibility and remembered Taipei.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "brighter-summer-day-1991-yang",
+        "title": "A Brighter Summer Day",
+        "year": 1991,
+        "director": "Edward Yang",
+        "aliases": [
+          "牯嶺街少年殺人事件",
+          "고령가 소년 살인사건"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "The motif of light and questions of identity continue to intertwine thereafter.",
+        "locator": "Article body: theft of the flashlight and subsequent interpretation of visibility and remembered Taipei."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Cheshire connects the stolen flashlight and unreliable electricity to unstable identities: characters are only partially visible, while the lighting makes remembered Taipei feel elusive rather than transparently reconstructed.",
+        "summaryKo": "체셔는 훔친 손전등과 불안정한 전기를 정체성의 불확실성과 연결한다. 인물의 부분적 가시성이 과거 타이베이를 명료한 재현보다 포착하기 어려운 기억으로 만든다.",
+        "boundary": "An interpretation of lighting and identity, not a literal influence claim.",
+        "filmKeys": [
+          "brighter-summer-day-1991-yang"
+        ],
+        "subjects": [
+          "partial visibility",
+          "historical memory",
+          "adolescent identity"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-oharu-not-reconciled",
+    "url": "https://www.criterion.com/current/posts/2827-the-life-of-oharu-not-reconciled",
+    "title": "The Life of Oharu: Not Reconciled",
+    "author": "Gilberto Perez",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2013-07-08",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: epilogue analysis of Oharu seeing her son across the garden and veranda.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "life-of-oharu-1952-mizoguchi",
+        "title": "The Life of Oharu",
+        "year": 1952,
+        "director": "Kenji Mizoguchi",
+        "aliases": [
+          "西鶴一代女",
+          "오하루의 일생"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "each cut punctuates Oharu’s feeling of being put back in her place",
+        "locator": "Article body: epilogue analysis of Oharu seeing her son across the garden and veranda."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Perez analyzes Oharu’s last sight of her son: cuts replace the expected subjective view with distant positions behind passing officials. Scale, occlusion, and renewed camera movement make social exclusion visible.",
+        "summaryKo": "페레즈는 아들을 마지막으로 보는 장면에서 주관숏 대신 관리들 너머의 먼 시점으로 전환되는 편집을 분석한다. 거리와 가림, 다시 움직이는 카메라가 사회적 배제를 드러낸다.",
+        "boundary": "This supports a specific spatial reading of Oharu, not a general equivalence with all long-take cinema.",
+        "filmKeys": [
+          "life-of-oharu-1952-mizoguchi"
+        ],
+        "subjects": [
+          "social distance",
+          "occlusion",
+          "camera movement",
+          "women and hierarchy"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-good-morning-structures",
+    "url": "https://www.criterion.com/current/posts/4543-good-morning-structures-and-strictures-in-suburbia",
+    "title": "Good Morning: Structures and Strictures in Suburbia",
+    "author": "Jonathan Rosenbaum",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2017-05-14",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: three-paragraph comparison of the children’s rebellions in the 1932 and 1959 films.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "good-morning-1959-ozu",
+        "title": "Good Morning",
+        "year": 1959,
+        "director": "Yasujiro Ozu",
+        "aliases": [
+          "Ohayo",
+          "안녕하세요"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "i-was-born-but-1932-ozu",
+        "title": "I Was Born, But...",
+        "year": 1932,
+        "director": "Yasujiro Ozu",
+        "aliases": [
+          "大人の見る絵本 生れてはみたけれど",
+          "태어나기는 했지만"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "the difference between what a father’s authority meant in prewar versus postwar Japan.",
+        "locator": "Article body: three-paragraph comparison of the children’s rebellions in the 1932 and 1959 films."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Rosenbaum contrasts the sons’ hunger strike after their father’s workplace humiliation in I Was Born, But... with the milder television dispute and comic silence in Good Morning. The contrast changes the stakes of paternal authority across prewar and postwar suburbia.",
+        "summaryKo": "로젠봄은 아버지의 직장 내 굴욕에 대한 단식투쟁과 텔레비전을 둘러싼 침묵투쟁을 대조한다. 전전과 전후 교외사회에서 부권의 무게가 달라진다.",
+        "boundary": "Explicit contrast, not merely same-director similarity; the later film does not erase unemployment or exclusion.",
+        "filmKeys": [
+          "good-morning-1959-ozu",
+          "i-was-born-but-1932-ozu"
+        ],
+        "subjects": [
+          "paternal authority",
+          "social ritual",
+          "comic rebellion",
+          "postwar suburbia"
+        ],
+        "kind": "contrast",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "senses-nyff-2000-chunhyang",
+    "url": "https://www.sensesofcinema.com/2000/festival-reports/nyff/",
+    "title": "38th New York Film Festival Report",
+    "author": "Jared Rapfogel",
+    "publisher": "Senses of Cinema",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2000-11",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Chunhyang section: analysis of the pansori voice competing with images and converging during the beating sequence.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "chunhyang-2000-im",
+        "title": "Chunhyang",
+        "year": 2000,
+        "director": "Im Kwon-taek",
+        "aliases": [
+          "춘향뎐"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Im lets the singer do at least as much narrative work as the visuals",
+        "locator": "Chunhyang section: analysis of the pansori voice competing with images and converging during the beating sequence."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Rapfogel describes pansori narration and enacted images competing for narrative control. The singer describes and speaks through the characters, initially producing distance; during the beating scene the two modes converge into intensified emotion.",
+        "summaryKo": "랩포겔은 판소리와 재현된 이미지가 서술의 주도권을 겨루다가 춘향이 매를 맞는 장면에서 감정적으로 합류한다고 읽는다. 거리두기와 몰입이 같은 형식 안에서 바뀐다.",
+        "boundary": "This is a critic’s analysis of Chunhyang, not a claim that the other festival selections use the same technique.",
+        "filmKeys": [
+          "chunhyang-2000-im"
+        ],
+        "subjects": [
+          "oral storytelling",
+          "sound image relation",
+          "performance",
+          "narrative distance"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-boyhood-film-week",
+    "url": "https://www.bfi.org.uk/sight-and-sound/reviews/film-week-boyhood",
+    "title": "Film of the week: Boyhood",
+    "author": "Ashley Clark",
+    "publisher": "BFI Sight and Sound",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2014-07-11",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article opening: comparison with Everyday; middle discussion of unobtrusive time jumps and bodily changes.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "boyhood-2014-linklater",
+        "title": "Boyhood",
+        "year": 2014,
+        "director": "Richard Linklater",
+        "aliases": [
+          "보이후드"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "everyday-2012-winterbottom",
+        "title": "Everyday",
+        "year": 2012,
+        "director": "Michael Winterbottom",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Everyday is probably the clearest precedent for Boyhood",
+        "locator": "Article opening: comparison with Everyday; middle discussion of unobtrusive time jumps and bodily changes."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Clark pairs Boyhood with Everyday because both integrate actors’ actual aging into fictional family life. He explicitly notes that Everyday was probably conceived later, so resemblance does not establish influence.",
+        "summaryKo": "클라크는 배우의 실제 노화를 허구의 가족생활에 결합한다는 점에서 두 영화를 연결한다. 다만 에브리데이의 구상이 더 늦었을 수 있으므로 영향관계로 단정하지 않는다.",
+        "boundary": "A formal precedent comparison, not a documented causal influence.",
+        "filmKeys": [
+          "boyhood-2014-linklater",
+          "everyday-2012-winterbottom"
+        ],
+        "subjects": [
+          "longitudinal production",
+          "real aging",
+          "family time"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      },
+      {
+        "id": "o2",
+        "summary": "The review locates Boyhood’s temporal force in small incidents and barely announced ellipses, with bodily changes marking time instead of milestone scenes.",
+        "summaryKo": "이 평론은 중요한 기념일보다 작은 사건과 거의 드러나지 않는 생략, 신체의 변화가 시간의 흐름을 만든다고 본다.",
+        "boundary": "Paraphrases the review’s formal analysis, not all aspects of the film.",
+        "filmKeys": [
+          "boyhood-2014-linklater"
+        ],
+        "subjects": [
+          "ellipsis",
+          "everyday detail",
+          "embodied time"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-black-girl-self-possessed",
+    "url": "https://www.criterion.com/current/posts/4402-black-girl-self-possessed",
+    "title": "Black Girl: Self, Possessed",
+    "author": "Ashley Clark",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2017-01-23",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: arrival in France, dubbed internal monologue, and comparison of music with Touki Bouki.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "black-girl-1966-sembene",
+        "title": "Black Girl",
+        "year": 1966,
+        "director": "Ousmane Sembene",
+        "aliases": [
+          "La Noire de..."
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "touki-bouki-1973-mambety",
+        "title": "Touki Bouki",
+        "year": 1973,
+        "director": "Djibril Diop Mambety",
+        "aliases": [
+          "Touki bouki"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "she must craft her inner self in a language she cannot speak.",
+        "locator": "Article body: arrival in France, dubbed internal monologue, and comparison of music with Touki Bouki."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Clark interprets Diouana’s French interior voice as a colonial contradiction: it opens her subjectivity while expressing it in a language she cannot speak. Funding constraints produced this dubbing choice.",
+        "summaryKo": "클라크는 디우아나의 프랑스어 내면 독백이 주체성을 드러내면서도 말할 수 없는 식민자의 언어에 갇히는 모순을 만든다고 읽는다. 더빙은 제작비 제약에서 나왔다.",
+        "boundary": "Distinguishes the documented production compromise from Clark’s interpretation of its effect.",
+        "filmKeys": [
+          "black-girl-1966-sembene"
+        ],
+        "subjects": [
+          "interior voice",
+          "colonial language",
+          "subjectivity"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      },
+      {
+        "id": "o2",
+        "summary": "Clark compares Black Girl’s insistently cheerful piano during the Riviera drive with Touki Bouki’s abrasive repetition of Josephine Baker: attractive French destinations acquire an oppressive sonic underside.",
+        "summaryKo": "리비에라로 가는 차 안의 경쾌한 피아노를 투키 부키의 조세핀 베이커 노래와 비교하며, 프랑스의 매혹적인 이미지 밑에 억압적인 청각적 긴장이 생긴다고 본다.",
+        "boundary": "Explicit critical comparison of musical effect, not a documented borrowing.",
+        "filmKeys": [
+          "black-girl-1966-sembene",
+          "touki-bouki-1973-mambety"
+        ],
+        "subjects": [
+          "ironic music",
+          "postcolonial migration",
+          "sound image contrast"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-touki-bouki-modernity",
+    "url": "https://www.criterion.com/current/posts/2988-touki-bouki-mamb-ty-and-modernity",
+    "title": "Touki bouki: Mambéty and Modernity",
+    "author": "Richard Porton",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2013-12-10",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: outlaw-couple comparison followed by montage, sound-image disjunction, and the cattle-to-abattoir transition.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "touki-bouki-1973-mambety",
+        "title": "Touki Bouki",
+        "year": 1973,
+        "director": "Djibril Diop Mambety",
+        "aliases": [
+          "Touki bouki"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "The eccentric spatial and temporal shifts crystallize essentially unresolvable tensions between rural traditions and urban anomie.",
+        "locator": "Article body: outlaw-couple comparison followed by montage, sound-image disjunction, and the cattle-to-abattoir transition."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Porton reads associative editing and sound-image disjunction as formal expressions of incompatible rural and urban orders. The opening cut from herded cattle to slaughter makes modernization a violent discontinuity, while the horned motorcycle mixes inherited and contemporary forms.",
+        "summaryKo": "포턴은 연상적 편집과 소리·이미지의 어긋남을 농촌과 도시 질서의 긴장으로 읽는다. 가축에서 도살장으로의 전환과 뿔 달린 오토바이는 근대화와 전통의 충돌을 구체화한다.",
+        "boundary": "The essay rejects both nostalgic tradition and simple progress; do not flatten this into a generic road-movie link.",
+        "filmKeys": [
+          "touki-bouki-1973-mambety"
+        ],
+        "subjects": [
+          "associative montage",
+          "sound image disjunction",
+          "modernity",
+          "postcolonial form"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-cienaga-outside-frame",
+    "url": "https://www.criterion.com/current/posts/3444-la-ci-naga-what-s-outside-the-frame",
+    "title": "La Ciénaga: What’s Outside the Frame",
+    "author": "David Oubiña",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2015-01-26",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: analysis of the gunshot, swimming-pool ellipsis, and offscreen sound.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "la-cienaga-2001-martel",
+        "title": "La Ciénaga",
+        "year": 2001,
+        "director": "Lucrecia Martel",
+        "aliases": [
+          "The Swamp"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "sounds give the images a disturbing dimensionality.",
+        "locator": "Article body: analysis of the gunshot, swimming-pool ellipsis, and offscreen sound."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Oubiña explains how interrupted actions and offscreen sounds leave possible accidents unresolved. A cutaway before a gunshot and a delayed view of a swimmer sustain danger without confirming it; sound makes the unseen persist around ordinary family activity.",
+        "summaryKo": "오우비냐는 중단된 행동과 화면 밖 소리가 사고 가능성을 미해결 상태로 남긴다고 설명한다. 총성 전의 컷과 수영한 아이를 늦게 보여주는 구성이 일상 주변에 불안을 지속시킨다.",
+        "boundary": "Paraphrases particular examples; the author uses horror mechanisms as an analogy, not a genre classification.",
+        "filmKeys": [
+          "la-cienaga-2001-martel"
+        ],
+        "subjects": [
+          "offscreen sound",
+          "ellipsis",
+          "latent catastrophe",
+          "domestic space"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-late-spring-home",
+    "url": "https://www.criterion.com/current/posts/421-late-spring-home-with-ozu",
+    "title": "Late Spring: Home with Ozu",
+    "author": "Michael Atkinson",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2012-04-17",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article ending: spatial analysis of domestic rooms and comparison with Tokyo Story and Floating Weeds.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "late-spring-1949-ozu",
+        "title": "Late Spring",
+        "year": 1949,
+        "director": "Yasujiro Ozu",
+        "aliases": [
+          "Banshun",
+          "만춘"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "tokyo-story-1953-ozu",
+        "title": "Tokyo Story",
+        "year": 1953,
+        "director": "Yasujiro Ozu",
+        "aliases": [
+          "Tokyo Monogatari",
+          "동경 이야기"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Ozu’s palette may seem uniform from film to film, but it often yields very different atmospheres.",
+        "locator": "Article ending: spatial analysis of domestic rooms and comparison with Tokyo Story and Floating Weeds."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Atkinson contrasts Late Spring’s comfortably inhabited home, which makes Noriko’s departure painful, with Tokyo Story’s inhospitable urban rooms. Similar visual discipline produces opposing experiences of belonging through rooms, depth, and partly hidden doorways.",
+        "summaryKo": "앳킨슨은 만춘의 편안히 거주된 집과 동경 이야기의 불편한 도시 방들을 대조한다. 비슷한 시각적 규율이 공간의 깊이와 문을 통해 서로 다른 소속감을 만든다.",
+        "boundary": "A critic’s spatial comparison; does not equate the two families or endorse every cultural generalization elsewhere in the essay.",
+        "filmKeys": [
+          "late-spring-1949-ozu",
+          "tokyo-story-1953-ozu"
+        ],
+        "subjects": [
+          "domestic architecture",
+          "belonging",
+          "departure",
+          "spatial contrast"
+        ],
+        "kind": "contrast",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-jeanne-dielman-matter-time",
+    "url": "https://www.criterion.com/current/posts/1215",
+    "title": "A Matter of Time: Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
+    "author": "Ivone Margulies",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2009-08-17",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article opening: visibility of domestic tasks versus omitted prostitution; subsequent Saute ma ville comparison.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "jeanne-dielman-1975-akerman",
+        "title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
+        "year": 1975,
+        "director": "Chantal Akerman",
+        "aliases": [
+          "잔느 딜망"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "saute-ma-ville-1968-akerman",
+        "title": "Saute ma ville",
+        "year": 1968,
+        "director": "Chantal Akerman",
+        "aliases": [
+          "Blow Up My Town"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "the full visibility given to daily tasks exacts, as its cost, the more sensational scenes of Jeanne’s prostitution.",
+        "locator": "Article opening: visibility of domestic tasks versus omitted prostitution; subsequent Saute ma ville comparison."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Margulies identifies a structural exchange: domestic labor receives duration and visibility while prostitution is withheld. This reassigns dramatic value and makes small disruptions legible against the spectator’s acquired knowledge of routine.",
+        "summaryKo": "마굴리스는 가사노동에 시간과 가시성을 주는 대신 성매매 장면을 생략하는 구조적 교환을 짚는다. 관객이 익힌 반복 속에서 작은 어긋남이 사건이 된다.",
+        "boundary": "Concerns formal allocation of attention, not a claim that duration alone creates feminist cinema.",
+        "filmKeys": [
+          "jeanne-dielman-1975-akerman"
+        ],
+        "subjects": [
+          "domestic labor",
+          "duration",
+          "routine disruption",
+          "offscreen action"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      },
+      {
+        "id": "o2",
+        "summary": "The essay connects Saute ma ville’s cleaning, mess-making, and sealed kitchen to Jeanne Dielman’s collision of domestic order and catastrophe.",
+        "summaryKo": "이 글은 소트 마 빌의 청소와 어지르기, 밀폐된 부엌을 잔느 딜망의 가정적 질서와 파국의 충돌에 연결한다.",
+        "boundary": "Explicit comparison across Akerman’s films, not shared subject alone.",
+        "filmKeys": [
+          "jeanne-dielman-1975-akerman",
+          "saute-ma-ville-1968-akerman"
+        ],
+        "subjects": [
+          "domestic order",
+          "kitchen",
+          "catastrophe"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-housemaid-crossing-borders",
+    "url": "https://www.criterion.com/current/posts/2993-the-housemaid-crossing-borders",
+    "title": "The Housemaid: Crossing Borders",
+    "author": "Kyung Hyun Kim",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2013-12-16",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: acquired two-floor house, embedded narrative, and chamber-drama comparison.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "housemaid-1960-kim",
+        "title": "The Housemaid",
+        "year": 1960,
+        "director": "Kim Ki-young",
+        "aliases": [
+          "하녀"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "The structure of The Housemaid blurs the division between reality and fiction",
+        "locator": "Article body: acquired two-floor house, embedded narrative, and chamber-drama comparison."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Kim reads the newly acquired two-story house as an overextended domestic aspiration requiring a servant. Its story-within-story, shadows, moving camera, and modernist music turn the family crisis into a hallucinatory challenge to class boundaries and conservative domestic ideals.",
+        "summaryKo": "김경현은 새로 산 이층집을 가사노동의 한계를 넘는 욕망의 공간으로 읽는다. 액자구조와 그림자, 카메라 이동, 현대적 음악이 가정의 위기를 계급과 가족규범을 흔드는 체험으로 만든다.",
+        "boundary": "A film-specific reading; German chamber drama is a formal comparison in the essay, not verified direct influence.",
+        "filmKeys": [
+          "housemaid-1960-kim"
+        ],
+        "subjects": [
+          "domestic architecture",
+          "class aspiration",
+          "frame narrative",
+          "melodrama"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-memories-murder-killing-jar",
+    "url": "https://www.criterion.com/current/posts/7361-memories-of-murder-in-the-killing-jar",
+    "title": "Memories of Murder: In the Killing Jar",
+    "author": "Ed Park",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2021-04-20",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Section 2: comic crime-scene disorder, interrupted laughter, and police repression of protest.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "memories-of-murder-2003-bong",
+        "title": "Memories of Murder",
+        "year": 2003,
+        "director": "Bong Joon-ho",
+        "aliases": [
+          "살인의 추억"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Your laughter keeps coming up short, however, every time you glimpse the body",
+        "locator": "Section 2: comic crime-scene disorder, interrupted laughter, and police repression of protest."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Park shows how the bungled crime-scene investigation oscillates between farce and atrocity: slapstick officials and destroyed evidence draw laughter that the victim’s body interrupts. The same police suppress democratic protest, making procedural incompetence part of a national historical crisis.",
+        "summaryKo": "박은 현장 훼손과 경찰의 슬랩스틱이 웃음을 만들다가 희생자의 시신이 이를 끊는다고 본다. 시위를 진압하는 동일한 경찰 조직이 수사 실패를 역사적 위기와 연결한다.",
+        "boundary": "Supports tonal and institutional analysis, not a claim that every comic moment trivializes the victims.",
+        "filmKeys": [
+          "memories-of-murder-2003-bong"
+        ],
+        "subjects": [
+          "tonal instability",
+          "institutional violence",
+          "failed investigation",
+          "historical trauma"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-taste-cherry-tree",
+    "url": "https://www.criterion.com/current/posts/7026-taste-of-cherry-stay-near-the-tree",
+    "title": "Taste of Cherry: Stay Near the Tree",
+    "author": "A. S. Hamrah",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2020-07-21",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article opening: omitted plot explanations and circular movement; later transition from the earthquake films to Badii’s private crisis.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "taste-of-cherry-1997-kiarostami",
+        "title": "Taste of Cherry",
+        "year": 1997,
+        "director": "Abbas Kiarostami",
+        "aliases": [
+          "Ta’m e guilass",
+          "체리 향기"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Taste of Cherry excludes, cutting away plot and backstory",
+        "locator": "Article opening: omitted plot explanations and circular movement; later transition from the earthquake films to Badii’s private crisis."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Hamrah emphasizes the omission of Badii’s explanatory backstory and the circular journey. The private crisis remains unspecified, so the film’s consideration of life does not rely on a conventional reward, revealed motive, or neatly solved plot.",
+        "summaryKo": "함라는 바디의 사연을 설명하지 않는 생략과 원형의 이동을 강조한다. 위기의 원인을 확정하지 않기에 삶에 대한 사유가 통상적인 보상이나 사건 해결에 기대지 않는다.",
+        "boundary": "This describes productive withholding; it does not diagnose Badii or settle his final fate.",
+        "filmKeys": [
+          "taste-of-cherry-1997-kiarostami"
+        ],
+        "subjects": [
+          "withheld motivation",
+          "circular journey",
+          "encounter",
+          "open ending"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-beehive-spanish-lessons",
+    "url": "https://www.criterion.com/current/posts/447-the-spirit-of-the-beehive-spanish-lessons",
+    "title": "The Spirit of the Beehive: Spanish Lessons",
+    "author": "Paul Julian Smith",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2006-09-18",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: children watching Frankenstein, abandoned explicit script elements, and cautions about political allegory.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "spirit-beehive-1973-erice",
+        "title": "The Spirit of the Beehive",
+        "year": 1973,
+        "director": "Victor Erice",
+        "aliases": [
+          "El espíritu de la colmena",
+          "벌집의 정령"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "frankenstein-1931-whale",
+        "title": "Frankenstein",
+        "year": 1931,
+        "director": "James Whale",
+        "aliases": [
+          "프랑켄슈타인"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Yet to equate Franco and Frankenstein as twin masters of horror is too crude.",
+        "locator": "Article body: children watching Frankenstein, abandoned explicit script elements, and cautions about political allegory."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Smith treats the children’s encounter with Frankenstein as a gateway between cinematic imagination and postwar domestic distress. Elliptical motivations and coded household details carry historical trauma; he rejects a simple identification of the monster with Franco.",
+        "summaryKo": "스미스는 아이들의 프랑켄슈타인 관람을 영화적 상상과 전후 가정의 고통이 만나는 입구로 읽는다. 생략과 가정의 암시가 역사적 상처를 전하며 괴물과 프랑코의 일대일 대응은 거부한다.",
+        "boundary": "Direct intertextual relation and critical interpretation; not a claim that Frankenstein itself addresses Francoism.",
+        "filmKeys": [
+          "spirit-beehive-1973-erice",
+          "frankenstein-1931-whale"
+        ],
+        "subjects": [
+          "film within film",
+          "child spectatorship",
+          "political allegory",
+          "historical trauma"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-brakhage-act-seeing",
+    "url": "https://www.criterion.com/current/posts/272-by-brakhage-the-act-of-seeing",
+    "title": "By Brakhage: The Act of Seeing . . .",
+    "author": "Fred Camper",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2010-05-25",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article opening: Dog Star Man’s montage and superimpositions; subsequent distinction between subject matter and perceptual rhythm.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "dog-star-man-1964-brakhage",
+        "title": "Dog Star Man",
+        "year": 1964,
+        "director": "Stan Brakhage",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "they’re best seen, in other words, as light moving in time.",
+        "locator": "Article opening: Dog Star Man’s montage and superimpositions; subsequent distinction between subject matter and perceptual rhythm."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Camper describes Dog Star Man’s layers of body, forest, stars, and painted film as associations made through superimposition and rhythmic form. The images can sustain a cosmic narrative and a nonnarrative encounter with light simultaneously.",
+        "summaryKo": "캠퍼는 도그 스타 맨의 신체·숲·별·필름 위 물감이 중첩과 리듬으로 연상관계를 만든다고 설명한다. 우주적 서사와 빛 자체의 비서사적 체험이 공존한다.",
+        "boundary": "Specific reading of the completed 1961–64 cycle; not an account of every Brakhage work.",
+        "filmKeys": [
+          "dog-star-man-1964-brakhage"
+        ],
+        "subjects": [
+          "superimposition",
+          "painted film",
+          "perception",
+          "rhythmic montage"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-largent-weight-world",
+    "url": "https://www.criterion.com/current/posts/4719-largent-the-weight-of-the-world",
+    "title": "L’argent: The Weight of the World",
+    "author": "Adrian Martin",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2017-07-11",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: comparison with A Man Escaped and Pickpocket, immediately before analysis of the opening ATM.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "largent-1983-bresson",
+        "title": "L’Argent",
+        "year": 1983,
+        "director": "Robert Bresson",
+        "aliases": [
+          "L'Argent",
+          "돈"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "pickpocket-1959-bresson",
+        "title": "Pickpocket",
+        "year": 1959,
+        "director": "Robert Bresson",
+        "aliases": [
+          "소매치기"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "man-escaped-1956-bresson",
+        "title": "A Man Escaped",
+        "year": 1956,
+        "director": "Robert Bresson",
+        "aliases": [
+          "Un condamné à mort s’est échappé",
+          "저항"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "L’argent plays it cool all the way to the end.",
+        "locator": "Article body: comparison with A Man Escaped and Pickpocket, immediately before analysis of the opening ATM."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Martin contrasts L’Argent’s steady, affectively chilled rhythm with the bursts of music or accelerated montage in A Man Escaped and Pickpocket. Although all touch thriller action, the late film strips away its excitement while rapidly accumulating consequences.",
+        "summaryKo": "마틴은 돈의 차갑고 일정한 리듬을 저항과 소매치기의 음악·가속편집과 대조한다. 스릴러적 행위가 있어도 흥분을 제거한 채 결과가 빠르게 누적된다.",
+        "boundary": "Explicit formal contrast, not a claim that the earlier films are conventional action cinema.",
+        "filmKeys": [
+          "largent-1983-bresson",
+          "pickpocket-1959-bresson",
+          "man-escaped-1956-bresson"
+        ],
+        "subjects": [
+          "dedramatization",
+          "montage rhythm",
+          "criminal action",
+          "causal chain"
+        ],
+        "kind": "contrast",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-apu-common-sight",
+    "url": "https://www.criterion.com/current/posts/3798-the-apu-trilogy-every-common-sight",
+    "title": "The Apu Trilogy: Every Common Sight",
+    "author": "Terrence Rafferty",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2015-11-17",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "First section after the divider: Aparajito’s changed pace, education montage, and recurring trains and doorways.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "pather-panchali-1955-ray",
+        "title": "Pather Panchali",
+        "year": 1955,
+        "director": "Satyajit Ray",
+        "aliases": [
+          "পথের পাঁচালী",
+          "길의 노래"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "aparajito-1956-ray",
+        "title": "Aparajito",
+        "year": 1956,
+        "director": "Satyajit Ray",
+        "aliases": [
+          "অপরাজিত",
+          "불굴의 인간"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "The music of this film is primarily in the editing",
+        "locator": "First section after the divider: Aparajito’s changed pace, education montage, and recurring trains and doorways."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Rafferty contrasts Pather Panchali’s patient arrangement of tiny observations with Aparajito’s brisk chronicle of education and movement. Returning railway and doorway images change from childhood possibility to departure and maternal anxiety; rhythmic design follows a changing life.",
+        "summaryKo": "래퍼티는 길의 노래의 미세한 관찰 리듬과 불굴의 인간의 빠른 교육·이동 연대기를 대조한다. 반복되는 철도와 문 이미지의 의미가 가능성에서 이별과 어머니의 불안으로 바뀐다.",
+        "boundary": "A comparison within the trilogy, not interchangeable coming-of-age themes.",
+        "filmKeys": [
+          "pather-panchali-1955-ray",
+          "aparajito-1956-ray"
+        ],
+        "subjects": [
+          "motif transformation",
+          "editing rhythm",
+          "education",
+          "maternal separation"
+        ],
+        "kind": "contrast",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-beau-travail-sensation",
+    "url": "https://www.criterion.com/current/posts/7097-beau-travail-a-cinema-of-sensation",
+    "title": "Beau travail: A Cinema of Sensation",
+    "author": "Girish Shambu",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2020-09-15",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: Melville and Britten sources, followed by Subor’s recurring Forestier identity and Godard continuation.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "beau-travail-1999-denis",
+        "title": "Beau Travail",
+        "year": 1999,
+        "director": "Claire Denis",
+        "aliases": [
+          "아름다운 직업"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "petit-soldat-1963-godard",
+        "title": "Le Petit Soldat",
+        "year": 1963,
+        "director": "Jean-Luc Godard",
+        "aliases": [
+          "The Little Soldier",
+          "작은 병정"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "She imagined her film to be an oblique continuation of Godard’s",
+        "locator": "Article body: Melville and Britten sources, followed by Subor’s recurring Forestier identity and Godard continuation."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Shambu identifies a deliberate bridge to Le Petit Soldat: Michel Subor again plays Bruno Forestier, imagined by Denis decades later. Beau Travail combines that continuation with Melville’s male triangle and Britten’s music, retaining distinct origins within a new work.",
+        "summaryKo": "샴부는 미셸 쉬보르가 브뤼노 포레스티에라는 같은 이름을 다시 연기하는 것이 작은 병정의 비스듬한 속편 구상임을 짚는다. 멜빌의 관계구도와 브리튼의 음악도 다른 출처를 유지한 채 결합된다.",
+        "boundary": "Documented intertextual continuation; it does not make the two films narratively identical.",
+        "filmKeys": [
+          "beau-travail-1999-denis",
+          "petit-soldat-1963-godard"
+        ],
+        "subjects": [
+          "intertextual continuation",
+          "adaptation by grafting",
+          "military identity"
+        ],
+        "kind": "influence",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-killer-sheep-everyday-blues",
+    "url": "https://www.criterion.com/current/posts/8817-killer-of-sheep-everyday-blues",
+    "title": "Killer of Sheep: Everyday Blues",
+    "author": "Danielle Amir Jackson",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2025-05-27",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article opening: childhood scolding and change of lullaby singer; subsequent account of episodic construction.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "killer-sheep-1977-burnett",
+        "title": "Killer of Sheep",
+        "year": 1977,
+        "director": "Charles Burnett",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Paul Robeson’s authoritative baritone takes over for the children",
+        "locator": "Article opening: childhood scolding and change of lullaby singer; subsequent account of episodic construction."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Jackson reads the opening transfer of a lullaby from children to Robeson’s adult voice alongside a boy’s coercive lesson in manhood. Musical continuity registers lost innocence; later everyday vignettes carry the experience of work and endurance without an epic plot.",
+        "summaryKo": "잭슨은 자장가가 아이들 목소리에서 로브슨의 성인 목소리로 넘어갈 때 강요된 남성성의 훈육과 순수성 상실이 드러난다고 읽는다. 일상의 단편들이 노동과 버팀을 전한다.",
+        "boundary": "The musical transition is specific; the record does not reduce Black working-class life to misery.",
+        "filmKeys": [
+          "killer-sheep-1977-burnett"
+        ],
+        "subjects": [
+          "musical transition",
+          "childhood initiation",
+          "episodic realism",
+          "working class"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-young-lincoln-hero",
+    "url": "https://www.criterion.com/current/posts/413-young-mr-lincoln-hero-in-waiting",
+    "title": "Young Mr. Lincoln: Hero in Waiting",
+    "author": "Geoffrey O’Brien",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2006-02-13",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: Fonda’s framing and withdrawal, followed by the riverbank posture and reverse-angle analysis.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "young-mr-lincoln-1939-ford",
+        "title": "Young Mr. Lincoln",
+        "year": 1939,
+        "director": "John Ford",
+        "aliases": [
+          "젊은 링컨"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "His consciousness is the center of the movie, and it remains as much a mystery as the river",
+        "locator": "Article body: Fonda’s framing and withdrawal, followed by the riverbank posture and reverse-angle analysis."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "O’Brien locates Lincoln’s opacity in bodily position and framing: political engagement alternates with withdrawal, while the riverbank scene reverses camera and posture without supplying psychological explanation. Pastoral ease carries unresolved historical apprehension.",
+        "summaryKo": "오브라이언은 링컨의 위치와 자세, 프레이밍에서 불투명성을 읽는다. 정치적 참여와 물러남이 교차하고 강변 장면의 반전된 시점은 심리를 해설하지 않는다. 목가적 평온 속에 역사적 불안이 남는다.",
+        "boundary": "No claim here about Benning, Ozu, or a documented materialist lineage; any such bridge must be a separate curatorial inference.",
+        "filmKeys": [
+          "young-mr-lincoln-1939-ford"
+        ],
+        "subjects": [
+          "spatial performance",
+          "historical myth",
+          "withdrawal",
+          "landscape"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-mood-love-notes",
+    "url": "https://www.criterion.com/current/posts/7976-notes-on-in-the-mood-for-love",
+    "title": "Notes on In the Mood for Love",
+    "author": "Charles Yu",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2022-11-01",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Numbered sections 3 and 9.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "in-mood-love-2000-wong",
+        "title": "In the Mood for Love",
+        "year": 2000,
+        "director": "Wong Kar-wai",
+        "aliases": [
+          "花樣年華",
+          "화양연화"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "The result achieved through subtraction, distillation. Absences and silences",
+        "locator": "Numbered sections 3 and 9."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Yu describes slowed moments separated by unshown weeks, with production alternatives removed to sharpen absence. The lovers’ impersonations of their spouses let dialogue work twice: as reconstruction and as guarded personal approach.",
+        "summaryKo": "유는 생략된 몇 주 사이에 느려진 순간들이 놓이며 삭제가 부재를 선명하게 한다고 읽는다. 배우자 흉내는 과거 재구성과 조심스러운 접근이라는 두 기능을 동시에 수행한다.",
+        "boundary": "An authored interpretation of time and role-playing; it does not confirm unseen events.",
+        "filmKeys": [
+          "in-mood-love-2000-wong"
+        ],
+        "subjects": [
+          "temporal distillation",
+          "absence",
+          "role playing",
+          "indirect intimacy"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-cleo-passionate-time",
+    "url": "https://www.criterion.com/current/posts/499-cleo-from-5-to-7-passionate-time",
+    "title": "Cléo from 5 to 7: Passionate Time",
+    "author": "Adrian Martin",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2008-01-21",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article body: distinction between chronological duration and emotional time, followed by formal freedom within temporal constraints.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "cleo-1962-varda",
+        "title": "Cléo from 5 to 7",
+        "year": 1962,
+        "director": "Agnes Varda",
+        "aliases": [
+          "Cléo de 5 à 7",
+          "5시부터 7시까지의 클레오"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "the experience of time that contracts or expands according to how we feel it.",
+        "locator": "Article body: distinction between chronological duration and emotional time, followed by formal freedom within temporal constraints."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Martin distinguishes clock time from felt time: the fixed wait for medical news is continually reshaped by boredom, desire, and apprehension. Strict geographic continuity allows emotional change and shifts of attention to other people rather than imprisoning the film in a technical exercise.",
+        "summaryKo": "마틴은 검사 결과를 기다리는 시계 시간과 지루함·욕망·불안에 따라 늘고 줄어드는 체감 시간을 구별한다. 엄격한 동선의 연속성 안에서 감정과 타인에 대한 주의가 변화한다.",
+        "boundary": "The essay calls the film 1961; identity uses Criterion’s film catalogue release year 1962. No single-take claim.",
+        "filmKeys": [
+          "cleo-1962-varda"
+        ],
+        "subjects": [
+          "clock time",
+          "subjective duration",
+          "urban wandering",
+          "shifting attention"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "senses-rotterdam-2007-ten-skies",
+    "url": "https://www.sensesofcinema.com/2007/festival-reports/rotterdam-iff-2007/",
+    "title": "Short: As Long As It Takes as part of The 36th Rotterdam International Film Festival",
+    "author": "Genevieve Yue",
+    "publisher": "Senses of Cinema",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2007-05",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Final four paragraphs: Benning’s introduction and the perceptual duration of the sky views.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "ten-skies-2004-benning",
+        "title": "Ten Skies",
+        "year": 2004,
+        "director": "James Benning",
+        "aliases": [
+          "열 개의 하늘"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "actually one sky with ten different views.",
+        "locator": "Final four paragraphs: Benning’s introduction and the perceptual duration of the sky views."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Yue reports Benning’s description of an artist as someone who attends and reports back. Ten-minute sky views give spectators time to notice changes in clouds, color, contrails, and small airplanes rather than following narrative events.",
+        "summaryKo": "웨는 예술가를 주의 깊게 보고 전하는 사람으로 설명한 베닝의 발언을 기록한다. 10분씩 지속되는 하늘은 구름·색·비행운·작은 비행기의 변화를 관찰할 시간을 준다.",
+        "boundary": "The report dates the film 2005; BFI’s opened Erika Balsom filmography confirms canonical 2004. No asserted link to Ford or Ozu.",
+        "filmKeys": [
+          "ten-skies-2004-benning"
+        ],
+        "subjects": [
+          "sustained attention",
+          "duration",
+          "landscape change",
+          "observational practice"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criterion-red-shoes-dancing",
+    "url": "https://www.criterion.com/current/posts/1518-the-red-shoes-dancing-for-your-life",
+    "title": "The Red Shoes: Dancing for Your Life",
+    "author": "David Ehrenstein",
+    "publisher": "The Criterion Collection",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2010-07-19",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Article ending: ballet as Vicky’s mental space, absent theatre audience, changing partners, and transformations of setting.",
+      "note": "Read the original publisher page. Observations paraphrase the named passages; the short quotation is an audit anchor, not the full evidence."
+    },
+    "films": [
+      {
+        "key": "red-shoes-1948-powell-pressburger",
+        "title": "The Red Shoes",
+        "year": 1948,
+        "director": "Michael Powell and Emeric Pressburger",
+        "aliases": [
+          "분홍신"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "The audience is never seen",
+        "locator": "Article ending: ballet as Vicky’s mental space, absent theatre audience, changing partners, and transformations of setting."
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Ehrenstein reads the central ballet as Vicky’s mental world rather than a record of a possible stage performance. Replacing partners and transforming sets make the artistic and romantic conflict visible, with color and atmosphere carrying equal weight to choreography.",
+        "summaryKo": "에런스타인은 중심 발레를 실제 무대의 기록보다 비키의 정신세계로 읽는다. 파트너 교체와 공간 변형이 예술·사랑의 갈등을 드러내고 색과 분위기가 안무만큼 작동한다.",
+        "boundary": "A specific account of the film’s impossible-stage sequence, not a general claim that dance is psychological symbolism.",
+        "filmKeys": [
+          "red-shoes-1948-powell-pressburger"
+        ],
+        "subjects": [
+          "subjective spectacle",
+          "stage cinema",
+          "color dramaturgy",
+          "artistic dedication"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  }
+]

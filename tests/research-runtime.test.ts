@@ -19,7 +19,7 @@ function setup(t:TestContext,name:string,scenario:Scenario={}){
  process.env.OPENAI_API_KEY='test-key-never-sent';process.env.OPENAI_CURATOR_MODEL=`test-curator-${name}`;process.env.OPENAI_SEARCH_MODEL=`test-search-${name}`;process.env.TMDB_READ_ACCESS_TOKEN='test-tmdb-token-never-sent';process.env.PUBLIC_MODE='false';process.env.VERCEL='0';
  const films:Film[]=Array.from({length:50},(_,i)=>({id:`tmdb:${base+i}`,title:`Fixture ${name} Film ${i}`,titleKo:`검증 영화 ${number}-${i}`,year:1950+i,director:`Fixture Director ${i}`,poster:`https://image.tmdb.org/t/p/w500/fixture-${base+i}.jpg`}));
  const articleUrl=`https://www.criterion.com/current/posts/${base}-fixture-${name}`;
- const calls={draft:0,curate:0,search:0,article:0,metadata:0};
+ const calls={draft:0,curate:0,simple:0,search:0,article:0,metadata:0};
  const modelInputs:{stage:string;input:any}[]=[];
  const unexpected:string[]=[];
  const originalFetch=globalThis.fetch;
@@ -53,6 +53,10 @@ function setup(t:TestContext,name:string,scenario:Scenario={}){
    if(stage?.startsWith('strada_write_')){
     const request=JSON.parse(body.input.find(row=>row.role==='user')!.content);
     return output({recommendations:request.approvedConnections.map((row:{candidate:string;decision:string})=>({candidate:row.candidate,why:row.decision}))});
+   }
+   if(stage==='strada_curator_v1'){
+    calls.simple++;
+    return output({v:'증언과 재현의 형식을 변형하는 하나의 경로',r:films.slice(0,12).map((film,index)=>({t:film.title,y:film.year,d:film.director,a:[0],b:`증언과 재현의 관계를 변형하는 추천 ${index}`,e:[],k:'m'}))});
    }
    if(!stage){
     calls.search++;
@@ -203,5 +207,5 @@ test('production discovery accepts more than the former daily and caller limits 
   const response=await POST(request);assert.equal(response.status,200);
   assert.equal((await response.json()).recommendations.length,12);
  }
- assert.equal(fixture.calls.draft,60);assert.equal(fixture.calls.curate,60);
+ assert.equal(fixture.calls.simple,60);assert.equal(fixture.calls.draft,0);assert.equal(fixture.calls.curate,0);
 });

@@ -47,3 +47,7 @@ next-env.d.ts
 
 !.env.example
 *.tsbuildinfo
+
+# Python ingestion cache
+__pycache__/
+*.pyc

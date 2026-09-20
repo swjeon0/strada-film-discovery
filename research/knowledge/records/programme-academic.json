@@ -1,0 +1,1397 @@
+[
+  {
+    "id": "hfa-benning-place-over-time",
+    "url": "https://harvardfilmarchive.org/programs/place-over-time-recent-work-by-james-benning/3",
+    "title": "Place Over Time. Recent Work by James Benning",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Introduction, second paragraph beginning With his California Trilogy",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "ten-skies-2004-benning",
+        "title": "Ten Skies",
+        "year": 2004,
+        "director": "James Benning",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "13-lakes-2004-benning",
+        "title": "13 Lakes",
+        "year": 2004,
+        "director": "James Benning",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "rr-2007-benning",
+        "title": "RR",
+        "year": 2007,
+        "director": "James Benning",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "duration and a rigorous formal aesthetic",
+        "locator": "Introduction, second paragraph beginning With his California Trilogy"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The series frames Benning’s recent landscape films through duration and formal organization as ways of perceiving social and environmental histories inscribed in places. It screens Ten Skies, 13 Lakes and RR within that curatorial frame.",
+        "summaryKo": "이 프로그램은 베닝의 풍경 영화를 지속시간과 엄격한 형식으로 장소에 새겨진 사회·환경의 역사를 감지하는 작업으로 묶는다.",
+        "boundary": "A series-level curatorial frame, not a claim that every film has the same politics or a documented pairwise influence.",
+        "filmKeys": [
+          "ten-skies-2004-benning",
+          "13-lakes-2004-benning",
+          "rr-2007-benning"
+        ],
+        "subjects": [
+          "duration",
+          "landscape",
+          "environmental history",
+          "political space"
+        ],
+        "kind": "co_programming",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-beau-travail-brief-encounter",
+    "url": "https://harvardfilmarchive.org/calendar/beau-travail-brief-encounter-2025-03",
+    "title": "Beau travail / Brief Encounter",
+    "author": "Aidin Kamali",
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Brief Encounter programme note, opening sentence",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "beau-travail-1999-denis",
+        "title": "Beau travail",
+        "year": 1999,
+        "director": "Claire Denis",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "brief-encounter-1945-lean",
+        "title": "Brief Encounter",
+        "year": 1945,
+        "director": "David Lean",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Like Beau Travail, Brief Encounter frames its story through the protagonist’s narration of a tabooed desire",
+        "locator": "Brief Encounter programme note, opening sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Kamali explicitly links the films through protagonists narrating prohibited desire: Galoup’s consuming resentment and Laura’s extramarital attraction. The comparison crosses sensual military choreography and restrained domestic melodrama.",
+        "summaryKo": "카말리는 금지된 욕망을 주인공의 회고적 서술로 전달한다는 점에서 두 영화를 직접 연결한다. 군사 훈련의 관능성과 억제된 불륜 멜로드라마가 다른 방식으로 욕망을 드러낸다.",
+        "boundary": "A documented critical comparison; no claim of direct influence or identical sexuality.",
+        "filmKeys": [
+          "beau-travail-1999-denis",
+          "brief-encounter-1945-lean"
+        ],
+        "subjects": [
+          "forbidden desire",
+          "retrospective narration",
+          "restraint",
+          "embodied gesture"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-black-girl-niaye",
+    "url": "https://harvardfilmarchive.org/calendar/black-girl-2023-02/1",
+    "title": "Black Girl",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Black Girl programme note, middle paragraph",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "black-girl-1966-sembene",
+        "title": "Black Girl",
+        "year": 1966,
+        "director": "Ousmane Sembène",
+        "aliases": [
+          "La Noire de…"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "niaye-1964-sembene",
+        "title": "Niaye",
+        "year": 1964,
+        "director": "Ousmane Sembène",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "In decentering the film’s white characters, Sembène foregrounds the African worker",
+        "locator": "Black Girl programme note, middle paragraph"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note reads Black Girl’s abrupt scale changes and French voiceover as formal expressions of Diouana’s alienation under neocolonial domestic labor.",
+        "summaryKo": "이 노트는 백인 고용주 대신 디우아나를 중심에 놓고, 급격한 숏 크기 변화와 프랑스어 보이스오버로 가사노동의 소외를 드러낸다고 읽는다.",
+        "boundary": "Specific reading of Black Girl; does not establish a comparison to every film about labor.",
+        "filmKeys": [
+          "black-girl-1966-sembene"
+        ],
+        "subjects": [
+          "domestic labor",
+          "neocolonialism",
+          "voiceover",
+          "alienation"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      },
+      {
+        "id": "o2",
+        "summary": "The screening pairs Black Girl with Niaye, whose griot narration records village hypocrisy and leaders’ deference to colonial authority.",
+        "summaryKo": "이 상영은 식민 권력에 아부하는 마을 지도층을 그리오의 목소리로 고발하는 니아이를 함께 배치한다.",
+        "boundary": "The event pairing is documented; thematic synthesis is not evidence of influence between the works.",
+        "filmKeys": [
+          "black-girl-1966-sembene",
+          "niaye-1964-sembene"
+        ],
+        "subjects": [
+          "colonial authority",
+          "oral narration"
+        ],
+        "kind": "co_programming",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-ghatak-reason-argument-story",
+    "url": "https://harvardfilmarchive.org/calendar/reason-argument-and-story-2001-04",
+    "title": "Reason, Argument and a Story",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Programme note, final sentence",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "reason-argument-story-1974-ghatak",
+        "title": "Reason, Argument and a Story",
+        "year": 1974,
+        "director": "Ritwik Ghatak",
+        "aliases": [
+          "Jukti Takko Aar Gappo"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "disillusionment with organized politics",
+        "locator": "Programme note, final sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note reads the alcoholic intellectual’s journey through Bengal, accompanied by displaced and disillusioned figures, as Ghatak’s loss of faith in organized politics and ordinary political experience.",
+        "summaryKo": "노트는 벵골을 떠도는 지식인과 난민·실업자의 여정을 가탁의 조직 정치와 일상의 정치 경험에 대한 환멸로 읽는다.",
+        "boundary": "A reading of this late film; not a blanket description of Ghatak’s entire career.",
+        "filmKeys": [
+          "reason-argument-story-1974-ghatak"
+        ],
+        "subjects": [
+          "political disillusionment",
+          "wandering",
+          "displacement",
+          "autobiographical performance"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-denis-us-go-home",
+    "url": "https://harvardfilmarchive.org/calendar/us-go-home-keep-it-for-yourself",
+    "title": "U.S. Go Home / Keep It For Yourself",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "PROGRAM, U.S. Go Home note, final sentence",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "us-go-home-1994-denis",
+        "title": "U.S. Go Home",
+        "year": 1994,
+        "director": "Claire Denis",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "explore the fugitive chemistry of social and sexual relationships",
+        "locator": "PROGRAM, U.S. Go Home note, final sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note connects the dance-party story to Denis’s return from Africa to the Paris outskirts and to a television commission about adolescence and formative music. The girls’ reluctant visit explores unstable social and sexual relations.",
+        "summaryKo": "노트는 춤 모임의 이야기를 드니의 아프리카 귀환 경험 및 청소년기와 음악을 다룬 텔레비전 기획과 연결한다.",
+        "boundary": "The autobiographical context is qualified as inspiration; no biographical claim about every scene.",
+        "filmKeys": [
+          "us-go-home-1994-denis"
+        ],
+        "subjects": [
+          "adolescence",
+          "music",
+          "social gesture",
+          "autobiographical memory"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-texture-fashion-film",
+    "url": "https://harvardfilmarchive.org/programs/texture-analysis-fashion-and-film",
+    "title": "Texture Analysis. Fashion and Film",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Series title and Past screenings schedule",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "friday-night-2002-denis",
+        "title": "Friday Night",
+        "year": 2002,
+        "director": "Claire Denis",
+        "aliases": [
+          "Vendredi soir"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "pillow-book-1996-greenaway",
+        "title": "The Pillow Book",
+        "year": 1996,
+        "director": "Peter Greenaway",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "in-mood-for-love-2000-wong",
+        "title": "In the Mood for Love",
+        "year": 2000,
+        "director": "Wong Kar-wai",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Texture Analysis. Fashion and Film",
+        "locator": "Series title and Past screenings schedule"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Harvard placed Friday Night, The Pillow Book and In the Mood for Love in one fashion-and-film series. The listing establishes a shared curatorial setting for examining texture and dress.",
+        "summaryKo": "하버드는 금요일 밤·필로우 북·화양연화를 패션과 영화 프로그램에 함께 배치했다. 의상과 질감을 탐색하는 공통의 상영 맥락이 확인된다.",
+        "boundary": "The page supplies a programme title and membership, not a developed comparative argument or film-to-film influence.",
+        "filmKeys": [
+          "friday-night-2002-denis",
+          "pillow-book-1996-greenaway",
+          "in-mood-for-love-2000-wong"
+        ],
+        "subjects": [
+          "fashion",
+          "texture",
+          "costume"
+        ],
+        "kind": "co_programming",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flc-bridges-madison-county",
+    "url": "https://www.filmlinc.org/films/the-bridges-of-madison-county/",
+    "title": "The Bridges of Madison County",
+    "author": null,
+    "publisher": "Film at Lincoln Center",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Final programme-note sentence",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "bridges-madison-1995-eastwood",
+        "title": "The Bridges of Madison County",
+        "year": 1995,
+        "director": "Clint Eastwood",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "a blinking car taillight, a rearview mirror, and a passenger side door handle",
+        "locator": "Final programme-note sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The programme identifies Eastwood’s montage of ordinary car details as the mechanism of the climactic emotional suspense. A four-day affair extends into lifelong memory through restrained performances and object-focused editing.",
+        "summaryKo": "프로그램은 자동차 후미등·거울·문손잡이를 잇는 몽타주에서 감정적 절정의 원리를 찾는다. 짧은 만남은 절제된 연기와 사물 중심 편집을 통해 평생의 기억이 된다.",
+        "boundary": "A formal reading of a specific passage; no claim that every object is a universal symbol.",
+        "filmKeys": [
+          "bridges-madison-1995-eastwood"
+        ],
+        "subjects": [
+          "melodrama",
+          "objects",
+          "montage",
+          "romantic memory"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-memoria",
+    "url": "https://harvardfilmarchive.org/programs/memoria",
+    "title": "Memoria",
+    "author": "BG",
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Programme note, final paragraph",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "memoria-2021-apichatpong",
+        "title": "Memoria",
+        "year": 2021,
+        "director": "Apichatpong Weerasethakul",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Political subtext and past traumas leak into the present",
+        "locator": "Programme note, final paragraph"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note follows an unexplained sound from technical investigation into shared memory. Sonic atmosphere dissolves borders between interior and exterior experience, allowing political trauma and metaphysical uncertainty to coexist.",
+        "summaryKo": "노트는 정체불명의 소리에 대한 기술적 탐색이 공유된 기억으로 번지는 과정을 읽는다. 소리의 공간은 내면과 외부, 정치적 트라우마와 형이상학적 불확실성을 겹친다.",
+        "boundary": "Interpretation of the film, not a scientific account of memory or a claim about its current distribution.",
+        "filmKeys": [
+          "memoria-2021-apichatpong"
+        ],
+        "subjects": [
+          "sound",
+          "collective memory",
+          "trauma",
+          "perception"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-touki-bouki",
+    "url": "https://harvardfilmarchive.org/calendar/touki-bouki-2019-09",
+    "title": "Touki Bouki",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Programme note, paragraph beginning Instead",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "touki-bouki-1973-mambety",
+        "title": "Touki Bouki",
+        "year": 1973,
+        "director": "Djibril Diop Mambéty",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "irony, allegory, political parody, internal dreamstate",
+        "locator": "Programme note, paragraph beginning Instead"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The programme reads fragmented narration, jump cuts and a heterogeneous soundtrack as resistance to the inherited hierarchies of postcolonial Dakar. The lovers’ imagined escape keeps possibility and mirage in tension.",
+        "summaryKo": "프로그램은 파편화된 서사·점프컷·이질적 음향을 탈식민 다카르의 위계에 저항하는 형식으로 읽는다. 연인의 탈출 욕망은 가능성과 신기루 사이에 놓인다.",
+        "boundary": "The note’s interpretation of formal choices; does not turn all discontinuous editing into anti-colonial politics.",
+        "filmKeys": [
+          "touki-bouki-1973-mambety"
+        ],
+        "subjects": [
+          "fragmented narration",
+          "postcolonial space",
+          "sound collage",
+          "migration"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-wendy-lucy",
+    "url": "https://harvardfilmarchive.org/calendar/wendy-and-lucy-2020-03",
+    "title": "Wendy and Lucy",
+    "author": "Kelly Reichardt; Haden Guest",
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Linked inline transcript #transcription-72, Kelly Reichardt at 2:59",
+      "note": "Opened original programme and transcript; observation reads only exchange at 1:59–2:59. Year normalized to the 2008 premiere, not HFA listing’s 2009. Production year cross-checked at https://www.festival-cannes.com/f/wendy-and-lucy/.",
+      "textUrl": "https://harvardfilmarchive.org/calendar/wendy-and-lucy-2020-03#transcription-72"
+    },
+    "films": [
+      {
+        "key": "wendy-lucy-2008-reichardt",
+        "title": "Wendy and Lucy",
+        "year": 2008,
+        "director": "Kelly Reichardt",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "long-goodbye-1973-altman",
+        "title": "The Long Goodbye",
+        "year": 1973,
+        "director": "Robert Altman",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "it takes on a muzak-y thing in the store",
+        "locator": "Linked inline transcript #transcription-72, Kelly Reichardt at 2:59"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Reichardt tentatively recalls The Long Goodbye’s grocery sequence when discussing Wendy’s hummed theme becoming store music. The linkage concerns sound and the isolation of being inside one’s head.",
+        "summaryKo": "라이카트는 웬디가 흥얼대는 선율이 매장 음악으로 바뀌는 장면을 설명하며 롱 굿바이의 식료품점 장면을 떠올린다. 연결점은 음향과 자기 안에 고립된 감각이다.",
+        "boundary": "Reichardt says she is sure she was thinking of it somehow, not that the films share plots. HFA dates Wendy and Lucy 2009; canonical premiere year is 2008.",
+        "filmKeys": [
+          "wendy-lucy-2008-reichardt",
+          "long-goodbye-1973-altman"
+        ],
+        "subjects": [
+          "source music",
+          "subjective sound",
+          "isolation"
+        ],
+        "kind": "influence",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "belcourt-yi-yi",
+    "url": "https://www.belcourt.org/films/yi-yi/",
+    "title": "YI YI",
+    "author": null,
+    "publisher": "The Belcourt Theatre",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Programme synopsis, first paragraph",
+      "note": "Read original publisher page; agent review only."
+    },
+    "films": [
+      {
+        "key": "yi-yi-2000-yang",
+        "title": "Yi Yi",
+        "year": 2000,
+        "director": "Edward Yang",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "beginning with a wedding and ending with a funeral",
+        "locator": "Programme synopsis, first paragraph"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The programme sets Yi Yi’s family story inside a year bounded by collective rites. NJ’s renewed attachment and Yang-Yang’s camera connect different generations through distinct attempts to grasp experience.",
+        "summaryKo": "프로그램은 결혼식에서 장례식까지 한 해의 가족사를 틀로 삼는다. NJ의 과거 인연과 양양의 카메라는 서로 다른 세대가 삶을 이해하려는 시도로 이어진다.",
+        "boundary": "Programme synopsis with a bounded interpretive reading, not an asserted connection to another film.",
+        "filmKeys": [
+          "yi-yi-2000-yang"
+        ],
+        "subjects": [
+          "generations",
+          "family ritual",
+          "photography",
+          "everyday time"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lafilmforum-land-sky-2024",
+    "url": "https://www.lafilmforum.org/assets/Uploads/Screenings/Documents/Program-notes_Sept-19-Experimentations-3.pdf",
+    "title": "Experimentations: Imag(in)ing Knowledge in Film — Program 3: Between Land and Sky, Accounting for the In-Between",
+    "author": "Jane de Almeida; Jheanelle Brown",
+    "publisher": "Los Angeles Filmforum",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": "2024-09-19",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "PDF page 2, programme introduction",
+      "note": "Opened original four-page programme PDF; retained observation refers to page 2. Brilliant Noise creator and year cross-checked at https://semiconductorfilms.com/art/brilliant-noise/."
+    },
+    "films": [
+      {
+        "key": "solar-eclipse-1900-maskelyne",
+        "title": "Solar Eclipse",
+        "year": 1900,
+        "director": "Nevil Maskelyne",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "brilliant-noise-2006-semiconductor",
+        "title": "Brilliant Noise",
+        "year": 2006,
+        "director": "Semiconductor",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "nostalgia-light-2010-guzman",
+        "title": "Nostalgia for the Light",
+        "year": 2010,
+        "director": "Patricio Guzmán",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "challenging the way it is romanticized in popular media",
+        "locator": "PDF page 2, programme introduction"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The programme moves from an early eclipse recording through raw solar-data imagery to Guzmán’s desert searches for cosmic and political histories. The sequence questions how scientific images visualize and romanticize the world.",
+        "summaryKo": "이 프로그램은 초기 일식 기록과 태양 데이터 영상에서 구스만의 우주·정치적 과거 탐색으로 이어진다. 과학적 이미지가 세계를 시각화하고 낭만화하는 방식을 상영 순서로 질문한다.",
+        "boundary": "One documented three-film programme; no all-pairs similarity or influence assertion.",
+        "filmKeys": [
+          "solar-eclipse-1900-maskelyne",
+          "brilliant-noise-2006-semiconductor",
+          "nostalgia-light-2010-guzman"
+        ],
+        "subjects": [
+          "scientific imaging",
+          "landscape",
+          "material evidence",
+          "political memory"
+        ],
+        "kind": "co_programming",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cinej-ewing-cracked-windshield",
+    "url": "https://cinej.pitt.edu/ojs/cinej/article/view/77/247",
+    "title": "Fiction Criticizing Reality: Abbas Kiarostami and the Cracked Windshield of Cinema",
+    "author": "James Blake Ewing",
+    "publisher": "CINEJ Cinema Journal",
+    "type": "academic",
+    "language": "en",
+    "publishedAt": "2014-04-08",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "open_license",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/",
+      "note": "License stated by the publisher. Retained quotation is unchanged; STRADA annotations are separately authored summaries."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "PDF page 4, paragraph beginning Kiarostami also explores",
+      "note": "Opened original publisher PDF and article landing page. Read bounded passages on pages 30–35 and conclusion 44–46. PDF states CC BY 3.0 US."
+    },
+    "films": [
+      {
+        "key": "close-up-1990-kiarostami",
+        "title": "Close-Up",
+        "year": 1990,
+        "director": "Abbas Kiarostami",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "life-nothing-more-1992-kiarostami",
+        "title": "Life, and Nothing More…",
+        "year": 1992,
+        "director": "Abbas Kiarostami",
+        "aliases": [
+          "And Life Goes On"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "olive-trees-1994-kiarostami",
+        "title": "Through the Olive Trees",
+        "year": 1994,
+        "director": "Abbas Kiarostami",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "each refers back to the previous film, exposing its nature as fiction",
+        "locator": "PDF page 4, paragraph beginning Kiarostami also explores"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Ewing connects Close-Up’s constructed documentary appearance to the Koker films’ recursive exposure of filmmaking. Surrogate directors and disrupted sound complicate any easy reconciliation of filmed reality with fiction.",
+        "summaryKo": "유잉은 클로즈업의 구성된 다큐멘터리 외관과 코케르 영화들의 자기반영적 촬영 구조를 잇는다. 감독의 대리인과 음향의 단절은 현실과 허구의 간단한 화해를 방해한다.",
+        "boundary": "An argument by Ewing, including engagement with other critics; not proof that every technical failure was accidental or deliberate.",
+        "filmKeys": [
+          "close-up-1990-kiarostami",
+          "life-nothing-more-1992-kiarostami",
+          "olive-trees-1994-kiarostami"
+        ],
+        "subjects": [
+          "reenactment",
+          "reflexivity",
+          "documentary fiction",
+          "technical failure"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cinej-nostalgia-documemory",
+    "url": "https://cinej.pitt.edu/ojs/cinej/article/download/71/226",
+    "title": "Nostalgia for the Light: A ‘Documemory’ and The Conflict between History and Memory",
+    "author": "Didem Durak",
+    "publisher": "CINEJ Cinema Journal",
+    "type": "academic",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "open_license",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/",
+      "note": "License stated by the publisher. Retained quotation is unchanged; STRADA annotations are separately authored summaries."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "PDF page 2 (journal page 127), The Main Premises: Time, Loss, and Hope",
+      "note": "Opened original publisher PDF; read abstract and introduction through journal page 128. PDF states CC BY 3.0 US."
+    },
+    "films": [
+      {
+        "key": "nostalgia-light-2010-guzman",
+        "title": "Nostalgia for the Light",
+        "year": 2010,
+        "director": "Patricio Guzmán",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "The desert is the connection between the past and the present",
+        "locator": "PDF page 2 (journal page 127), The Main Premises: Time, Loss, and Hope"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Durak reads the Atacama as both an astronomical archive and a material repository of remains. The film’s contrast between access to ancient matter and unresolved political loss exposes the difficulty of constructing Chile’s collective memory.",
+        "summaryKo": "두라크는 아타카마를 천문학적 기록과 유해의 물질적 저장소로 함께 읽는다. 오래된 물질에 접근하면서도 정치적 상실을 해결하지 못하는 대비가 집단기억의 어려움을 드러낸다.",
+        "boundary": "Bounded reading of introduction and pages 127–128; not a claim to have independently verified scientific statements in the film.",
+        "filmKeys": [
+          "nostalgia-light-2010-guzman"
+        ],
+        "subjects": [
+          "landscape archive",
+          "political disappearance",
+          "material evidence",
+          "collective memory"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "columbia-miyao-late-spring",
+    "url": "https://www.columbia.edu/cu/weai/exeas/resources/late-spring.html",
+    "title": "The Scene at the Kyoto Inn: Teaching OZU Yasujiro's Late Spring",
+    "author": "Daisuke Miyao",
+    "publisher": "Columbia University ExEAS",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Instructor’s Introduction, discussion of Bordwell and Thompson",
+      "note": "Opened full academic teaching unit. Re-cited arguments remain attributed to their original scholars; no claim of direct access to those books."
+    },
+    "films": [
+      {
+        "key": "late-spring-1949-ozu",
+        "title": "Late Spring",
+        "year": 1949,
+        "director": "Yasujiro Ozu",
+        "aliases": [
+          "Banshun"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "tokyo-ga-1985-wenders",
+        "title": "Tokyo-ga",
+        "year": 1985,
+        "director": "Wim Wenders",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "his style exceeds any unitary meaning",
+        "locator": "Instructor’s Introduction, discussion of Bordwell and Thompson"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Miyao presents competing accounts of Late Spring’s vase: emotional or transcendent unity versus a non-narrative interruption. The teaching unit asks viewers to examine shots and historical assumptions rather than equating Japanese objects with national essence.",
+        "summaryKo": "미야오는 만춘의 화병을 감정적·초월적 통일로 읽는 해석과 비서사적 방해로 읽는 해석을 병치한다. 일본적 사물을 곧바로 국민적 본질로 환원하지 말고 숏과 역사적 전제를 살피도록 한다.",
+        "boundary": "An academic teaching unit that summarizes attributed scholars, not a newly peer-reviewed article or consensus interpretation.",
+        "filmKeys": [
+          "late-spring-1949-ozu"
+        ],
+        "subjects": [
+          "non-narrative objects",
+          "critical disagreement",
+          "national identity",
+          "spectatorship"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      },
+      {
+        "id": "o2",
+        "summary": "Tokyo-ga is explicitly proposed as comparative viewing about Wenders’s encounter with Ozu’s people and places.",
+        "summaryKo": "도쿄가는 벤더스가 오즈의 사람과 장소를 만나는 비교 상영작으로 제시된다.",
+        "boundary": "Pedagogical pairing, not evidence of identical style.",
+        "filmKeys": [
+          "late-spring-1949-ozu",
+          "tokyo-ga-1985-wenders"
+        ],
+        "subjects": [
+          "cinephilia",
+          "film memory"
+        ],
+        "kind": "co_programming",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cinej-aquino-necessary-fictions-body",
+    "url": "https://cinej.pitt.edu/ojs/cinej/article/view/42/143",
+    "title": "Necessary Fictions: From Cinéma vérité to Ciné, ma vérité(s)",
+    "author": "Rowena Santos Aquino",
+    "publisher": "CINEJ Cinema Journal",
+    "type": "academic",
+    "language": "en",
+    "publishedAt": "2012-04-20",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "noncommercial",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+      "note": "License printed on publisher PDF first page. Only short quotations and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Printed p. 56 (PDF p. 7), paragraph beginning Abbas Kiarostami; Printed pp. 58–59 (PDF pp. 9–10), sequence analysis and paragraph beginning The sway",
+      "note": "Opened publisher full-text PDF and read the cited body sections. New body-grounded extraction replacing discarded abstract-only record; not a claim of exhaustive paper ingestion."
+    },
+    "films": [
+      {
+        "key": "close-up-1990-kiarostami",
+        "title": "Close-Up",
+        "year": 1990,
+        "director": "Abbas Kiarostami",
+        "aliases": [
+          "Close-up",
+          "Nema-ye Nazdik"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "life-goes-on-1992-kiarostami",
+        "title": "Life, and Nothing More...",
+        "year": 1992,
+        "director": "Abbas Kiarostami",
+        "aliases": [
+          "And Life Goes On"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "through-olive-trees-1994-kiarostami",
+        "title": "Through the Olive Trees",
+        "year": 1994,
+        "director": "Abbas Kiarostami",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "moment-innocence-1996-makhmalbaf",
+        "title": "A Moment of Innocence",
+        "year": 1996,
+        "director": "Mohsen Makhmalbaf",
+        "aliases": [
+          "Bread and Flower",
+          "Nun va Goldoon"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "initiates the systematic use of reenactment in subsequent films",
+        "locator": "Printed p. 56 (PDF p. 7), paragraph beginning Abbas Kiarostami"
+      },
+      {
+        "id": "p2",
+        "text": "These actors talk back instead of simply repeat other people’s",
+        "locator": "Printed pp. 58–59 (PDF pp. 9–10), sequence analysis and paragraph beginning The sway"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Aquino traces reenactment from Close-Up into Life, and Nothing More and Through the Olive Trees: performers’ actual lives interrupt fictional frameworks.",
+        "summaryKo": "아퀴노는 클로즈업에서 삶은 계속된다와 올리브 나무 사이로 이어지는 재연을 분석한다. 출연자의 실제 삶이 허구의 틀에 개입한다.",
+        "boundary": "A historical sequence of practices, not evidence that these films make identical political claims.",
+        "filmKeys": [
+          "close-up-1990-kiarostami",
+          "life-goes-on-1992-kiarostami",
+          "through-olive-trees-1994-kiarostami"
+        ],
+        "subjects": [
+          "reenactment",
+          "documentary fiction",
+          "performer agency"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      },
+      {
+        "id": "o2",
+        "summary": "In A Moment of Innocence, younger performers resist the older men’s instructions; the final bread-and-flower substitution transforms remembrance into a dispute between generations.",
+        "summaryKo": "순수의 순간에서 젊은 출연자들은 기성세대의 지시에 저항한다. 마지막 빵과 꽃은 과거 재연을 세대 간 논쟁으로 바꾼다.",
+        "boundary": "This is Aquino’s reading of the staging and final sequence, not a literal record of historical events.",
+        "filmKeys": [
+          "moment-innocence-1996-makhmalbaf"
+        ],
+        "subjects": [
+          "reenactment",
+          "generational conflict",
+          "memory",
+          "performer agency"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cinej-wenders-motion-body",
+    "url": "https://cinej.pitt.edu/ojs/cinej/article/download/63/230",
+    "title": "Wenders in Motion: A Study On The Way Of Characterization In Wim Wenders’ Road Movies",
+    "author": "Erman Pehlivan",
+    "publisher": "CINEJ Cinema Journal",
+    "type": "academic",
+    "language": "en",
+    "publishedAt": "2013-06-04",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "open_license",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/",
+      "note": "License printed on publisher PDF first page. Only short quotations and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Printed p. 87 (PDF p. 6), Amsterdam bus-stop Polaroid scene; Printed pp. 97–98 (PDF pp. 16–17), end of The Ozu Connection and Paris, Texas opening",
+      "note": "Opened publisher full-text PDF and read the cited body sections. New body-grounded extraction replacing discarded abstract-only record; not a claim of exhaustive paper ingestion."
+    },
+    "films": [
+      {
+        "key": "alice-cities-1974-wenders",
+        "title": "Alice in the Cities",
+        "year": 1974,
+        "director": "Wim Wenders",
+        "aliases": [
+          "Alice in den Städten"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "kings-road-1976-wenders",
+        "title": "Kings of the Road",
+        "year": 1976,
+        "director": "Wim Wenders",
+        "aliases": [
+          "Im Lauf der Zeit"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "paris-texas-1984-wenders",
+        "title": "Paris, Texas",
+        "year": 1984,
+        "director": "Wim Wenders",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Alice is the one using the camera and Philip is the subject",
+        "locator": "Printed p. 87 (PDF p. 6), Amsterdam bus-stop Polaroid scene"
+      },
+      {
+        "id": "p2",
+        "text": "They create an uneasy sense of dislocation",
+        "locator": "Printed pp. 97–98 (PDF pp. 16–17), end of The Ozu Connection and Paris, Texas opening"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Pehlivan reads Alice photographing Philip as a reversal of his habitual detached looking; their faces overlap in the Polaroid and he regains contact with the world.",
+        "summaryKo": "페흘리반은 앨리스가 필립을 촬영하는 순간을 관조적 시선의 역전으로 읽는다. 폴라로이드 속 겹친 얼굴은 세계와의 접촉을 회복한다.",
+        "boundary": "A close reading of one photographic exchange, not a general claim about photography.",
+        "filmKeys": [
+          "alice-cities-1974-wenders"
+        ],
+        "subjects": [
+          "photography",
+          "role reversal",
+          "alienation"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      },
+      {
+        "id": "o2",
+        "summary": "Pehlivan links empty framing across these films to dislocation, extending the road trilogy discussion into Travis entering the opening desert frame of Paris, Texas.",
+        "summaryKo": "텅 빈 프레임이 로드 삼부작의 소외감에서 파리 텍사스의 첫 사막 장면으로 이어진다고 분석한다.",
+        "boundary": "The article questions whether all road imagery derives from Ozu; no specific Ozu film is established as the source.",
+        "filmKeys": [
+          "alice-cities-1974-wenders",
+          "kings-road-1976-wenders",
+          "paris-texas-1984-wenders"
+        ],
+        "subjects": [
+          "empty framing",
+          "dislocation",
+          "landscape"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cinej-dogville-displacement-body",
+    "url": "https://cinej.pitt.edu/ojs/cinej/article/view/84/266",
+    "title": "The Role Of The Refugee And The Impact Of Fragmented Identities In Diasporic Filmmakers. A Review Of Dogville By Lars von Trier",
+    "author": "Sara Marino",
+    "publisher": "CINEJ Cinema Journal",
+    "type": "academic",
+    "language": "en",
+    "publishedAt": "2014-04-08",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "open_license",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/",
+      "note": "License printed on publisher PDF first page. Only short quotations and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Printed p. 141 (PDF p. 16), paragraph beginning The sad tale; surrounding pp. 140–141",
+      "note": "Opened publisher full-text PDF and read the cited body sections. New body-grounded extraction replacing discarded abstract-only record; not a claim of exhaustive paper ingestion."
+    },
+    "films": [
+      {
+        "key": "dogville-2003-trier",
+        "title": "Dogville",
+        "year": 2003,
+        "director": "Lars von Trier",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Its minimal set, sparse lighting, chalk painted streets",
+        "locator": "Printed p. 141 (PDF p. 16), paragraph beginning The sad tale; surrounding pp. 140–141"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Marino reads the chalk streets and absent walls as a liminal space: Grace is apparently admitted but never becomes a citizen. Staging exposes conditional hospitality and collective exclusion.",
+        "summaryKo": "마리노는 분필 거리와 벽의 부재를 경계적 공간으로 읽는다. 그레이스는 받아들여진 듯하지만 시민이 되지 못하며 조건부 환대와 집단 배제가 드러난다.",
+        "boundary": "This applies Naficy’s framework to Dogville; it does not establish von Trier’s personal experience as a refugee.",
+        "filmKeys": [
+          "dogville-2003-trier"
+        ],
+        "subjects": [
+          "conditional hospitality",
+          "theatrical space",
+          "exclusion",
+          "displacement"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cinej-maison-petits-cubes-body",
+    "url": "https://cinej.pitt.edu/ojs/cinej/article/view/86/267",
+    "title": "Pattern of the Body Image in La Maison en Petits Cubes on the Basis of Milieu and Individual Relationship",
+    "author": "Yasemin Kılınçarslan",
+    "publisher": "CINEJ Cinema Journal",
+    "type": "academic",
+    "language": "en",
+    "publishedAt": "2014-04-08",
+    "checkedAt": "2026-09-20T00:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "open_license",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/",
+      "note": "License printed on publisher PDF first page. Only short quotations and original annotations retained."
+    },
+    "verification": {
+      "method": "web_open",
+      "locator": "Printed p. 158 (PDF p. 9), The Milieu as an Integration with Body-City; also p. 156",
+      "note": "Opened publisher full-text PDF and read the cited body sections. New body-grounded extraction replacing discarded abstract-only record; not a claim of exhaustive paper ingestion."
+    },
+    "films": [
+      {
+        "key": "maison-petits-cubes-2008-kato",
+        "title": "La Maison en Petits Cubes",
+        "year": 2008,
+        "director": "Kunio Kato",
+        "aliases": [
+          "The House of Small Cubes",
+          "Tsumiki no Ie"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Space narrows; time passes, body grows old.",
+        "locator": "Printed p. 158 (PDF p. 9), The Milieu as an Integration with Body-City; also p. 156"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Kılınçarslan connects the house’s submerged floors with successive lived experiences and an aging body. Retrieving the pipe turns a physical dive into recovered family memory.",
+        "summaryKo": "수몰된 집의 각 층은 지나온 삶과 노화하는 몸에 대응한다. 파이프를 찾는 잠수는 가족의 기억을 되찾는 과정이 된다.",
+        "boundary": "A spatial and bodily reading of this short; no direct comparison to another film is made.",
+        "filmKeys": [
+          "maison-petits-cubes-2008-kato"
+        ],
+        "subjects": [
+          "architecture",
+          "embodied memory",
+          "aging",
+          "ecological space"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  }
+]

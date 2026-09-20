@@ -1,0 +1,79 @@
+{
+  "reason": "User excluded abstract-only academic records. Metadata retained solely as a future full-text reading queue, not active evidence.",
+  "documents": [
+    {
+      "id": "cinej-aquino-necessary-fictions",
+      "url": "https://cinej.pitt.edu/ojs/cinej/article/view/42",
+      "title": "Necessary Fictions: From Cinéma vérité to Ciné, ma vérité(s)",
+      "publisher": "CINEJ Cinema Journal",
+      "excludedReason": "abstract_only_not_full_paper_read",
+      "replacementFullTextRecordId": "cinej-aquino-necessary-fictions-body"
+    },
+    {
+      "id": "cinej-wenders-motion",
+      "url": "https://cinej.pitt.edu/ojs/cinej/article/view/63",
+      "title": "Wenders in Motion: A Study On The Way Of Characterization In Wim Wenders’ Road Movies",
+      "publisher": "CINEJ Cinema Journal",
+      "excludedReason": "abstract_only_not_full_paper_read",
+      "replacementFullTextRecordId": "cinej-wenders-motion-body"
+    },
+    {
+      "id": "cinej-neorealism-compulsory",
+      "url": "https://cinej.pitt.edu/ojs/cinej/article/view/73",
+      "title": "Defining Italian Neorealism: A Compulsory Movement",
+      "publisher": "CINEJ Cinema Journal",
+      "excludedReason": "abstract_only_not_full_paper_read"
+    },
+    {
+      "id": "cinej-dogville-displacement",
+      "url": "https://cinej.pitt.edu/ojs/cinej/article/view/84",
+      "title": "The Role Of The Refugee And The Impact Of Fragmented Identities In Diasporic Filmmakers. A Review Of Dogville By Lars von Trier",
+      "publisher": "CINEJ Cinema Journal",
+      "excludedReason": "abstract_only_not_full_paper_read",
+      "replacementFullTextRecordId": "cinej-dogville-displacement-body"
+    },
+    {
+      "id": "cinej-maison-petits-cubes",
+      "url": "https://cinej.pitt.edu/ojs/cinej/article/view/86",
+      "title": "Pattern of the Body Image in La Maison en Petits Cubes on the Basis of Milieu and Individual Relationship",
+      "publisher": "CINEJ Cinema Journal",
+      "excludedReason": "abstract_only_not_full_paper_read",
+      "replacementFullTextRecordId": "cinej-maison-petits-cubes-body"
+    },
+    {
+      "id": "cinej-time-love-national-cinema",
+      "url": "https://cinej.pitt.edu/ojs/cinej/article/view/57",
+      "title": "Auteur and Style in National Cinema: A Reframing of Metin Erksan's Time To Love",
+      "publisher": "CINEJ Cinema Journal",
+      "excludedReason": "abstract_only_not_full_paper_read"
+    },
+    {
+      "id": "esla-nostalgia-ecocinema",
+      "url": "https://esla.letras.uc.cl/index.php/esla/article/view/62259",
+      "title": "Every Night the Universe Passes over Santiago. Transnational “Ecocinema” and Visualising Environmental Histories in Patricio Guzmán’s Nostalgia for the Light",
+      "publisher": "English Studies in Latin America",
+      "excludedReason": "abstract_only_not_full_paper_read"
+    },
+    {
+      "id": "cinej-breaking-waves-substitution",
+      "url": "https://cinej.pitt.edu/ojs/cinej/article/view/55",
+      "title": "Same Story But Different Cover: The Substitution Principle in Religion and Understanding It Through Watching Films",
+      "publisher": "CINEJ Cinema Journal",
+      "excludedReason": "abstract_only_not_full_paper_read"
+    },
+    {
+      "id": "cinej-gandhi-intertextual",
+      "url": "https://cinej.pitt.edu/ojs/cinej/article/view/66",
+      "title": "The Tale Of Gandhi Through The Lens: An Inter-Textual Analytical Study Of Three Major Films- Gandhi, The Making Of The Mahatma, And Gandhi, My Father",
+      "publisher": "CINEJ Cinema Journal",
+      "excludedReason": "abstract_only_not_full_paper_read"
+    },
+    {
+      "id": "kino-early-summer-time-image",
+      "url": "https://ojs.lib.uwo.ca/index.php/kino/article/view/6288",
+      "title": "Deleuze and the Time-Image in Early Summer",
+      "publisher": "Kino: The Western Undergraduate Film Studies Journal",
+      "excludedReason": "abstract_only_not_full_paper_read"
+    }
+  ]
+}

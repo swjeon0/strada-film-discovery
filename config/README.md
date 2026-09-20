@@ -1,5 +1,18 @@
 # STRADA 모델과 프롬프트 실험
 
+## 현재 추천 목록 경로
+
+현재 `/api/recommendations`의 12편 목록은 아래의 단일 경로를 사용합니다.
+
+- 운영 모델·시간·출력 예산: `lib/server/curator-production.ts`의 `PRODUCTION_CURATOR_SETTINGS`
+- 문헌 저장소: `lib/server/knowledge/corpus.ts`, 수집 자료: `research/knowledge/records`, 절차: `research/knowledge/README.md`
+- 큐레이션 프롬프트: `lib/server/curator-v1/curate.ts`의 `SYSTEM_V2`
+- 식별 실패 슬롯 프롬프트: 같은 파일의 `REPAIR_SYSTEM`
+- 같은 평가 입력에서 모델 비교: `npm run benchmark:curator-v1 -- --run --case all --models 모델명 --out work/결과.json`
+- 프롬프트와 문헌 유무의 블라인드 비교: `npm run evaluate:curator-v1-quality -- --run --case all --model 모델명 --out work/결과.json`
+
+운영 모델을 바꾸지 않고 실험하려면 먼저 CLI의 `--models`만 바꿉니다. 프롬프트는 `SYSTEM_V2`를 복사해 버전을 하나 더 만든 뒤 `promptVersion`으로 분기해야 같은 조건을 재현할 수 있습니다. 아래의 프로필 설명은 상세 설명과 보관 중인 이전 다단계 파이프라인에 적용되며, 현재 12편 목록의 `PRODUCTION_CURATOR_SETTINGS`를 덮어쓰지 않습니다.
+
 운영 화면에는 설정 버튼을 추가하지 않았습니다. 아래 설정은 서버에서만 읽으며 방문자가 모델이나 프롬프트를 바꿀 수 없습니다. API 키는 기존 `.env.local` 또는 Vercel 환경 변수에 둡니다.
 
 ## 모델 바꾸기
@@ -45,7 +58,7 @@ export const curationPromptAdditions = {
 
 모델 파일이나 프롬프트 변경은 개발 서버 재시작 후 적용됩니다. 운영 사이트에는 GitHub에 올려 Vercel 새 배포가 완료되어야 적용됩니다. 환경 변수만 바꿨을 때도 Vercel에서 새 배포가 필요합니다. 실험 호출은 설정된 모델의 API 사용량으로 청구됩니다.
 
-## 같은 후보로 모델 비교하기
+## 보관용 구형 다단계 벤치마크 (현재 서비스에서 사용하지 않음)
 
 프로젝트 폴더에서 실행합니다. `.env.local`을 자동으로 읽습니다. `--run`이 없으면 설정만 출력하고 외부 API를 호출하지 않습니다.
 

@@ -120,6 +120,8 @@ test('a canceled stage retains completed verified articles and stops waiting on 
 test('usage estimates apply the selected model and cached input prices without double counting a reported search block',()=>{
  const mini=responseUsage({model:'gpt-5.4-mini-2026-03-17',usage:{input_tokens:1000,output_tokens:100,input_tokens_details:{cached_tokens:400}}},'gpt-5.4-mini');
  assert.equal(mini.cachedInputTokens,400);assert.ok(Math.abs(mini.estimatedUsd-.00093)<1e-10);
+ const flagship=responseUsage({model:'gpt-5.4-2026-03-05',usage:{input_tokens:1000,output_tokens:100,input_tokens_details:{cached_tokens:400}}},'gpt-5.4');
+ assert.ok(Math.abs(flagship.estimatedUsd-.0031)<1e-10);
  const output=[{type:'web_search_call'}];
  const small=responseUsage({usage:{input_tokens:100,output_tokens:0},output},'gpt-4.1-mini');
  assert.equal(small.estimatedSearchContentTokens,8000);assert.ok(Math.abs(small.estimatedUsd-.01324)<1e-10);

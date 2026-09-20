@@ -59,6 +59,7 @@ function setup(t:{after:(callback:()=>void)=>void},name:string,holdDraft=false,s
     if(scenario.missingIndices?.includes(films.indexOf(film)))return Response.json({results:[]});
     return Response.json({results:[{id:Number(film.id.slice(5)),title:film.title,release_date:`${film.year}-01-01`,poster_path:`/preparation-${film.id.slice(5)}.jpg`}]});
    }
+   if(parsed.pathname==='/3/search/person')return Response.json({results:[]});
    const match=/^\/3\/movie\/(\d+)$/.exec(parsed.pathname);
    if(match){const film=films.find(film=>film.id===`tmdb:${match[1]}`);assert.ok(film);return Response.json({id:Number(match[1]),title:film.title,original_title:film.title,release_date:`${film.year}-01-01`,poster_path:`/preparation-${match[1]}.jpg`,overview:'A verified database synopsis.',credits:{crew:[{job:'Director',name:film.director}]},translations:{translations:[{iso_639_1:'ko',data:{title:film.titleKo,overview:'검증된 데이터베이스 줄거리.'}}]},genres:[],production_countries:[]});}
   }

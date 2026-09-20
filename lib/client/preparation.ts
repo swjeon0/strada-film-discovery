@@ -8,7 +8,7 @@ export function discoveryInput(session:Session,language:Language,intent:Research
  const base=session.snapshots[session.cursor],continuing=intent!=='initial';
  const seeds=continuing?base?.seeds??[]:session.seedDraft,trail=continuing?[...base?.trail??[]]:[];
  if((intent==='follow'||intent==='manual')&&film)trail.push(film);
- return {requestId:crypto.randomUUID(),baseSnapshotId:base?.id??null,seeds:seeds.map(f=>f.id),trail:trail.map(f=>f.id),language,intent,previousIds:continuing?base?.recommendations.map(r=>r.film.id)??[]:[],...(continuing&&base?.preparationToken?{preparationToken:base.preparationToken}:{}),...discoveryHistoryContext(session,continuing)};
+ return {requestId:crypto.randomUUID(),baseSnapshotId:base?.id??null,seeds:seeds.map(f=>f.id),trail:trail.map(f=>f.id),language,intent,previousIds:continuing?base?.recommendations.map(r=>r.film.id)??[]:[],...discoveryHistoryContext(session,continuing)};
 }
 
 /** Reuse only the exact selected path, exclusion history, language, and action. */

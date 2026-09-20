@@ -1,0 +1,74 @@
+{
+  "admissionPolicy": "academic_full_text_only",
+  "pythonTests": 31,
+  "realFirstMs": 72.29,
+  "realSecondMs": 29.98,
+  "realArtifactIdentical": true,
+  "realDatabaseCountsIdentical": true,
+  "realCurrentStats": {
+    "documents": 44,
+    "versions": 44,
+    "films": 59,
+    "passages": 46,
+    "observations": 52,
+    "evidenceLinks": 52,
+    "agentReviewed": 44,
+    "humanApproved": 0,
+    "commercialOnly": false,
+    "byType": {
+      "academic": 6,
+      "criticism": 26,
+      "festival": 0,
+      "programme": 12
+    },
+    "byRights": {
+      "metadata_only": 0,
+      "noncommercial": 1,
+      "open_license": 5,
+      "restricted_excerpt": 38
+    },
+    "quoteVerification": "agent_source_access_reported; offline_quote_match_not_performed"
+  },
+  "realDatabaseCounts": {
+    "sources": 54,
+    "document_versions": 81,
+    "film_entities": 71,
+    "passages": 83,
+    "observations": 93,
+    "evidence_links": 93,
+    "review_events": 81,
+    "ingestion_jobs": 7,
+    "quarantine_errors": 2,
+    "active_sources": 44
+  },
+  "realArtifactBytes": 123696,
+  "coldRebuildCorpusVersionMatches": true,
+  "syntheticScale": {
+    "documents": 2000,
+    "batchSize": 200,
+    "batchCount": 10,
+    "firstBuildMs": 1565.73,
+    "unchangedBuildMs": 665.88,
+    "databaseCountsIdentical": true,
+    "corpusVersionIdentical": true,
+    "quarantined": 0,
+    "sqliteIntegrity": "ok",
+    "foreignKeyErrors": 0,
+    "note": "Synthetic copies test ingestion mechanics only, not document quality, network fetching, embedding cost, or production retrieval scaling."
+  },
+  "timestamp": "2026-09-20T20:19:42.716Z",
+  "corpusVersion": "9995462c2933930656f8bc5052e6063cdc6cf14d4dbb7e9e66b2f087a4675f06",
+  "embeddingPersistence": {
+    "checkedAt": "2026-09-20T20:32:25.473145+00:00",
+    "model": "text-embedding-3-small",
+    "dimensions": 256,
+    "insertedOnFirstImport": 52,
+    "insertedOnSecondImport": 0,
+    "reusedOnSecondImport": 52,
+    "apiCalls": 0,
+    "rows": 52,
+    "activeRows": 52,
+    "legacyGenerationTimeUnknownRows": 52,
+    "foreignKeyErrors": 0
+  }
+}

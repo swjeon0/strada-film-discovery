@@ -12,7 +12,15 @@
     "lint": "eslint app components lib hooks tests --ignore-pattern dist --ignore-pattern .next",
     "test": "node --import tsx --test tests/*.test.ts",
     "typecheck": "tsc --noEmit",
-    "benchmark": "node --import tsx scripts/benchmark-curation.ts"
+    "benchmark": "node --import tsx scripts/benchmark-curation.ts",
+    "benchmark:curator-v1": "node --import tsx scripts/benchmark-curator-v1.ts",
+    "evaluate:curator-v1-quality": "node --import tsx scripts/evaluate-curator-v1-quality.ts",
+    "score:curator-v1-quality": "node --import tsx scripts/score-curator-v1-quality.ts",
+    "diagnose:curator-v1-relation-recall": "node --import tsx scripts/diagnose-curator-v1-relation-recall.ts",
+    "knowledge:build": "python3 scripts/build-knowledge.py --audit",
+    "knowledge:embed": "node --import tsx scripts/embed-knowledge.ts",
+    "knowledge:audit": "node --import tsx scripts/audit-knowledge-sources.ts",
+    "knowledge:test": "python3 -m unittest discover -s research/knowledge/tests"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
