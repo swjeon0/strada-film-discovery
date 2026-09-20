@@ -10,6 +10,7 @@ import {prepareAnchorReferences,peekAnchorReferences} from './anchor-research';
 import {normalizedText,filmMentioned} from './grounding';
 import {emptyUsage,sumUsage,findCuratorialReferences,type ResearchUsage,type Reference,type CuratorialQuery} from './source-search';
 import {issuePreparationToken,readPreparationToken,PREPARATION_TTL,type Preparation} from './preparation-token';
+import {CRITICAL_CORPUS_VERSION,corpusOperationQuery,retrieveCorpusSignals} from './critical-corpus';
 
 export type DiscoveryTimings={metadataMs:number;anchorResearchMs:number;draftMs:number;candidateResolutionMs:number;focusedResearchMs:number;prepareMs:number;selectionMs:number;writingMs?:number;decisionReused?:boolean;totalMs:number;preparationReused:boolean};
 export type PreparedResult={preparation:Preparation;preparationToken?:string;seeds:Film[];trail:Film[];usage:ResearchUsage;timings:DiscoveryTimings};
@@ -17,7 +18,7 @@ type PreparedWork={preparation:Preparation;usage:ResearchUsage;timings:Discovery
 const completed=new Map<string,{at:number,value:PreparedWork}>();
 type Job={promise:Promise<PreparedWork>,controller:AbortController,subscribers:number,settled:boolean};
 const inFlight=new Map<string,Job>();
-export function preparationFingerprint(){const s=curationSettings();return createHash('sha256').update('strada-preparation-v1:'+s.stageFingerprints.draft+':'+s.stageFingerprints.search).digest('hex');}
+export function preparationFingerprint(){const s=curationSettings();return createHash('sha256').update('strada-preparation-v2:'+CRITICAL_CORPUS_VERSION+':'+s.stageFingerprints.draft+':'+s.stageFingerprints.search).digest('hex');}
 export function selectedInput(films:Film[],language:ResearchOptions['language']){
  return weights(films,[]).sort((a,b)=>a.film.id.localeCompare(b.film.id)).map(({film,weight},i)=>({code:`a${i}`,id:film.id,title:film.title,titleKo:film.titleKo,displayTitle:titleOf(film,language),year:film.year,director:film.director,weight,overview:(film.overviewEn||film.synopsisEn||film.overviewKo||'').slice(0,1000),country:film.country}));
 }
@@ -66,7 +67,7 @@ export function balanceReferences(references:Reference[],films:Film[],limit=12){
 }
 async function buildPreparation(films:Film[],seenIds:string[],discovered:DiscoveredFilm[],options:ResearchOptions,fingerprint:string,callerSignal:AbortSignal,prior:Preparation|null=null,allowRetainedCandidates=false):Promise<PreparedWork>{
  const started=Date.now(),controller=new AbortController(),signal=AbortSignal.any([callerSignal,controller.signal,AbortSignal.timeout(60000)]),timings=zeroTimings();
- const anchors=selectedInput(films,options.language),anchorMap=new Map(anchors.map(a=>[a.code,a.id]));
+ const anchors=selectedInput(films,options.language),anchorMap=new Map(anchors.map(a=>[a.code,a.id])),corpusSignals=retrieveCorpusSignals(films);
  const eligible=prior&&allowRetainedCandidates?eligiblePreparedCandidates(prior,seenIds,options):[];
  // A changed selected set inherits readings only. Its old candidate arguments
  // must be rebuilt around the new whole path with equal selected-film weights.
@@ -77,7 +78,7 @@ async function buildPreparation(films:Film[],seenIds:string[],discovered:Discove
  const anchorPromise=prepareAnchorReferences(films.filter(f=>!inheritedCoverage.includes(f.id)),{remaining:32,signal},signal).catch(()=>({references:[] as Reference[],usage:emptyUsage(config().searchModel),elapsedMs:0,coveredFilmIds:[] as string[]}));
  try{
   const draftStarted=Date.now();
-  const planned=await curatorResponse('draft',curationDraftSchema(anchors.map(a=>a.code),candidateCount),CURATOR_DRAFT_PROMPT,{language:options.language,intent:options.intent,requestedCandidateCount:candidateCount,selected:anchors,selectedFilmReferences:balanceReferences([...inheritedReferences,...peekAnchorReferences(films)],films,6).map(ref=>({title:ref.source.title,discussedFilmIds:ref.anchorIds,excerpt:ref.text.slice(0,4000)})),avoidPreviouslyDisplayed:discovered.slice(-120).map(f=>({title:f.title,year:f.year,director:f.director})),...(retained.length?{retainedLenses:prior!.lenses,retainedCandidates:retained.map(row=>({code:row.code,title:row.film.title,year:row.film.year,director:row.film.director,lens:row.draft.lens,bridge:row.draft.bridge}))}:{})},signal,retained.length?3000:4400,35000);
+  const planned=await curatorResponse('draft',curationDraftSchema(anchors.map(a=>a.code),candidateCount),CURATOR_DRAFT_PROMPT,{language:options.language,intent:options.intent,requestedCandidateCount:candidateCount,selected:anchors,reviewedCorpusSignals:corpusSignals.map(({id,sourceType,sourceTitle,entities,operation,claim,boundary,hook,matchedFilmIds})=>({id,sourceType,sourceTitle,entities,operation,claim,boundary,hook,matchedFilmIds})),selectedFilmReferences:balanceReferences([...inheritedReferences,...peekAnchorReferences(films)],films,6).map(ref=>({title:ref.source.title,discussedFilmIds:ref.anchorIds,excerpt:ref.text.slice(0,4000)})),avoidPreviouslyDisplayed:discovered.slice(-120).map(f=>({title:f.title,year:f.year,director:f.director})),...(retained.length?{retainedLenses:prior!.lenses,retainedCandidates:retained.map(row=>({code:row.code,title:row.film.title,year:row.film.year,director:row.film.director,lens:row.draft.lens,bridge:row.draft.bridge}))}:{})},signal,retained.length?3000:4400,35000);
   timings.draftMs=Date.now()-draftStarted;
   const parsed=DraftSchema.safeParse(planned.output);if(!parsed.success)throw new AppError('INVALID_RESEARCH','The curator’s film plan could not be read.');
   const draft=parsed.data,lenses=new Map(draft.lenses.map(l=>[l.id,l]));
@@ -89,11 +90,13 @@ async function buildPreparation(films:Film[],seenIds:string[],discovered:Discove
   if(!candidates.length&&!retained.length)throw new AppError('INVALID_RESEARCH','No complete film candidates were generated.');
   const offset=retained.reduce((max,row)=>Math.max(max,/^c\d+$/.test(row.code)?Number(row.code.slice(1))+1:0),0);
   const provisional:Film[]=candidates.map((c,i)=>({id:`candidate:${offset+i}`,title:c.title,year:c.year,director:c.director,poster:''}));
-  const focused:CuratorialQuery[]=draft.queries.filter(q=>q.purpose!=='anchor').slice(0,1).map(q=>({query:q.query,purpose:q.purpose,filmIds:[...new Set([...q.anchors.map(code=>anchorMap.get(code)).filter((id):id is string=>!!id),...provisional.filter(f=>filmMentioned(q.query,f)).map(f=>f.id)])]}));
+  const draftFocused:CuratorialQuery[]=draft.queries.filter(q=>q.purpose!=='anchor').slice(0,2).map(q=>({query:q.query,purpose:q.purpose,filmIds:[...new Set([...q.anchors.map(code=>anchorMap.get(code)).filter((id):id is string=>!!id),...provisional.filter(f=>filmMentioned(q.query,f)).map(f=>f.id)])]}));
+  const operationQuery=corpusOperationQuery(corpusSignals,films);
+  const focused=[...new Map([...(operationQuery?draftFocused.slice(0,1):draftFocused),...(operationQuery?[operationQuery]:[])].map(query=>[normalizedText(query.query),query])).values()].slice(0,2);
   const resolutionStarted=Date.now(),focusStarted=Date.now();
   const [resolved,focus,anchorResult]=await Promise.all([
    resolveCandidates(candidates,{remaining:110,signal:AbortSignal.any([signal,AbortSignal.timeout(20000)])}).then(result=>{timings.candidateResolutionMs=Date.now()-resolutionStarted;return result;}),
-   (focused.length?findCuratorialReferences([...films,...provisional],focused,{remaining:12,signal},AbortSignal.any([signal,AbortSignal.timeout(10000)])):Promise.resolve({references:[],usage:emptyUsage(config().searchModel)})).catch(()=>({references:[] as Reference[],usage:emptyUsage(config().searchModel)})).then(result=>{timings.focusedResearchMs=Date.now()-focusStarted;return result;}),
+   (focused.length?findCuratorialReferences([...films,...provisional],focused,{remaining:16,signal},AbortSignal.any([signal,AbortSignal.timeout(12000)])):Promise.resolve({references:[],usage:emptyUsage(config().searchModel)})).catch(()=>({references:[] as Reference[],usage:emptyUsage(config().searchModel)})).then(result=>{timings.focusedResearchMs=Date.now()-focusStarted;return result;}),
    anchorPromise,
   ]);
   signal.throwIfAborted();timings.anchorResearchMs=anchorResult.elapsedMs;
@@ -102,13 +105,18 @@ async function buildPreparation(films:Film[],seenIds:string[],discovered:Discove
   const used=new Set(retained.map(row=>row.film.id));const fresh=resolved.flatMap((film,i)=>{if(!film||forbidden.has(film.id)||used.has(film.id))return [];used.add(film.id);return [{code:`c${offset+i}`,draft:candidates[i],film}];});
   const verified=[...retained,...fresh].slice(0,32);
   if(!verified.length)throw new AppError(options.intent==='regenerate'?'NO_NEW_FILMS':'FILM_RESOLUTION_FAILED','No new verified films were found. Your current path is unchanged.');
+  const expandedCorpusSignals=retrieveCorpusSignals([...films,...verified.map(row=>row.film)]),selectedIds=new Set(films.map(film=>film.id)),candidateIds=new Set(verified.map(row=>row.film.id));
+  const bridgeSignals=expandedCorpusSignals.filter(signal=>signal.matchedFilmIds.some(id=>selectedIds.has(id))&&signal.matchedFilmIds.some(id=>candidateIds.has(id)));
+  // Direct seed-to-candidate records form the strongest two-hop path. Preserve
+  // seed-only hypotheses too so the final curator can reject a weak expansion.
+  const finalCorpusSignals=[...new Map([...bridgeSignals,...corpusSignals,...expandedCorpusSignals].map(signal=>[signal.id,signal])).values()].slice(0,8);
   const references=balanceReferences([...inheritedReferences,...anchorResult.references,...focus.references].map(ref=>({...ref,anchorIds:ref.anchorIds.map(id=>canonical.get(id)||id)})),films);
   const coveredFilmIds=[...new Set([...inheritedCoverage,...anchorResult.coveredFilmIds])].sort();
   const queries=[...new Map([...(retained.length?prior!.queries:[]),...draft.queries].map(query=>[normalizedText(query.query),query])).values()].slice(0,6);
-  const preparation:Preparation={version:1,issued:Date.now(),fingerprint,language:options.language,selected:films,lenses:[...lenses.values()].slice(0,3),queries,candidates:verified,references,coveredFilmIds};
+  const preparation:Preparation={version:1,issued:Date.now(),fingerprint,language:options.language,selected:films,lenses:[...lenses.values()].slice(0,3),queries,candidates:verified,references,corpusSignals:finalCorpusSignals,coveredFilmIds};
   timings.prepareMs=Date.now()-started;timings.totalMs=timings.prepareMs;
   const usage=sumUsage(sumUsage(planned.usage,anchorResult.usage),focus.usage);
-  console.info('STRADA preparation audit',{timings,selected:films.length,covered:coveredFilmIds.length,retained:retained.length,requested:candidateCount,added:fresh.length,candidates:verified.length,references:references.length,usage});
+  console.info('STRADA preparation audit',{timings,selected:films.length,covered:coveredFilmIds.length,corpusSignals:finalCorpusSignals.length,corpusBridges:bridgeSignals.length,retained:retained.length,requested:candidateCount,added:fresh.length,candidates:verified.length,references:references.length,usage});
   return {preparation,usage,timings};
  }finally{controller.abort();}
 }

@@ -12,6 +12,7 @@ import {issuePreparationToken} from './preparation-token';
 import {curationSettings} from './curation-settings';
 import {issueDetailToken} from './curation-detail';
 import {localizeTitles} from '../i18n';
+import {softlyDiversifyRanking} from './curation-gates';
 
 export const RESEARCH_PROMPT=CURATOR_DRAFT_PROMPT;
 export type ResearchResult={batch:Batch,seeds:Film[],trail:Film[],usage:ResearchUsage,timings:DiscoveryTimings};
@@ -49,7 +50,7 @@ async function runResearch(seedIds:string[],trailIds:string[],seenIds:string[],d
  const byCode=new Map(verified.map(row=>[row.code,row]));
  const selectionStarted=Date.now();
  const decisionReused=!!usableDecision(preparation,films,seenIds,options);
- let ranking=verified.map(row=>row.code),rejected=new Set<string>(),curated=new Map<string,ReturnType<typeof CuratedFilm.parse>>(),curationFallback=false;
+ let ranking=softlyDiversifyRanking(verified.map(row=>row.code),byCode),rejected=new Set<string>(),curated=new Map<string,ReturnType<typeof CuratedFilm.parse>>(),curationFallback=false;
  try{
   const saved=usableDecision(preparation,films,seenIds,options);
   const selected=saved?{decision:saved,usage:{...emptyUsage(curationSettings().stages.curate.model),cached:true}}:await criticalPlan(preparation,films,seenIds,options,signal,Math.min(40000,Math.max(1,deadline-Date.now()-19000)));

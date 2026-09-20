@@ -89,7 +89,9 @@ test('failed live source searches still produce 12 verified AI recommendations w
  assert.deepEqual(result.batch.sources,[]);
  assert.ok(result.batch.recommendations.every(rec=>RecommendationSchema.safeParse(rec).success&&rec.connections.every(connection=>connection.relation==='ai_inference'&&connection.whyKo===connection.why)&&!!rec.curation&&!!rec.detailToken));
  assert.deepEqual(resultIds(result),ids(fixture.films.slice(0,12)));
- assert.equal(fixture.calls.draft,1);assert.equal(fixture.calls.curate,1);assert.equal(fixture.calls.search,2);
+ // One selected-film search plus a draft lens query and a reviewed-corpus
+ // operation query; failures still fall back to honest AI curation.
+ assert.equal(fixture.calls.draft,1);assert.equal(fixture.calls.curate,1);assert.equal(fixture.calls.search,3);
  assert.equal(fixture.modelInputs[0].input.language,'ko');
  assert.deepEqual(fixture.modelInputs[0].input.selected.map((film:{id:string})=>film.id),['closeup']);
 });

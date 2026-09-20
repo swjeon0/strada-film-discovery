@@ -6,6 +6,7 @@ import {curationSettings} from './curation-settings';
 import {curatorResponse} from './curator-model';
 import {eligiblePreparedCandidates,selectedInput} from './preparation';
 import {CriticalDecisionSchema,type Preparation} from './preparation-token';
+import {prioritizeSupportedCoverage,sanitizePlanEvidence,softlyDiversifyRanking} from './curation-gates';
 
 export type CriticalDecision=NonNullable<Preparation['decision']>;
 function context(preparation:Preparation,films:Film[],seenIds:string[],options:ResearchOptions){
@@ -14,12 +15,13 @@ function context(preparation:Preparation,films:Film[],seenIds:string[],options:R
  const references=preparation.references.map((reference,i)=>({code:`s${i}`,title:reference.source.title,kind:reference.source.type,discussedFilmIds:reference.anchorIds,excerpt:reference.text}));
  const input={
   language:options.language,intent:options.intent,selected,lenses:preparation.lenses,references,
+  reviewedCorpusSignals:(preparation.corpusSignals??[]).map(({id,sourceType,sourceTitle,entities,operation,claim,boundary,hook,matchedFilmIds})=>({id,sourceType,sourceTitle,entities,operation,claim,boundary,hook,matchedFilmIds})),
   freshness:{previousIds,maximumPreviousOverlap:options.intent==='follow'||options.intent==='manual'?5:0},
   verifiedCandidates:verified.map(row=>({code:row.code,id:row.film.id,...row.draft,title:row.film.title,titleKo:row.film.titleKo,displayTitle:titleOf(row.film,options.language),year:row.film.year,director:row.film.director,overview:(row.film.overviewEn||row.film.synopsisEn||'').slice(0,700),previouslyShown:seen.includes(row.film.id),inPreviousList:previousIds.includes(row.film.id)})),
  };
  // Include all historical IDs, even those absent from the current pool. Also
  // bind the actual passages/notes, not only film identities or a timestamp.
- const fingerprint=createHash('sha256').update(JSON.stringify({version:'strada-critical-context-v1',preparation:preparation.fingerprint,seen,input})).digest('hex');
+ const fingerprint=createHash('sha256').update(JSON.stringify({version:'strada-critical-context-v2',preparation:preparation.fingerprint,seen,input})).digest('hex');
  return {selected,verified,references,input,fingerprint};
 }
 
@@ -44,9 +46,13 @@ export async function criticalPlan(preparation:Preparation,films:Film[],seenIds:
  if(!byCode.size)throw new AppError('NO_NEW_FILMS','No eligible prepared candidates remain. Prepare another film pool.',400);
  const result=await curatorResponse('curate',curationSelectionSchema([...byCode.keys()],prepared.selected.map(row=>row.code),prepared.references.map(row=>row.code)),CURATOR_SELECT_PROMPT,prepared.input,signal,3600,Math.max(1,Math.min(40000,timeoutMs)));
  const output=CurationSchema.safeParse(result.output);if(!output.success)throw new AppError('INVALID_RESEARCH','The final curation was incomplete.');
- const ranking=[...new Set([...output.data.ranking,...byCode.keys()])].filter(code=>byCode.has(code));
+ let ranking=[...new Set([...output.data.ranking,...byCode.keys()])].filter(code=>byCode.has(code));
  const rejected=[...new Set(output.data.rejected.filter(code=>byCode.has(code)))];
- const recommendations=[...new Map(output.data.recommendations.flatMap(value=>{const parsed=CuratedFilm.safeParse(value);return parsed.success&&byCode.has(parsed.data.candidate)?[[parsed.data.candidate,parsed.data] as const]:[];})).values()];
+ const filmById=new Map(films.map(film=>[film.id,film])),anchors=new Map(prepared.selected.flatMap(anchor=>{const film=filmById.get(anchor.id);return film?[[anchor.code,film] as const]:[];})),referenceMap=new Map(preparation.references.map((reference,index)=>[`s${index}`,reference]));
+ const plans=new Map(output.data.recommendations.flatMap(value=>{const parsed=CuratedFilm.safeParse(value);if(!parsed.success)return [];const candidate=byCode.get(parsed.data.candidate);return candidate?[[parsed.data.candidate,sanitizePlanEvidence(parsed.data,candidate.film,referenceMap,anchors)] as const]:[];}));
+ ranking=prioritizeSupportedCoverage(ranking,plans,anchors);
+ ranking=softlyDiversifyRanking(ranking,byCode);
+ const recommendations=[...plans.values()];
  if(!recommendations.length)throw new AppError('INVALID_RESEARCH','No complete critical decisions were generated.');
  const decision:CriticalDecision={fingerprint:result.settingsFingerprint,contextFingerprint:prepared.fingerprint,ranking,recommendations,rejected};
  signal.throwIfAborted();return {decision,usage:result.usage,elapsedMs:Date.now()-started};
