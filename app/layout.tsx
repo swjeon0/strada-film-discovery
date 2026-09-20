@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "STRADA — Find your way through film",
-  description: "Discover films through criticism, scholarship and festival writing. One film leads to another. Find your own route through cinema.",
+  description:
+    "Discover films through criticism, scholarship and festival writing. One film leads to another. Find your own route through cinema.",
   icons: {
     icon: "/strada-logo.png",
     shortcut: "/strada-logo.png",

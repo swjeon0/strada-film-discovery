@@ -1,13 +1,12 @@
-/** Server-side experiment instructions. Keep API keys out of these files. */
-type Stage = 'draft' | 'curate' | 'write' | 'detail';
+/** Server-side experiment instructions. Never put credentials in this file. */
+export type CuratorStage = "list" | "repair" | "detail";
 
-/** Appended to the built-in prompt. Start with a small change in one stage. */
-export const curationPromptAdditions: Record<Stage, string> = {
-  draft: '',
-  curate: '',
-  write: '',
-  detail: '',
+/** Appended to the built-in prompt for the selected stage. */
+export const curatorPromptAdditions: Record<CuratorStage, string> = {
+  list: "",
+  repair: "",
+  detail: "",
 };
 
-/** Optional complete replacements. Leave empty to retain the built-in prompts. */
-export const curationPromptOverrides: Partial<Record<Stage, string>> = {};
+/** Complete prompt replacements. Leave empty during normal operation. */
+export const curatorPromptOverrides: Partial<Record<CuratorStage, string>> = {};

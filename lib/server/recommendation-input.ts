@@ -1,4 +1,31 @@
-import {z} from 'zod';
-import {MAX_SEEN_FILMS} from '../domain';
-const filmId=z.string().min(1).max(100).regex(/^(?:tmdb:[1-9]\d*|wd:Q[1-9]\d*|[a-z][a-z0-9-]*)$/);
-export const RecommendationInput=z.object({requestId:z.string().min(1).max(100),baseSnapshotId:z.string().max(100).nullable(),seeds:z.array(filmId).min(1).max(8),trail:z.array(filmId).max(30),language:z.enum(['en','ko']).default('en'),intent:z.enum(['initial','follow','manual','regenerate']).default('initial'),previousIds:z.array(filmId).max(12).default([]),seenIds:z.array(filmId).max(MAX_SEEN_FILMS).default([]),preparationToken:z.string().max(220000).optional(),discoveredFilms:z.array(z.object({id:filmId,title:z.string().min(1).max(240),year:z.number().int().min(1850).max(2200),director:z.string().max(240)})).max(768).default([])});
+import { z } from "zod";
+import { MAX_SEEN_FILMS } from "../domain";
+const filmId = z
+  .string()
+  .min(1)
+  .max(100)
+  .regex(/^(?:tmdb:[1-9]\d*|wd:Q[1-9]\d*|[a-z][a-z0-9-]*)$/);
+export const RECOMMENDATION_COUNT = 12;
+export const RecommendationInput = z.object({
+  requestId: z.string().min(1).max(100),
+  baseSnapshotId: z.string().max(100).nullable(),
+  seeds: z.array(filmId).min(1).max(8),
+  trail: z.array(filmId).max(30),
+  language: z.enum(["en", "ko"]).default("en"),
+  intent: z
+    .enum(["initial", "follow", "manual", "regenerate"])
+    .default("initial"),
+  previousIds: z.array(filmId).max(12).default([]),
+  seenIds: z.array(filmId).max(MAX_SEEN_FILMS).default([]),
+  discoveredFilms: z
+    .array(
+      z.object({
+        id: filmId,
+        title: z.string().min(1).max(240),
+        year: z.number().int().min(1850).max(2200),
+        director: z.string().max(240),
+      }),
+    )
+    .max(768)
+    .default([]),
+});

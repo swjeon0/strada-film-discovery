@@ -1,9 +1,0 @@
-{
-  "name": "strada-api-budget",
-  "main": "worker.ts",
-  "compatibility_date": "2026-09-12",
-  "workers_dev": true,
-  "durable_objects": {
-    "bindings": [{"name":"AI_QUOTA","class_name":"AiQuota","script_name":"strada-film-discovery"}]
-  }
-}

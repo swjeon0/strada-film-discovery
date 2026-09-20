@@ -1,5 +1,106 @@
-import type {Film,Language} from './domain';
-export const LANG_KEY='strada.language';
-export const translate=(language:Language,en:string,ko:string)=>language==='ko'?ko:en;
-export function localizeTitles(text:string,films:Pick<Film,'title'|'titleKo'>[],language:Language){if(language!=='ko')return text;let result=text;for(const f of [...films].sort((a,b)=>b.title.length-a.title.length)){if(f.titleKo){result=result.replaceAll(`${f.title} (${f.titleKo})`,f.titleKo).replaceAll(`${f.title}(${f.titleKo})`,f.titleKo).replaceAll(f.title,f.titleKo);result=result.replaceAll(`${f.titleKo}(${f.titleKo})`,f.titleKo).replaceAll(`${f.titleKo} (${f.titleKo})`,f.titleKo);}}return result;}
-export function apiMessage(code:string|undefined,language:Language,fallback?:string){const errors:Record<string,[string,string]>={NO_NEW_FILMS:['We could not find enough new films this time. Try again or add a film to your path; your current results are kept.','이번에는 새로운 영화를 충분히 찾지 못했습니다. 다시 시도하거나 경로에 영화 한 편을 더해 보세요. 현재 추천은 그대로입니다.'],DETAIL_EXPIRED:['The extended explanation for this saved result has expired. Its original recommendation is still shown above.','이전 추천의 상세 설명 조회 기간이 지났습니다. 위에서 저장된 추천 이유를 읽을 수 있어요.'],INVALID_INPUT:['This request could not be read. Refresh the page and try again; your saved path is kept.','요청 정보를 읽지 못했습니다. 새로고침한 뒤 다시 시도해 주세요. 저장된 경로는 그대로입니다.'],NO_FRESH_RESULTS:['We could not find another set of unseen films this time. Try again or add a film to your path.','이번에는 아직 보지 않은 추천을 충분히 찾지 못했습니다. 다시 시도하거나 경로에 영화 한 편을 더해 보세요.'],PATH_LIMIT:['This path has reached its saved discovery limit. Your results are kept; start a new path to continue.','이 경로의 탐색 기록 한도에 도착했습니다. 지금 결과는 그대로 보관되며, 새 경로에서 탐색을 이어갈 수 있습니다.'],FILM_RESOLUTION_FAILED:['The generated films could not be matched to the movie database. Please try again; your current path is unchanged.','생성된 추천을 영화 DB와 연결하지 못했습니다. 다시 시도해 주세요. 현재 경로는 그대로입니다.'],SETUP_REQUIRED:['AI discovery is not connected. Your path is safe.','AI 탐색 연결을 확인해 주세요. 현재 경로는 그대로 보관됩니다.'],INVALID_API_KEY:['The project ID cannot be used as an API key.','프로젝트 ID 대신 비밀 API 키가 필요합니다.'],RATE_LIMIT:['The service is busy. Please try again shortly.','요청이 잠시 몰렸습니다. 잠시 후 다시 시도해 주세요.'],METADATA_ERROR:['The movie database is temporarily unavailable.','영화 DB에 잠시 연결할 수 없습니다.'],TIMEOUT:['Research took too long. Your path is unchanged.','탐색 시간이 길어졌습니다. 현재 경로는 그대로입니다.'],INCOMPLETE:['The research was incomplete. Your path is unchanged.','탐색을 끝내지 못했습니다. 현재 경로는 그대로입니다.'],NO_EVIDENCE:['The recommendations could not be completed. Please retry; your current path is unchanged.','추천을 완성하지 못했습니다. 다시 시도해 주세요. 현재 경로는 그대로입니다.'],OUTSIDE_COLLECTION:['Live discovery is needed for this film. Search and synopsis still work.','이 영화의 추천에는 AI 탐색 연결이 필요합니다. 검색과 줄거리는 볼 수 있습니다.'],INVALID_RESEARCH:['The research could not be verified. Your path is unchanged.','추천 근거를 검증하지 못했습니다. 현재 경로는 그대로입니다.'],MODEL_UNAVAILABLE:['The configured model is not available for this API account.','현재 API 계정에서 설정한 모델을 사용할 수 없습니다.'],BUDGET:['This request reached its research limit. Your path is unchanged.','한 번의 탐색 한도에 도달했습니다. 현재 경로는 그대로입니다.']};const row=errors[code??''];return row?row[language==='ko'?1:0]:language==='ko'?'요청을 완료하지 못했습니다. 현재 경로는 그대로입니다.':fallback||'The request could not finish. Your path is unchanged.';}
+import type { Film, Language } from "./domain";
+export const LANG_KEY = "strada.language";
+export const translate = (language: Language, en: string, ko: string) =>
+  language === "ko" ? ko : en;
+export function localizeTitles(
+  text: string,
+  films: Pick<Film, "title" | "titleKo">[],
+  language: Language,
+) {
+  if (language !== "ko") return text;
+  let result = text;
+  for (const f of [...films].sort((a, b) => b.title.length - a.title.length)) {
+    if (f.titleKo) {
+      result = result
+        .replaceAll(`${f.title} (${f.titleKo})`, f.titleKo)
+        .replaceAll(`${f.title}(${f.titleKo})`, f.titleKo)
+        .replaceAll(f.title, f.titleKo);
+      result = result
+        .replaceAll(`${f.titleKo}(${f.titleKo})`, f.titleKo)
+        .replaceAll(`${f.titleKo} (${f.titleKo})`, f.titleKo);
+    }
+  }
+  return result;
+}
+export function apiMessage(
+  code: string | undefined,
+  language: Language,
+  fallback?: string,
+) {
+  const errors: Record<string, [string, string]> = {
+    NO_NEW_FILMS: [
+      "We could not find enough new films this time. Try again or add a film to your path; your current results are kept.",
+      "이번에는 새로운 영화를 충분히 찾지 못했습니다. 다시 시도하거나 경로에 영화 한 편을 더해 보세요. 현재 추천은 그대로입니다.",
+    ],
+    DETAIL_EXPIRED: [
+      "The extended explanation for this saved result has expired. Its original recommendation is still shown above.",
+      "이전 추천의 상세 설명 조회 기간이 지났습니다. 위에서 저장된 추천 이유를 읽을 수 있어요.",
+    ],
+    INVALID_INPUT: [
+      "This request could not be read. Refresh the page and try again; your saved path is kept.",
+      "요청 정보를 읽지 못했습니다. 새로고침한 뒤 다시 시도해 주세요. 저장된 경로는 그대로입니다.",
+    ],
+    NO_FRESH_RESULTS: [
+      "We could not find another set of unseen films this time. Try again or add a film to your path.",
+      "이번에는 아직 보지 않은 추천을 충분히 찾지 못했습니다. 다시 시도하거나 경로에 영화 한 편을 더해 보세요.",
+    ],
+    PATH_LIMIT: [
+      "This path has reached its saved discovery limit. Your results are kept; start a new path to continue.",
+      "이 경로의 탐색 기록 한도에 도착했습니다. 지금 결과는 그대로 보관되며, 새 경로에서 탐색을 이어갈 수 있습니다.",
+    ],
+    FILM_RESOLUTION_FAILED: [
+      "The generated films could not be matched to the movie database. Please try again; your current path is unchanged.",
+      "생성된 추천을 영화 DB와 연결하지 못했습니다. 다시 시도해 주세요. 현재 경로는 그대로입니다.",
+    ],
+    SETUP_REQUIRED: [
+      "AI discovery is not connected. Your path is safe.",
+      "AI 탐색 연결을 확인해 주세요. 현재 경로는 그대로 보관됩니다.",
+    ],
+    INVALID_API_KEY: [
+      "The project ID cannot be used as an API key.",
+      "프로젝트 ID 대신 비밀 API 키가 필요합니다.",
+    ],
+    RATE_LIMIT: [
+      "The service is busy. Please try again shortly.",
+      "요청이 잠시 몰렸습니다. 잠시 후 다시 시도해 주세요.",
+    ],
+    METADATA_ERROR: [
+      "The movie database is temporarily unavailable.",
+      "영화 DB에 잠시 연결할 수 없습니다.",
+    ],
+    TIMEOUT: [
+      "Research took too long. Your path is unchanged.",
+      "탐색 시간이 길어졌습니다. 현재 경로는 그대로입니다.",
+    ],
+    INCOMPLETE: [
+      "The research was incomplete. Your path is unchanged.",
+      "탐색을 끝내지 못했습니다. 현재 경로는 그대로입니다.",
+    ],
+    NO_EVIDENCE: [
+      "The recommendations could not be completed. Please retry; your current path is unchanged.",
+      "추천을 완성하지 못했습니다. 다시 시도해 주세요. 현재 경로는 그대로입니다.",
+    ],
+    OUTSIDE_COLLECTION: [
+      "Live discovery is needed for this film. Search and synopsis still work.",
+      "이 영화의 추천에는 AI 탐색 연결이 필요합니다. 검색과 줄거리는 볼 수 있습니다.",
+    ],
+    INVALID_RESEARCH: [
+      "The research could not be verified. Your path is unchanged.",
+      "추천 근거를 검증하지 못했습니다. 현재 경로는 그대로입니다.",
+    ],
+    MODEL_UNAVAILABLE: [
+      "The configured model is not available for this API account.",
+      "현재 API 계정에서 설정한 모델을 사용할 수 없습니다.",
+    ],
+    BUDGET: [
+      "This request reached its research limit. Your path is unchanged.",
+      "한 번의 탐색 한도에 도달했습니다. 현재 경로는 그대로입니다.",
+    ],
+  };
+  const row = errors[code ?? ""];
+  return row
+    ? row[language === "ko" ? 1 : 0]
+    : language === "ko"
+      ? "요청을 완료하지 못했습니다. 현재 경로는 그대로입니다."
+      : fallback || "The request could not finish. Your path is unchanged.";
+}

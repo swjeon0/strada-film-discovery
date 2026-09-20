@@ -14,11 +14,45 @@ Each `records/*.json` file is an array of records. Only actually opened sources 
   "publishedAt": null,
   "checkedAt": "2026-09-20T00:00:00.000Z",
   "access": "full_page",
-  "rights": {"mode": "restricted_excerpt", "licenseUrl": null, "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."},
-  "verification": {"method": "web_open", "locator": "Article body, paragraph beginning ...", "note": "Read original publisher page."},
-  "films": [{"key": "late-spring-1949-ozu", "title": "Late Spring", "year": 1949, "director": "Yasujiro Ozu", "aliases": ["Banshun", "만춘"], "externalIds": []}],
-  "passages": [{"id": "p1", "text": "An exact short quotation, with at most 25 quoted words across the whole document.", "locator": "Article body, paragraph beginning ..."}],
-  "observations": [{"id": "o1", "summary": "An original precise paraphrase of what the author says, not new film comparison.", "summaryKo": "정확한 한국어 요약", "boundary": "What this document does not establish; prevent overclaiming.", "filmKeys": ["late-spring-1949-ozu"], "subjects": ["domestic space", "elliptical narration"], "kind": "film_reading", "passageIds": ["p1"]}]
+  "rights": {
+    "mode": "restricted_excerpt",
+    "licenseUrl": null,
+    "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+  },
+  "verification": {
+    "method": "web_open",
+    "locator": "Article body, paragraph beginning ...",
+    "note": "Read original publisher page."
+  },
+  "films": [
+    {
+      "key": "late-spring-1949-ozu",
+      "title": "Late Spring",
+      "year": 1949,
+      "director": "Yasujiro Ozu",
+      "aliases": ["Banshun", "만춘"],
+      "externalIds": []
+    }
+  ],
+  "passages": [
+    {
+      "id": "p1",
+      "text": "An exact short quotation, with at most 25 quoted words across the whole document.",
+      "locator": "Article body, paragraph beginning ..."
+    }
+  ],
+  "observations": [
+    {
+      "id": "o1",
+      "summary": "An original precise paraphrase of what the author says, not new film comparison.",
+      "summaryKo": "정확한 한국어 요약",
+      "boundary": "What this document does not establish; prevent overclaiming.",
+      "filmKeys": ["late-spring-1949-ozu"],
+      "subjects": ["domestic space", "elliptical narration"],
+      "kind": "film_reading",
+      "passageIds": ["p1"]
+    }
+  ]
 }
 ```
 

@@ -2,18 +2,44 @@
   "defaultProfile": "balanced",
   "profiles": {
     "balanced": {
-      "draft": { "model": "gpt-5.4-mini", "reasoning": "low" },
-      "curate": { "model": "gpt-5.6-terra", "reasoning": "low" },
-      "write": { "model": "gpt-5.4-mini", "reasoning": "low" },
-      "detail": { "model": "gpt-5.4-mini", "reasoning": "low" },
-      "search": { "model": "gpt-4.1-mini", "reasoning": null }
+      "list": {
+        "model": "gpt-5.6-terra",
+        "reasoning": "none",
+        "timeoutMs": 15750,
+        "maxOutputTokens": 2000
+      },
+      "repair": {
+        "model": "gpt-5.4",
+        "reasoning": "none",
+        "timeoutMs": 3750,
+        "maxOutputTokens": 1100
+      },
+      "detail": {
+        "model": "gpt-5.4-mini",
+        "reasoning": "low",
+        "timeoutMs": 30000,
+        "maxOutputTokens": 2500
+      }
     },
     "baseline": {
-      "draft": { "model": "gpt-5.4-mini", "reasoning": "low" },
-      "curate": { "model": "gpt-5.4-mini", "reasoning": "low" },
-      "write": { "model": "gpt-5.4-mini", "reasoning": "low" },
-      "detail": { "model": "gpt-5.4-mini", "reasoning": "low" },
-      "search": { "model": "gpt-4.1-mini", "reasoning": null }
+      "list": {
+        "model": "gpt-5.4-mini",
+        "reasoning": "low",
+        "timeoutMs": 15750,
+        "maxOutputTokens": 2000
+      },
+      "repair": {
+        "model": "gpt-5.4-mini",
+        "reasoning": "low",
+        "timeoutMs": 3750,
+        "maxOutputTokens": 1100
+      },
+      "detail": {
+        "model": "gpt-5.4-mini",
+        "reasoning": "low",
+        "timeoutMs": 30000,
+        "maxOutputTokens": 2500
+      }
     }
   }
 }
