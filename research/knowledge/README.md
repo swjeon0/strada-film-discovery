@@ -4,9 +4,9 @@ This is a document-centered research corpus, not a list of predetermined recomme
 
 ## Current pilot snapshot
 
-The 2026-09-20 collection batch in `records/pilot-2026-09-20.json` added 14 opened documents, 31 active film identities, 15 passages and 15 observations. All 14 new records passed schema ingestion without quarantine and all 15 bounded quotations matched the publisher text in the automated source audit. The active serving snapshot now contains 58 documents, 90 films, 61 passages and 67 observations. These counts describe corpus coverage, not human approval or demonstrated recommendation quality.
+The two 2026-09-20 expansion batches added 35 opened documents. The second batch used the policy-gated collection framework in `collection/`: 24 URLs were planned, 23 readable sources were staged, one Criterion page was blocked, and 21 high-density documents were promoted after review. Every one of the 21 promoted quotation anchors matched the fetched publisher text. The active serving snapshot now contains 79 documents, 135 films, 82 passages and 88 observations. These counts describe corpus coverage, not human approval or demonstrated recommendation quality.
 
-The batch deliberately emphasizes documented connective material: direct comparisons, contrasts, historical constellations and intentional co-programming. It includes Harvard Film Archive programmes linking Ozu, Kiarostami, Truffaut, Dreyer, Hawks, Marker, Rainer and Snow, plus two BFI critical frames. Two single-film readings were retained where they add an independent institutional account of a seed film. Publisher bylines remain `null` when a page names an introducer or cited scholar without identifying the programme-note author.
+The batches deliberately emphasize documented connective material: direct comparisons, contrasts, historical constellations and intentional co-programming. The second batch adds noir lineages, silent-cinema constellations, sound-led programming, genre synthesis and career-spanning routes through Ozu, Kiarostami, Bresson, Bong, Lynch and Truffaut. Single-film readings remain only where they add a precise formal or historical account. Publisher bylines remain `null` when a page names an introducer or cited scholar without identifying the programme-note author.
 
 ## Portable inputs and build products
 
@@ -59,6 +59,8 @@ The builder uses Python's standard library and makes **zero network/API calls**.
 Each file has an input-hash job ID. Each document, all normalized children, its item result and the job checkpoint commit in one transaction. Rerunning unchanged input skips completed documents; a crash resumes at completed item checkpoints. Invalid documents are quarantined, other documents continue, and the command returns nonzero. Editing a quarantined record creates a new input-hash job. Build failures must be fixed before release. `--audit` reports individual results as JSON for review.
 
 To add documents: open the primary source, record its true access and rights, prepare bounded records following `record-format.md`, then run the builder. Inspect every quarantine and the corpus diff. Regenerate semantic neighbors from changed observation hashes, run retrieval/evidence tests and a small live recommendation regression, and deploy the new artifacts together. Do not upload raw PDFs or article text whose reuse rights are unestablished.
+
+For repeatable collection, use [`collection/README.md`](collection/README.md). Its URL jobs, source-family policy, resumable fetch manifests, optional offline Batch extraction, review parser and promotion gate keep raw acquisition and model suggestions outside the serving corpus. A fetched or model-extracted document is never automatically published.
 
 For a clean reproducibility check, use a new SQLite path with the same records and committed registry, then compare `corpusVersion` and exported documents/films. Two unchanged builds preserve the exact serving artifact including `builtAt`; working job metadata does not alter its fingerprint.
 

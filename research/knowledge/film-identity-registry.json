@@ -52,6 +52,17 @@
       ]
     },
     {
+      "key": "film-0922c05d9c8a3262ee9efd81",
+      "title": "Mabel’s Blunder",
+      "year": 1914,
+      "director": "Mabel Normand",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "mabels-blunder-1914-normand"
+      ]
+    },
+    {
       "key": "film-09deddbb97f94597dff71333",
       "title": "Chunhyang",
       "year": 2000,
@@ -92,6 +103,17 @@
       ]
     },
     {
+      "key": "film-0feefdc0d9cd04590be1b7e7",
+      "title": "Crystal Voyager",
+      "year": 1973,
+      "director": "David Elfick",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "crystal-voyager-1973-elfick"
+      ]
+    },
+    {
       "key": "film-131164f1b1b65c3bea5fe685",
       "title": "There Was a Father",
       "year": 1942,
@@ -102,6 +124,30 @@
       "externalIds": [],
       "sourceKeys": [
         "there-was-a-father-1942-ozu"
+      ]
+    },
+    {
+      "key": "film-155d9a12fb9c0de95a710ee7",
+      "title": "Stranger on the Third Floor",
+      "year": 1940,
+      "director": "Boris Ingster",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "stranger-on-third-floor-1940-ingster"
+      ]
+    },
+    {
+      "key": "film-16efd26879bb513550369013",
+      "title": "This Is Not a Film",
+      "year": 2011,
+      "director": "Jafar Panahi and Mojtaba Mirtahmasb",
+      "aliases": [
+        "In film nist"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "this-is-not-a-film-2011-panahi-mirtahmasb"
       ]
     },
     {
@@ -129,6 +175,19 @@
       ]
     },
     {
+      "key": "film-1af632455c7398aab705badd",
+      "title": "The Host",
+      "year": 2006,
+      "director": "Bong Joon Ho",
+      "aliases": [
+        "Gwoemul"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "host-2006-bong"
+      ]
+    },
+    {
       "key": "film-1cf8f39a71e6bae944e56e45",
       "title": "Gandhi",
       "year": 1982,
@@ -137,6 +196,17 @@
       "externalIds": [],
       "sourceKeys": [
         "gandhi-1982-attenborough"
+      ]
+    },
+    {
+      "key": "film-1d288a24cd35e35ab2a62d97",
+      "title": "Pitfall",
+      "year": 1948,
+      "director": "André de Toth",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "pitfall-1948-de-toth"
       ]
     },
     {
@@ -175,6 +245,17 @@
       ]
     },
     {
+      "key": "film-27caae3ce673738a375afc62",
+      "title": "Listen to Britain",
+      "year": 1942,
+      "director": "Humphrey Jennings and Stewart McAllister",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "listen-to-britain-1942-jennings-mcallister"
+      ]
+    },
+    {
       "key": "film-2a00954f7f08203ebf506abc",
       "title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
       "year": 1975,
@@ -185,6 +266,28 @@
       "externalIds": [],
       "sourceKeys": [
         "jeanne-dielman-1975-akerman"
+      ]
+    },
+    {
+      "key": "film-2e28678ec7dd45755464a69b",
+      "title": "Snowpiercer",
+      "year": 2013,
+      "director": "Bong Joon Ho",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "snowpiercer-2013-bong"
+      ]
+    },
+    {
+      "key": "film-2e58cfce27957f09853a9e95",
+      "title": "Blue Velvet",
+      "year": 1986,
+      "director": "David Lynch",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "blue-velvet-1986-lynch"
       ]
     },
     {
@@ -213,6 +316,17 @@
       ]
     },
     {
+      "key": "film-3ea007ef0feb9ea8056e06dd",
+      "title": "The Terminator",
+      "year": 1984,
+      "director": "James Cameron",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "terminator-1984-cameron"
+      ]
+    },
+    {
       "key": "film-410b4bc2d54a63bcccff45cc",
       "title": "Dog Star Man",
       "year": 1964,
@@ -221,6 +335,19 @@
       "externalIds": [],
       "sourceKeys": [
         "dog-star-man-1964-brakhage"
+      ]
+    },
+    {
+      "key": "film-42500552f0e6583c235a0a6b",
+      "title": "Mother",
+      "year": 2009,
+      "director": "Bong Joon Ho",
+      "aliases": [
+        "Madeo"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "mother-2009-bong"
       ]
     },
     {
@@ -312,6 +439,39 @@
       ]
     },
     {
+      "key": "film-4a5f88f75d34cb9545f3f96f",
+      "title": "They Live by Night",
+      "year": 1948,
+      "director": "Nicholas Ray",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "they-live-by-night-1948-ray"
+      ]
+    },
+    {
+      "key": "film-4d61a7cbe940a1763e00bde1",
+      "title": "He Ran All the Way",
+      "year": 1951,
+      "director": "John Berry",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "he-ran-all-the-way-1951-berry"
+      ]
+    },
+    {
+      "key": "film-4ebedd000bcde2fdd4480a35",
+      "title": "Lunch Break",
+      "year": 2008,
+      "director": "Sharon Lockhart",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "lunch-break-2008-lockhart"
+      ]
+    },
+    {
       "key": "film-51dab71160f341d020e2af9c",
       "title": "Brilliant Noise",
       "year": 2006,
@@ -345,6 +505,41 @@
       "externalIds": [],
       "sourceKeys": [
         "nostalgia-light-2010-guzman"
+      ]
+    },
+    {
+      "key": "film-53a7124c6b275425f6091cb6",
+      "title": "Try and Get Me",
+      "year": 1950,
+      "director": "Cy Endfield",
+      "aliases": [
+        "The Sound of Fury"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "try-and-get-me-1950-endfield"
+      ]
+    },
+    {
+      "key": "film-57d81b0b6b2270f113902682",
+      "title": "The Matrix",
+      "year": 1999,
+      "director": "Lana Wachowski and Lilly Wachowski",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "matrix-1999-wachowski"
+      ]
+    },
+    {
+      "key": "film-587ddcb8f4690dfe70614e7f",
+      "title": "You Only Live Once",
+      "year": 1937,
+      "director": "Fritz Lang",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "you-only-live-once-1937-lang"
       ]
     },
     {
@@ -409,6 +604,17 @@
       ]
     },
     {
+      "key": "film-6072b53fbbc4d15401e37ea0",
+      "title": "The Birth of a Nation",
+      "year": 1915,
+      "director": "D. W. Griffith",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "birth-of-a-nation-1915-griffith"
+      ]
+    },
+    {
       "key": "film-61334c5e35d6d46ef4fccd36",
       "title": "Rio Bravo",
       "year": 1959,
@@ -420,6 +626,17 @@
       ]
     },
     {
+      "key": "film-617aaf1069b89977ea62c644",
+      "title": "Suspense",
+      "year": 1913,
+      "director": "Lois Weber and Phillips Smalley",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "suspense-1913-weber-smalley"
+      ]
+    },
+    {
       "key": "film-61c2b15aa651c4e7838303fc",
       "title": "Killer of Sheep",
       "year": 1977,
@@ -428,6 +645,17 @@
       "externalIds": [],
       "sourceKeys": [
         "killer-sheep-1977-burnett"
+      ]
+    },
+    {
+      "key": "film-64bfc535dcbd5b97a6da2599",
+      "title": "Lost Highway",
+      "year": 1997,
+      "director": "David Lynch",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "lost-highway-1997-lynch"
       ]
     },
     {
@@ -490,6 +718,7 @@
       ],
       "externalIds": [],
       "sourceKeys": [
+        "and-life-goes-on-1992-kiarostami",
         "life-goes-on-1992-kiarostami",
         "life-nothing-more-1992-kiarostami"
       ]
@@ -503,6 +732,20 @@
       "externalIds": [],
       "sourceKeys": [
         "solar-eclipse-1900-maskelyne"
+      ]
+    },
+    {
+      "key": "film-6a64e7f404e0d4237f27f6c5",
+      "title": "The Wild Child",
+      "year": 1970,
+      "director": "François Truffaut",
+      "aliases": [
+        "L’Enfant sauvage",
+        "The Wild Boy"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "wild-child-1970-truffaut"
       ]
     },
     {
@@ -544,6 +787,17 @@
       ]
     },
     {
+      "key": "film-72a7acb2a786b5a05a9e8754",
+      "title": "Falling Leaves",
+      "year": 1912,
+      "director": "Alice Guy-Blaché",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "falling-leaves-1912-guy-blache"
+      ]
+    },
+    {
       "key": "film-72c7febcbc1f733f4722e0da",
       "title": "Letter from Siberia",
       "year": 1957,
@@ -570,6 +824,28 @@
       ]
     },
     {
+      "key": "film-73f3614e7eeadc924a1c09fe",
+      "title": "Crack-Up",
+      "year": 1946,
+      "director": "Irving Reis",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "crack-up-1946-reis"
+      ]
+    },
+    {
+      "key": "film-770da794a493b3aaa85a781a",
+      "title": "Gun Crazy",
+      "year": 1950,
+      "director": "Joseph H. Lewis",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "gun-crazy-1950-lewis"
+      ]
+    },
+    {
       "key": "film-792e37f5932de0d6c3276d5b",
       "title": "Good Morning",
       "year": 1959,
@@ -584,6 +860,19 @@
       ]
     },
     {
+      "key": "film-79d5eb926ef09b22f9045e33",
+      "title": "Parasite",
+      "year": 2019,
+      "director": "Bong Joon Ho",
+      "aliases": [
+        "Gisaengchung"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "parasite-2019-bong"
+      ]
+    },
+    {
       "key": "film-7bf8150b4ed587202557e735",
       "title": "Assassination",
       "year": 1964,
@@ -594,6 +883,19 @@
       "externalIds": [],
       "sourceKeys": [
         "assassination-1964-shinoda"
+      ]
+    },
+    {
+      "key": "film-7d81f3ee7382729c44a93af9",
+      "title": "Mulholland Dr.",
+      "year": 2001,
+      "director": "David Lynch",
+      "aliases": [
+        "Mulholland Drive"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "mulholland-drive-2001-lynch"
       ]
     },
     {
@@ -719,6 +1021,7 @@
       ],
       "externalIds": [],
       "sourceKeys": [
+        "where-is-friends-house-1987-kiarostami",
         "wheres-friends-house-1987-kiarostami"
       ]
     },
@@ -733,6 +1036,17 @@
       "externalIds": [],
       "sourceKeys": [
         "red-shoes-1948-powell-pressburger"
+      ]
+    },
+    {
+      "key": "film-904e382fc4bd53b6ed987c6f",
+      "title": "The Crowd",
+      "year": 1928,
+      "director": "King Vidor",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "crowd-1928-vidor"
       ]
     },
     {
@@ -752,11 +1066,46 @@
       "year": 2003,
       "director": "Bong Joon-ho",
       "aliases": [
+        "Salinui chueok",
         "살인의 추억"
       ],
       "externalIds": [],
       "sourceKeys": [
+        "memories-murder-2003-bong",
         "memories-of-murder-2003-bong"
+      ]
+    },
+    {
+      "key": "film-957b30abd794fe05458ac7c5",
+      "title": "Broken Blossoms",
+      "year": 1919,
+      "director": "D. W. Griffith",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "broken-blossoms-1919-griffith"
+      ]
+    },
+    {
+      "key": "film-98ddee36cb05ec8cae91af53",
+      "title": "Fury",
+      "year": 1936,
+      "director": "Fritz Lang",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "fury-1936-lang"
+      ]
+    },
+    {
+      "key": "film-9c236ff5a4a375870baadb9b",
+      "title": "Alien",
+      "year": 1979,
+      "director": "Ridley Scott",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "alien-1979-scott"
       ]
     },
     {
@@ -796,6 +1145,17 @@
       ]
     },
     {
+      "key": "film-9f9ed8ca7409e21fb480fbfa",
+      "title": "Exit",
+      "year": 2008,
+      "director": "Sharon Lockhart",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "exit-2008-lockhart"
+      ]
+    },
+    {
       "key": "film-a01aa5063b48563058b112f4",
       "title": "The Bridges of Madison County",
       "year": 1995,
@@ -818,6 +1178,17 @@
       "externalIds": [],
       "sourceKeys": [
         "taste-of-cherry-1997-kiarostami"
+      ]
+    },
+    {
+      "key": "film-a38ac455afea96f5d683b45c",
+      "title": "Blue",
+      "year": 1993,
+      "director": "Derek Jarman",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "blue-1993-jarman"
       ]
     },
     {
@@ -874,6 +1245,17 @@
       ]
     },
     {
+      "key": "film-b01250e86e1f9649184c2951",
+      "title": "Tomorrow Is Another Day",
+      "year": 1951,
+      "director": "Felix E. Feist",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "tomorrow-is-another-day-1951-feist"
+      ]
+    },
+    {
       "key": "film-b20c71cca012d24fbdd3d36f",
       "title": "Wrong Move",
       "year": 1975,
@@ -909,6 +1291,19 @@
       ]
     },
     {
+      "key": "film-b78fa011408a3072b6532a54",
+      "title": "An Autumn Afternoon",
+      "year": 1962,
+      "director": "Yasujirō Ozu",
+      "aliases": [
+        "Sanma no aji"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "autumn-afternoon-1962-ozu"
+      ]
+    },
+    {
       "key": "film-b7ce320bc18a3c37f694fbc1",
       "title": "On the Occasion of Remembering the Turning Gate",
       "year": 2002,
@@ -920,6 +1315,17 @@
       "externalIds": [],
       "sourceKeys": [
         "turning-gate-2002-hong"
+      ]
+    },
+    {
+      "key": "film-b8ee25214ecb25439796e9cc",
+      "title": "La Cigarette",
+      "year": 1919,
+      "director": "Germaine Dulac",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "la-cigarette-1919-dulac"
       ]
     },
     {
@@ -945,6 +1351,54 @@
       "externalIds": [],
       "sourceKeys": [
         "brighter-summer-day-1991-yang"
+      ]
+    },
+    {
+      "key": "film-c05f13e28facb61c26aae090",
+      "title": "7th Heaven",
+      "year": 1927,
+      "director": "Frank Borzage",
+      "aliases": [
+        "Seventh Heaven"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "seventh-heaven-1927-borzage"
+      ]
+    },
+    {
+      "key": "film-c119d82a3025a525b9d89ebc",
+      "title": "Intolerance",
+      "year": 1916,
+      "director": "D. W. Griffith",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "intolerance-1916-griffith"
+      ]
+    },
+    {
+      "key": "film-c2b2c2c3d884f04c6c01200e",
+      "title": "Soylent Green",
+      "year": 1973,
+      "director": "Richard Fleischer",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "soylent-green-1973-fleischer"
+      ]
+    },
+    {
+      "key": "film-c69d9a31f9c0d58b3168ed93",
+      "title": "Sunrise: A Song of Two Humans",
+      "year": 1927,
+      "director": "F. W. Murnau",
+      "aliases": [
+        "Sunrise"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "sunrise-1927-murnau"
       ]
     },
     {
@@ -1004,6 +1458,17 @@
       "externalIds": [],
       "sourceKeys": [
         "umberto-d-1952-desica"
+      ]
+    },
+    {
+      "key": "film-cd229dc2bb39e99feb9dcfc6",
+      "title": "Slacker",
+      "year": 1990,
+      "director": "Richard Linklater",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "slacker-1990-linklater"
       ]
     },
     {
@@ -1103,6 +1568,17 @@
       ]
     },
     {
+      "key": "film-db910b356279e5db99f25265",
+      "title": "Morning of the Earth",
+      "year": 1972,
+      "director": "Albert Falzon",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "morning-of-the-earth-1972-falzon"
+      ]
+    },
+    {
       "key": "film-dbe9a2182d1655eb5513297f",
       "title": "Paris, Texas",
       "year": 1984,
@@ -1111,6 +1587,17 @@
       "externalIds": [],
       "sourceKeys": [
         "paris-texas-1984-wenders"
+      ]
+    },
+    {
+      "key": "film-e06998b7de21b9ae6e0fc9fe",
+      "title": "Eraserhead",
+      "year": 1977,
+      "director": "David Lynch",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "eraserhead-1977-lynch"
       ]
     },
     {
@@ -1171,6 +1658,17 @@
       "externalIds": [],
       "sourceKeys": [
         "brief-encounter-1945-lean"
+      ]
+    },
+    {
+      "key": "film-f0af1ee1b58703b1f453f8fa",
+      "title": "99 River Street",
+      "year": 1953,
+      "director": "Phil Karlson",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "99-river-street-1953-karlson"
       ]
     },
     {
@@ -1240,11 +1738,23 @@
       "year": 1959,
       "director": "François Truffaut",
       "aliases": [
-        "Les 400 coups"
+        "Les 400 coups",
+        "Les quatre cents coups"
       ],
       "externalIds": [],
       "sourceKeys": [
         "400-blows-1959-truffaut"
+      ]
+    },
+    {
+      "key": "film-fd77add4605f051b2f9a09e7",
+      "title": "Wild at Heart",
+      "year": 1990,
+      "director": "David Lynch",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "wild-at-heart-1990-lynch"
       ]
     },
     {

@@ -1,0 +1,1649 @@
+[
+  {
+    "id": "hfa-try-and-get-me-fury",
+    "url": "https://harvardfilmarchive.org/calendar/he-ran-all-the-way-2008-05",
+    "title": "He Ran All the Way / Try and Get Me",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Try and Get Me programme note, opening sentence",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "he-ran-all-the-way-1951-berry",
+        "title": "He Ran All the Way",
+        "year": 1951,
+        "director": "John Berry",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "try-and-get-me-1950-endfield",
+        "title": "Try and Get Me",
+        "year": 1950,
+        "director": "Cy Endfield",
+        "aliases": [
+          "The Sound of Fury"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "fury-1936-lang",
+        "title": "Fury",
+        "year": 1936,
+        "director": "Fritz Lang",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Like Fritz Lang’s Fury, Try and Get Me is a potent vision of an America ruled by mob mentality.",
+        "locator": "Try and Get Me programme note, opening sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note explicitly places Try and Get Me beside Lang’s Fury as films that turn collective violence into a diagnosis of American mob rule; it further reads Endfield’s film through economic injustice and blacklist-era politics.",
+        "summaryKo": "이 노트는 <Try and Get Me>를 랭의 <Fury>와 직접 나란히 놓고 집단 폭력을 미국의 군중 지배에 대한 진단으로 읽으며, 엔드필드의 영화에 경제적 부정의와 블랙리스트 시대의 정치성을 더한다.",
+        "boundary": "The comparison concerns mob mentality and political anger, not identical plots; He Ran All the Way is discussed on the same double-feature page but is not part of this explicit comparison.",
+        "filmKeys": [
+          "try-and-get-me-1950-endfield",
+          "fury-1936-lang"
+        ],
+        "subjects": [
+          "mob mentality",
+          "economic injustice",
+          "film noir",
+          "blacklist"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-broken-blossoms-griffith-scale",
+    "url": "https://harvardfilmarchive.org/calendar/broken-blossoms-2006-09",
+    "title": "Broken Blossoms",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Programme note, opening sentence",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "broken-blossoms-1919-griffith",
+        "title": "Broken Blossoms",
+        "year": 1919,
+        "director": "D. W. Griffith",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "intolerance-1916-griffith",
+        "title": "Intolerance",
+        "year": 1916,
+        "director": "D. W. Griffith",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "birth-of-a-nation-1915-griffith",
+        "title": "The Birth of a Nation",
+        "year": 1915,
+        "director": "D. W. Griffith",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "In contrast to such vast and epic Griffith productions as Intolerance and The Birth of a Nation, this intimate melodrama",
+        "locator": "Programme note, opening sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The programme contrasts Broken Blossoms’ compressed studio production and intimate melodramatic scale with Griffith’s vast historical spectacles, while retaining a critical caveat about its racial and class stereotyping.",
+        "summaryKo": "프로그램 노트는 <Broken Blossoms>의 압축된 스튜디오 제작과 친밀한 멜로드라마적 규모를 그리피스의 거대한 역사 스펙터클과 대비하며, 인종과 계급의 전형화에 대한 비판적 단서를 유지한다.",
+        "boundary": "A contrast of scale and mode within Griffith’s work, not an endorsement of the racial politics of any film.",
+        "filmKeys": [
+          "broken-blossoms-1919-griffith",
+          "intolerance-1916-griffith",
+          "birth-of-a-nation-1915-griffith"
+        ],
+        "subjects": [
+          "intimate melodrama",
+          "spectacle",
+          "production scale",
+          "racial stereotyping"
+        ],
+        "kind": "contrast",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-pitfall-postwar-noir",
+    "url": "https://harvardfilmarchive.org/calendar/pitfall-2008-05/1",
+    "title": "Pitfall / Tomorrow Is Another Day",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Tomorrow Is Another Day programme note, opening sentence",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "pitfall-1948-de-toth",
+        "title": "Pitfall",
+        "year": 1948,
+        "director": "André de Toth",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "tomorrow-is-another-day-1951-feist",
+        "title": "Tomorrow Is Another Day",
+        "year": 1951,
+        "director": "Felix E. Feist",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Doomed lovers on the run are a quintessentially noir archetype, combining the American romance of the outlaw with the poignant appeal of redemptive love.",
+        "locator": "Tomorrow Is Another Day programme note, opening sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The paired programme frames Tomorrow Is Another Day through the lovers-on-the-run noir archetype and reads its postwar landscapes as the remains of a denied American dream; Pitfall approaches the same programme from middle-class postwar discontent.",
+        "summaryKo": "이 페어링은 <Tomorrow Is Another Day>를 도주하는 연인이라는 누아르 원형으로 규정하고 전후 풍경을 좌절된 아메리칸드림의 잔여로 읽는다. <Pitfall>은 같은 프로그램에서 중산층의 전후 불만을 다룬다.",
+        "boundary": "The page intentionally pairs the films, but its two notes do not claim that their narratives or formal strategies are equivalent.",
+        "filmKeys": [
+          "pitfall-1948-de-toth",
+          "tomorrow-is-another-day-1951-feist"
+        ],
+        "subjects": [
+          "postwar discontent",
+          "lovers on the run",
+          "American dream",
+          "film noir"
+        ],
+        "kind": "co_programming",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-99-river-street-hidden-perspectives",
+    "url": "https://harvardfilmarchive.org/calendar/99-river-street-2008-05",
+    "title": "99 River Street / The Brothers Rico",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "99 River Street programme note",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "99-river-street-1953-karlson",
+        "title": "99 River Street",
+        "year": 1953,
+        "director": "Phil Karlson",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Karlson’s direction is extremely lean and sophisticated, as he plays with a Chinese box structure of hidden perspectives",
+        "locator": "99 River Street programme note"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note locates 99 River Street’s force in lean direction, nested changes of perspective and the staging of a cruel noir joke, rather than only in its wrong-man plot.",
+        "summaryKo": "이 노트는 <99 River Street>의 힘을 누명 서사에만 두지 않고, 군더더기 없는 연출과 중첩된 시점 전환, 잔혹한 누아르 농담의 연출에서 찾는다.",
+        "boundary": "A focused formal reading of 99 River Street; it does not by itself establish a relation to every film in the Unseen Noir series.",
+        "filmKeys": [
+          "99-river-street-1953-karlson"
+        ],
+        "subjects": [
+          "nested perspective",
+          "lean direction",
+          "film noir",
+          "narrative structure"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-stranger-crack-up-noir-perception",
+    "url": "https://harvardfilmarchive.org/calendar/stranger-on-the-third-floor-2008-05/1",
+    "title": "Stranger on the Third Floor / Crack-Up",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Crack-Up programme note",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "stranger-on-third-floor-1940-ingster",
+        "title": "Stranger on the Third Floor",
+        "year": 1940,
+        "director": "Boris Ingster",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "crack-up-1946-reis",
+        "title": "Crack-Up",
+        "year": 1946,
+        "director": "Irving Reis",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "As so often in noir, wartime trauma is evoked, this time as a possible solution for the protagonist’s apparently shaky sanity.",
+        "locator": "Crack-Up programme note"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The double feature joins two noirs that make perception unstable: Stranger on the Third Floor turns the unseen stranger into possible hallucination, while Crack-Up links a recurrent train-wreck dream and uncertain sanity to wartime trauma.",
+        "summaryKo": "이 더블피처는 지각을 불안정하게 만드는 두 누아르를 묶는다. <Stranger on the Third Floor>는 보이지 않는 낯선 이를 환각 가능성으로 만들고, <Crack-Up>은 반복되는 열차 사고의 꿈과 흔들리는 정신을 전쟁 트라우마와 연결한다.",
+        "boundary": "The pairing supports a shared route through unstable perception; the source does not claim a direct influence between the films.",
+        "filmKeys": [
+          "stranger-on-third-floor-1940-ingster",
+          "crack-up-1946-reis"
+        ],
+        "subjects": [
+          "unstable perception",
+          "wartime trauma",
+          "dream",
+          "film noir"
+        ],
+        "kind": "co_programming",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-matrix-genre-synthesis",
+    "url": "https://harvardfilmarchive.org/calendar/the-matrix-2006-04",
+    "title": "The Matrix",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Programme note, second sentence",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "matrix-1999-wachowski",
+        "title": "The Matrix",
+        "year": 1999,
+        "director": "Lana Wachowski and Lilly Wachowski",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "alien-1979-scott",
+        "title": "Alien",
+        "year": 1979,
+        "director": "Ridley Scott",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "soylent-green-1973-fleischer",
+        "title": "Soylent Green",
+        "year": 1973,
+        "director": "Richard Fleischer",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "terminator-1984-cameron",
+        "title": "The Terminator",
+        "year": 1984,
+        "director": "James Cameron",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Blending the kind of classic science-fiction stories found in Alien, Soylent Green, and The Terminator with Chinese martial-arts films, Japanese animation",
+        "locator": "Programme note, second sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note treats The Matrix as a deliberate synthesis: dystopian science-fiction precedents meet martial-arts cinema, Japanese animation, comic art and mysticism in a new effects-driven vision.",
+        "summaryKo": "이 노트는 <The Matrix>를 의도적인 종합으로 읽는다. 디스토피아 SF의 선례들이 무협영화, 일본 애니메이션, 코믹아트, 신비주의와 결합해 새로운 시각효과 중심의 세계를 만든다.",
+        "boundary": "The listed films establish a genre lineage, not one-to-one borrowing of particular scenes.",
+        "filmKeys": [
+          "matrix-1999-wachowski",
+          "alien-1979-scott",
+          "soylent-green-1973-fleischer",
+          "terminator-1984-cameron"
+        ],
+        "subjects": [
+          "genre synthesis",
+          "science fiction",
+          "martial arts",
+          "Japanese animation"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-lunch-break-exit-companion",
+    "url": "https://harvardfilmarchive.org/calendar/lunch-break-2009-09/1",
+    "title": "Lunch Break / Exit",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Exit programme note, opening sentence",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "lunch-break-2008-lockhart",
+        "title": "Lunch Break",
+        "year": 2008,
+        "director": "Sharon Lockhart",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "exit-2008-lockhart",
+        "title": "Exit",
+        "year": 2008,
+        "director": "Sharon Lockhart",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Like the Lumière brothers before her, Lockhart steps outside the factory in order to film her lyrical companion piece to Lunch Break.",
+        "locator": "Exit programme note, opening sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Exit is explicitly presented as Lunch Break’s companion: the calibrated movement through workers at rest gives way to five fixed observations of workers leaving, shifting from slowed interior duration to repeated exterior rhythm.",
+        "summaryKo": "<Exit>는 <Lunch Break>의 명시적인 짝으로 제시된다. 휴식 중인 노동자 사이를 통과하는 조율된 이동은 노동자가 퇴장하는 다섯 번의 고정 관찰로 바뀌며, 느려진 내부의 지속에서 반복되는 외부의 리듬으로 이동한다.",
+        "boundary": "A direct companion relation and formal contrast; the Lumière reference is historical analogy, not proof of a specific remake.",
+        "filmKeys": [
+          "lunch-break-2008-lockhart",
+          "exit-2008-lockhart"
+        ],
+        "subjects": [
+          "labor",
+          "duration",
+          "factory",
+          "fixed observation"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-listen-to-britain-blue-sound",
+    "url": "https://harvardfilmarchive.org/calendar/listen-to-britain-blue-2019-01",
+    "title": "Listen to Britain / Blue",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Programme note, opening sentence",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "listen-to-britain-1942-jennings-mcallister",
+        "title": "Listen to Britain",
+        "year": 1942,
+        "director": "Humphrey Jennings and Stewart McAllister",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "blue-1993-jarman",
+        "title": "Blue",
+        "year": 1993,
+        "director": "Derek Jarman",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Both Jennings and Jarman were dead set on pushing the envelope of accepted film form",
+        "locator": "Programme note, opening sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The programme’s pairing is built around sound becoming primary: Blue nearly removes the changing image, while Listen to Britain rejects explanatory voiceover for an immersive montage of wartime sounds and scenes.",
+        "summaryKo": "이 프로그램의 페어링은 소리가 전면에 놓인다는 공통점에 기반한다. <Blue>는 변화하는 이미지를 거의 제거하고, <Listen to Britain>은 설명적 보이스오버 대신 전시 영국의 소리와 장면을 몰입적으로 몽타주한다.",
+        "boundary": "The source compares their formal use of sound; it does not erase the films’ very different historical and political situations.",
+        "filmKeys": [
+          "listen-to-britain-1942-jennings-mcallister",
+          "blue-1993-jarman"
+        ],
+        "subjects": [
+          "sound primacy",
+          "voiceover",
+          "visual reduction",
+          "wartime Britain"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-you-only-live-once-noir-lineage",
+    "url": "https://harvardfilmarchive.org/calendar/you-only-live-once-2014-08",
+    "title": "You Only Live Once",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Programme note, opening paragraph",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "you-only-live-once-1937-lang",
+        "title": "You Only Live Once",
+        "year": 1937,
+        "director": "Fritz Lang",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "they-live-by-night-1948-ray",
+        "title": "They Live by Night",
+        "year": 1948,
+        "director": "Nicholas Ray",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "gun-crazy-1950-lewis",
+        "title": "Gun Crazy",
+        "year": 1950,
+        "director": "Joseph H. Lewis",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "a razor-sharp rendering of Depression-era America anticipating film noirs like They Live by Night and Gun Crazy",
+        "locator": "Programme note, opening paragraph"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note places Lang’s lovers-on-the-run tragedy before two canonical postwar noirs, arguing that its rendering of Depression America and fatal pressure on the couple anticipates their later noir form.",
+        "summaryKo": "이 노트는 랭의 도주 연인 비극을 두 편의 정전적 전후 누아르보다 앞에 놓고, 대공황기 미국과 연인에게 가해지는 숙명적 압박의 묘사가 이후 누아르 형식을 예고한다고 본다.",
+        "boundary": "A historical anticipation claim, not evidence that either later director directly copied Lang.",
+        "filmKeys": [
+          "you-only-live-once-1937-lang",
+          "they-live-by-night-1948-ray",
+          "gun-crazy-1950-lewis"
+        ],
+        "subjects": [
+          "lovers on the run",
+          "Depression America",
+          "film noir lineage",
+          "fatalism"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-crystal-voyager-production-lineage",
+    "url": "https://harvardfilmarchive.org/calendar/crystal-voyager-2017-07-2/1",
+    "title": "Crystal Voyager",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Programme note, opening sentence",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "crystal-voyager-1973-elfick",
+        "title": "Crystal Voyager",
+        "year": 1973,
+        "director": "David Elfick",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "morning-of-the-earth-1972-falzon",
+        "title": "Morning of the Earth",
+        "year": 1972,
+        "director": "Albert Falzon",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "After the unexpected success of Morning of the Earth, Albert Falzon and David Elfick were able to secure funding to make a second film.",
+        "locator": "Programme note, opening sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note links Crystal Voyager’s production directly to Morning of the Earth’s success, then distinguishes the later film through George Greenough’s DIY boat-building biography and the immersive slow-motion wave footage of its closing sequence.",
+        "summaryKo": "이 노트는 <Crystal Voyager>의 제작을 <Morning of the Earth>의 성공과 직접 연결한 뒤, 조지 그리너프의 DIY 보트 제작 서사와 결말의 몰입적 슬로모션 파도 촬영으로 후속작을 구별한다.",
+        "boundary": "A documented production lineage; the source does not claim that the two films share every aesthetic concern.",
+        "filmKeys": [
+          "crystal-voyager-1973-elfick",
+          "morning-of-the-earth-1972-falzon"
+        ],
+        "subjects": [
+          "surf cinema",
+          "production lineage",
+          "DIY filmmaking",
+          "immersive camera"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-this-is-not-a-film-diary",
+    "url": "https://harvardfilmarchive.org/calendar/this-is-not-a-film-2012-11",
+    "title": "This Is Not a Film",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Programme note, second sentence",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "this-is-not-a-film-2011-panahi-mirtahmasb",
+        "title": "This Is Not a Film",
+        "year": 2011,
+        "director": "Jafar Panahi and Mojtaba Mirtahmasb",
+        "aliases": [
+          "In film nist"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "This is Not a Film resembles a diary film – capturing the daily rhythms and seemingly spontaneous musings of Panahi",
+        "locator": "Programme note, second sentence"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The note reads the apartment-bound film as diary-like but stresses how passing the camera to friends displaces Panahi as sole subject and lets the turbulent outside world enter the work.",
+        "summaryKo": "이 노트는 아파트에 갇힌 영화를 일기영화처럼 읽으면서도, 카메라를 친구들에게 넘기는 행위가 파나히를 유일한 주체에서 밀어내고 격동하는 바깥세계를 작품 안으로 들인다고 강조한다.",
+        "boundary": "Diary film is a resemblance used by the programme note, not a complete genre classification.",
+        "filmKeys": [
+          "this-is-not-a-film-2011-panahi-mirtahmasb"
+        ],
+        "subjects": [
+          "diary film",
+          "house arrest",
+          "camera handoff",
+          "outside world"
+        ],
+        "kind": "film_reading",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hfa-eraserhead-wild-at-heart-pairing",
+    "url": "https://harvardfilmarchive.org/calendar/eraserhead-2025-02",
+    "title": "Eraserhead / Wild at Heart",
+    "author": null,
+    "publisher": "Harvard Film Archive",
+    "type": "programme",
+    "language": "en",
+    "publishedAt": null,
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Programme announcement above film list",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "eraserhead-1977-lynch",
+        "title": "Eraserhead",
+        "year": 1977,
+        "director": "David Lynch",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "wild-at-heart-1990-lynch",
+        "title": "Wild at Heart",
+        "year": 1990,
+        "director": "David Lynch",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "we are now offering a double feature with 35mm prints of both Eraserhead and Wild at Heart.",
+        "locator": "Programme announcement above film list"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The archive intentionally pairs Lynch’s first feature with Wild at Heart. Its note identifies Eraserhead as the birthplace of later Lynchian visual and sonic signatures, so the double feature invites a longitudinal reading of those motifs.",
+        "summaryKo": "아카이브는 린치의 장편 데뷔작과 <Wild at Heart>를 의도적으로 묶는다. 노트는 <Eraserhead>를 이후 린치의 시청각적 특징이 태어난 작품으로 보며, 두 편의 페어링은 그 모티프의 장기적 변형을 보게 한다.",
+        "boundary": "The page documents the pairing and an Eraserhead reading; it does not spell out which exact motifs recur in Wild at Heart.",
+        "filmKeys": [
+          "eraserhead-1977-lynch",
+          "wild-at-heart-1990-lynch"
+        ],
+        "subjects": [
+          "auteur development",
+          "sound design",
+          "industrial space",
+          "double feature"
+        ],
+        "kind": "co_programming",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-bressonian-largent-slacker",
+    "url": "https://www.bfi.org.uk/features/robert-bresson-bressonian",
+    "title": "What does ‘Bressonian’ really mean?",
+    "author": "Alex Barrett",
+    "publisher": "BFI",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2022-05-31",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Paragraph under Slacker (1990)",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "largent-1983-bresson",
+        "title": "L’Argent",
+        "year": 1983,
+        "director": "Robert Bresson",
+        "aliases": [
+          "L'Argent"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "slacker-1990-linklater",
+        "title": "Slacker",
+        "year": 1990,
+        "director": "Richard Linklater",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "some critics have likened the film’s baton-passing structure, which moves continuously from one character to another, to that found in Bresson’s L’Argent",
+        "locator": "Paragraph under Slacker (1990)"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Barrett tests the label ‘Bressonian’ through Slacker: its nonprofessional cast, single-lens restriction and baton-passing structure recall aspects of Bresson and L’Argent, while the essay warns that isolated traits do not equal an entire style.",
+        "summaryKo": "배럿은 <Slacker>를 통해 ‘브레송적’이라는 말을 시험한다. 비전문 배우, 단일 렌즈, 인물에서 인물로 넘어가는 구조가 브레송과 <L’Argent>의 요소를 떠올리지만, 고립된 특징만으로 전체 스타일을 동일시할 수 없다고 경고한다.",
+        "boundary": "A critical resemblance and acknowledged influence, not a claim that Slacker duplicates L’Argent’s rhythm or worldview.",
+        "filmKeys": [
+          "largent-1983-bresson",
+          "slacker-1990-linklater"
+        ],
+        "subjects": [
+          "baton-passing structure",
+          "nonprofessional actors",
+          "influence",
+          "style"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-kiarostami-koker-reframing",
+    "url": "https://www.bfi.org.uk/features/where-begin-abbas-kiarostami",
+    "title": "Where to begin with Abbas Kiarostami",
+    "author": "Geoff Andrew",
+    "publisher": "BFI",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2017-06-22",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Through the Olive Trees section",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "where-is-friends-house-1987-kiarostami",
+        "title": "Where Is the Friend’s House?",
+        "year": 1987,
+        "director": "Abbas Kiarostami",
+        "aliases": [
+          "Khane-ye doust kodjast?"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "and-life-goes-on-1992-kiarostami",
+        "title": "And Life Goes On",
+        "year": 1992,
+        "director": "Abbas Kiarostami",
+        "aliases": [
+          "Life, and Nothing More..."
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "through-olive-trees-1994-kiarostami",
+        "title": "Through the Olive Trees",
+        "year": 1994,
+        "director": "Abbas Kiarostami",
+        "aliases": [],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "the overall picture of life in the Koker villages is enlarged, embellished and enriched",
+        "locator": "Through the Olive Trees section"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "The guide reads the Koker trilogy as successive reframing: a child’s quest becomes a filmmaker’s post-earthquake return, then another film crew restages the second film, multiplying viewpoints where documentary and fiction meet.",
+        "summaryKo": "이 가이드는 코케르 삼부작을 연속적인 재프레이밍으로 읽는다. 아이의 여정은 지진 뒤 영화감독의 귀환이 되고, 다시 다른 촬영팀이 두 번째 영화를 재연하면서 다큐멘터리와 허구가 만나는 시점들이 늘어난다.",
+        "boundary": "The trilogy label and reframing are critical organization; each film remains an independent work rather than a conventional continuous narrative.",
+        "filmKeys": [
+          "where-is-friends-house-1987-kiarostami",
+          "and-life-goes-on-1992-kiarostami",
+          "through-olive-trees-1994-kiarostami"
+        ],
+        "subjects": [
+          "reframing",
+          "fiction and documentary",
+          "Koker trilogy",
+          "multiple viewpoints"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-tokyo-story-noriko-trilogy",
+    "url": "https://www.bfi.org.uk/features/tokyo-story-anatomy-classic",
+    "title": "Tokyo Story: anatomy of a classic",
+    "author": "Jasper Sharp",
+    "publisher": "BFI",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2020-06-25",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Section on Ozu precursors and the Noriko trilogy",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "late-spring-1949-ozu",
+        "title": "Late Spring",
+        "year": 1949,
+        "director": "Yasujirō Ozu",
+        "aliases": [
+          "Banshun"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "early-summer-1951-ozu",
+        "title": "Early Summer",
+        "year": 1951,
+        "director": "Yasujirō Ozu",
+        "aliases": [
+          "Bakushū"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "tokyo-story-1953-ozu",
+        "title": "Tokyo Story",
+        "year": 1953,
+        "director": "Yasujirō Ozu",
+        "aliases": [
+          "Tōkyō Monogatari"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Tokyo Story is the third of Ozu’s ‘Noriko trilogy’ of self-standing stories featuring an archetype named Noriko played by Setsuko Hara.",
+        "locator": "Section on Ozu precursors and the Noriko trilogy"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Sharp connects three self-standing Ozu films through the recurring Noriko figure, repeated actors and altered family positions: daughter facing marriage, unmarried woman within an extended household, then war widow urged to begin again.",
+        "summaryKo": "샤프는 독립된 세 오즈 영화를 반복되는 노리코 인물, 같은 배우들의 변주, 달라진 가족 위치로 연결한다. 결혼을 앞둔 딸, 대가족 안의 미혼 여성, 다시 삶을 시작하라는 권유를 받는 전쟁 미망인으로 이동한다.",
+        "boundary": "The films form a critical constellation rather than a continuous trilogy with one character biography.",
+        "filmKeys": [
+          "late-spring-1949-ozu",
+          "early-summer-1951-ozu",
+          "tokyo-story-1953-ozu"
+        ],
+        "subjects": [
+          "Noriko trilogy",
+          "repertory casting",
+          "family roles",
+          "self-standing stories"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-early-women-silent-constellation",
+    "url": "https://www.bfi.org.uk/features/where-begin-with-early-women-filmmakers",
+    "title": "Where to begin with early women filmmakers",
+    "author": "Pamela Hutchinson",
+    "publisher": "BFI",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2019-06-10",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Opening section on the scarcity myth",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "suspense-1913-weber-smalley",
+        "title": "Suspense",
+        "year": 1913,
+        "director": "Lois Weber and Phillips Smalley",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "falling-leaves-1912-guy-blache",
+        "title": "Falling Leaves",
+        "year": 1912,
+        "director": "Alice Guy-Blaché",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "la-cigarette-1919-dulac",
+        "title": "La Cigarette",
+        "year": 1919,
+        "director": "Germaine Dulac",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "mabels-blunder-1914-normand",
+        "title": "Mabel’s Blunder",
+        "year": 1914,
+        "director": "Mabel Normand",
+        "aliases": [
+          "Mabel's Blunder"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "Women such as Lois Weber, Alice Guy-Blaché, Germaine Dulac, Lotte Reiniger and Mabel Normand were leaders in their respective fields",
+        "locator": "Opening section on the scarcity myth"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Hutchinson rejects the scarcity myth by routing across distinct forms: Weber’s subjective home-invasion suspense, Guy-Blaché’s gender-conscious melodrama, Dulac’s feminist impressionism and Normand’s directed slapstick.",
+        "summaryKo": "허친슨은 희소성 신화를 거부하며 서로 다른 형식을 가로지른다. 웨버의 주관적 홈인베이전 서스펜스, 기블라셰의 젠더 의식적 멜로드라마, 뒬락의 페미니즘적 인상주의, 노먼드가 연출한 슬랩스틱을 하나의 역사적 경로로 묶는다.",
+        "boundary": "A corrective historical route, not a claim that these films share one uniform aesthetic or politics.",
+        "filmKeys": [
+          "suspense-1913-weber-smalley",
+          "falling-leaves-1912-guy-blache",
+          "la-cigarette-1919-dulac",
+          "mabels-blunder-1914-normand"
+        ],
+        "subjects": [
+          "silent women directors",
+          "scarcity myth",
+          "gender",
+          "formal diversity"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-bong-genre-class-route",
+    "url": "https://www.bfi.org.uk/features/where-begin-with-bong-joon-ho",
+    "title": "Where to begin with Bong Joon Ho",
+    "author": "Ben Nicholson",
+    "publisher": "BFI",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2020-01-20",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "The Host section, opening paragraph",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "host-2006-bong",
+        "title": "The Host",
+        "year": 2006,
+        "director": "Bong Joon Ho",
+        "aliases": [
+          "Gwoemul"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "parasite-2019-bong",
+        "title": "Parasite",
+        "year": 2019,
+        "director": "Bong Joon Ho",
+        "aliases": [
+          "Gisaengchung"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "memories-murder-2003-bong",
+        "title": "Memories of Murder",
+        "year": 2003,
+        "director": "Bong Joon Ho",
+        "aliases": [
+          "Salinui chueok"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "snowpiercer-2013-bong",
+        "title": "Snowpiercer",
+        "year": 2013,
+        "director": "Bong Joon Ho",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "mother-2009-bong",
+        "title": "Mother",
+        "year": 2009,
+        "director": "Bong Joon Ho",
+        "aliases": [
+          "Madeo"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "The Host provides a perfect introduction to several of the key facets of Bong’s filmmaking that wind their way through his entire oeuvre",
+        "locator": "The Host section, opening paragraph"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Nicholson uses The Host as a hub for Bong’s cinema: unstable mixtures of genre and tone repeatedly expose class pressure, institutional failure and marginal families across Parasite, Memories of Murder, Snowpiercer and Mother.",
+        "summaryKo": "니컬슨은 <The Host>를 봉준호 영화의 허브로 삼는다. 장르와 톤의 불안정한 혼합이 <Parasite>, <Memories of Murder>, <Snowpiercer>, <Mother> 전반에서 계급 압력, 제도의 실패, 주변화된 가족을 반복해 드러낸다.",
+        "boundary": "A career-level critical route; it does not reduce the five films to the same genre or political allegory.",
+        "filmKeys": [
+          "host-2006-bong",
+          "parasite-2019-bong",
+          "memories-murder-2003-bong",
+          "snowpiercer-2013-bong",
+          "mother-2009-bong"
+        ],
+        "subjects": [
+          "genre collision",
+          "tonal instability",
+          "class",
+          "institutional failure"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-lynch-intuition-route",
+    "url": "https://www.bfi.org.uk/features/where-begin-with-david-lynch",
+    "title": "Where to begin with David Lynch",
+    "author": "Leigh Singer",
+    "publisher": "BFI",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2016-01-20",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Opening discussion of Lynch’s nonlinear narratives",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "blue-velvet-1986-lynch",
+        "title": "Blue Velvet",
+        "year": 1986,
+        "director": "David Lynch",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "wild-at-heart-1990-lynch",
+        "title": "Wild at Heart",
+        "year": 1990,
+        "director": "David Lynch",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "lost-highway-1997-lynch",
+        "title": "Lost Highway",
+        "year": 1997,
+        "director": "David Lynch",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "eraserhead-1977-lynch",
+        "title": "Eraserhead",
+        "year": 1977,
+        "director": "David Lynch",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "mulholland-drive-2001-lynch",
+        "title": "Mulholland Dr.",
+        "year": 2001,
+        "director": "David Lynch",
+        "aliases": [
+          "Mulholland Drive"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "their true power comes from a more intangible place, where words and logic cede control to intuition and emotion.",
+        "locator": "Opening discussion of Lynch’s nonlinear narratives"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Singer’s route treats Lynch’s nonlinear puzzles as vehicles for intuition and emotion, then tracks a recurring movement from familiar American surfaces into dream logic, domestic menace and fractured identity across the five films.",
+        "summaryKo": "싱어의 경로는 린치의 비선형 퍼즐을 직관과 감정의 매개로 보고, 다섯 영화에서 익숙한 미국적 표면이 꿈의 논리, 가정의 위협, 분열된 정체성으로 이동하는 양상을 추적한다.",
+        "boundary": "A recurring critical pattern, not a claim that narrative decoding is irrelevant or that every film uses the same structure.",
+        "filmKeys": [
+          "blue-velvet-1986-lynch",
+          "wild-at-heart-1990-lynch",
+          "lost-highway-1997-lynch",
+          "eraserhead-1977-lynch",
+          "mulholland-drive-2001-lynch"
+        ],
+        "subjects": [
+          "dream logic",
+          "Americana",
+          "nonlinear narrative",
+          "intuition"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-ozu-tokyo-autumn-parallel",
+    "url": "https://www.bfi.org.uk/sight-and-sound/ozu-yasujiro-master-time",
+    "title": "Ozu Yasujirô: the master of time",
+    "author": "Thom Andersen",
+    "publisher": "BFI / Sight and Sound",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2019-11-13",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Paragraph comparing Shukichi’s drinking scene with An Autumn Afternoon",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "tokyo-story-1953-ozu",
+        "title": "Tokyo Story",
+        "year": 1953,
+        "director": "Yasujirō Ozu",
+        "aliases": [
+          "Tōkyō Monogatari"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "autumn-afternoon-1962-ozu",
+        "title": "An Autumn Afternoon",
+        "year": 1962,
+        "director": "Yasujirō Ozu",
+        "aliases": [
+          "Sanma no aji"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "There is a parallel scene in Ozu’s last film, An Autumn Afternoon",
+        "locator": "Paragraph comparing Shukichi’s drinking scene with An Autumn Afternoon"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Andersen compares two scenes of retired fathers returned home drunk. The later film shifts the burden to an unmarried daughter, proposing a harsher possible continuation for the family compromise left around Shige in Tokyo Story.",
+        "summaryKo": "앤더슨은 술에 취해 돌아온 은퇴한 아버지의 두 장면을 비교한다. 후대의 영화는 부담을 미혼 딸에게 옮기며, <Tokyo Story>의 시게를 둘러싼 가족적 타협에 더 가혹한 후일담을 제시한다.",
+        "boundary": "A critic’s parallel between two scenes, not a statement that An Autumn Afternoon is a literal sequel.",
+        "filmKeys": [
+          "tokyo-story-1953-ozu",
+          "autumn-afternoon-1962-ozu"
+        ],
+        "subjects": [
+          "parallel scenes",
+          "family obligation",
+          "unmarried daughter",
+          "economic pressure"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-peak-silent-style-constellation",
+    "url": "https://www.bfi.org.uk/sight-and-sound/features/peak-silent-cinema",
+    "title": "The peak of silent cinema",
+    "author": "Ian Christie",
+    "publisher": "BFI / Sight and Sound",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2020-08-13",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "Historical introduction before the selected films",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "crowd-1928-vidor",
+        "title": "The Crowd",
+        "year": 1928,
+        "director": "King Vidor",
+        "aliases": [],
+        "externalIds": []
+      },
+      {
+        "key": "seventh-heaven-1927-borzage",
+        "title": "7th Heaven",
+        "year": 1927,
+        "director": "Frank Borzage",
+        "aliases": [
+          "Seventh Heaven"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "sunrise-1927-murnau",
+        "title": "Sunrise: A Song of Two Humans",
+        "year": 1927,
+        "director": "F. W. Murnau",
+        "aliases": [
+          "Sunrise"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "passion-joan-arc-1928-dreyer",
+        "title": "The Passion of Joan of Arc",
+        "year": 1928,
+        "director": "Carl Theodor Dreyer",
+        "aliases": [
+          "La Passion de Jeanne d'Arc"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "All are apparent in such highly praised films as The Crowd, 7th Heaven and Sunrise",
+        "locator": "Historical introduction before the selected films"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Christie groups late-silent Hollywood around mobile camera, close-up, stylized décor, light and restrained montage, then sets Dreyer’s suppression of sets and rhythmic close-ups as a European intensification of silent form.",
+        "summaryKo": "크리스티는 후기 무성기 할리우드를 이동 촬영, 클로즈업, 양식화된 장식, 빛, 절제된 몽타주로 묶고, 드레이어의 세트 억제와 리드미컬한 클로즈업을 무성 형식의 유럽적 극대화로 제시한다.",
+        "boundary": "A historical and formal constellation, not a claim that the four films share one narrative or national tradition.",
+        "filmKeys": [
+          "crowd-1928-vidor",
+          "seventh-heaven-1927-borzage",
+          "sunrise-1927-murnau",
+          "passion-joan-arc-1928-dreyer"
+        ],
+        "subjects": [
+          "silent style",
+          "camera movement",
+          "close-up",
+          "visual storytelling"
+        ],
+        "kind": "historical_context",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfi-truffaut-400-blows-wild-child",
+    "url": "https://www.bfi.org.uk/features/where-begin-with-francois-truffaut",
+    "title": "Where to begin with François Truffaut",
+    "author": "Trevor Johnston",
+    "publisher": "BFI",
+    "type": "criticism",
+    "language": "en",
+    "publishedAt": "2022-01-04",
+    "checkedAt": "2026-09-20T23:00:00.000Z",
+    "access": "full_page",
+    "rights": {
+      "mode": "restricted_excerpt",
+      "licenseUrl": null,
+      "note": "Publicly readable; redistribution permission not established. Only a short quotation and original annotations retained."
+    },
+    "verification": {
+      "method": "http_fetch",
+      "locator": "What to watch next section",
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+    },
+    "reviewStatus": "agent_reviewed",
+    "films": [
+      {
+        "key": "400-blows-1959-truffaut",
+        "title": "The 400 Blows",
+        "year": 1959,
+        "director": "François Truffaut",
+        "aliases": [
+          "Les quatre cents coups"
+        ],
+        "externalIds": []
+      },
+      {
+        "key": "wild-child-1970-truffaut",
+        "title": "The Wild Child",
+        "year": 1970,
+        "director": "François Truffaut",
+        "aliases": [
+          "L’Enfant sauvage",
+          "The Wild Boy"
+        ],
+        "externalIds": []
+      }
+    ],
+    "passages": [
+      {
+        "id": "p1",
+        "text": "the focused simplicity of The 400 Blows finds an echo in the 19th-century case-study L’Enfant sauvage",
+        "locator": "What to watch next section"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "summary": "Johnston links The Wild Child back to The 400 Blows through focused simplicity and children confronting systems of education and socialization, while distinguishing the later film through period case-study form and silent-cinema storytelling.",
+        "summaryKo": "존스턴은 집중된 단순성과 교육·사회화 체계에 맞서는 아이들을 통해 <The Wild Child>를 <The 400 Blows>와 연결하고, 시대극적 사례 연구 형식과 무성영화의 서사력으로 후대 작품을 구별한다.",
+        "boundary": "An echo in formal concentration and subject, not a continuous Antoine Doinel story.",
+        "filmKeys": [
+          "400-blows-1959-truffaut",
+          "wild-child-1970-truffaut"
+        ],
+        "subjects": [
+          "childhood",
+          "education",
+          "focused simplicity",
+          "silent storytelling"
+        ],
+        "kind": "comparison",
+        "passageIds": [
+          "p1"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "families": [
+    {
+      "id": "harvard-film-archive",
+      "publisher": "Harvard Film Archive",
+      "hosts": ["harvardfilmarchive.org"],
+      "allowedPathPrefixes": ["/calendar/", "/programs/", "/public/upload/print/"],
+      "defaultType": "programme",
+      "defaultLanguage": "en",
+      "rights": {
+        "mode": "restricted_excerpt",
+        "licenseUrl": null,
+        "note": "Publicly readable; redistribution permission not established. Retain only bounded quotation anchors and original annotations."
+      },
+      "paceMs": 900,
+      "minimumTextChars": 500
+    },
+    {
+      "id": "bfi-sight-and-sound",
+      "publisher": "BFI / Sight and Sound",
+      "hosts": ["bfi.org.uk"],
+      "allowedPathPrefixes": ["/features/", "/sight-and-sound/"],
+      "defaultType": "criticism",
+      "defaultLanguage": "en",
+      "rights": {
+        "mode": "restricted_excerpt",
+        "licenseUrl": null,
+        "note": "Publicly readable; redistribution permission not established. Retain only bounded quotation anchors and original annotations."
+      },
+      "paceMs": 900,
+      "minimumTextChars": 1000
+    },
+    {
+      "id": "criterion-current",
+      "publisher": "The Criterion Collection",
+      "hosts": ["criterion.com"],
+      "allowedPathPrefixes": ["/current/posts/"],
+      "defaultType": "criticism",
+      "defaultLanguage": "en",
+      "rights": {
+        "mode": "restricted_excerpt",
+        "licenseUrl": null,
+        "note": "Publicly readable when accessible; redistribution permission not established. Retain only bounded quotation anchors and original annotations."
+      },
+      "paceMs": 1200,
+      "minimumTextChars": 1000
+    },
+    {
+      "id": "moma-film",
+      "publisher": "The Museum of Modern Art",
+      "hosts": ["moma.org"],
+      "allowedPathPrefixes": ["/calendar/film/", "/magazine/articles/", "/docs/", "/momaorg/shared/pdfs/"],
+      "defaultType": "programme",
+      "defaultLanguage": "en",
+      "rights": {
+        "mode": "restricted_excerpt",
+        "licenseUrl": null,
+        "note": "Institutional public page; redistribution permission not established. Retain only bounded quotation anchors and original annotations."
+      },
+      "paceMs": 1000,
+      "minimumTextChars": 500
+    }
+  ]
+}

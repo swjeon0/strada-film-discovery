@@ -16,6 +16,10 @@
     "evaluate:curator-quality": "node --import tsx scripts/evaluate-curator-quality.ts",
     "score:curator-quality": "node --import tsx scripts/score-curator-quality.ts",
     "knowledge:build": "python3 scripts/build-knowledge.py --audit",
+    "knowledge:collect": "node --import tsx scripts/collect-knowledge.ts",
+    "knowledge:prepare-batch": "node --import tsx scripts/prepare-knowledge-batch.ts",
+    "knowledge:review-batch": "node --import tsx scripts/review-knowledge-batch.ts",
+    "knowledge:promote": "python3 scripts/promote-knowledge.py",
     "knowledge:embed": "node --import tsx scripts/embed-knowledge.ts",
     "knowledge:audit": "node --import tsx scripts/audit-knowledge-sources.ts",
     "knowledge:test": "python3 -m unittest discover -s research/knowledge/tests"

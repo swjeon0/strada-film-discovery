@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { execFile } from "node:child_process";
-import { mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, rename, stat, writeFile } from "node:fs/promises";
 import { isIP } from "node:net";
 import { dirname, join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -26,7 +26,7 @@ type RecordInput = {
   verification?: { textUrl?: string };
   passages: { id: string; text: string; locator: string }[];
 };
-type Status =
+export type SourceFetchStatus =
   | "matched"
   | "quote_missing"
   | "blocked"
@@ -37,8 +37,8 @@ type Status =
   | "response_too_large"
   | "unreadable"
   | "invalid_url";
-type FetchResult = {
-  status: Status | "readable";
+export type SourceFetchResult = {
+  status: SourceFetchStatus | "readable";
   url: string;
   httpStatus: number | null;
   checkedAt: string;
@@ -50,7 +50,7 @@ type FetchResult = {
   fromCache?: boolean;
   bytes?: number;
 };
-type QuoteResult = {
+export type QuoteResult = {
   passageId: string;
   status: "matched" | "quote_missing" | "not_checked";
   matchMode?: "exact" | "typography_normalized";
@@ -63,7 +63,7 @@ type AuditRow = {
   url: string;
   checkedUrl: string;
   httpStatus: number | null;
-  status: Status;
+  status: SourceFetchStatus;
   checkedAt: string;
   contentHash: string | null;
   textHash?: string;
@@ -266,7 +266,7 @@ async function boundedBody(response: Response) {
   }
   return Buffer.concat(parts);
 }
-async function fetchOnce(raw: string): Promise<FetchResult> {
+async function fetchOnce(raw: string): Promise<SourceFetchResult> {
   let url = raw;
   const checkedAt = new Date().toISOString(),
     signal = AbortSignal.timeout(TIMEOUT_MS);
@@ -394,13 +394,16 @@ async function fetchOnce(raw: string): Promise<FetchResult> {
     };
   }
 }
-async function readSource(url: string, refresh: boolean): Promise<FetchResult> {
+export async function readSource(
+  url: string,
+  refresh = false,
+): Promise<SourceFetchResult> {
   const cachePath = join(cacheRoot, `${hash(url)}.json`);
   if (!refresh)
     try {
       const cached = JSON.parse(
         await readFile(cachePath, "utf8"),
-      ) as FetchResult & { extractorVersion: number };
+      ) as SourceFetchResult & { extractorVersion: number };
       if (
         cached.extractorVersion === EXTRACTOR_VERSION &&
         cached.status === "readable" &&
@@ -425,7 +428,7 @@ async function readSource(url: string, refresh: boolean): Promise<FetchResult> {
 }
 export async function auditRecord(
   record: RecordInput,
-  load: (url: string) => Promise<FetchResult>,
+  load: (url: string) => Promise<SourceFetchResult>,
 ): Promise<AuditRow> {
   const result = await load(record.verification?.textUrl ?? record.url);
   const quotes =
@@ -462,15 +465,24 @@ export async function auditRecord(
   };
 }
 async function main() {
-  const root = resolve("research/knowledge/records"),
-    names = (await readdir(root))
-      .filter((name) => name.endsWith(".json"))
-      .sort(),
+  const args = process.argv.slice(2),
+    get = (name: string) => {
+      const index = args.indexOf(name);
+      return index >= 0 ? args[index + 1] : undefined;
+    },
+    input = resolve(get("--input") ?? "research/knowledge/records"),
+    inputStat = await stat(input),
+    files = inputStat.isDirectory()
+      ? (await readdir(input))
+          .filter((name) => name.endsWith(".json"))
+          .sort()
+          .map((name) => join(input, name))
+      : [input],
     records: RecordInput[] = [];
-  for (const name of names)
+  for (const path of files)
     records.push(
       ...(JSON.parse(
-        await readFile(join(root, name), "utf8"),
+        await readFile(path, "utf8"),
       ) as RecordInput[]),
     );
   if (new Set(records.map((r) => r.id)).size !== records.length)
@@ -494,7 +506,10 @@ async function main() {
     (acc, row) => ((acc[row.status] = (acc[row.status] ?? 0) + 1), acc),
     {},
   );
-  await atomic(resolve("research/knowledge/source-audit.json"), {
+  const report = resolve(
+    get("--out") ?? "research/knowledge/source-audit.json",
+  );
+  await atomic(report, {
     version: 1,
     extractorVersion: EXTRACTOR_VERSION,
     generatedAt: new Date().toISOString(),
@@ -512,7 +527,7 @@ async function main() {
     JSON.stringify({
       documents: records.length,
       counts,
-      report: "research/knowledge/source-audit.json",
+      report,
     }),
   );
 }

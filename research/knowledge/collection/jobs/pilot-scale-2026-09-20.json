@@ -1,0 +1,176 @@
+{
+  "version": 1,
+  "id": "pilot-scale-2026-09-20",
+  "createdAt": "2026-09-20T22:30:00.000Z",
+  "description": "Second STRADA expansion batch: connective institutional programming and dense critical maps, collected through the resumable staging framework.",
+  "targets": [
+    {
+      "id": "hfa-he-ran-all-the-way",
+      "url": "https://harvardfilmarchive.org/calendar/he-ran-all-the-way-2008-05",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "He Ran All the Way / Try and Get Me",
+      "tags": ["film noir", "mob violence", "blacklist"]
+    },
+    {
+      "id": "hfa-broken-blossoms",
+      "url": "https://harvardfilmarchive.org/calendar/broken-blossoms-2006-09",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "Broken Blossoms",
+      "tags": ["silent cinema", "Griffith", "historical contrast"]
+    },
+    {
+      "id": "hfa-pitfall-tomorrow",
+      "url": "https://harvardfilmarchive.org/calendar/pitfall-2008-05/1",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "Pitfall / Tomorrow Is Another Day",
+      "tags": ["film noir", "double feature"]
+    },
+    {
+      "id": "hfa-99-river-street",
+      "url": "https://harvardfilmarchive.org/calendar/99-river-street-2008-05",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "99 River Street / The Brothers Rico",
+      "tags": ["film noir", "Phil Karlson"]
+    },
+    {
+      "id": "hfa-stranger-crack-up",
+      "url": "https://harvardfilmarchive.org/calendar/stranger-on-the-third-floor-2008-05/1",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "Stranger on the Third Floor / Crack-Up",
+      "tags": ["film noir", "dream", "trauma"]
+    },
+    {
+      "id": "hfa-matrix",
+      "url": "https://harvardfilmarchive.org/calendar/the-matrix-2006-04",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "The Matrix",
+      "tags": ["science fiction", "genre synthesis", "animation"]
+    },
+    {
+      "id": "hfa-lunch-break-exit",
+      "url": "https://harvardfilmarchive.org/calendar/lunch-break-2009-09/1",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "Lunch Break / Exit",
+      "tags": ["labor", "duration", "Lumiere"]
+    },
+    {
+      "id": "hfa-listen-blue",
+      "url": "https://harvardfilmarchive.org/calendar/listen-to-britain-blue-2019-01",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "Listen to Britain / Blue",
+      "tags": ["sound", "wartime cinema", "pairing"]
+    },
+    {
+      "id": "hfa-you-only-live-once",
+      "url": "https://harvardfilmarchive.org/calendar/you-only-live-once-2014-08",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "You Only Live Once",
+      "tags": ["Fritz Lang", "film noir", "lovers on the run"]
+    },
+    {
+      "id": "hfa-crystal-voyager",
+      "url": "https://harvardfilmarchive.org/calendar/crystal-voyager-2017-07-2/1",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "Crystal Voyager",
+      "tags": ["surf film", "expanded perception", "slow motion"]
+    },
+    {
+      "id": "hfa-this-is-not-a-film",
+      "url": "https://harvardfilmarchive.org/calendar/this-is-not-a-film-2012-11",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "This Is Not a Film",
+      "tags": ["diary film", "political cinema", "self-reflexivity"]
+    },
+    {
+      "id": "hfa-eraserhead-wild-at-heart",
+      "url": "https://harvardfilmarchive.org/calendar/eraserhead-2025-02",
+      "sourceFamily": "harvard-film-archive",
+      "titleHint": "Eraserhead / Wild at Heart",
+      "tags": ["David Lynch", "sound", "double feature"]
+    },
+    {
+      "id": "bfi-peak-silent-cinema",
+      "url": "https://www.bfi.org.uk/sight-and-sound/features/peak-silent-cinema",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "The peak of silent cinema",
+      "tags": ["silent cinema", "historical constellation"]
+    },
+    {
+      "id": "bfi-bressonian",
+      "url": "https://www.bfi.org.uk/features/robert-bresson-bressonian",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "What does Bressonian really mean?",
+      "tags": ["Bresson", "influence", "style"]
+    },
+    {
+      "id": "bfi-begin-kiarostami",
+      "url": "https://www.bfi.org.uk/features/where-begin-abbas-kiarostami",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Where to begin with Abbas Kiarostami",
+      "tags": ["Kiarostami", "career map"]
+    },
+    {
+      "id": "bfi-begin-bresson",
+      "url": "https://www.bfi.org.uk/features/where-begin-robert-bresson",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Where to begin with Robert Bresson",
+      "tags": ["Bresson", "career map"]
+    },
+    {
+      "id": "bfi-tokyo-story",
+      "url": "https://www.bfi.org.uk/features/tokyo-story-anatomy-classic",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Tokyo Story: anatomy of a classic",
+      "tags": ["Ozu", "family", "postwar cinema"]
+    },
+    {
+      "id": "bfi-ozu-master-time",
+      "url": "https://www.bfi.org.uk/sight-and-sound/ozu-yasujiro-master-time",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Ozu Yasujirô: the master of time",
+      "tags": ["Ozu", "time", "style"]
+    },
+    {
+      "id": "bfi-money-moves-largent",
+      "url": "https://www.bfi.org.uk/sight-and-sound/features/money-moves-robert-bressons-largent",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Money moves: on Robert Bresson's L'argent",
+      "tags": ["Bresson", "L'Argent", "money"]
+    },
+    {
+      "id": "bfi-begin-lynch",
+      "url": "https://www.bfi.org.uk/features/where-begin-with-david-lynch",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Where to begin with David Lynch",
+      "tags": ["David Lynch", "career map"]
+    },
+    {
+      "id": "bfi-early-women",
+      "url": "https://www.bfi.org.uk/features/where-begin-with-early-women-filmmakers",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Where to begin with early women filmmakers",
+      "tags": ["silent cinema", "women filmmakers", "film history"]
+    },
+    {
+      "id": "bfi-begin-bong",
+      "url": "https://www.bfi.org.uk/features/where-begin-with-bong-joon-ho",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Where to begin with Bong Joon Ho",
+      "tags": ["Bong Joon Ho", "genre", "career map"]
+    },
+    {
+      "id": "bfi-begin-truffaut",
+      "url": "https://www.bfi.org.uk/features/where-begin-with-francois-truffaut",
+      "sourceFamily": "bfi-sight-and-sound",
+      "titleHint": "Where to begin with Francois Truffaut",
+      "tags": ["Truffaut", "French New Wave", "career map"]
+    },
+    {
+      "id": "criterion-like-someone-in-love",
+      "url": "https://www.criterion.com/current/posts/3170-like-someone-in-love-on-likeness",
+      "sourceFamily": "criterion-current",
+      "titleHint": "Like Someone in Love: On Likeness",
+      "tags": ["Kiarostami", "likeness", "performance"]
+    }
+  ]
+}

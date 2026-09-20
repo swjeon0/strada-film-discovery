@@ -1,12 +1,12 @@
 {
   "version": 1,
   "extractorVersion": 3,
-  "generatedAt": "2026-09-20T22:38:59.698Z",
-  "corpusRecordsHash": "259487e4cb94f17795591bda32cce11b252b2ea8dec923c2cd8154da523d5835",
-  "documentCount": 58,
+  "generatedAt": "2026-09-20T23:04:59.371Z",
+  "corpusRecordsHash": "2abb796e429469f36ec23097467ee9b28282d0bce5995577fb3eb7295e4e7962",
+  "documentCount": 79,
   "counts": {
     "blocked": 24,
-    "matched": 27,
+    "matched": 48,
     "pdf_not_checked": 3,
     "quote_missing": 4
   },
@@ -22,7 +22,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/1492-close-up-prison-and-escape",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.161Z",
+      "checkedAt": "2026-09-20T23:04:51.572Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -40,7 +40,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/3981-a-brighter-summer-day-coming-of-age-in-taipei",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.190Z",
+      "checkedAt": "2026-09-20T23:04:51.610Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -58,7 +58,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/2827-the-life-of-oharu-not-reconciled",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.191Z",
+      "checkedAt": "2026-09-20T23:04:51.612Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -76,7 +76,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/4543-good-morning-structures-and-strictures-in-suburbia",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.283Z",
+      "checkedAt": "2026-09-20T23:04:51.700Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -140,7 +140,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/4402-black-girl-self-possessed",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.286Z",
+      "checkedAt": "2026-09-20T23:04:51.703Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -158,7 +158,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/2988-touki-bouki-mamb-ty-and-modernity",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.287Z",
+      "checkedAt": "2026-09-20T23:04:51.704Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -176,7 +176,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/3444-la-ci-naga-what-s-outside-the-frame",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.378Z",
+      "checkedAt": "2026-09-20T23:04:51.766Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -194,7 +194,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/421-late-spring-home-with-ozu",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.379Z",
+      "checkedAt": "2026-09-20T23:04:51.767Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -212,7 +212,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/1215",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.381Z",
+      "checkedAt": "2026-09-20T23:04:51.769Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -230,7 +230,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/2993-the-housemaid-crossing-borders",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.444Z",
+      "checkedAt": "2026-09-20T23:04:51.822Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -248,7 +248,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/7361-memories-of-murder-in-the-killing-jar",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.445Z",
+      "checkedAt": "2026-09-20T23:04:51.838Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -266,7 +266,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/7026-taste-of-cherry-stay-near-the-tree",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.454Z",
+      "checkedAt": "2026-09-20T23:04:51.840Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -284,7 +284,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/447-the-spirit-of-the-beehive-spanish-lessons",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.509Z",
+      "checkedAt": "2026-09-20T23:04:51.886Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -302,7 +302,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/272-by-brakhage-the-act-of-seeing",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.509Z",
+      "checkedAt": "2026-09-20T23:04:51.903Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -320,7 +320,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/4719-largent-the-weight-of-the-world",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.522Z",
+      "checkedAt": "2026-09-20T23:04:51.904Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -338,7 +338,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/3798-the-apu-trilogy-every-common-sight",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.704Z",
+      "checkedAt": "2026-09-20T23:04:51.953Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -356,7 +356,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/7097-beau-travail-a-cinema-of-sensation",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.705Z",
+      "checkedAt": "2026-09-20T23:04:51.954Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -374,7 +374,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/8817-killer-of-sheep-everyday-blues",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.759Z",
+      "checkedAt": "2026-09-20T23:04:51.960Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -392,7 +392,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/413-young-mr-lincoln-hero-in-waiting",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.794Z",
+      "checkedAt": "2026-09-20T23:04:52.010Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -410,7 +410,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/7976-notes-on-in-the-mood-for-love",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.796Z",
+      "checkedAt": "2026-09-20T23:04:52.013Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -428,7 +428,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/499-cleo-from-5-to-7-passionate-time",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.824Z",
+      "checkedAt": "2026-09-20T23:04:52.022Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -469,7 +469,7 @@
       "checkedUrl": "https://www.criterion.com/current/posts/1518-the-red-shoes-dancing-for-your-life",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.856Z",
+      "checkedAt": "2026-09-20T23:04:52.157Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -955,7 +955,7 @@
       "checkedUrl": "https://www.filmlinc.org/films/the-bridges-of-madison-county/",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.864Z",
+      "checkedAt": "2026-09-20T23:04:52.166Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -1065,7 +1065,7 @@
       "checkedUrl": "https://www.lafilmforum.org/assets/Uploads/Screenings/Documents/Program-notes_Sept-19-Experimentations-3.pdf",
       "httpStatus": 200,
       "status": "pdf_not_checked",
-      "checkedAt": "2026-09-20T22:38:52.874Z",
+      "checkedAt": "2026-09-20T23:04:52.169Z",
       "contentHash": "b0e7ba55d02f0013a8444d8f5ae9c3181f87a1c8ed182335a8199926e52a51be",
       "contentType": "application/pdf",
       "bytes": 331562,
@@ -1106,7 +1106,7 @@
       "checkedUrl": "https://cinej.pitt.edu/ojs/cinej/article/download/71/226",
       "httpStatus": 200,
       "status": "pdf_not_checked",
-      "checkedAt": "2026-09-20T22:38:52.931Z",
+      "checkedAt": "2026-09-20T23:04:52.221Z",
       "contentHash": "8ae82b0239ef87c373d0ca0d39b9de15c32fe034936d79df01ec6f3f03fa8edc",
       "contentType": "application/pdf",
       "bytes": 3345612,
@@ -1126,7 +1126,7 @@
       "checkedUrl": "https://www.columbia.edu/cu/weai/exeas/resources/late-spring.html",
       "httpStatus": 403,
       "status": "blocked",
-      "checkedAt": "2026-09-20T22:38:52.944Z",
+      "checkedAt": "2026-09-20T23:04:52.336Z",
       "contentHash": null,
       "fromCache": false,
       "reason": "Publisher returned HTTP 403. Quote presence was not assessed.",
@@ -1170,7 +1170,7 @@
       "checkedUrl": "https://cinej.pitt.edu/ojs/cinej/article/download/63/230",
       "httpStatus": 200,
       "status": "pdf_not_checked",
-      "checkedAt": "2026-09-20T22:38:53.253Z",
+      "checkedAt": "2026-09-20T23:04:52.513Z",
       "contentHash": "a16e93829e6a2e4d0864c0a80c2f412896ed8fa83c453a25804488041ed9bcf3",
       "contentType": "application/pdf",
       "bytes": 8563218,
@@ -1228,6 +1228,489 @@
           "passageId": "p1",
           "locator": "Printed p. 158 (PDF p. 9), The Milieu as an Integration with Body-City; also p. 156",
           "status": "quote_missing"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-try-and-get-me-fury",
+      "url": "https://harvardfilmarchive.org/calendar/he-ran-all-the-way-2008-05",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/he-ran-all-the-way-2008-05",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:22.400Z",
+      "contentHash": "2950ed0edc35b5171a9035c1b7ffe467278feb82f90cf736910e146479b1221f",
+      "textHash": "1f6c56960b8f1e3195c98a9de57b25157252c2ac84984bd0420a9ef34b89a2ab",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 69905,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Try and Get Me programme note, opening sentence",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 1370,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-broken-blossoms-griffith-scale",
+      "url": "https://harvardfilmarchive.org/calendar/broken-blossoms-2006-09",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/broken-blossoms-2006-09",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:23.302Z",
+      "contentHash": "22a3bcda7ec8bc36b5e8f60c7d3bf8d7f914e139f129abbb1b260b9b0da03c94",
+      "textHash": "9b659ed6b4faad415d21d2229fd622ff540947c6a81ab5c6733170d404d9b04f",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 68523,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Programme note, opening sentence",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 385,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-pitfall-postwar-noir",
+      "url": "https://harvardfilmarchive.org/calendar/pitfall-2008-05/1",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/pitfall-2008-05/1",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:24.203Z",
+      "contentHash": "5a49f76e906f5b5f867701c0a91a7b440500fd64543cd217dc9625ddce9d1230",
+      "textHash": "5287d935d7c5bf2e3df71513c0151cef2a2f15162a9dfe335230fc9d6decd9ca",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 70501,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Tomorrow Is Another Day programme note, opening sentence",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 1343,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-99-river-street-hidden-perspectives",
+      "url": "https://harvardfilmarchive.org/calendar/99-river-street-2008-05",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/99-river-street-2008-05",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:25.101Z",
+      "contentHash": "10676e631aefa16947c2ebfb1f980c3367a0f2aeac40635ab19c30ee83efaa28",
+      "textHash": "e04879ef985889bf71e1ce0945ba14e39d99493e04295eca5b40371272f76093",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 69760,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "99 River Street programme note",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 844,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-stranger-crack-up-noir-perception",
+      "url": "https://harvardfilmarchive.org/calendar/stranger-on-the-third-floor-2008-05/1",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/stranger-on-the-third-floor-2008-05/1",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:26.003Z",
+      "contentHash": "8a7c2cc017d42c13de653cc87c2dd3f07ef21e98fa49937a0a9ca4e577036164",
+      "textHash": "a43532a6724b1ebaaea13648046fbeba844febfe4472b74accb3e793ccf7b51e",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 69923,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Crack-Up programme note",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 1371,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-matrix-genre-synthesis",
+      "url": "https://harvardfilmarchive.org/calendar/the-matrix-2006-04",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/the-matrix-2006-04",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:26.903Z",
+      "contentHash": "7f8a3d9a1a8da18c89cf2c7be2c38d47da750e74eaa468055c6942b193fe669a",
+      "textHash": "04a4e459990151027df4be16b6e22c93ff901298038e464495109e1627ec4307",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 73113,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Programme note, second sentence",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 490,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-lunch-break-exit-companion",
+      "url": "https://harvardfilmarchive.org/calendar/lunch-break-2009-09/1",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/lunch-break-2009-09/1",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:27.803Z",
+      "contentHash": "19b61b49d572394c3cf1d3679eda99aceed06f2f9a6545a39be4d1ee73215716",
+      "textHash": "716a24ce9b5bb9e7a476593dae2b0ffd6a02d8639943f69fea6fbb3bb76cef4e",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 65661,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Exit programme note, opening sentence",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 1261,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-listen-to-britain-blue-sound",
+      "url": "https://harvardfilmarchive.org/calendar/listen-to-britain-blue-2019-01",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/listen-to-britain-blue-2019-01",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:28.703Z",
+      "contentHash": "8af8dbfe193ebc6a950b141d11711e3fb982892b07370e2c236370888132f340",
+      "textHash": "b12a5aed1a3cb035a29712af80ee139f2657d228faf36c9834368da906e24f8c",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 77727,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Programme note, opening sentence",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 305,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-you-only-live-once-noir-lineage",
+      "url": "https://harvardfilmarchive.org/calendar/you-only-live-once-2014-08",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/you-only-live-once-2014-08",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:29.602Z",
+      "contentHash": "a93ecb97f7aeb581f1f104f06cb384a15fed82cc59a91e45dac213f370c6a17d",
+      "textHash": "ac5aa8556010461af44e29e0953f9c4095218f8319afc75b2015b50d9ad91465",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 125609,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Programme note, opening paragraph",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 635,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-crystal-voyager-production-lineage",
+      "url": "https://harvardfilmarchive.org/calendar/crystal-voyager-2017-07-2/1",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/crystal-voyager-2017-07-2/1",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:30.503Z",
+      "contentHash": "e3addbb0970dcb5d27484b4953d9d398fe56bed2380a4a8506d23178b3caeb80",
+      "textHash": "a8ae5d512b9034487dfb8faf167cf6d17a10d4bca823a2c40ca42ea13fc3ea7b",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 59488,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Programme note, opening sentence",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 282,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-this-is-not-a-film-diary",
+      "url": "https://harvardfilmarchive.org/calendar/this-is-not-a-film-2012-11",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/this-is-not-a-film-2012-11",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:31.402Z",
+      "contentHash": "9b8552070ee77524d914ab0c750f598a204604ef76cf64bb4d1173a54a4158f2",
+      "textHash": "242b436dd8dcfc672c17be5047c969d7890639370f1ca9deb31e9bab13d62e4f",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 70737,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Programme note, second sentence",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 675,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "hfa-eraserhead-wild-at-heart-pairing",
+      "url": "https://harvardfilmarchive.org/calendar/eraserhead-2025-02",
+      "checkedUrl": "https://harvardfilmarchive.org/calendar/eraserhead-2025-02",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:32.303Z",
+      "contentHash": "41f6335438018875850a9a3890ac74e9d95701ccf138da8a3d4c131e5b5bfdde",
+      "textHash": "75736c2df4ccff6a38e599a3173bf87c53da19e0a0ace4874a6a703eb4b1431b",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 69175,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Programme announcement above film list",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 1414,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-bressonian-largent-slacker",
+      "url": "https://www.bfi.org.uk/features/robert-bresson-bressonian",
+      "checkedUrl": "https://www.bfi.org.uk/features/robert-bresson-bressonian",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:33.408Z",
+      "contentHash": "ff7800a3d8c088196f89ebc59ba603a4700f3afbc4db4d6fc36b04848d208687",
+      "textHash": "99fa05affbd8508de73170af9445a81f9739265ff6fbdc6dfe20a046433ee9a1",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 209699,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Paragraph under Slacker (1990)",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 3552,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-kiarostami-koker-reframing",
+      "url": "https://www.bfi.org.uk/features/where-begin-abbas-kiarostami",
+      "checkedUrl": "https://www.bfi.org.uk/features/where-begin-abbas-kiarostami",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:34.309Z",
+      "contentHash": "e36e39be6f080456649f20916bac65b4c257f09efd733edd17c465b081ba2e96",
+      "textHash": "e7991eaa45529e35c1d08c28cac0687714a1c1ac04a0be09133b2b7a6dcc9d5a",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 203349,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Through the Olive Trees section",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 5557,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-tokyo-story-noriko-trilogy",
+      "url": "https://www.bfi.org.uk/features/tokyo-story-anatomy-classic",
+      "checkedUrl": "https://www.bfi.org.uk/features/tokyo-story-anatomy-classic",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:36.110Z",
+      "contentHash": "f675306e191b662615db6a45da5029f2111bde4cd4284d945c8fc42abfb273df",
+      "textHash": "db3a48f0aee0380d1a5422c20c6bc8bc1c9eb6e83ce05b92537eb59b919b7392",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 254144,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Section on Ozu precursors and the Noriko trilogy",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 5872,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-early-women-silent-constellation",
+      "url": "https://www.bfi.org.uk/features/where-begin-with-early-women-filmmakers",
+      "checkedUrl": "https://www.bfi.org.uk/features/where-begin-with-early-women-filmmakers",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:39.715Z",
+      "contentHash": "bd67b9c8c61d111d539f74dca13c5b9444926a0596bb44c521a2176cf430212d",
+      "textHash": "712a977701f707d066ea6181f22d1a629b1936cf963ab944cff0663a25ff3891",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 187301,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Opening section on the scarcity myth",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 838,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-bong-genre-class-route",
+      "url": "https://www.bfi.org.uk/features/where-begin-with-bong-joon-ho",
+      "checkedUrl": "https://www.bfi.org.uk/features/where-begin-with-bong-joon-ho",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:40.615Z",
+      "contentHash": "6b7500bbc73f7c772baf6744f40e6db8b31d10f0b57567c433cc69e09d1b901b",
+      "textHash": "b2d40cb782df682811ab791f780abb43942354d204a4b745baf2b583c85103ba",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 218578,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "The Host section, opening paragraph",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 2120,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-lynch-intuition-route",
+      "url": "https://www.bfi.org.uk/features/where-begin-with-david-lynch",
+      "checkedUrl": "https://www.bfi.org.uk/features/where-begin-with-david-lynch",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:38.815Z",
+      "contentHash": "589db67d4977448b2aa8a278335bdb4088c0e86f44db3ad5d81d40f1d2b24fcb",
+      "textHash": "f794c2f02aa68546f2bee7117be2db7133557878afa9d8e2e46951102a54c50c",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 215834,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Opening discussion of Lynch’s nonlinear narratives",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 2484,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-ozu-tokyo-autumn-parallel",
+      "url": "https://www.bfi.org.uk/sight-and-sound/ozu-yasujiro-master-time",
+      "checkedUrl": "https://www.bfi.org.uk/sight-and-sound/ozu-yasujiro-master-time",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:37.013Z",
+      "contentHash": "2a5b4584a005f6a44d534340a00f143c5298089a0fab40f2da7ec16e038f338c",
+      "textHash": "954ec900858e4c9d2d91d7d978f3c4a45734ce13731235005d746eea4028170e",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 158801,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Paragraph comparing Shukichi’s drinking scene with An Autumn Afternoon",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 11136,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-peak-silent-style-constellation",
+      "url": "https://www.bfi.org.uk/sight-and-sound/features/peak-silent-cinema",
+      "checkedUrl": "https://www.bfi.org.uk/sight-and-sound/features/peak-silent-cinema",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:32.507Z",
+      "contentHash": "01703becf72e5b310f66fab05328254d149ca411c00ca4ddf5e5127139076e8f",
+      "textHash": "d89dda41dd9f735c30b84bc97db03780187434bc12e65bf1895d99179bdac6a7",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 416016,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "Historical introduction before the selected films",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 10689,
+          "offsetBasis": "extracted_text"
+        }
+      ]
+    },
+    {
+      "documentId": "bfi-truffaut-400-blows-wild-child",
+      "url": "https://www.bfi.org.uk/features/where-begin-with-francois-truffaut",
+      "checkedUrl": "https://www.bfi.org.uk/features/where-begin-with-francois-truffaut",
+      "httpStatus": 200,
+      "status": "matched",
+      "checkedAt": "2026-09-20T22:58:41.515Z",
+      "contentHash": "51c8cdafaf3e993740ffba71843ba811981f9f0696deaca826ebda7c7f47201d",
+      "textHash": "3d6d48fc695bb688782e696adde28abe5d4132ca7ab09800fc558adc99d96f2f",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 189896,
+      "fromCache": true,
+      "quotes": [
+        {
+          "passageId": "p1",
+          "locator": "What to watch next section",
+          "status": "matched",
+          "matchMode": "exact",
+          "offset": 5938,
+          "offsetBasis": "extracted_text"
         }
       ]
     }
