@@ -92,6 +92,43 @@
       ]
     },
     {
+      "key": "film-131164f1b1b65c3bea5fe685",
+      "title": "There Was a Father",
+      "year": 1942,
+      "director": "Yasujiro Ozu",
+      "aliases": [
+        "Chichi ariki"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "there-was-a-father-1942-ozu"
+      ]
+    },
+    {
+      "key": "film-17953cb8ba5a4795f59d54f7",
+      "title": "Gunman's Walk",
+      "year": 1958,
+      "director": "Phil Karlson",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "gunmans-walk-1958-karlson"
+      ]
+    },
+    {
+      "key": "film-1858f5b09a49d03d36ccd008",
+      "title": "The Passion of Joan of Arc",
+      "year": 1928,
+      "director": "Carl Theodor Dreyer",
+      "aliases": [
+        "La Passion de Jeanne d'Arc"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "passion-joan-arc-1928-dreyer"
+      ]
+    },
+    {
       "key": "film-1cf8f39a71e6bae944e56e45",
       "title": "Gandhi",
       "year": 1982,
@@ -100,6 +137,17 @@
       "externalIds": [],
       "sourceKeys": [
         "gandhi-1982-attenborough"
+      ]
+    },
+    {
+      "key": "film-1f1318e4b2679d798c37c9e2",
+      "title": "Lives of Performers",
+      "year": 1972,
+      "director": "Yvonne Rainer",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "lives-performers-1972-rainer"
       ]
     },
     {
@@ -154,6 +202,17 @@
       ]
     },
     {
+      "key": "film-3c237f1c3379001e4cc37f1a",
+      "title": "Kristina Talking Pictures",
+      "year": 1976,
+      "director": "Yvonne Rainer",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "kristina-talking-1976-rainer"
+      ]
+    },
+    {
       "key": "film-410b4bc2d54a63bcccff45cc",
       "title": "Dog Star Man",
       "year": 1964,
@@ -176,6 +235,19 @@
       ]
     },
     {
+      "key": "film-44b55c1bb4ac4f1266d6761b",
+      "title": "A Look at Madness",
+      "year": 1962,
+      "director": "Mario Ruspoli",
+      "aliases": [
+        "Regards sur la folie"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "look-at-madness-1962-ruspoli"
+      ]
+    },
+    {
       "key": "film-47b8e7502a421a43dbb1ab0b",
       "title": "Reason, Argument and a Story",
       "year": 1974,
@@ -186,6 +258,19 @@
       "externalIds": [],
       "sourceKeys": [
         "reason-argument-story-1974-ghatak"
+      ]
+    },
+    {
+      "key": "film-487c1404a90c37eccc9b60da",
+      "title": "Pale Flower",
+      "year": 1964,
+      "director": "Masahiro Shinoda",
+      "aliases": [
+        "Kawaita hana"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "pale-flower-1964-shinoda"
       ]
     },
     {
@@ -276,6 +361,17 @@
       ]
     },
     {
+      "key": "film-5a457be68529d1aba6d7c6b9",
+      "title": "Jaws",
+      "year": 1975,
+      "director": "Steven Spielberg",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "jaws-1975-spielberg"
+      ]
+    },
+    {
       "key": "film-5cc744ae77e32d9466f05983",
       "title": "La Ciénaga",
       "year": 2001,
@@ -286,6 +382,41 @@
       "externalIds": [],
       "sourceKeys": [
         "la-cienaga-2001-martel"
+      ]
+    },
+    {
+      "key": "film-5dd44a8c24fcfe2a24d7b851",
+      "title": "Thunderhoof",
+      "year": 1948,
+      "director": "Phil Karlson",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "thunderhoof-1948-karlson"
+      ]
+    },
+    {
+      "key": "film-5ef249c92608102ff46d2a93",
+      "title": "Day of Wrath",
+      "year": 1943,
+      "director": "Carl Theodor Dreyer",
+      "aliases": [
+        "Vredens dag"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "day-of-wrath-1943-dreyer"
+      ]
+    },
+    {
+      "key": "film-61334c5e35d6d46ef4fccd36",
+      "title": "Rio Bravo",
+      "year": 1959,
+      "director": "Howard Hawks",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "rio-bravo-1959-hawks"
       ]
     },
     {
@@ -310,6 +441,19 @@
       "externalIds": [],
       "sourceKeys": [
         "ten-skies-2004-benning"
+      ]
+    },
+    {
+      "key": "film-67cee18ff3a9d97ef7865284",
+      "title": "Breathless",
+      "year": 1960,
+      "director": "Jean-Luc Godard",
+      "aliases": [
+        "À bout de souffle"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "breathless-1960-godard"
       ]
     },
     {
@@ -362,6 +506,19 @@
       ]
     },
     {
+      "key": "film-6a8727aa6fa49d86ad83bfc1",
+      "title": "Last Year at Marienbad",
+      "year": 1961,
+      "director": "Alain Resnais",
+      "aliases": [
+        "L'Année dernière à Marienbad"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "last-year-marienbad-1961-resnais"
+      ]
+    },
+    {
       "key": "film-6e7391e4560679d7ecf05073",
       "title": "Wendy and Lucy",
       "year": 2008,
@@ -384,6 +541,19 @@
       "externalIds": [],
       "sourceKeys": [
         "petit-soldat-1963-godard"
+      ]
+    },
+    {
+      "key": "film-72c7febcbc1f733f4722e0da",
+      "title": "Letter from Siberia",
+      "year": 1957,
+      "director": "Chris Marker",
+      "aliases": [
+        "Lettre de Sibérie"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "letter-siberia-1957-marker"
       ]
     },
     {
@@ -411,6 +581,19 @@
       "externalIds": [],
       "sourceKeys": [
         "good-morning-1959-ozu"
+      ]
+    },
+    {
+      "key": "film-7bf8150b4ed587202557e735",
+      "title": "Assassination",
+      "year": 1964,
+      "director": "Masahiro Shinoda",
+      "aliases": [
+        "Ansatsu"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "assassination-1964-shinoda"
       ]
     },
     {
@@ -478,6 +661,17 @@
       ]
     },
     {
+      "key": "film-85bd317d4f6650cec462bb35",
+      "title": "Rio Lobo",
+      "year": 1970,
+      "director": "Howard Hawks",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "rio-lobo-1970-hawks"
+      ]
+    },
+    {
       "key": "film-85cca1bfabdfac99ccbb0991",
       "title": "Aparajito",
       "year": 1956,
@@ -515,6 +709,20 @@
       ]
     },
     {
+      "key": "film-8e1fb3b4120140deba3467e0",
+      "title": "Where Is the Friend's House?",
+      "year": 1987,
+      "director": "Abbas Kiarostami",
+      "aliases": [
+        "Khaneh-ye Dust Kojast",
+        "Khane-ye doust kodjast?"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "wheres-friends-house-1987-kiarostami"
+      ]
+    },
+    {
       "key": "film-8fa49d6b1171b28203990e59",
       "title": "The Red Shoes",
       "year": 1948,
@@ -528,6 +736,17 @@
       ]
     },
     {
+      "key": "film-925fcfbe2f8af7f2350af61a",
+      "title": "L’Avventura",
+      "year": 1960,
+      "director": "Michelangelo Antonioni",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "lavventura-1960-antonioni"
+      ]
+    },
+    {
       "key": "film-9397f89da4422f3286eeb3f1",
       "title": "Memories of Murder",
       "year": 2003,
@@ -538,6 +757,19 @@
       "externalIds": [],
       "sourceKeys": [
         "memories-of-murder-2003-bong"
+      ]
+    },
+    {
+      "key": "film-9ce0d652dd037fdead718c8d",
+      "title": "Sunday in Peking",
+      "year": 1955,
+      "director": "Chris Marker",
+      "aliases": [
+        "Dimanche à Pékin"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "sunday-peking-1955-marker"
       ]
     },
     {
@@ -666,6 +898,31 @@
       ]
     },
     {
+      "key": "film-b2b93f47d0ac86641e460123",
+      "title": "Breakfast (Table Top Dolly)",
+      "year": 1976,
+      "director": "Michael Snow",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "breakfast-1976-snow"
+      ]
+    },
+    {
+      "key": "film-b7ce320bc18a3c37f694fbc1",
+      "title": "On the Occasion of Remembering the Turning Gate",
+      "year": 2002,
+      "director": "Hong Sangsoo",
+      "aliases": [
+        "Saenghwalui balgyeon",
+        "Turning Gate"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "turning-gate-2002-hong"
+      ]
+    },
+    {
       "key": "film-b93201fd50563a11c15a89c9",
       "title": "Niaye",
       "year": 1964,
@@ -699,6 +956,30 @@
       "externalIds": [],
       "sourceKeys": [
         "yi-yi-2000-yang"
+      ]
+    },
+    {
+      "key": "film-c9fd638f9fecafd62eb1a896",
+      "title": "Film About a Woman Who...",
+      "year": 1974,
+      "director": "Yvonne Rainer",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "film-about-woman-1974-rainer"
+      ]
+    },
+    {
+      "key": "film-caa0870bed31e41ca31755dd",
+      "title": "Time Stood Still",
+      "year": 1959,
+      "director": "Ermanno Olmi",
+      "aliases": [
+        "Il tempo si è fermato"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "time-stood-still-1959-olmi"
       ]
     },
     {
@@ -763,6 +1044,17 @@
       ]
     },
     {
+      "key": "film-d3ae108f81cd4f3cbbc47a7c",
+      "title": "La Région Centrale",
+      "year": 1971,
+      "director": "Michael Snow",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "region-centrale-1971-snow"
+      ]
+    },
+    {
       "key": "film-d4d95b6f40da7bb6e86a3642",
       "title": "The Pillow Book",
       "year": 1996,
@@ -774,6 +1066,19 @@
       ]
     },
     {
+      "key": "film-d579e1f4a369f028d65eeb94",
+      "title": "The Only Son",
+      "year": 1936,
+      "director": "Yasujiro Ozu",
+      "aliases": [
+        "Hitori musuko"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "only-son-1936-ozu"
+      ]
+    },
+    {
       "key": "film-d6a57832dd33ce6c3707aa63",
       "title": "Bicycle Thieves",
       "year": 1948,
@@ -782,6 +1087,19 @@
       "externalIds": [],
       "sourceKeys": [
         "bicycle-thieves-1948-desica"
+      ]
+    },
+    {
+      "key": "film-d7ecd040168344f942889902",
+      "title": "Captive Feast",
+      "year": 1962,
+      "director": "Mario Ruspoli",
+      "aliases": [
+        "La fête prisonnière"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "captive-feast-1962-ruspoli"
       ]
     },
     {
@@ -834,6 +1152,17 @@
       ]
     },
     {
+      "key": "film-e4a7410024c42dc7d789c2b9",
+      "title": "El Dorado",
+      "year": 1966,
+      "director": "Howard Hawks",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "el-dorado-1966-hawks"
+      ]
+    },
+    {
       "key": "film-e60723c3e743a289f52054aa",
       "title": "Brief Encounter",
       "year": 1945,
@@ -870,6 +1199,52 @@
       "externalIds": [],
       "sourceKeys": [
         "late-spring-1949-ozu"
+      ]
+    },
+    {
+      "key": "film-f3d6ac76d313cc4b7b50b527",
+      "title": "Wavelength",
+      "year": 1967,
+      "director": "Michael Snow",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "wavelength-1967-snow"
+      ]
+    },
+    {
+      "key": "film-f6d4c5d6f5e92b27aa47074d",
+      "title": "In the Street",
+      "year": 1952,
+      "director": "Helen Levitt, Janice Loeb and James Agee",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "in-the-street-1952-levitt-loeb-agee"
+      ]
+    },
+    {
+      "key": "film-fc5b0b791ed32730970445a7",
+      "title": "Vampyr",
+      "year": 1932,
+      "director": "Carl Theodor Dreyer",
+      "aliases": [],
+      "externalIds": [],
+      "sourceKeys": [
+        "vampyr-1932-dreyer"
+      ]
+    },
+    {
+      "key": "film-fd08c0ba6ef8077457bf32c2",
+      "title": "The 400 Blows",
+      "year": 1959,
+      "director": "François Truffaut",
+      "aliases": [
+        "Les 400 coups"
+      ],
+      "externalIds": [],
+      "sourceKeys": [
+        "400-blows-1959-truffaut"
       ]
     },
     {

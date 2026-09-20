@@ -2,6 +2,12 @@
 
 This is a document-centered research corpus, not a list of predetermined recommended films. The production curator can recommend films outside this corpus. Reviewed observations supply context and traceable evidence; TMDB separately verifies proposed film identities.
 
+## Current pilot snapshot
+
+The 2026-09-20 collection batch in `records/pilot-2026-09-20.json` added 14 opened documents, 31 active film identities, 15 passages and 15 observations. All 14 new records passed schema ingestion without quarantine and all 15 bounded quotations matched the publisher text in the automated source audit. The active serving snapshot now contains 58 documents, 90 films, 61 passages and 67 observations. These counts describe corpus coverage, not human approval or demonstrated recommendation quality.
+
+The batch deliberately emphasizes documented connective material: direct comparisons, contrasts, historical constellations and intentional co-programming. It includes Harvard Film Archive programmes linking Ozu, Kiarostami, Truffaut, Dreyer, Hawks, Marker, Rainer and Snow, plus two BFI critical frames. Two single-film readings were retained where they add an independent institutional account of a seed film. Publisher bylines remain `null` when a page names an introducer or cited scholar without identifying the programme-note author.
+
 ## Portable inputs and build products
 
 - `records/*.json`: actual source access records, bounded verbatim quotations and separately authored paraphrases. These are the authoritative document inputs. A record does **not** claim complete ingestion of a document merely because `access` says `full_page`.

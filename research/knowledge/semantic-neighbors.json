@@ -1,67 +1,117 @@
 {
   "version": 1,
-  "corpusVersion": "9995462c2933930656f8bc5052e6063cdc6cf14d4dbb7e9e66b2f087a4675f06",
+  "corpusVersion": "d350989062195419aabc2b8e55ea8bf771eb51722d56fb0492796f0940fe4004",
   "model": "text-embedding-3-small",
   "dimensions": 256,
   "neighbors": {
     "belcourt-yi-yi:o1": [
       {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.620712
+      },
+      {
         "id": "lafilmforum-land-sky-2024:o1",
-        "score": 0.556549
+        "score": 0.556653
       },
       {
         "id": "hfa-benning-place-over-time:o1",
-        "score": 0.556501
+        "score": 0.556624
       },
       {
         "id": "bfi-boyhood-film-week:o2",
-        "score": 0.549306
+        "score": 0.549416
       },
       {
         "id": "criterion-mood-love-notes:o1",
-        "score": 0.54749
+        "score": 0.547498
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.54415
+        "score": 0.544081
       },
       {
         "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.531573
+        "score": 0.531028
       },
       {
         "id": "criterion-housemaid-crossing-borders:o1",
-        "score": 0.529964
+        "score": 0.530108
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.530049
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.525663
+      }
+    ],
+    "bfi-1975-jaws-jeanne-spectrum:o1": [
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.638807
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.635139
+      },
+      {
+        "id": "criterion-jeanne-dielman-matter-time:o1",
+        "score": 0.633442
       },
       {
         "id": "flc-bridges-madison-county:o1",
-        "score": 0.521069
+        "score": 0.625619
       },
       {
-        "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.518112
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.609254
       },
       {
-        "id": "bfi-boyhood-film-week:o1",
-        "score": 0.510373
+        "id": "hfa-benning-place-over-time:o1",
+        "score": 0.600493
+      },
+      {
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.59905
+      },
+      {
+        "id": "criterion-cleo-passionate-time:o1",
+        "score": 0.59666
+      },
+      {
+        "id": "criterion-jeanne-dielman-matter-time:o2",
+        "score": 0.575206
+      },
+      {
+        "id": "criterion-red-shoes-dancing:o1",
+        "score": 0.563943
       }
     ],
     "bfi-boyhood-film-week:o1": [
       {
         "id": "bfi-boyhood-film-week:o2",
-        "score": 0.531123
+        "score": 0.531017
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.520092
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.514137
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.510373
+        "score": 0.510466
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.509435
+        "score": 0.5092
       },
       {
         "id": "criterion-cleo-passionate-time:o1",
-        "score": 0.481427
+        "score": 0.48134
       }
     ],
     "bfi-boyhood-film-week:o2": [
@@ -74,12 +124,16 @@
         "score": 0.564151
       },
       {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.559744
+      },
+      {
         "id": "flc-bridges-madison-county:o1",
         "score": 0.549755
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.549306
+        "score": 0.549416
       },
       {
         "id": "criterion-taste-cherry-tree:o1",
@@ -87,7 +141,7 @@
       },
       {
         "id": "criterion-apu-common-sight:o1",
-        "score": 0.531423
+        "score": 0.532276
       },
       {
         "id": "criterion-oharu-not-reconciled:o1",
@@ -95,131 +149,181 @@
       },
       {
         "id": "bfi-boyhood-film-week:o1",
-        "score": 0.531123
+        "score": 0.531017
       },
       {
         "id": "criterion-mood-love-notes:o1",
         "score": 0.51405
+      }
+    ],
+    "bfi-lavventura-modernist-moment:o1": [
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.609254
       },
       {
-        "id": "criterion-late-spring-home:o1",
-        "score": 0.511091
+        "id": "criterion-cleo-passionate-time:o1",
+        "score": 0.592532
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.565596
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.559352
+      },
+      {
+        "id": "hfa-el-dorado-rio-trilogy:o1",
+        "score": 0.551598
+      },
+      {
+        "id": "criterion-touki-bouki-modernity:o1",
+        "score": 0.550761
+      },
+      {
+        "id": "flc-bridges-madison-county:o1",
+        "score": 0.549135
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.539954
+      },
+      {
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.512361
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.509621
       }
     ],
     "cinej-aquino-necessary-fictions-body:o1": [
       {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.624145
+      },
+      {
         "id": "criterion-close-up-prison-escape:o2",
-        "score": 0.616763
+        "score": 0.616759
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.616411
       },
       {
         "id": "cinej-ewing-cracked-windshield:o1",
-        "score": 0.586881
+        "score": 0.586833
       },
       {
         "id": "criterion-young-lincoln-hero:o1",
-        "score": 0.582922
+        "score": 0.582874
       },
       {
         "id": "criterion-red-shoes-dancing:o1",
-        "score": 0.579131
+        "score": 0.579059
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.573931
+        "score": 0.57401
       },
       {
         "id": "criterion-close-up-prison-escape:o1",
-        "score": 0.572001
+        "score": 0.571928
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o1",
-        "score": 0.570617
+        "score": 0.570559
       },
       {
         "id": "cinej-wenders-motion-body:o1",
-        "score": 0.559142
-      },
-      {
-        "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.532413
-      },
-      {
-        "id": "hfa-benning-place-over-time:o1",
-        "score": 0.531691
+        "score": 0.559244
       }
     ],
     "cinej-aquino-necessary-fictions-body:o2": [
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.573931
+        "score": 0.57401
       },
       {
         "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.55668
+        "score": 0.556762
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.552307
+        "score": 0.552456
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.54415
+        "score": 0.544081
       },
       {
         "id": "criterion-memories-murder-killing-jar:o1",
-        "score": 0.538992
+        "score": 0.538977
       },
       {
         "id": "criterion-mood-love-notes:o1",
-        "score": 0.534383
+        "score": 0.534398
       },
       {
         "id": "criterion-killer-sheep-everyday-blues:o1",
-        "score": 0.530399
+        "score": 0.530461
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o1",
-        "score": 0.530152
+        "score": 0.53019
       },
       {
         "id": "hfa-black-girl-niaye:o2",
-        "score": 0.50844
+        "score": 0.508476
       },
       {
         "id": "criterion-oharu-not-reconciled:o1",
-        "score": 0.501299
+        "score": 0.501283
       }
     ],
     "cinej-dogville-displacement-body:o1": [
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.544512
+        "score": 0.545466
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o1",
-        "score": 0.528234
+        "score": 0.528468
       },
       {
         "id": "criterion-late-spring-home:o1",
-        "score": 0.519594
+        "score": 0.519905
       },
       {
         "id": "hfa-ghatak-reason-argument-story:o1",
-        "score": 0.491562
+        "score": 0.491695
       },
       {
         "id": "criterion-young-lincoln-hero:o1",
-        "score": 0.482063
+        "score": 0.482186
       }
     ],
     "cinej-ewing-cracked-windshield:o1": [
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.677278
+      },
       {
         "id": "criterion-close-up-prison-escape:o2",
         "score": 0.654845
       },
       {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.590372
+      },
+      {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.586881
+        "score": 0.586833
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.556049
       },
       {
         "id": "criterion-cienaga-outside-frame:o1",
@@ -240,74 +344,62 @@
       {
         "id": "criterion-red-shoes-dancing:o1",
         "score": 0.543327
-      },
-      {
-        "id": "criterion-close-up-prison-escape:o1",
-        "score": 0.513001
-      },
-      {
-        "id": "criterion-mood-love-notes:o1",
-        "score": 0.504176
-      },
-      {
-        "id": "belcourt-yi-yi:o1",
-        "score": 0.499097
       }
     ],
     "cinej-maison-petits-cubes-body:o1": [
       {
         "id": "criterion-housemaid-crossing-borders:o1",
-        "score": 0.600265
+        "score": 0.600639
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.55668
+        "score": 0.556762
       },
       {
         "id": "criterion-late-spring-home:o1",
-        "score": 0.551976
+        "score": 0.551953
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.532413
+        "score": 0.532895
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.531573
+        "score": 0.531028
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.527884
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.527499
       },
       {
         "id": "hfa-denis-us-go-home:o1",
-        "score": 0.524835
+        "score": 0.524457
       },
       {
         "id": "cinej-nostalgia-documemory:o1",
-        "score": 0.521314
+        "score": 0.521927
       },
       {
         "id": "criterion-cienaga-outside-frame:o1",
-        "score": 0.513792
-      },
-      {
-        "id": "hfa-memoria:o1",
-        "score": 0.503601
-      },
-      {
-        "id": "criterion-jeanne-dielman-matter-time:o2",
-        "score": 0.490407
+        "score": 0.513163
       }
     ],
     "cinej-nostalgia-documemory:o1": [
       {
         "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.521314
+        "score": 0.521927
       },
       {
         "id": "lafilmforum-land-sky-2024:o1",
-        "score": 0.518366
+        "score": 0.518415
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.510822
+        "score": 0.510913
       },
       {
         "id": "criterion-close-up-prison-escape:o2",
@@ -317,165 +409,229 @@
     "cinej-wenders-motion-body:o1": [
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.559142
+        "score": 0.559244
       },
       {
         "id": "criterion-close-up-prison-escape:o1",
-        "score": 0.499029
+        "score": 0.49905
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.486466
+      },
+      {
+        "id": "hfa-captive-feast-look-madness:o1",
+        "score": 0.484533
       },
       {
         "id": "criterion-brighter-summer-day-coming-age:o1",
-        "score": 0.481087
+        "score": 0.481132
       }
     ],
     "cinej-wenders-motion-body:o2": [
       {
         "id": "columbia-miyao-late-spring:o2",
-        "score": 0.526929
+        "score": 0.526969
       },
       {
         "id": "criterion-touki-bouki-modernity:o1",
-        "score": 0.507503
+        "score": 0.50749
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.482473
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.480571
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.480141
       }
     ],
     "columbia-miyao-late-spring:o1": [
       {
         "id": "criterion-late-spring-home:o1",
-        "score": 0.491278
+        "score": 0.49139
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.491012
+        "score": 0.491075
       }
     ],
     "columbia-miyao-late-spring:o2": [
       {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.541611
+      },
+      {
         "id": "cinej-wenders-motion-body:o2",
-        "score": 0.526929
+        "score": 0.526969
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.506097
       },
       {
         "id": "criterion-late-spring-home:o1",
-        "score": 0.494416
+        "score": 0.494435
       },
       {
         "id": "lafilmforum-land-sky-2024:o1",
-        "score": 0.480363
+        "score": 0.480336
       }
     ],
     "criterion-apu-common-sight:o1": [
       {
         "id": "criterion-killer-sheep-everyday-blues:o1",
-        "score": 0.553474
+        "score": 0.553888
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.542362
       },
       {
         "id": "bfi-boyhood-film-week:o2",
-        "score": 0.531423
+        "score": 0.532276
       },
       {
         "id": "criterion-black-girl-self-possessed:o2",
-        "score": 0.526397
+        "score": 0.525998
       },
       {
         "id": "flc-bridges-madison-county:o1",
-        "score": 0.522239
+        "score": 0.520764
       },
       {
         "id": "criterion-touki-bouki-modernity:o1",
-        "score": 0.5203
+        "score": 0.519934
       },
       {
         "id": "criterion-good-morning-structures:o1",
-        "score": 0.518993
+        "score": 0.519129
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.512292
+        "score": 0.512569
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.506841
+        "score": 0.505774
       },
       {
         "id": "criterion-late-spring-home:o1",
-        "score": 0.49943
-      },
-      {
-        "id": "belcourt-yi-yi:o1",
-        "score": 0.49851
+        "score": 0.499316
       }
     ],
     "criterion-beau-travail-sensation:o1": [
       {
         "id": "criterion-black-girl-self-possessed:o2",
-        "score": 0.51264
+        "score": 0.512861
       },
       {
         "id": "hfa-beau-travail-brief-encounter:o1",
-        "score": 0.486239
+        "score": 0.48619
       }
     ],
     "criterion-beehive-spanish-lessons:o1": [
       {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.562845
+      },
+      {
         "id": "criterion-oharu-not-reconciled:o1",
-        "score": 0.509936
+        "score": 0.509962
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.501803
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.499121
+      },
+      {
+        "id": "hfa-friends-house-400-blows:o1",
+        "score": 0.489079
       }
     ],
     "criterion-black-girl-self-possessed:o1": [
       {
         "id": "hfa-black-girl-niaye:o1",
-        "score": 0.64265
+        "score": 0.642325
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.509943
+        "score": 0.51054
       },
       {
         "id": "criterion-black-girl-self-possessed:o2",
-        "score": 0.505175
+        "score": 0.506068
       }
     ],
     "criterion-black-girl-self-possessed:o2": [
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.55096
+        "score": 0.551374
       },
       {
         "id": "hfa-black-girl-niaye:o1",
-        "score": 0.549835
+        "score": 0.549804
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.537534
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.5305
       },
       {
         "id": "criterion-apu-common-sight:o1",
-        "score": 0.526397
+        "score": 0.525998
       },
       {
         "id": "criterion-beau-travail-sensation:o1",
-        "score": 0.51264
+        "score": 0.512861
       },
       {
         "id": "criterion-black-girl-self-possessed:o1",
-        "score": 0.505175
+        "score": 0.506068
       },
       {
         "id": "criterion-touki-bouki-modernity:o1",
-        "score": 0.504651
+        "score": 0.50468
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.493016
       },
       {
         "id": "criterion-killer-sheep-everyday-blues:o1",
-        "score": 0.488977
-      },
-      {
-        "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.486872
+        "score": 0.489049
       }
     ],
     "criterion-brakhage-act-seeing:o1": [
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.591581
+      },
       {
         "id": "hfa-benning-place-over-time:o1",
         "score": 0.55372
       },
       {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.546422
+      },
+      {
         "id": "criterion-touki-bouki-modernity:o1",
         "score": 0.539863
+      },
+      {
+        "id": "hfa-letter-siberia-sunday-peking:o1",
+        "score": 0.524931
       },
       {
         "id": "flc-bridges-madison-county:o1",
@@ -486,8 +642,12 @@
         "score": 0.497598
       },
       {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.485672
+      },
+      {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.482263
+        "score": 0.482107
       }
     ],
     "criterion-brighter-summer-day-coming-age:o1": [
@@ -509,7 +669,7 @@
       },
       {
         "id": "cinej-wenders-motion-body:o1",
-        "score": 0.481087
+        "score": 0.481132
       }
     ],
     "criterion-cienaga-outside-frame:o1": [
@@ -531,11 +691,15 @@
       },
       {
         "id": "hfa-memoria:o1",
-        "score": 0.519672
+        "score": 0.519541
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.517463
       },
       {
         "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.513792
+        "score": 0.513163
       },
       {
         "id": "criterion-taste-cherry-tree:o1",
@@ -548,24 +712,32 @@
       {
         "id": "criterion-touki-bouki-modernity:o1",
         "score": 0.500961
-      },
-      {
-        "id": "criterion-young-lincoln-hero:o1",
-        "score": 0.493755
       }
     ],
     "criterion-cleo-passionate-time:o1": [
       {
         "id": "criterion-largent-weight-world:o1",
-        "score": 0.626946
+        "score": 0.626945
       },
       {
         "id": "bfi-boyhood-film-week:o2",
         "score": 0.612032
       },
       {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.59666
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.592532
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.54723
+      },
+      {
         "id": "senses-rotterdam-2007-ten-skies:o1",
-        "score": 0.537955
+        "score": 0.538519
       },
       {
         "id": "flc-bridges-madison-county:o1",
@@ -576,24 +748,12 @@
         "score": 0.519556
       },
       {
-        "id": "criterion-late-spring-home:o1",
-        "score": 0.492331
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.49854
       },
       {
-        "id": "criterion-close-up-prison-escape:o2",
-        "score": 0.491299
-      },
-      {
-        "id": "belcourt-yi-yi:o1",
-        "score": 0.48354
-      },
-      {
-        "id": "criterion-apu-common-sight:o1",
-        "score": 0.481466
-      },
-      {
-        "id": "bfi-boyhood-film-week:o1",
-        "score": 0.481427
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.497096
       }
     ],
     "criterion-close-up-prison-escape:o1": [
@@ -603,19 +763,27 @@
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.572001
+        "score": 0.571928
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.555696
+        "score": 0.555736
       },
       {
         "id": "senses-rotterdam-2007-ten-skies:o1",
-        "score": 0.538107
+        "score": 0.538272
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.531938
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o1",
         "score": 0.524198
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.514921
       },
       {
         "id": "criterion-mood-love-notes:o1",
@@ -628,48 +796,48 @@
       {
         "id": "bfi-boyhood-film-week:o2",
         "score": 0.506774
-      },
-      {
-        "id": "cinej-wenders-motion-body:o1",
-        "score": 0.499029
-      },
-      {
-        "id": "hfa-touki-bouki:o1",
-        "score": 0.497058
       }
     ],
     "criterion-close-up-prison-escape:o2": [
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.705216
+      },
       {
         "id": "cinej-ewing-cracked-windshield:o1",
         "score": 0.654845
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.616763
+        "score": 0.616759
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.551207
       },
       {
         "id": "criterion-red-shoes-dancing:o1",
         "score": 0.546481
       },
       {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.512442
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.511889
+      },
+      {
         "id": "criterion-jeanne-dielman-matter-time:o1",
         "score": 0.502067
       },
       {
+        "id": "hfa-captive-feast-look-madness:o1",
+        "score": 0.494693
+      },
+      {
         "id": "criterion-cleo-passionate-time:o1",
         "score": 0.491299
-      },
-      {
-        "id": "bfi-boyhood-film-week:o2",
-        "score": 0.490018
-      },
-      {
-        "id": "cinej-nostalgia-documemory:o1",
-        "score": 0.489593
-      },
-      {
-        "id": "criterion-housemaid-crossing-borders:o1",
-        "score": 0.484466
       }
     ],
     "criterion-good-morning-structures:o1": [
@@ -678,12 +846,28 @@
         "score": 0.576854
       },
       {
+        "id": "hfa-there-was-father-only-son:o1",
+        "score": 0.547983
+      },
+      {
+        "id": "hfa-gunmans-walk-thunderhoof:o1",
+        "score": 0.541328
+      },
+      {
         "id": "criterion-apu-common-sight:o1",
-        "score": 0.518993
+        "score": 0.519129
       },
       {
         "id": "criterion-killer-sheep-everyday-blues:o1",
         "score": 0.50144
+      },
+      {
+        "id": "hfa-friends-house-400-blows:o1",
+        "score": 0.48715
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.48278
       }
     ],
     "criterion-housemaid-crossing-borders:o1": [
@@ -693,7 +877,7 @@
       },
       {
         "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.600265
+        "score": 0.600639
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o2",
@@ -701,7 +885,7 @@
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.561802
+        "score": 0.561677
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o1",
@@ -713,7 +897,7 @@
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.529964
+        "score": 0.530108
       },
       {
         "id": "flc-bridges-madison-county:o1",
@@ -724,14 +908,22 @@
         "score": 0.522634
       },
       {
-        "id": "hfa-denis-us-go-home:o1",
-        "score": 0.501062
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.521863
       }
     ],
     "criterion-jeanne-dielman-matter-time:o1": [
       {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.633442
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.579438
+      },
+      {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.570617
+        "score": 0.570559
       },
       {
         "id": "hfa-beau-travail-brief-encounter:o1",
@@ -760,20 +952,16 @@
       {
         "id": "hfa-black-girl-niaye:o1",
         "score": 0.537381
-      },
-      {
-        "id": "criterion-housemaid-crossing-borders:o1",
-        "score": 0.535584
-      },
-      {
-        "id": "criterion-mood-love-notes:o1",
-        "score": 0.534111
       }
     ],
     "criterion-jeanne-dielman-matter-time:o2": [
       {
         "id": "criterion-housemaid-crossing-borders:o1",
         "score": 0.597269
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.575206
       },
       {
         "id": "hfa-black-girl-niaye:o1",
@@ -793,17 +981,21 @@
       },
       {
         "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.490407
+        "score": 0.491249
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.488723
       }
     ],
     "criterion-killer-sheep-everyday-blues:o1": [
       {
         "id": "criterion-apu-common-sight:o1",
-        "score": 0.553474
+        "score": 0.553888
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.530399
+        "score": 0.530461
       },
       {
         "id": "criterion-touki-bouki-modernity:o1",
@@ -811,15 +1003,15 @@
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.526679
-      },
-      {
-        "id": "hfa-ghatak-reason-argument-story:o1",
-        "score": 0.523563
+        "score": 0.52652
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.523554
+        "score": 0.524038
+      },
+      {
+        "id": "hfa-ghatak-reason-argument-story:o1",
+        "score": 0.523543
       },
       {
         "id": "criterion-good-morning-structures:o1",
@@ -835,17 +1027,33 @@
       },
       {
         "id": "criterion-black-girl-self-possessed:o2",
-        "score": 0.488977
+        "score": 0.489049
       }
     ],
     "criterion-largent-weight-world:o1": [
       {
         "id": "criterion-cleo-passionate-time:o1",
-        "score": 0.626946
+        "score": 0.626945
       },
       {
         "id": "flc-bridges-madison-county:o1",
-        "score": 0.560895
+        "score": 0.560861
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.543813
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.505743
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.505143
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.503126
       }
     ],
     "criterion-late-spring-home:o1": [
@@ -855,15 +1063,23 @@
       },
       {
         "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.551976
+        "score": 0.551953
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o2",
         "score": 0.544963
       },
       {
+        "id": "hfa-there-was-father-only-son:o1",
+        "score": 0.52598
+      },
+      {
         "id": "cinej-dogville-displacement-body:o1",
-        "score": 0.519594
+        "score": 0.519905
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.518297
       },
       {
         "id": "bfi-boyhood-film-week:o2",
@@ -879,15 +1095,7 @@
       },
       {
         "id": "criterion-apu-common-sight:o1",
-        "score": 0.49943
-      },
-      {
-        "id": "columbia-miyao-late-spring:o2",
-        "score": 0.494416
-      },
-      {
-        "id": "criterion-cleo-passionate-time:o1",
-        "score": 0.492331
+        "score": 0.499316
       }
     ],
     "criterion-memories-murder-killing-jar:o1": [
@@ -905,11 +1113,11 @@
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.538992
+        "score": 0.538977
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.532695
+        "score": 0.532759
       },
       {
         "id": "criterion-housemaid-crossing-borders:o1",
@@ -921,25 +1129,25 @@
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.512577
+        "score": 0.512516
       },
       {
-        "id": "flc-bridges-madison-county:o1",
-        "score": 0.495445
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.504077
       },
       {
-        "id": "criterion-killer-sheep-everyday-blues:o1",
-        "score": 0.493795
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.495964
       }
     ],
     "criterion-mood-love-notes:o1": [
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.54749
+        "score": 0.547498
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.534383
+        "score": 0.534398
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o1",
@@ -947,15 +1155,15 @@
       },
       {
         "id": "senses-rotterdam-2007-ten-skies:o1",
-        "score": 0.529835
+        "score": 0.530403
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.524006
+        "score": 0.523984
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.514304
+        "score": 0.514349
       },
       {
         "id": "bfi-boyhood-film-week:o2",
@@ -966,12 +1174,12 @@
         "score": 0.513392
       },
       {
-        "id": "cinej-ewing-cracked-windshield:o1",
-        "score": 0.504176
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.504822
       },
       {
-        "id": "flc-bridges-madison-county:o1",
-        "score": 0.498706
+        "id": "cinej-ewing-cracked-windshield:o1",
+        "score": 0.504176
       }
     ],
     "criterion-oharu-not-reconciled:o1": [
@@ -988,38 +1196,50 @@
         "score": 0.525462
       },
       {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.52045
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.519496
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.519229
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.517713
+      },
+      {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.511811
+        "score": 0.511859
       },
       {
         "id": "criterion-beehive-spanish-lessons:o1",
-        "score": 0.509936
+        "score": 0.509962
       },
       {
         "id": "criterion-late-spring-home:o1",
         "score": 0.509601
-      },
-      {
-        "id": "criterion-red-shoes-dancing:o1",
-        "score": 0.509418
-      },
-      {
-        "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.501299
-      },
-      {
-        "id": "criterion-touki-bouki-modernity:o1",
-        "score": 0.500307
-      },
-      {
-        "id": "criterion-jeanne-dielman-matter-time:o1",
-        "score": 0.491275
       }
     ],
     "criterion-red-shoes-dancing:o1": [
       {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.585377
+      },
+      {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.579131
+        "score": 0.579059
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.563943
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.562624
       },
       {
         "id": "criterion-close-up-prison-escape:o2",
@@ -1028,6 +1248,10 @@
       {
         "id": "cinej-ewing-cracked-windshield:o1",
         "score": 0.543327
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.541158
       },
       {
         "id": "criterion-housemaid-crossing-borders:o1",
@@ -1040,22 +1264,6 @@
       {
         "id": "hfa-benning-place-over-time:o1",
         "score": 0.518039
-      },
-      {
-        "id": "hfa-denis-us-go-home:o1",
-        "score": 0.51624
-      },
-      {
-        "id": "criterion-oharu-not-reconciled:o1",
-        "score": 0.509418
-      },
-      {
-        "id": "criterion-jeanne-dielman-matter-time:o1",
-        "score": 0.506306
-      },
-      {
-        "id": "criterion-jeanne-dielman-matter-time:o2",
-        "score": 0.502739
       }
     ],
     "criterion-taste-cherry-tree:o1": [
@@ -1083,15 +1291,27 @@
     "criterion-touki-bouki-modernity:o1": [
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.567744
+        "score": 0.568871
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.550761
       },
       {
         "id": "flc-bridges-madison-county:o1",
         "score": 0.549288
       },
       {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.546384
+      },
+      {
         "id": "criterion-brakhage-act-seeing:o1",
         "score": 0.539863
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.538231
       },
       {
         "id": "criterion-killer-sheep-everyday-blues:o1",
@@ -1103,29 +1323,17 @@
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.520429
+        "score": 0.520312
       },
       {
         "id": "criterion-apu-common-sight:o1",
-        "score": 0.5203
-      },
-      {
-        "id": "cinej-wenders-motion-body:o2",
-        "score": 0.507503
-      },
-      {
-        "id": "criterion-black-girl-self-possessed:o2",
-        "score": 0.504651
-      },
-      {
-        "id": "criterion-cienaga-outside-frame:o1",
-        "score": 0.500961
+        "score": 0.519934
       }
     ],
     "criterion-young-lincoln-hero:o1": [
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.582922
+        "score": 0.582874
       },
       {
         "id": "cinej-ewing-cracked-windshield:o1",
@@ -1144,8 +1352,16 @@
         "score": 0.513551
       },
       {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.499639
+      },
+      {
         "id": "criterion-cienaga-outside-frame:o1",
         "score": 0.493755
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.489389
       },
       {
         "id": "criterion-oharu-not-reconciled:o1",
@@ -1153,13 +1369,21 @@
       },
       {
         "id": "cinej-dogville-displacement-body:o1",
-        "score": 0.482063
+        "score": 0.482186
       }
     ],
     "flc-bridges-madison-county:o1": [
       {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.625619
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.565938
+      },
+      {
         "id": "criterion-largent-weight-world:o1",
-        "score": 0.560895
+        "score": 0.560861
       },
       {
         "id": "bfi-boyhood-film-week:o2",
@@ -1168,6 +1392,10 @@
       {
         "id": "criterion-touki-bouki-modernity:o1",
         "score": 0.549288
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.549135
       },
       {
         "id": "criterion-cleo-passionate-time:o1",
@@ -1182,26 +1410,40 @@
         "score": 0.523265
       },
       {
-        "id": "criterion-apu-common-sight:o1",
-        "score": 0.522239
-      },
-      {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.521069
+        "score": 0.521039
+      }
+    ],
+    "hfa-assassination-pale-flower:o1": [
+      {
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.549528
       },
       {
-        "id": "criterion-brakhage-act-seeing:o1",
-        "score": 0.519558
+        "id": "hfa-el-dorado-rio-trilogy:o1",
+        "score": 0.530567
       },
       {
-        "id": "hfa-touki-bouki:o1",
-        "score": 0.507674
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.509546
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.504848
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.502254
       }
     ],
     "hfa-beau-travail-brief-encounter:o1": [
       {
         "id": "criterion-jeanne-dielman-matter-time:o1",
         "score": 0.56818
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.558811
       },
       {
         "id": "flc-bridges-madison-county:o1",
@@ -1213,15 +1455,23 @@
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.519119
+        "score": 0.519218
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.506982
+        "score": 0.507338
+      },
+      {
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.501358
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.486701
       },
       {
         "id": "criterion-beau-travail-sensation:o1",
-        "score": 0.486239
+        "score": 0.48619
       },
       {
         "id": "criterion-taste-cherry-tree:o1",
@@ -1231,15 +1481,23 @@
     "hfa-benning-place-over-time:o1": [
       {
         "id": "senses-rotterdam-2007-ten-skies:o1",
-        "score": 0.641422
+        "score": 0.641174
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.63365
       },
       {
         "id": "lafilmforum-land-sky-2024:o1",
-        "score": 0.616757
+        "score": 0.616683
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.600493
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.556501
+        "score": 0.556624
       },
       {
         "id": "criterion-brakhage-act-seeing:o1",
@@ -1247,33 +1505,25 @@
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.54778
+        "score": 0.546662
       },
       {
         "id": "hfa-texture-fashion-film:o1",
-        "score": 0.544054
+        "score": 0.544196
       },
       {
-        "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.531691
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.542583
       },
       {
-        "id": "criterion-young-lincoln-hero:o1",
-        "score": 0.528075
-      },
-      {
-        "id": "criterion-red-shoes-dancing:o1",
-        "score": 0.518039
-      },
-      {
-        "id": "criterion-jeanne-dielman-matter-time:o1",
-        "score": 0.499322
+        "id": "hfa-letter-siberia-sunday-peking:o1",
+        "score": 0.54192
       }
     ],
     "hfa-black-girl-niaye:o1": [
       {
         "id": "criterion-black-girl-self-possessed:o1",
-        "score": 0.64265
+        "score": 0.642325
       },
       {
         "id": "hfa-black-girl-niaye:o2",
@@ -1281,11 +1531,11 @@
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.59028
+        "score": 0.590824
       },
       {
         "id": "criterion-black-girl-self-possessed:o2",
-        "score": 0.549835
+        "score": 0.549804
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o2",
@@ -1302,6 +1552,10 @@
       {
         "id": "criterion-housemaid-crossing-borders:o1",
         "score": 0.489445
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.481339
       }
     ],
     "hfa-black-girl-niaye:o2": [
@@ -1311,277 +1565,733 @@
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.577794
+        "score": 0.577871
       },
       {
         "id": "hfa-denis-us-go-home:o1",
-        "score": 0.533782
+        "score": 0.533786
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.517061
+        "score": 0.517073
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.50844
+        "score": 0.508476
+      },
+      {
+        "id": "hfa-friends-house-400-blows:o1",
+        "score": 0.507913
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o1",
-        "score": 0.491537
+        "score": 0.491462
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.487946
+        "score": 0.488016
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.484958
       },
       {
         "id": "criterion-killer-sheep-everyday-blues:o1",
         "score": 0.481326
       }
     ],
-    "hfa-denis-us-go-home:o1": [
+    "hfa-captive-feast-look-madness:o1": [
       {
-        "id": "hfa-touki-bouki:o1",
-        "score": 0.579755
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.551692
       },
       {
-        "id": "hfa-memoria:o1",
-        "score": 0.563206
+        "id": "cinej-aquino-necessary-fictions-body:o1",
+        "score": 0.542355
       },
       {
-        "id": "hfa-black-girl-niaye:o2",
-        "score": 0.533782
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.539862
       },
       {
-        "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.524835
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.53676
+      },
+      {
+        "id": "cinej-ewing-cracked-windshield:o1",
+        "score": 0.515643
+      },
+      {
+        "id": "lafilmforum-land-sky-2024:o1",
+        "score": 0.505143
+      },
+      {
+        "id": "hfa-friends-house-400-blows:o1",
+        "score": 0.503173
+      },
+      {
+        "id": "hfa-benning-place-over-time:o1",
+        "score": 0.495589
+      },
+      {
+        "id": "criterion-close-up-prison-escape:o2",
+        "score": 0.494693
+      },
+      {
+        "id": "senses-rotterdam-2007-ten-skies:o1",
+        "score": 0.486342
+      }
+    ],
+    "hfa-close-up-truth-illusion:o1": [
+      {
+        "id": "criterion-close-up-prison-escape:o2",
+        "score": 0.705216
+      },
+      {
+        "id": "cinej-ewing-cracked-windshield:o1",
+        "score": 0.677278
+      },
+      {
+        "id": "cinej-aquino-necessary-fictions-body:o1",
+        "score": 0.624145
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.571063
       },
       {
         "id": "criterion-red-shoes-dancing:o1",
-        "score": 0.51624
+        "score": 0.562624
       },
       {
-        "id": "hfa-ghatak-reason-argument-story:o1",
-        "score": 0.515042
+        "id": "hfa-captive-feast-look-madness:o1",
+        "score": 0.53676
       },
       {
-        "id": "belcourt-yi-yi:o1",
-        "score": 0.509986
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.535379
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.533204
+      },
+      {
+        "id": "criterion-close-up-prison-escape:o1",
+        "score": 0.531938
+      },
+      {
+        "id": "hfa-memoria:o1",
+        "score": 0.528543
+      }
+    ],
+    "hfa-day-wrath-dreyer-economy:o1": [
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.635139
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.565596
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.533204
+      },
+      {
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.532281
+      },
+      {
+        "id": "hfa-el-dorado-rio-trilogy:o1",
+        "score": 0.530387
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.517949
       },
       {
         "id": "criterion-housemaid-crossing-borders:o1",
-        "score": 0.501062
+        "score": 0.509647
       },
       {
-        "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.495311
+        "id": "criterion-largent-weight-world:o1",
+        "score": 0.505143
+      },
+      {
+        "id": "hfa-assassination-pale-flower:o1",
+        "score": 0.502254
+      },
+      {
+        "id": "criterion-beehive-spanish-lessons:o1",
+        "score": 0.501803
+      }
+    ],
+    "hfa-denis-us-go-home:o1": [
+      {
+        "id": "hfa-touki-bouki:o1",
+        "score": 0.578592
+      },
+      {
+        "id": "hfa-memoria:o1",
+        "score": 0.563157
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.554286
+      },
+      {
+        "id": "hfa-black-girl-niaye:o2",
+        "score": 0.533786
+      },
+      {
+        "id": "cinej-maison-petits-cubes-body:o1",
+        "score": 0.524457
+      },
+      {
+        "id": "criterion-red-shoes-dancing:o1",
+        "score": 0.516322
+      },
+      {
+        "id": "hfa-ghatak-reason-argument-story:o1",
+        "score": 0.514976
+      },
+      {
+        "id": "belcourt-yi-yi:o1",
+        "score": 0.509994
+      },
+      {
+        "id": "criterion-housemaid-crossing-borders:o1",
+        "score": 0.501085
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.495434
+      }
+    ],
+    "hfa-el-dorado-rio-trilogy:o1": [
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.551598
+      },
+      {
+        "id": "hfa-gunmans-walk-thunderhoof:o1",
+        "score": 0.550255
+      },
+      {
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.532832
+      },
+      {
+        "id": "hfa-assassination-pale-flower:o1",
+        "score": 0.530567
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.530387
+      }
+    ],
+    "hfa-friends-house-400-blows:o1": [
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.594563
+      },
+      {
+        "id": "hfa-black-girl-niaye:o2",
+        "score": 0.507913
+      },
+      {
+        "id": "criterion-oharu-not-reconciled:o1",
+        "score": 0.504531
+      },
+      {
+        "id": "hfa-captive-feast-look-madness:o1",
+        "score": 0.503173
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.494147
+      },
+      {
+        "id": "criterion-beehive-spanish-lessons:o1",
+        "score": 0.489079
+      },
+      {
+        "id": "criterion-good-morning-structures:o1",
+        "score": 0.48715
+      },
+      {
+        "id": "hfa-touki-bouki:o1",
+        "score": 0.484204
       }
     ],
     "hfa-ghatak-reason-argument-story:o1": [
       {
         "id": "criterion-killer-sheep-everyday-blues:o1",
-        "score": 0.523563
+        "score": 0.523543
       },
       {
         "id": "hfa-denis-us-go-home:o1",
-        "score": 0.515042
+        "score": 0.514976
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.508734
+        "score": 0.509416
       },
       {
         "id": "hfa-memoria:o1",
-        "score": 0.498517
+        "score": 0.498492
       },
       {
         "id": "cinej-dogville-displacement-body:o1",
-        "score": 0.491562
+        "score": 0.491695
       },
       {
         "id": "criterion-touki-bouki-modernity:o1",
-        "score": 0.48944
+        "score": 0.489488
       },
       {
         "id": "criterion-close-up-prison-escape:o1",
-        "score": 0.48549
+        "score": 0.48551
+      }
+    ],
+    "hfa-gunmans-walk-thunderhoof:o1": [
+      {
+        "id": "hfa-el-dorado-rio-trilogy:o1",
+        "score": 0.550255
+      },
+      {
+        "id": "criterion-good-morning-structures:o1",
+        "score": 0.541328
+      },
+      {
+        "id": "hfa-there-was-father-only-son:o1",
+        "score": 0.494309
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.491494
+      }
+    ],
+    "hfa-hearing-seeing-rainer-snow:o1": [
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.64037
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.638807
+      },
+      {
+        "id": "hfa-benning-place-over-time:o1",
+        "score": 0.63365
+      },
+      {
+        "id": "hfa-letter-siberia-sunday-peking:o1",
+        "score": 0.603931
+      },
+      {
+        "id": "criterion-brakhage-act-seeing:o1",
+        "score": 0.591581
+      },
+      {
+        "id": "cinej-ewing-cracked-windshield:o1",
+        "score": 0.590372
+      },
+      {
+        "id": "lafilmforum-land-sky-2024:o1",
+        "score": 0.588606
+      },
+      {
+        "id": "criterion-red-shoes-dancing:o1",
+        "score": 0.585377
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.571063
+      },
+      {
+        "id": "hfa-touki-bouki:o1",
+        "score": 0.566304
+      }
+    ],
+    "hfa-hearing-seeing-rainer-snow:o2": [
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.64037
+      },
+      {
+        "id": "cinej-aquino-necessary-fictions-body:o1",
+        "score": 0.616411
+      },
+      {
+        "id": "criterion-jeanne-dielman-matter-time:o1",
+        "score": 0.579438
+      },
+      {
+        "id": "hfa-touki-bouki:o1",
+        "score": 0.561028
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.545375
+      },
+      {
+        "id": "hfa-benning-place-over-time:o1",
+        "score": 0.542583
+      },
+      {
+        "id": "criterion-red-shoes-dancing:o1",
+        "score": 0.541158
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.539954
+      },
+      {
+        "id": "criterion-black-girl-self-possessed:o2",
+        "score": 0.5305
+      },
+      {
+        "id": "senses-nyff-2000-chunhyang:o1",
+        "score": 0.518574
+      }
+    ],
+    "hfa-in-street-friends-house:o1": [
+      {
+        "id": "belcourt-yi-yi:o1",
+        "score": 0.620712
+      },
+      {
+        "id": "hfa-friends-house-400-blows:o1",
+        "score": 0.594563
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.559151
+      },
+      {
+        "id": "cinej-aquino-necessary-fictions-body:o1",
+        "score": 0.556225
+      },
+      {
+        "id": "hfa-denis-us-go-home:o1",
+        "score": 0.554286
+      },
+      {
+        "id": "criterion-close-up-prison-escape:o2",
+        "score": 0.551207
+      },
+      {
+        "id": "hfa-letter-siberia-sunday-peking:o1",
+        "score": 0.547564
+      },
+      {
+        "id": "criterion-apu-common-sight:o1",
+        "score": 0.542362
+      },
+      {
+        "id": "hfa-captive-feast-look-madness:o1",
+        "score": 0.539862
+      },
+      {
+        "id": "cinej-maison-petits-cubes-body:o1",
+        "score": 0.527499
+      }
+    ],
+    "hfa-letter-siberia-sunday-peking:o1": [
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.603931
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.547564
+      },
+      {
+        "id": "hfa-benning-place-over-time:o1",
+        "score": 0.54192
+      },
+      {
+        "id": "criterion-brakhage-act-seeing:o1",
+        "score": 0.524931
+      },
+      {
+        "id": "criterion-red-shoes-dancing:o1",
+        "score": 0.499974
+      },
+      {
+        "id": "hfa-touki-bouki:o1",
+        "score": 0.499843
       }
     ],
     "hfa-memoria:o1": [
       {
         "id": "hfa-denis-us-go-home:o1",
-        "score": 0.563206
+        "score": 0.563157
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.528543
       },
       {
         "id": "criterion-cienaga-outside-frame:o1",
-        "score": 0.519672
+        "score": 0.519541
       },
       {
         "id": "cinej-maison-petits-cubes-body:o1",
-        "score": 0.503601
+        "score": 0.502472
       },
       {
         "id": "hfa-ghatak-reason-argument-story:o1",
-        "score": 0.498517
+        "score": 0.498492
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.494175
+        "score": 0.494476
       },
       {
         "id": "hfa-wendy-lucy:o1",
-        "score": 0.491677
+        "score": 0.490783
       }
     ],
     "hfa-texture-fashion-film:o1": [
       {
         "id": "hfa-benning-place-over-time:o1",
-        "score": 0.544054
+        "score": 0.544196
+      },
+      {
+        "id": "hfa-turning-gate-early-hong:o1",
+        "score": 0.499517
+      }
+    ],
+    "hfa-there-was-father-only-son:o1": [
+      {
+        "id": "criterion-good-morning-structures:o1",
+        "score": 0.547983
+      },
+      {
+        "id": "criterion-late-spring-home:o1",
+        "score": 0.52598
+      },
+      {
+        "id": "hfa-gunmans-walk-thunderhoof:o1",
+        "score": 0.494309
+      },
+      {
+        "id": "criterion-apu-common-sight:o1",
+        "score": 0.481129
       }
     ],
     "hfa-touki-bouki:o1": [
       {
         "id": "hfa-black-girl-niaye:o1",
-        "score": 0.59028
+        "score": 0.590824
       },
       {
         "id": "hfa-denis-us-go-home:o1",
-        "score": 0.579755
+        "score": 0.578592
       },
       {
         "id": "hfa-black-girl-niaye:o2",
-        "score": 0.577794
+        "score": 0.577871
       },
       {
         "id": "criterion-touki-bouki-modernity:o1",
-        "score": 0.567744
+        "score": 0.568871
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.566304
       },
       {
         "id": "criterion-housemaid-crossing-borders:o1",
-        "score": 0.561802
+        "score": 0.561677
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.561028
       },
       {
         "id": "criterion-black-girl-self-possessed:o2",
-        "score": 0.55096
+        "score": 0.551374
       },
       {
         "id": "senses-nyff-2000-chunhyang:o1",
-        "score": 0.550959
+        "score": 0.551082
       },
       {
         "id": "hfa-benning-place-over-time:o1",
-        "score": 0.54778
+        "score": 0.546662
+      }
+    ],
+    "hfa-turning-gate-early-hong:o1": [
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.59905
       },
       {
-        "id": "cinej-dogville-displacement-body:o1",
-        "score": 0.544512
+        "id": "hfa-assassination-pale-flower:o1",
+        "score": 0.549528
       },
       {
-        "id": "criterion-killer-sheep-everyday-blues:o1",
-        "score": 0.523554
+        "id": "hfa-el-dorado-rio-trilogy:o1",
+        "score": 0.532832
+      },
+      {
+        "id": "hfa-day-wrath-dreyer-economy:o1",
+        "score": 0.532281
+      },
+      {
+        "id": "criterion-jeanne-dielman-matter-time:o1",
+        "score": 0.514447
+      },
+      {
+        "id": "bfi-lavventura-modernist-moment:o1",
+        "score": 0.512361
+      },
+      {
+        "id": "flc-bridges-madison-county:o1",
+        "score": 0.508432
+      },
+      {
+        "id": "criterion-mood-love-notes:o1",
+        "score": 0.504822
+      },
+      {
+        "id": "bfi-boyhood-film-week:o2",
+        "score": 0.504811
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.501691
       }
     ],
     "hfa-wendy-lucy:o1": [
       {
         "id": "hfa-memoria:o1",
-        "score": 0.491677
+        "score": 0.490783
       }
     ],
     "lafilmforum-land-sky-2024:o1": [
       {
         "id": "hfa-benning-place-over-time:o1",
-        "score": 0.616757
+        "score": 0.616683
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.588606
       },
       {
         "id": "belcourt-yi-yi:o1",
-        "score": 0.556549
+        "score": 0.556653
       },
       {
         "id": "cinej-nostalgia-documemory:o1",
-        "score": 0.518366
+        "score": 0.518415
+      },
+      {
+        "id": "hfa-close-up-truth-illusion:o1",
+        "score": 0.516214
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.515121
+      },
+      {
+        "id": "hfa-captive-feast-look-madness:o1",
+        "score": 0.505143
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.505405
+        "score": 0.504884
+      },
+      {
+        "id": "hfa-in-street-friends-house:o1",
+        "score": 0.500671
       },
       {
         "id": "cinej-ewing-cracked-windshield:o1",
-        "score": 0.490898
-      },
-      {
-        "id": "senses-rotterdam-2007-ten-skies:o1",
-        "score": 0.486748
-      },
-      {
-        "id": "columbia-miyao-late-spring:o2",
-        "score": 0.480363
+        "score": 0.490857
       }
     ],
     "senses-nyff-2000-chunhyang:o1": [
       {
         "id": "criterion-close-up-prison-escape:o1",
-        "score": 0.555696
+        "score": 0.555736
       },
       {
         "id": "cinej-aquino-necessary-fictions-body:o2",
-        "score": 0.552307
+        "score": 0.552456
       },
       {
         "id": "hfa-touki-bouki:o1",
-        "score": 0.550959
+        "score": 0.551082
       },
       {
         "id": "criterion-memories-murder-killing-jar:o1",
-        "score": 0.532695
+        "score": 0.532759
       },
       {
         "id": "criterion-jeanne-dielman-matter-time:o1",
-        "score": 0.526942
+        "score": 0.526941
       },
       {
         "id": "criterion-killer-sheep-everyday-blues:o1",
-        "score": 0.526679
+        "score": 0.52652
       },
       {
         "id": "criterion-touki-bouki-modernity:o1",
-        "score": 0.520429
+        "score": 0.520312
       },
       {
         "id": "hfa-beau-travail-brief-encounter:o1",
-        "score": 0.519119
+        "score": 0.519218
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o2",
+        "score": 0.518574
       },
       {
         "id": "hfa-black-girl-niaye:o2",
-        "score": 0.517061
-      },
-      {
-        "id": "criterion-mood-love-notes:o1",
-        "score": 0.514304
+        "score": 0.517073
       }
     ],
     "senses-rotterdam-2007-ten-skies:o1": [
       {
         "id": "hfa-benning-place-over-time:o1",
-        "score": 0.641422
-      },
-      {
-        "id": "criterion-close-up-prison-escape:o1",
-        "score": 0.538107
+        "score": 0.641174
       },
       {
         "id": "criterion-cleo-passionate-time:o1",
-        "score": 0.537955
+        "score": 0.538519
+      },
+      {
+        "id": "criterion-close-up-prison-escape:o1",
+        "score": 0.538272
       },
       {
         "id": "criterion-mood-love-notes:o1",
-        "score": 0.529835
+        "score": 0.530403
+      },
+      {
+        "id": "bfi-1975-jaws-jeanne-spectrum:o1",
+        "score": 0.524214
+      },
+      {
+        "id": "hfa-hearing-seeing-rainer-snow:o1",
+        "score": 0.495317
       },
       {
         "id": "bfi-boyhood-film-week:o2",
-        "score": 0.487752
+        "score": 0.487918
       },
       {
         "id": "lafilmforum-land-sky-2024:o1",
-        "score": 0.486748
+        "score": 0.486578
+      },
+      {
+        "id": "hfa-captive-feast-look-madness:o1",
+        "score": 0.486342
       }
     ]
   }

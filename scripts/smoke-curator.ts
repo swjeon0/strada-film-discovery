@@ -2,6 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import nextEnv from "@next/env";
 import { runCuratorProduction } from "../lib/server/curator/production";
+import { CuratorIdentityError } from "../lib/server/curator/resolve";
 import { explainFilm } from "../lib/server/curation-detail";
 import {
   RecommendationSchema,
@@ -161,11 +162,14 @@ async function run(
     return data;
   } catch (error) {
     const elapsedMs = Date.now() - start;
+    const details =
+      error instanceof CuratorIdentityError ? error.details : undefined;
     runs.push({
       id,
       ok: false,
       elapsedMs,
       error: error instanceof Error ? error.message : "unknown",
+      ...(details ? { details } : {}),
     });
     console.log(
       JSON.stringify({
@@ -173,6 +177,7 @@ async function run(
         ok: false,
         elapsedMs,
         error: error instanceof Error ? error.message : "unknown",
+        ...(details ? { details } : {}),
       }),
     );
   }

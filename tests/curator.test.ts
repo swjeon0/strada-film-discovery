@@ -276,7 +276,25 @@ test("reasoning none is sent explicitly and compact tuples replace the verbose c
 test("director identity tolerates diacritics and culturally reversed name order without fuzzy matching", () => {
   assert.equal(directorMatches("Yasujirō Ozu", "Ozu Yasujiro"), true);
   assert.equal(directorMatches("John Ford", "Ford John"), true);
+  assert.equal(
+    directorMatches(
+      "Jafar Panahi, Mojtaba Mirtahmasb",
+      "Jafar Panahi and Mojtaba Mirtahmasb",
+    ),
+    true,
+  );
+  assert.equal(
+    directorMatches("Jafar Panahi, Mojtaba Mirtahmasb", "Jafar Panahi"),
+    true,
+  );
   assert.equal(directorMatches("John Ford", "John Huston"), false);
+  assert.equal(
+    directorMatches(
+      "Jafar Panahi, Mojtaba Mirtahmasb",
+      "Jafar Panahi and Abbas Kiarostami",
+    ),
+    false,
+  );
 });
 
 test("identity resolution verifies the exact twelve-film route without substitutes", async () => {

@@ -1,5 +1,6 @@
 import { RECOMMENDATION_COUNT } from "./recommendation-input";
-import { titleMatches } from "./film-identity";
+import { directorMatches, titleMatches } from "./film-identity";
+export { directorMatches } from "./film-identity";
 import { config, AppError } from "./config";
 import {
   getFilm as getTmdb,
@@ -205,24 +206,6 @@ function normalizeName(value: string) {
     .replace(/\p{M}/gu, "")
     .toLowerCase()
     .replace(/[^\p{L}\p{N}]/gu, "");
-}
-function personTokens(value: string) {
-  return (
-    value
-      .normalize("NFKD")
-      .replace(/\p{M}/gu, "")
-      .toLowerCase()
-      .match(/[\p{L}\p{N}]+/gu) ?? []
-  ).sort();
-}
-export function directorMatches(a: string, b: string) {
-  const left = personTokens(a),
-    right = personTokens(b);
-  return (
-    left.length > 0 &&
-    left.length === right.length &&
-    left.every((token, index) => token === right[index])
-  );
 }
 export async function mapLimited<T, R>(
   items: T[],

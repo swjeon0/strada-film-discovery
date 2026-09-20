@@ -1,4 +1,4 @@
-import { titleMatches } from "./film-identity";
+import { directorMatches, titleMatches } from "./film-identity";
 import { config, AppError } from "./config";
 import { filmById, collection } from "../catalogue";
 import type { Film, Language } from "../domain";
@@ -275,10 +275,7 @@ function movieTitleMatches(
   ].some((value) => typeof value === "string" && titleMatches(value, title));
 }
 function directedBy(film: Film, director: string) {
-  return (
-    samePerson(film.director, director) ||
-    film.director.split(",").some((name) => samePerson(name, director))
-  );
+  return directorMatches(film.director, director);
 }
 async function resolveFromDirectorCredits(
   title: string,
@@ -344,7 +341,7 @@ export async function resolveCandidate(
     (f) =>
       titleMatches(f.title, title) &&
       Math.abs(f.year - year) <= 1 &&
-      samePerson(f.director, director),
+      directorMatches(f.director, director),
   );
   if (local) return local;
   if (!norm(director)) return null;
