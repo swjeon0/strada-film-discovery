@@ -21,9 +21,8 @@ export const ContextPassageSchema = z.object({
   filmIds: z.array(z.string()).max(80),
   subjects: z.array(z.string().min(1).max(100)).max(20),
   contentKind: z
-    .enum(["exact_passage", "reviewed_paraphrase"])
+    .enum(["exact_passage", "source_paraphrase"])
     .default("exact_passage"),
-  reviewState: z.enum(["human_checked", "agent_reviewed"]),
   rights: z.enum([
     "quotation_for_research",
     "link_and_metadata_only",

@@ -510,14 +510,6 @@ export function FilmDrawer({
                           <blockquote>{s.excerpt}</blockquote>
                         </div>
                       )}
-                      {s.reviewStatus === "agent_reviewed" && (
-                        <small className="context-note">
-                          {tr(
-                            "Source reading checked by AI; not yet reviewed by a human editor.",
-                            "AI가 원문을 확인해 정리한 자료이며, 사람 편집자의 검수는 아직 거치지 않았습니다.",
-                          )}
-                        </small>
-                      )}
                       {s.scope === "interpretive_context" && (
                         <small className="context-note">
                           {tr(

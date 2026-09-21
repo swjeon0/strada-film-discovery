@@ -1,5 +1,6 @@
 PRAGMA foreign_keys = ON;
 PRAGMA journal_mode = WAL;
+PRAGMA user_version = 2;
 
 CREATE TABLE IF NOT EXISTS sources (
   id TEXT PRIMARY KEY,
@@ -26,7 +27,6 @@ CREATE TABLE IF NOT EXISTS document_versions (
   verification_method TEXT NOT NULL CHECK(verification_method IN ('web_open','http_fetch')),
   verification_locator TEXT NOT NULL,
   verification_note TEXT NOT NULL,
-  review_status TEXT NOT NULL CHECK(review_status = 'agent_reviewed'),
   original_record_json TEXT NOT NULL,
   parser_version TEXT NOT NULL,
   created_at TEXT NOT NULL,
@@ -79,7 +79,6 @@ CREATE TABLE IF NOT EXISTS observations (
   boundary TEXT NOT NULL,
   kind TEXT NOT NULL CHECK(kind IN ('film_reading','comparison','contrast','influence','co_programming','historical_context','incidental_mention')),
   subjects_json TEXT NOT NULL,
-  review_status TEXT NOT NULL CHECK(review_status = 'agent_reviewed'),
   UNIQUE(version_id,local_id)
 );
 CREATE TABLE IF NOT EXISTS observation_participants (
@@ -103,16 +102,6 @@ CREATE TABLE IF NOT EXISTS observation_embeddings (
   generated_at TEXT NOT NULL,
   imported_at TEXT,
   PRIMARY KEY(observation_id,model,dimensions,input_hash)
-);
-CREATE TABLE IF NOT EXISTS review_events (
-  id TEXT PRIMARY KEY,
-  version_id TEXT NOT NULL REFERENCES document_versions(id),
-  actor_type TEXT NOT NULL CHECK(actor_type IN ('agent','human')),
-  actor_id TEXT NOT NULL,
-  status TEXT NOT NULL CHECK(status IN ('agent_reviewed','human_approved','needs_review','rejected')),
-  note TEXT NOT NULL,
-  created_at TEXT NOT NULL,
-  CHECK(actor_type = 'human' OR status != 'human_approved')
 );
 CREATE TABLE IF NOT EXISTS ingestion_jobs (
   id TEXT PRIMARY KEY,
@@ -179,7 +168,6 @@ CREATE INDEX IF NOT EXISTS observations_by_version ON observations(version_id,ki
 CREATE INDEX IF NOT EXISTS participants_by_entity ON observation_participants(film_key,observation_id);
 CREATE INDEX IF NOT EXISTS evidence_by_passage ON evidence_links(passage_id,observation_id);
 CREATE INDEX IF NOT EXISTS embeddings_by_input ON observation_embeddings(model,dimensions,input_hash);
-CREATE INDEX IF NOT EXISTS reviews_by_version ON review_events(version_id,created_at);
 CREATE INDEX IF NOT EXISTS jobs_by_status ON ingestion_jobs(status,updated_at);
 CREATE INDEX IF NOT EXISTS judgments_by_case ON judgments(case_id,judge_type);
 

@@ -107,7 +107,6 @@ function document(
     observations,
     versionId: `${id}:v1`,
     contentHash: `fixture-${id}`,
-    reviewStatus: "agent_reviewed",
     keyMappings: {},
     ...patch,
   };
@@ -448,7 +447,7 @@ test("more than eight selected films preserve identities and receive direct read
     );
 });
 
-test("full-paper access, translations, review status and scope boundaries survive retrieval", async () => {
+test("full-paper access, translations and scope boundaries survive retrieval", async () => {
   const obs = observation("abstract", [a.key], {
     summary: "The passage identifies a contrast in duration.",
     summaryKo: "본문은 지속 시간의 대조를 설명한다.",
@@ -471,7 +470,6 @@ test("full-paper access, translations, review status and scope boundaries surviv
   assert.equal(ko.observation, obs.summaryKo);
   assert.equal(en.observation, obs.summary);
   assert.equal(ko.accessLevel, "full_page");
-  assert.equal(ko.reviewState, "agent_reviewed");
   assert.equal(ko.rights, "noncommercial");
   assert.equal(ko.boundary, obs.boundary);
   assert.equal(ko.versionId, doc.versionId);
@@ -656,7 +654,6 @@ test("production source adapter and signed detail packet retain bounded source p
     assert.equal(batch.sources.length, 1);
     const source = batch.sources[0];
     assert.equal(source.accessLevel, "full_page");
-    assert.equal(source.reviewStatus, "agent_reviewed");
     assert.equal(source.boundary, obs.boundary);
     assert.equal(source.documentId, doc.id);
     assert.equal(source.documentVersion, doc.versionId);
@@ -669,7 +666,6 @@ test("production source adapter and signed detail packet retain bounded source p
     assert.equal(packet.version, 2);
     assert.equal(packet.evidence.length, 1);
     assert.equal(packet.evidence[0].access, "full_page");
-    assert.equal(packet.evidence[0].review, "agent_reviewed");
     assert.equal(packet.evidence[0].boundary, obs.boundary);
     assert.equal(packet.evidence[0].locator, doc.passages[0].locator);
     assert.equal(packet.evidence[0].excerpt, doc.passages[0].text);

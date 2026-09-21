@@ -60,7 +60,6 @@ const context: ContextBundle = {
       filmIds: [a.id],
       subjects: ["Candidate 0"],
       contentKind: "exact_passage",
-      reviewState: "human_checked",
       rights: "quotation_for_research",
     },
   ],

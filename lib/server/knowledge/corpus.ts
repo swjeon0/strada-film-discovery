@@ -135,7 +135,6 @@ export class CorpusKnowledgeRepository implements KnowledgeRepository {
       corpusVersion: this.data.corpusVersion,
       semanticObservations: Object.keys(this.neighbors.neighbors).length,
       storage: "versioned-sqlite-with-bundled-read-replica",
-      humanCurationCases: 0,
     };
   }
   private matchFilm(film: Film) {
@@ -356,7 +355,6 @@ export class CorpusKnowledgeRepository implements KnowledgeRepository {
       filmIds: [...filmIds],
       subjects: observation.subjects,
       contentKind: "exact_passage",
-      reviewState: document.reviewStatus,
       rights:
         document.rights.mode === "open_license"
           ? "open_license"

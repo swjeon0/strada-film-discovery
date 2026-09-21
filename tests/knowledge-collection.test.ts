@@ -10,7 +10,8 @@ import {
   type SourceRegistry,
 } from "../scripts/collect-knowledge";
 import { batchLine, chunkText } from "../scripts/prepare-knowledge-batch";
-import { auditCandidate } from "../scripts/review-knowledge-batch";
+import { auditCandidate } from "../scripts/validate-knowledge-batch";
+import { selectDiscovered, type DiscoveryPlan } from "../scripts/discover-knowledge";
 
 const registry: SourceRegistry = {
   version: 1,
@@ -70,6 +71,40 @@ test("collector rejects unsafe registries and malformed jobs before fetching", (
   );
 });
 
+test("discovery applies source policy, published exclusions, stable ordering and quotas", () => {
+  const plan: DiscoveryPlan = {
+    version: 1,
+    id: "discover-001",
+    createdAt: "2026-09-20T00:00:00Z",
+    description: "Synthetic discovery.",
+    targetDocuments: 2,
+    families: [
+      {
+        sourceFamily: "archive",
+        seeds: ["https://archive.org/list?page={page}"],
+        includePathPrefixes: ["/film/"],
+        quota: 2,
+      },
+    ],
+  };
+  const pages = new Map([
+    [
+      "archive:https://archive.org/list?page=1",
+      '<a href="/film/z">Z</a><a href="/film/a?utm_source=x">A</a><a href="/other/no">No</a>',
+    ],
+    [
+      "archive:https://archive.org/list?page=2",
+      '<a href="https://archive.org/film/b">B</a><a href="https://other.org/film/c">No</a>',
+    ],
+  ]);
+  const targets = selectDiscovered(plan, registry, pages, ["https://archive.org/film/a"]);
+  assert.deepEqual(
+    targets.map((target) => target.url),
+    ["https://archive.org/film/b", "https://archive.org/film/z"],
+  );
+  assert.equal(new Set(targets.map((target) => target.id)).size, 2);
+});
+
 test("batch preparation chunks deterministically and refuses Sol models", () => {
   const text = `${"a".repeat(2100)}\n\n${"b".repeat(2100)}`;
   const chunks = chunkText(text, 2500, 200);
@@ -109,7 +144,7 @@ test("candidate audit blocks abstract-only scholarship and unverifiable quote an
         subjects: ["form"],
         anchorQuote: "Words not in the source",
         confidence: 0.8,
-        reviewFlags: [],
+        summaryKo: "읽기",
       },
     ],
     rejectionReasons: [],
@@ -120,5 +155,5 @@ test("candidate audit blocks abstract-only scholarship and unverifiable quote an
     "academic_without_full_text",
     "quote_not_found",
   ]);
-  assert.equal(audited.observations[0].eligibleForReview, false);
+  assert.equal(audited.observations[0].eligible, false);
 });

@@ -1,6 +1,6 @@
 # STRADA source record v1
 
-Each `records/*.json` file is an array of records. Only actually opened sources enter this set. Agent review is not human review. A record is a bounded reading of a document, not a claim to have ingested its full text.
+Each `records/*.json` file is an array of automatically validated records. A record is a bounded reading of a document, not a claim to have ingested its full text.
 
 ```json
 {
@@ -64,4 +64,4 @@ Each `records/*.json` file is an array of records. Only actually opened sources 
 - `filmKeys` resolve within this document's `films`; only attach films actually discussed in that observation. Provide accurate year/director. Aliases must be actual titles, not generated translations. Leave external IDs empty if not verified.
 - `passageIds` resolve within this document. The quote is an audit anchor. The paraphrase may summarize the opened paragraph or article, but is never an exact quotation and does not assert that the small quoted span entails all of it.
 - At least one informative exact passage and one observation per accessible source. Keep total quote words per source at most 25 and total derived prose under 160 words. No inaccessible full texts, fabricated locators, or paywall bypass.
-- New records carry `agent_reviewed` provenance during ingestion. They cannot be promoted to human-approved curation cases.
+- Admission records the automatic checks in the collection validation report; the serving schema has no person-review field.

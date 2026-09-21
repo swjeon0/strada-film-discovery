@@ -132,6 +132,33 @@ async function atomic(path: string, data: unknown) {
   await writeFile(path + ".tmp", JSON.stringify(data, null, 2) + "\n");
   await rename(path + ".tmp", path);
 }
+async function embeddingRequest(apiKey: string, input: string[]) {
+  for (let attempt = 0; attempt < 6; attempt++) {
+    const response = await fetch("https://api.openai.com/v1/embeddings", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      signal: AbortSignal.timeout(30_000),
+      body: JSON.stringify({
+        model: MODEL,
+        dimensions: DIMENSIONS,
+        input,
+        encoding_format: "float",
+      }),
+    });
+    if (response.ok) return response;
+    if (response.status !== 429 && response.status < 500)
+      throw new Error(`Embedding provider returned ${response.status}. No response body logged.`);
+    if (attempt === 5)
+      throw new Error(`Embedding provider returned ${response.status} after bounded retries.`);
+    const retryAfter = Number.parseFloat(response.headers.get("retry-after") ?? "0"),
+      delay = Math.min(20_000, Math.max(1_000, retryAfter * 1_000 || 2 ** attempt * 1_000));
+    await new Promise((done) => setTimeout(done, delay));
+  }
+  throw new Error("Embedding request exhausted retries.");
+}
 async function main() {
   nextEnv.loadEnvConfig(process.cwd());
   const args = process.argv.slice(2),
@@ -180,25 +207,11 @@ async function main() {
     throw new Error("OPENAI_API_KEY is required for uncached embeddings.");
   let inputTokens = 0,
     calls = 0;
-  for (let start = 0; start < pending.length; start += 64) {
-    const batch = pending.slice(start, start + 64);
-    const response = await fetch("https://api.openai.com/v1/embeddings", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      signal: AbortSignal.timeout(30_000),
-      body: JSON.stringify({
-        model: MODEL,
-        dimensions: DIMENSIONS,
-        input: batch.map((row) => row.text),
-        encoding_format: "float",
-      }),
-    });
-    if (!response.ok)
-      throw new Error(
-        `Embedding provider returned ${response.status}. No response body logged.`,
+  for (let start = 0; start < pending.length; start += 32) {
+    const batch = pending.slice(start, start + 32),
+      response = await embeddingRequest(
+        process.env.OPENAI_API_KEY!,
+        batch.map((row) => row.text),
       );
     const data = (await response.json()) as {
       data: { index: number; embedding: number[] }[];

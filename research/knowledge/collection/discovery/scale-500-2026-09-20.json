@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "scale-500-2026-09-20",
+  "createdAt": "2026-09-20T23:30:00.000Z",
+  "description": "Automated STRADA expansion tranche targeting 500 source-grounded film programme and criticism documents.",
+  "targetDocuments": 700,
+  "families": [
+    {
+      "sourceFamily": "bfi-sight-and-sound",
+      "seeds": [
+        "https://www.bfi.org.uk/articles/type/features",
+        "https://www.bfi.org.uk/articles/type/reviews",
+        "https://www.bfi.org.uk/articles/type/lists",
+        "https://www.bfi.org.uk/sight-and-sound"
+      ],
+      "pageStart": 1,
+      "pageEnd": 1,
+      "includePathPrefixes": [
+        "/features/",
+        "/sight-and-sound/"
+      ],
+      "quota": 90,
+      "proposedType": "criticism",
+      "tags": [
+        "BFI",
+        "criticism"
+      ]
+    },
+    {
+      "sourceFamily": "harvard-film-archive",
+      "seeds": [
+        "https://harvardfilmarchive.org/programs?page={page}"
+      ],
+      "pageStart": 1,
+      "pageEnd": 36,
+      "includePathPrefixes": [
+        "/programs/"
+      ],
+      "quota": 700,
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note"
+      ]
+    }
+  ]
+}

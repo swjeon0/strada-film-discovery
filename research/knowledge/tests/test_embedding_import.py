@@ -1,4 +1,5 @@
 """Version/hash integrity and idempotent persistence of offline cached vectors."""
+from contextlib import closing
 import importlib.util
 import json
 from pathlib import Path
@@ -60,7 +61,7 @@ class EmbeddingImportTests(unittest.TestCase):
         self.assertEqual(second["reused"], 1)
         self.assertEqual(second["activeObservationEmbeddings"], 1)
         self.assertEqual(second["networkCalls"], 0)
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db:
             row = db.execute("SELECT e.observation_id,e.input_hash,e.generated_at,e.imported_at,o.version_id FROM observation_embeddings e JOIN observations o ON o.id=e.observation_id").fetchone()
         self.assertEqual(row[0], f"{row[4]}/o1")
         self.assertEqual(row[2], "unknown_legacy_cache")
@@ -73,7 +74,7 @@ class EmbeddingImportTests(unittest.TestCase):
         result = self.run_import()
         self.assertEqual(result["inserted"], 2)
         self.assertEqual(result["distinctInputHashes"], 1)
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db:
             self.assertEqual(db.execute("SELECT DISTINCT generated_at FROM observation_embeddings").fetchone()[0], "2026-09-20T19:00:00Z")
 
     def test_changed_observation_gets_new_version_hash_and_preserves_old_vector(self):
@@ -88,7 +89,7 @@ class EmbeddingImportTests(unittest.TestCase):
         self.assertEqual(result["inserted"], 1)
         self.assertEqual(result["activeObservationEmbeddings"], 1)
         self.assertEqual(result["totalHistoricalEmbeddings"], 2)
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db:
             self.assertEqual(db.execute("SELECT count(DISTINCT input_hash) FROM observation_embeddings").fetchone()[0], 2)
 
     def test_stale_serving_version_cannot_attach_to_new_active_observation(self):
@@ -130,7 +131,7 @@ class EmbeddingImportTests(unittest.TestCase):
         self.cache.write_text(json.dumps(cache))
         with self.assertRaisesRegex(ValueError, "invalid cached embedding"):
             self.run_import()
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db:
             self.assertEqual(db.execute("SELECT count(*) FROM observation_embeddings").fetchone()[0], 0)
 
     def test_removed_document_keeps_only_historical_embedding(self):

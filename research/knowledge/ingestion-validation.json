@@ -1,74 +1,40 @@
 {
-  "admissionPolicy": "academic_full_text_only",
-  "pythonTests": 31,
-  "realFirstMs": 72.29,
-  "realSecondMs": 29.98,
-  "realArtifactIdentical": true,
-  "realDatabaseCountsIdentical": true,
-  "realCurrentStats": {
-    "documents": 44,
-    "versions": 44,
-    "films": 59,
-    "passages": 46,
-    "observations": 52,
-    "evidenceLinks": 52,
-    "agentReviewed": 44,
-    "humanApproved": 0,
+  "corpusVersion": "fe8625fa0e8176ac993af80989465e9c5f4fa8d11f4108d4b46714675a9e9837",
+  "stats": {
+    "documents": 579,
+    "versions": 579,
+    "films": 820,
+    "passages": 582,
+    "observations": 588,
+    "evidenceLinks": 589,
     "commercialOnly": false,
     "byType": {
       "academic": 6,
-      "criticism": 26,
+      "criticism": 99,
       "festival": 0,
-      "programme": 12
+      "programme": 474
     },
     "byRights": {
       "metadata_only": 0,
       "noncommercial": 1,
       "open_license": 5,
-      "restricted_excerpt": 38
+      "restricted_excerpt": 573
     },
-    "quoteVerification": "agent_source_access_reported; offline_quote_match_not_performed"
+    "quoteVerification": "automatic_exact_quote_validation_before_publication"
   },
-  "realDatabaseCounts": {
-    "sources": 54,
-    "document_versions": 81,
-    "film_entities": 71,
-    "passages": 83,
-    "observations": 93,
-    "evidence_links": 93,
-    "review_events": 81,
-    "ingestion_jobs": 7,
-    "quarantine_errors": 2,
-    "active_sources": 44
+  "databaseCounts": {
+    "sources": 579,
+    "document_versions": 579,
+    "film_entities": 831,
+    "passages": 582,
+    "observations": 588,
+    "evidence_links": 589,
+    "ingestion_jobs": 5,
+    "quarantine_errors": 0,
+    "active_sources": 579
   },
-  "realArtifactBytes": 123696,
-  "coldRebuildCorpusVersionMatches": true,
-  "syntheticScale": {
-    "documents": 2000,
-    "batchSize": 200,
-    "batchCount": 10,
-    "firstBuildMs": 1565.73,
-    "unchangedBuildMs": 665.88,
-    "databaseCountsIdentical": true,
-    "corpusVersionIdentical": true,
-    "quarantined": 0,
-    "sqliteIntegrity": "ok",
-    "foreignKeyErrors": 0,
-    "note": "Synthetic copies test ingestion mechanics only, not document quality, network fetching, embedding cost, or production retrieval scaling."
-  },
-  "timestamp": "2026-09-20T20:19:42.716Z",
-  "corpusVersion": "9995462c2933930656f8bc5052e6063cdc6cf14d4dbb7e9e66b2f087a4675f06",
-  "embeddingPersistence": {
-    "checkedAt": "2026-09-20T20:32:25.473145+00:00",
-    "model": "text-embedding-3-small",
-    "dimensions": 256,
-    "insertedOnFirstImport": 52,
-    "insertedOnSecondImport": 0,
-    "reusedOnSecondImport": 52,
-    "apiCalls": 0,
-    "rows": 52,
-    "activeRows": 52,
-    "legacyGenerationTimeUnknownRows": 52,
-    "foreignKeyErrors": 0
-  }
+  "sqliteIntegrity": "ok",
+  "foreignKeyErrors": 0,
+  "quarantined": 0,
+  "output": "/Users/swjeon/Documents/Codex/2026-09-12/referenced-chatgpt-conversation-this-is-an/closeup/research/knowledge/serving-index.json"
 }

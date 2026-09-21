@@ -54,7 +54,6 @@ export type KnowledgeDocument = {
   observations: KnowledgeObservation[];
   versionId: string;
   contentHash: string;
-  reviewStatus: "agent_reviewed" | "human_checked";
   keyMappings: Record<string, string>;
 };
 export type KnowledgeIndex = {

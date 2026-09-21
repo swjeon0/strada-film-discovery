@@ -61,7 +61,6 @@ export const SourceSchema = z.object({
   boundary: z.string().max(900).optional(),
   documentId: z.string().optional(),
   documentVersion: z.string().optional(),
-  reviewStatus: z.enum(["human_checked", "agent_reviewed"]).optional(),
 });
 export type Source = z.infer<typeof SourceSchema>;
 export const ConnectionSchema = z.object({

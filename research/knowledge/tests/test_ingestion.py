@@ -1,5 +1,6 @@
 """Offline invariants for versioned records, identity reconciliation and recovery."""
 import copy
+from contextlib import closing
 import importlib.util
 import json
 from pathlib import Path
@@ -55,7 +56,7 @@ class IngestionTests(unittest.TestCase):
         self.assertTrue(second["records"][0]["resumed"])
         self.assertEqual(second["sqliteIntegrity"], "ok")
         self.assertEqual(second["foreignKeyErrors"], 0)
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db:
             self.assertEqual(db.execute("SELECT exact_quote FROM passages").fetchone()[0], record()["passages"][0]["text"])
             self.assertEqual(db.execute("SELECT summary FROM observations").fetchone()[0], record()["observations"][0]["summary"])
             self.assertEqual(db.execute("SELECT match_status FROM passages").fetchone()[0], "not_locally_verified")
@@ -72,11 +73,11 @@ class IngestionTests(unittest.TestCase):
         self.assertEqual(second["databaseCounts"]["document_versions"], 2)
         self.assertNotEqual(first["corpusVersion"], second["corpusVersion"])
         self.assertEqual(second["stats"]["versions"], 1)
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db:
             with self.assertRaises(sqlite3.IntegrityError):
                 db.execute("UPDATE document_versions SET title='Overwritten'")
 
-    def test_recheck_adds_review_without_duplicate_content(self):
+    def test_recheck_does_not_duplicate_unchanged_content(self):
         item = record()
         self.write([item])
         first = self.build()
@@ -84,7 +85,6 @@ class IngestionTests(unittest.TestCase):
         self.write([item])
         second = self.build()
         self.assertEqual(second["databaseCounts"]["document_versions"], 1)
-        self.assertEqual(second["databaseCounts"]["review_events"], 2)
         self.assertEqual(first["corpusVersion"], second["corpusVersion"])
 
     def test_aliases_deduplicate_across_documents_and_keep_original_keys(self):
@@ -156,13 +156,11 @@ class IngestionTests(unittest.TestCase):
         self.assertEqual(result["quarantined"], 3)
         self.assertEqual(result["databaseCounts"]["sources"], 0)
 
-    def test_no_invented_human_review_or_license(self):
-        fake = record("false-human-review")
-        fake["reviewStatus"] = "human_approved"
+    def test_no_invented_license(self):
         license = record("license-without-url")
         license["rights"]["mode"] = "open_license"
-        self.write([fake, license])
-        self.assertEqual(self.build()["quarantined"], 2)
+        self.write([license])
+        self.assertEqual(self.build()["quarantined"], 1)
 
     def test_commercial_filter_is_conservative_and_never_relabels(self):
         restricted = record("restricted")
@@ -183,7 +181,7 @@ class IngestionTests(unittest.TestCase):
         item["observations"][0].update({"kind": "co_programming", "filmKeys": ["late-spring-1949-ozu", "early-summer"]})
         self.write([item])
         self.build()
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db:
             self.assertEqual(db.execute("SELECT count(*) FROM observations").fetchone()[0], 1)
             self.assertEqual(db.execute("SELECT count(*) FROM observation_participants").fetchone()[0], 2)
 

@@ -301,7 +301,7 @@ function manifestFor(job: CollectionJob, items: CollectionItem[]): CollectionMan
     counts: summarizeCollection(items),
     notes: [
       "Fetched means source text was captured in ignored work storage; it is not published evidence.",
-      "LLM extraction may create candidates only. Promotion still requires source reading, film identity checks, bounded quotes, and the existing corpus build/audit.",
+      "Publication requires automatic exact-quote checks, independent film identity resolution, schema validation, and the existing corpus build/audit.",
       "Raw publisher text is not committed unless its license explicitly permits redistribution.",
     ],
     items,

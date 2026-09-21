@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "jobId": "scale-500-2026-09-20",
+  "generatedAt": "2026-09-20T23:53:59.418Z",
+  "collection": {
+    "targets": 700,
+    "fetched": 700,
+    "fetchFailures": 0
+  },
+  "extraction": {
+    "model": "gpt-5.6-terra",
+    "batchId": "batch_6ab07042854c81909c20d73d13fa9ae1",
+    "requests": 700,
+    "completed": 700,
+    "failed": 0
+  },
+  "automaticValidation": {
+    "requested": 500,
+    "published": 500,
+    "modelResults": 700,
+    "parsedCandidates": 654,
+    "uniqueFilmIdentitiesChecked": 2152,
+    "rejectionsByReason": {
+      "film_identity_not_resolved": 83,
+      "invalid_film_reference": 1,
+      "no_eligible_observation": 41,
+      "quote_not_found": 2,
+      "quote_over_20_words": 2
+    },
+    "checks": [
+      "exact_quote_in_fetched_text",
+      "quote_at_most_20_words",
+      "valid_film_references",
+      "academic_full_text_only",
+      "tmdb_title_year_director_resolution",
+      "record_schema_validation"
+    ]
+  },
+  "status": "validated"
+}

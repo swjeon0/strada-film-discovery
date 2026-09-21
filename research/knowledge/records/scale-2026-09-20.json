@@ -18,9 +18,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Try and Get Me programme note, opening sentence",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "he-ran-all-the-way-1951-berry",
@@ -98,9 +97,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Programme note, opening sentence",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "broken-blossoms-1919-griffith",
@@ -177,9 +175,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Tomorrow Is Another Day programme note, opening sentence",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "pitfall-1948-de-toth",
@@ -247,9 +244,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "99 River Street programme note",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "99-river-street-1953-karlson",
@@ -308,9 +304,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Crack-Up programme note",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "stranger-on-third-floor-1940-ingster",
@@ -378,9 +373,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Programme note, second sentence",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "matrix-1999-wachowski",
@@ -466,9 +460,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Exit programme note, opening sentence",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "lunch-break-2008-lockhart",
@@ -536,9 +529,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Programme note, opening sentence",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "listen-to-britain-1942-jennings-mcallister",
@@ -606,9 +598,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Programme note, opening paragraph",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "you-only-live-once-1937-lang",
@@ -685,9 +676,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Programme note, opening sentence",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "crystal-voyager-1973-elfick",
@@ -755,9 +745,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Programme note, second sentence",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "this-is-not-a-film-2011-panahi-mirtahmasb",
@@ -818,9 +807,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Programme announcement above film list",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "eraserhead-1977-lynch",
@@ -888,9 +876,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Paragraph under Slacker (1990)",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "largent-1983-bresson",
@@ -960,9 +947,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Through the Olive Trees section",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "where-is-friends-house-1987-kiarostami",
@@ -1043,9 +1029,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Section on Ozu precursors and the Noriko trilogy",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "late-spring-1949-ozu",
@@ -1128,9 +1113,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Opening section on the scarcity myth",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "suspense-1913-weber-smalley",
@@ -1218,9 +1202,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "The Host section, opening paragraph",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "host-2006-bong",
@@ -1323,9 +1306,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Opening discussion of Lynch’s nonlinear narratives",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "blue-velvet-1986-lynch",
@@ -1422,9 +1404,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Paragraph comparing Shukichi’s drinking scene with An Autumn Afternoon",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "tokyo-story-1953-ozu",
@@ -1496,9 +1477,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "Historical introduction before the selected films",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "crowd-1928-vidor",
@@ -1590,9 +1570,8 @@
     "verification": {
       "method": "http_fetch",
       "locator": "What to watch next section",
-      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text; agent review only."
+      "note": "Fetched through the policy-gated STRADA collection job, then read against the extracted publisher text."
     },
-    "reviewStatus": "agent_reviewed",
     "films": [
       {
         "key": "400-blows-1959-truffaut",

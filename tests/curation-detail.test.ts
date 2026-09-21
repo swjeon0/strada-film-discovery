@@ -58,7 +58,6 @@ const source: Source = {
   accessLevel: "open",
   boundary: "This does not establish influence.",
   locator: "Page 3, paragraph 2",
-  reviewStatus: "agent_reviewed",
 };
 
 function isolate(t: { after: (fn: () => void) => void }) {
@@ -122,7 +121,6 @@ test("detail tokens retain verified identities and only evidence actually linked
       access: source.accessLevel,
       boundary: source.boundary,
       locator: source.locator,
-      review: source.reviewStatus,
       type: source.type,
     },
   ]);

@@ -53,11 +53,11 @@ const schema = {
           "kind",
           "filmIndexes",
           "summary",
+          "summaryKo",
           "boundary",
           "subjects",
           "anchorQuote",
           "confidence",
-          "reviewFlags",
         ],
         properties: {
           kind: {
@@ -72,13 +72,13 @@ const schema = {
               "incidental_mention",
             ],
           },
-          filmIndexes: { type: "array", items: { type: "integer" } },
+          filmIndexes: { type: "array", minItems: 1, items: { type: "integer" } },
           summary: { type: "string" },
+          summaryKo: { type: "string" },
           boundary: { type: "string" },
-          subjects: { type: "array", items: { type: "string" } },
+          subjects: { type: "array", minItems: 1, items: { type: "string" } },
           anchorQuote: { type: "string" },
           confidence: { type: "number" },
-          reviewFlags: { type: "array", items: { type: "string" } },
         },
       },
     },
@@ -119,12 +119,12 @@ export function batchLine(
 ) {
   if (/sol/i.test(model)) throw new Error("Sol models are disabled for STRADA.");
   const instructions = [
-    "You extract review candidates from one actually fetched film-critical source chunk.",
-    "Use only the supplied text. Never fill missing title, year, director, author, date, or relationship from memory.",
+    "You extract structured evidence from one actually fetched film-critical source.",
+    "Use the supplied text for every interpretation and relationship. You may normalize film title, release year, and director from reliable film knowledge because STRADA independently resolves every film against TMDB before publication; use null when uncertain.",
     "A film mention is useful only when the text gives a concrete reading or a documented relation. Co-mention alone is incidental_mention, not comparison or influence.",
-    "Each anchorQuote must occur verbatim in the supplied text and contain at most 25 words. Keep summaries precise and boundaries explicit.",
+    "Return at most six films and at most three observations, selecting the source's most useful curatorial evidence. Each anchorQuote must occur verbatim in the supplied text and contain at most 20 words. Keep English and Korean summaries precise and boundaries explicit.",
     "For academic material, set admit=false unless this is accessed full text rather than an abstract or metadata page.",
-    "This output is an untrusted candidate for human/agent review and must never claim approval.",
+    "Do not claim source support beyond the exact passage. Automatic validators will reject malformed, unverifiable, or nonexistent-film output.",
   ].join(" ");
   return {
     custom_id: customId,
@@ -133,7 +133,8 @@ export function batchLine(
     body: {
       model,
       store: false,
-      max_output_tokens: 3500,
+      max_output_tokens: 2400,
+      reasoning: { effort: "low" },
       instructions,
       input: `Publisher: ${source.publisher}\nCanonical URL: ${source.url}\nProposed source type: ${source.proposedType}\nLanguage hint: ${source.language}\nTitle hint: ${source.titleHint ?? "unknown"}\n\nSOURCE TEXT\n${source.text}`,
       text: {
@@ -170,16 +171,18 @@ async function main() {
     if (!item.rawTextPath || !item.publisher || !item.proposedType || !item.language)
       throw new Error(`Fetched item ${item.targetId} lacks collection provenance.`);
     const text = await readFile(resolve(item.rawTextPath), "utf8"),
-      chunks = chunkText(text);
-    for (const [index, chunk] of chunks.entries())
-      rows.push(
-        batchLine(`${manifest.jobId}__${item.targetId}__c${index + 1}`, model, {
+      bounded =
+        text.length <= 24_000
+          ? text
+          : `${text.slice(0, 18_000)}\n\n[... middle omitted ...]\n\n${text.slice(-6_000)}`;
+    rows.push(
+        batchLine(`${manifest.jobId}__${item.targetId}`, model, {
           url: item.canonicalUrl!,
           publisher: item.publisher,
           proposedType: item.proposedType,
           language: item.language,
           titleHint: item.titleHint,
-          text: chunk,
+          text: bounded,
         }),
       );
   }
@@ -200,7 +203,7 @@ async function main() {
         model,
         output,
         submitted: false,
-        note: "Upload with purpose=batch and create a /v1/responses batch only after reviewing this file and spend limits.",
+        note: "Ready for the automated Batch runner. The validator still requires exact quote matches, valid references, non-abstract academic access, and independently resolved films.",
       },
       null,
       2,

@@ -1,64 +1,42 @@
-# STRADA collection framework
+# STRADA automated collection framework
 
-This directory is the controlled front door to the published corpus. Discovery, fetching and model extraction are **staging operations**. They cannot change production retrieval. Only a reviewed source record that passes the existing schema plus an exact-quote audit can be promoted into `records/`.
+This directory is the controlled front door to the published corpus. Discovery, fetching, extraction, validation and publication are resumable jobs. No human-review state exists in the source schema or serving API.
 
 ## State flow
 
-`discovered → policy_checked → fetched → extracted → needs_review → source_audited → promoted`
+`discovered → policy_checked → fetched → extracted → automatically_validated → published`
 
-Failures remain explicit: `duplicate_published`, `duplicate_in_job`, `policy_rejected`, `blocked`, `unreadable`, `invalid_model_output`, `rejected`. There is no fallback that silently converts a failed source into model knowledge.
+Automatic admission is deliberately strict. A document is rejected when its source is blocked, duplicated or too short; an academic item is not full text; the structured response is malformed; its bounded quotation is absent from fetched publisher text; a film reference is invalid; or the film cannot be independently resolved against TMDB. Raw publisher text stays under ignored `work/` storage. Published records retain only short quotation anchors, original summaries and provenance.
 
-- `sources.json` is the source-family allowlist. It fixes publisher identity, allowed hosts and paths, minimum readable text, request pacing, default source type and conservative rights classification.
-- `jobs/*.json` contains bounded, reproducible URL batches. A target may point to a landing page plus a separate `textUrl`, but both must satisfy the same source-family policy.
-- `manifests/*.json` is committed provenance: canonical URLs, hashes, byte/character counts and terminal status. It contains no publisher body text.
-- `work/knowledge/collection/<job>/text/` contains fetched text and stays ignored. This prevents unlicensed full text from entering the repository.
-- `work/knowledge/collection/<job>/batch-input.jsonl` contains optional offline extraction requests. It is never submitted by the preparation command.
-- `work/knowledge/collection/<job>/review-candidates.json` contains untrusted model candidates. The production builder cannot read this shape.
-- `records/*.json` remains the only published source input.
+- `sources.json` defines allowed hosts and paths, request pacing, source type and rights classification.
+- `discovery/*.json` defines reproducible listing-page crawls and family quotas.
+- `jobs/*.json` stores canonical document targets.
+- `manifests/*.json` stores fetch provenance, hashes and terminal status without publisher body text.
+- `records/*.json` is the only input read by the production corpus builder.
 
-## Run a batch
+## Run a large tranche
 
 ```sh
-npm run knowledge:collect -- --job research/knowledge/collection/jobs/pilot-scale-2026-09-20.json
-npm run knowledge:collect -- --job research/knowledge/collection/jobs/pilot-scale-2026-09-20.json --run
-npm run knowledge:prepare-batch -- --manifest research/knowledge/collection/manifests/pilot-scale-2026-09-20.json --model gpt-5.6-terra
+npm run knowledge:discover -- --plan research/knowledge/collection/discovery/scale-500-2026-09-20.json --run
+npm run knowledge:collect -- --job research/knowledge/collection/jobs/scale-500-2026-09-20.json --run --concurrency 8
+npm run knowledge:prepare-batch -- --manifest research/knowledge/collection/manifests/scale-500-2026-09-20.json --model gpt-5.6-terra
+npm run knowledge:run-batch -- --run
+npm run knowledge:validate-batch -- --limit 500
+npm run knowledge:publish -- \
+  --input work/knowledge/collection/scale-500-2026-09-20/validated-records.json \
+  --validation-report work/knowledge/collection/scale-500-2026-09-20/validation-report.json \
+  --output research/knowledge/records/scale-500-2026-09-20.json \
+  --run
+npm run knowledge:build
+npm run knowledge:embed -- --run
 ```
 
-The first command is a no-network plan. The second fetches independent hosts concurrently (`--concurrency 1..8`, default 4) while preserving per-host pacing, bounded responses, retries only transient failures, canonical-URL and content-hash deduplication, and per-item checkpoints. Rerunning reuses completed items unless `--refresh` is explicit. The third command creates JSONL for the Responses Batch endpoint; it refuses Sol models and performs no API call. OpenAI documents a maximum of 50,000 requests and 200 MB for a Batch input file, and the preparer refuses larger files. Split real work much earlier, normally into 50–200 documents, for reviewability and recovery.
+Every command is restartable. Discovery excludes canonical URLs already in `records/`. Collection checkpoints after every target and reuses terminal results. The Batch runner stores its file and batch IDs without credentials and resumes polling the same input hash. Validation resolves unique films once and admits exactly the requested number; it fails instead of silently publishing fewer records. Publication is immutable and rejects duplicate IDs or URLs.
 
-If a batch is deliberately submitted, save its result JSONL under ignored work storage, then run:
+OpenAI's Batch API accepts Responses API requests and lowers asynchronous cost, while the local preparer enforces the documented 50,000-request and 200 MB input limits. Sol models remain disabled. The 500-document plan uses Terra because extraction quality matters more than using the smallest model.
 
-```sh
-npm run knowledge:review-batch -- \
-  --manifest research/knowledge/collection/manifests/pilot-scale-2026-09-20.json \
-  --results work/knowledge/collection/pilot-scale-2026-09-20/batch-output.jsonl
-```
+## Scaling beyond this tranche
 
-The review parser checks the structured shape, film-index references, the 25-word quotation ceiling and quotation presence in fetched text. It automatically blocks abstract-only academic candidates. Passing this parser means only “eligible to review.” A reviewer still checks the whole relevant passage, film identities, relation kind, summary, boundary and subjects.
+Scale documents and observations rather than expanding every programme into all possible film pairs. Fetch and extraction jobs can run independently; hashes make retries, embeddings and source updates incremental. Track accepted-source yield, duplicate rate, quote-match rate, film-resolution rate, serving artifact bytes, cold-load time, retrieval p95 and per-seed evidence recall for every tranche.
 
-## Promotion gate
-
-Put completed, source-shaped records in a temporary reviewed JSON file, audit that file in isolation, then promote it into a new immutable batch name:
-
-```sh
-npm run knowledge:audit -- \
-  --input work/knowledge/collection/JOB/reviewed-records.json \
-  --out work/knowledge/collection/JOB/reviewed-audit.json
-
-npm run knowledge:promote -- \
-  --input work/knowledge/collection/JOB/reviewed-records.json \
-  --audit work/knowledge/collection/JOB/reviewed-audit.json \
-  --output research/knowledge/records/BATCH.json
-
-# inspect the dry run, then repeat with --run
-```
-
-Promotion requires every document ID in the reviewed file to have `matched` audit status. It rejects existing IDs, canonical source-URL duplicates, malformed records, overlong quotations, missing references and abstract-only academic material. It will not overwrite a prior batch file. After promotion, rebuild, embed only uncached observations, run retrieval tests and deploy the serving artifacts.
-
-## Scaling to tens of thousands
-
-The framework scales by documents and observations, not every possible film pair. One multi-film programme remains one hyperedge observation. Fetching and offline extraction can be parallelized by independent jobs and source families; publishing remains a deterministic, reviewed gate. Hashes make fetch, extraction and embeddings incremental.
-
-Keep the current bundled serving index while it is small. Track artifact size, cold-load time, retrieval p95 and per-seed evidence recall after each corpus tranche. Migrate the same stable source/version/observation IDs to the prepared PostgreSQL schema when the bundle or retrieval budget becomes material; do not redesign the evidence contract during that storage move. PostgreSQL full-text search and pgvector become retrieval adapters, while the one online curator call and bounded evidence context remain unchanged.
-
-The framework improves throughput and provenance. It does not prove that extracted observations are insightful or that recommendation quality improved. Continue blind route-level evaluation on each thematic tranche and keep human/agent judgments separate from source admission.
+The bundled serving index remains practical for this initial scale. When bundle size or cold-load time becomes material, move the same stable IDs and tables to the prepared PostgreSQL schema and replace only the retrieval adapter. Keep the bounded evidence contract and one online curator call unchanged.

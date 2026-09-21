@@ -267,9 +267,9 @@ test("reasoning none is sent explicitly and compact tuples replace the verbose c
   assert.ok(
     passages.some(
       (tuple) =>
-        tuple[2] === "reviewed descriptors" || typeof tuple[7] === "object",
+        tuple[2] === "source descriptors" || typeof tuple[7] === "object",
     ),
-    "the tuple marks reviewed descriptors or a bounded reviewed observation",
+    "the tuple marks source descriptors or a bounded source observation",
   );
 });
 

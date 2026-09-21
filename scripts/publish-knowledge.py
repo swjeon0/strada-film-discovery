@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Promote reviewed records only after an exact-quote source audit passes."""
+"""Publish automatically validated source records into an immutable corpus batch."""
 from __future__ import annotations
 
 import argparse
@@ -44,11 +44,13 @@ def read_existing(root: Path) -> list[dict]:
     return rows
 
 
-def validate_promotion(records: object, audit: object, existing: list[dict]) -> list[dict]:
+def validate_publication(records: object, report: object, existing: list[dict]) -> list[dict]:
     if not isinstance(records, list) or not records:
-        raise ValueError("Reviewed input must be a nonempty JSON array")
-    if not isinstance(audit, dict) or not isinstance(audit.get("documents"), list):
-        raise ValueError("A source-audit report is required")
+        raise ValueError("Validated input must be a nonempty JSON array")
+    if not isinstance(report, dict) or report.get("status") != "validated":
+        raise ValueError("A successful automatic validation report is required")
+    if report.get("publishedCandidates") != len(records) or report.get("requested") != len(records):
+        raise ValueError("Validation counts must exactly match the publication input")
     builder = load_builder()
     validated = [builder.validate_record(row) for row in records]
     ids = [row["id"] for row in validated]
@@ -73,31 +75,25 @@ def validate_promotion(records: object, audit: object, existing: list[dict]) -> 
             if url in existing_urls or url in new_urls:
                 raise ValueError(f"Source URL already published or repeated: {url}")
             new_urls.add(url)
-    audited = {row.get("documentId"): row for row in audit["documents"]}
-    if set(ids) != set(audited):
-        raise ValueError("Audit document IDs must exactly match reviewed input")
-    failures = [source_id for source_id in ids if audited[source_id].get("status") != "matched"]
-    if failures:
-        raise ValueError(f"Exact-quote audit did not pass: {', '.join(failures)}")
     return validated
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, type=Path)
-    parser.add_argument("--audit", required=True, type=Path)
+    parser.add_argument("--validation-report", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--run", action="store_true")
     args = parser.parse_args()
     source = json.loads(args.input.read_text())
-    audit = json.loads(args.audit.read_text())
+    report = json.loads(args.validation_report.read_text())
     existing = read_existing(ROOT / "research/knowledge/records")
-    validated = validate_promotion(source, audit, existing)
+    validated = validate_publication(source, report, existing)
     if args.output.exists():
         raise ValueError("Promotion output already exists; use a new immutable batch file")
     result = {"records": len(validated), "output": str(args.output), "written": args.run}
     if not args.run:
-        result["hint"] = "Add --run after reviewing the exact output path."
+        result["hint"] = "Add --run to publish the already validated records."
         print(json.dumps(result))
         return
     args.output.parent.mkdir(parents=True, exist_ok=True)

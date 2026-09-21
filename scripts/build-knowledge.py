@@ -15,7 +15,7 @@ import unicodedata
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-PARSER_VERSION = "strada-record-v1.2-full-text-academic"
+PARSER_VERSION = "strada-record-v1.3-automatic-admission"
 SOURCE_TYPES = {"criticism", "academic", "programme", "festival"}
 ACCESS = {"full_page", "abstract", "metadata_only"}
 RIGHTS = {"restricted_excerpt", "open_license", "noncommercial", "metadata_only"}
@@ -69,7 +69,7 @@ def words(value: str) -> int:
 
 def content_hash(record: dict) -> str:
     content = copy.deepcopy(record)
-    # Rechecking an identical document records a review, not a new content version.
+    # Access-time changes do not create a new content version.
     content.pop("checkedAt", None)
     return digest(content)
 
@@ -117,8 +117,6 @@ def validate_record(record: object) -> dict:
         required_text(verification, key)
     if verification.get("textUrl") is not None:
         require_url(verification["textUrl"], "verification.textUrl")
-    if record.get("reviewStatus") not in {None, "agent_reviewed"}:
-        raise ValueError("ingestion cannot assert human review")
     films = record.get("films")
     passages = record.get("passages")
     observations = record.get("observations")
@@ -197,6 +195,19 @@ def validate_record(record: object) -> dict:
 
 def connect(path: Path) -> sqlite3.Connection:
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        legacy = sqlite3.connect(path)
+        try:
+            schema_version = legacy.execute("PRAGMA user_version").fetchone()[0]
+            has_schema = legacy.execute(
+                "SELECT 1 FROM sqlite_master WHERE type='table' LIMIT 1"
+            ).fetchone()
+        finally:
+            legacy.close()
+        if has_schema and schema_version != 2:
+            path.unlink()
+            path.with_name(path.name + "-wal").unlink(missing_ok=True)
+            path.with_name(path.name + "-shm").unlink(missing_ok=True)
     db = sqlite3.connect(path)
     db.row_factory = sqlite3.Row
     db.executescript((ROOT / "research/knowledge/schema.sql").read_text())
@@ -286,8 +297,8 @@ def import_record(db: sqlite3.Connection, record: dict, timestamp: str) -> str:
     exists = db.execute("SELECT id FROM document_versions WHERE id=?", (version_id,)).fetchone()
     if not exists:
         rights, verification = record["rights"], record["verification"]
-        db.execute("INSERT INTO document_versions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
-            version_id, source_id, hashed, record["title"], record.get("author"), record["publisher"], record["type"], record["language"], record.get("publishedAt"), record["checkedAt"], record["access"], rights["mode"], rights.get("licenseUrl"), rights["note"], verification["method"], verification["locator"], verification["note"], "agent_reviewed", encoded(record), PARSER_VERSION, timestamp,
+        db.execute("INSERT INTO document_versions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+            version_id, source_id, hashed, record["title"], record.get("author"), record["publisher"], record["type"], record["language"], record.get("publishedAt"), record["checkedAt"], record["access"], rights["mode"], rights.get("licenseUrl"), rights["note"], verification["method"], verification["locator"], verification["note"], encoded(record), PARSER_VERSION, timestamp,
         ))
         mapping = {film["key"]: resolve_film(db, film, timestamp) for film in record["films"]}
         if len(set(mapping.values())) != len(mapping):
@@ -298,14 +309,12 @@ def import_record(db: sqlite3.Connection, record: dict, timestamp: str) -> str:
             db.execute("INSERT INTO passages (id,version_id,local_id,ordinal,exact_quote,locator,text_hash) VALUES (?,?,?,?,?,?,?)", (f"{version_id}/{passage['id']}", version_id, passage["id"], index, passage["text"], passage["locator"], digest(passage["text"])))
         for observation in record["observations"]:
             oid = f"{version_id}/{observation['id']}"
-            db.execute("INSERT INTO observations VALUES (?,?,?,?,?,?,?,?,?)", (oid, version_id, observation["id"], observation["summary"], observation.get("summaryKo"), observation["boundary"], observation["kind"], encoded(observation["subjects"]), "agent_reviewed"))
+            db.execute("INSERT INTO observations VALUES (?,?,?,?,?,?,?,?)", (oid, version_id, observation["id"], observation["summary"], observation.get("summaryKo"), observation["boundary"], observation["kind"], encoded(observation["subjects"])))
             for index, source_key in enumerate(observation["filmKeys"]):
                 db.execute("INSERT OR IGNORE INTO observation_participants VALUES (?,?,?)", (oid, mapping[source_key], index))
             for pid in observation["passageIds"]:
                 db.execute("INSERT INTO evidence_links (observation_id,passage_id) VALUES (?,?)", (oid, f"{version_id}/{pid}"))
     db.execute("UPDATE sources SET current_version_id=?,updated_at=? WHERE id=?", (version_id, timestamp, source_id))
-    review_id = digest([version_id, "source-record-agent", record["checkedAt"]])
-    db.execute("INSERT OR IGNORE INTO review_events VALUES (?,?,?,?,?,?,?)", (review_id, version_id, "agent", "source-record-agent", "agent_reviewed", "Source record reports original-page access. Offline ingestion validates structure; it does not independently verify network content or claim human approval.", record["checkedAt"]))
     return version_id
 
 
@@ -313,7 +322,7 @@ def export_document(db: sqlite3.Connection, version_id: str) -> dict:
     row = db.execute("SELECT * FROM document_versions WHERE id=?", (version_id,)).fetchone()
     record = json.loads(row["original_record_json"])
     mappings = {r["source_key"]: r["film_key"] for r in db.execute("SELECT * FROM document_films WHERE version_id=? ORDER BY ordinal", (version_id,))}
-    record.update({"versionId": version_id, "contentHash": row["content_hash"], "reviewStatus": "agent_reviewed", "keyMappings": mappings})
+    record.update({"versionId": version_id, "contentHash": row["content_hash"], "keyMappings": mappings})
     for film in record["films"]:
         film["sourceKey"] = film["key"]
         film["key"] = mappings[film["key"]]
@@ -333,10 +342,10 @@ def export_index(db: sqlite3.Connection, version_ids: list[str], output: Path, c
         row = db.execute("SELECT * FROM film_entities WHERE key=?", (key,)).fetchone()
         aliases = [r[0] for r in db.execute("SELECT alias FROM aliases WHERE film_key=? AND alias_type='title' ORDER BY alias_normalized", (key,)) if r[0] != row["title"]]
         films.append({"key": key, "title": row["title"], "year": row["year"], "director": row["director"], "aliases": aliases, "externalIds": json.loads(row["external_ids_json"])})
-    stats = {"documents": len(documents), "versions": len(documents), "films": len(films), "passages": sum(len(r["passages"]) for r in documents), "observations": sum(len(r["observations"]) for r in documents), "evidenceLinks": sum(len(o["passageIds"]) for r in documents for o in r["observations"]), "agentReviewed": len(documents), "humanApproved": 0, "commercialOnly": commercial_only,
+    stats = {"documents": len(documents), "versions": len(documents), "films": len(films), "passages": sum(len(r["passages"]) for r in documents), "observations": sum(len(r["observations"]) for r in documents), "evidenceLinks": sum(len(o["passageIds"]) for r in documents for o in r["observations"]), "commercialOnly": commercial_only,
              "byType": {kind: sum(r["type"] == kind for r in documents) for kind in sorted(SOURCE_TYPES)},
              "byRights": {mode: sum(r["rights"]["mode"] == mode for r in documents) for mode in sorted(RIGHTS)},
-             "quoteVerification": "agent_source_access_reported; offline_quote_match_not_performed"}
+             "quoteVerification": "automatic_exact_quote_validation_before_publication"}
     corpus_version = digest({"parser": PARSER_VERSION, "versions": sorted(set(version_ids)), "films": films, "commercialOnly": commercial_only})
     built_at = now()
     if output.exists():
@@ -433,7 +442,7 @@ def build(input_path: Path, db_path: Path, output: Path, commercial_only: bool =
     write_identity_registry(db, registry)
     integrity = db.execute("PRAGMA integrity_check").fetchone()[0]
     foreign_key_errors = list(db.execute("PRAGMA foreign_key_check"))
-    table_counts = {table: db.execute(f"SELECT count(*) FROM {table}").fetchone()[0] for table in ("sources", "document_versions", "film_entities", "passages", "observations", "evidence_links", "review_events", "ingestion_jobs", "quarantine_errors")}
+    table_counts = {table: db.execute(f"SELECT count(*) FROM {table}").fetchone()[0] for table in ("sources", "document_versions", "film_entities", "passages", "observations", "evidence_links", "ingestion_jobs", "quarantine_errors")}
     table_counts["active_sources"] = db.execute("SELECT count(*) FROM sources WHERE current_version_id IS NOT NULL").fetchone()[0]
     db.close()
     return {"corpusVersion": result["corpusVersion"], "stats": result["stats"], "databaseCounts": table_counts, "sqliteIntegrity": integrity, "foreignKeyErrors": len(foreign_key_errors), "quarantined": sum(r["status"] == "quarantined" for r in audit), "records": audit, "output": str(output)}

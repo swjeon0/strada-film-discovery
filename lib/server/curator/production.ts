@@ -152,7 +152,6 @@ function passageSource(
     boundary: passage.boundary,
     documentId: passage.documentId,
     documentVersion: passage.versionId,
-    reviewStatus: passage.reviewState,
   };
 }
 

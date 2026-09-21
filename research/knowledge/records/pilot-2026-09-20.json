@@ -18,7 +18,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Programme note, opening paragraph comparing Assassination with Pale Flower",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -26,7 +26,9 @@
         "title": "Assassination",
         "year": 1964,
         "director": "Masahiro Shinoda",
-        "aliases": ["Ansatsu"],
+        "aliases": [
+          "Ansatsu"
+        ],
         "externalIds": []
       },
       {
@@ -34,7 +36,9 @@
         "title": "Pale Flower",
         "year": 1964,
         "director": "Masahiro Shinoda",
-        "aliases": ["Kawaita hana"],
+        "aliases": [
+          "Kawaita hana"
+        ],
         "externalIds": []
       }
     ],
@@ -51,10 +55,20 @@
         "summary": "The note directly links Shinoda’s two 1964 films as transitional works that retain genre forms while loosening their narrative and critical possibilities. Assassination’s splintered viewpoints make its protagonist an image within restless motion rather than a stable heroic center.",
         "summaryKo": "이 노트는 시노다의 두 1964년 작품을 장르 관습을 유지하면서도 서사와 비판의 자유를 넓힌 과도기적 영화로 직접 연결한다. <암살>의 분열된 시점은 주인공을 안정된 영웅보다 불안한 운동 속 이미지로 만든다.",
         "boundary": "A direct critical comparison, not a claim that the two films have identical plots or politics.",
-        "filmKeys": ["assassination-1964-shinoda", "pale-flower-1964-shinoda"],
-        "subjects": ["genre transition", "multiple viewpoints", "antihero", "Japanese New Wave"],
+        "filmKeys": [
+          "assassination-1964-shinoda",
+          "pale-flower-1964-shinoda"
+        ],
+        "subjects": [
+          "genre transition",
+          "multiple viewpoints",
+          "antihero",
+          "Japanese New Wave"
+        ],
         "kind": "comparison",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -77,7 +91,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Opening programme note and the two film listings",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -85,7 +99,9 @@
         "title": "Captive Feast",
         "year": 1962,
         "director": "Mario Ruspoli",
-        "aliases": ["La fête prisonnière"],
+        "aliases": [
+          "La fête prisonnière"
+        ],
         "externalIds": []
       },
       {
@@ -93,7 +109,9 @@
         "title": "A Look at Madness",
         "year": 1962,
         "director": "Mario Ruspoli",
-        "aliases": ["Regards sur la folie"],
+        "aliases": [
+          "Regards sur la folie"
+        ],
         "externalIds": []
       }
     ],
@@ -110,10 +128,20 @@
         "summary": "The archive treats Ruspoli’s back-to-back documentaries as a unit: both attend respectfully to doctors, patients and new therapeutic practices, using Michel Brault’s lightweight camera to make sustained proximity possible.",
         "summaryKo": "아카이브는 연이어 제작된 두 다큐멘터리를 하나의 작업군으로 본다. 미셸 브로의 경량 카메라를 통해 의사와 환자, 새로운 치료 실천을 존중하며 가까이 관찰한다.",
         "boundary": "The source establishes shared production and observational ethics, not that the patients’ experiences are interchangeable.",
-        "filmKeys": ["captive-feast-1962-ruspoli", "look-at-madness-1962-ruspoli"],
-        "subjects": ["direct cinema", "psychiatric care", "lightweight camera", "observational ethics"],
+        "filmKeys": [
+          "captive-feast-1962-ruspoli",
+          "look-at-madness-1962-ruspoli"
+        ],
+        "subjects": [
+          "direct cinema",
+          "psychiatric care",
+          "lightweight camera",
+          "observational ethics"
+        ],
         "kind": "comparison",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -136,7 +164,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Programme note, paragraphs describing a thematic diptych with Thunderhoof",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -169,10 +197,20 @@
         "summary": "Guest calls the two Karlson Westerns a thematic diptych. Their father-son conflicts join psychological family struggle to vigilantism, placing ordinary men’s private burdens inside an American wartime logic that treats violence as necessary.",
         "summaryKo": "게스트는 두 칼슨 서부극을 주제적 이중화로 묶는다. 부자 갈등이라는 사적·심리적 부담이 전시기의 미국적 자경주의와 결합해 폭력을 필요로 여기는 논리를 드러낸다.",
         "boundary": "A documented thematic connection within Karlson’s work, not a general claim about all Westerns.",
-        "filmKeys": ["gunmans-walk-1958-karlson", "thunderhoof-1948-karlson"],
-        "subjects": ["father-son conflict", "vigilantism", "postwar Western", "necessary violence"],
+        "filmKeys": [
+          "gunmans-walk-1958-karlson",
+          "thunderhoof-1948-karlson"
+        ],
+        "subjects": [
+          "father-son conflict",
+          "vigilantism",
+          "postwar Western",
+          "necessary violence"
+        ],
         "kind": "comparison",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -195,7 +233,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Opening programme note comparing the father with the mother in The Only Son",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -203,7 +241,9 @@
         "title": "There Was a Father",
         "year": 1942,
         "director": "Yasujiro Ozu",
-        "aliases": ["Chichi ariki"],
+        "aliases": [
+          "Chichi ariki"
+        ],
         "externalIds": []
       },
       {
@@ -211,7 +251,9 @@
         "title": "The Only Son",
         "year": 1936,
         "director": "Yasujiro Ozu",
-        "aliases": ["Hitori musuko"],
+        "aliases": [
+          "Hitori musuko"
+        ],
         "externalIds": []
       }
     ],
@@ -228,10 +270,20 @@
         "summary": "The note directly compares the parents in The Only Son and There Was a Father through lifelong sacrifice for a child’s education. In the later wartime film, separation and harsh empty spaces complicate patriotic calls to duty with loneliness.",
         "summaryKo": "이 노트는 자녀 교육을 위한 평생의 희생을 통해 <외아들>의 어머니와 <아버지가 있었다>의 아버지를 직접 비교한다. 후자의 거리와 빈 공간은 애국적 의무의 언어를 고독으로 복잡하게 만든다.",
         "boundary": "The comparison concerns parental sacrifice and historical pressure; it does not make the parents or political contexts identical.",
-        "filmKeys": ["there-was-a-father-1942-ozu", "only-son-1936-ozu"],
-        "subjects": ["parental sacrifice", "education", "wartime duty", "empty space"],
+        "filmKeys": [
+          "there-was-a-father-1942-ozu",
+          "only-son-1936-ozu"
+        ],
+        "subjects": [
+          "parental sacrifice",
+          "education",
+          "wartime duty",
+          "empty space"
+        ],
         "kind": "comparison",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -254,7 +306,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Joint screening page, notes for Where is the Friend’s House? and The 400 Blows",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -262,7 +314,9 @@
         "title": "Where Is the Friend's House?",
         "year": 1987,
         "director": "Abbas Kiarostami",
-        "aliases": ["Khane-ye doust kodjast?"],
+        "aliases": [
+          "Khane-ye doust kodjast?"
+        ],
         "externalIds": []
       },
       {
@@ -270,7 +324,9 @@
         "title": "The 400 Blows",
         "year": 1959,
         "director": "François Truffaut",
-        "aliases": ["Les 400 coups"],
+        "aliases": [
+          "Les 400 coups"
+        ],
         "externalIds": []
       }
     ],
@@ -287,10 +343,20 @@
         "summary": "The joint programme places Ahmad’s ethical persistence beside Antoine Doinel’s rebellion. Both children move through adult systems that cannot hear their needs, but Kiarostami emphasizes care and obligation while Truffaut foregrounds rejected freedom.",
         "summaryKo": "공동 프로그램은 아마드의 윤리적 끈기와 앙투안 두아넬의 반항을 나란히 둔다. 두 아이 모두 자신의 요구를 듣지 못하는 성인의 질서를 통과하지만, 키아로스타미는 돌봄과 의무를, 트뤼포는 거부된 자유를 강조한다.",
         "boundary": "The screening and separate notes support a curatorial juxtaposition; the source does not claim influence between the films.",
-        "filmKeys": ["wheres-friends-house-1987-kiarostami", "400-blows-1959-truffaut"],
-        "subjects": ["child perspective", "adult authority", "ethical persistence", "rebellion"],
+        "filmKeys": [
+          "wheres-friends-house-1987-kiarostami",
+          "400-blows-1959-truffaut"
+        ],
+        "subjects": [
+          "child perspective",
+          "adult authority",
+          "ethical persistence",
+          "rebellion"
+        ],
         "kind": "co_programming",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -313,7 +379,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Joint screening page and notes for both films",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -329,7 +395,9 @@
         "title": "Where Is the Friend's House?",
         "year": 1987,
         "director": "Abbas Kiarostami",
-        "aliases": ["Khaneh-ye Dust Kojast"],
+        "aliases": [
+          "Khaneh-ye Dust Kojast"
+        ],
         "externalIds": []
       }
     ],
@@ -346,10 +414,20 @@
         "summary": "The programme joins Levitt, Loeb and Agee’s candid street observation with Kiarostami’s village journey. It creates a route between children’s improvised public worlds and a child’s purposeful movement through geographic and psychological thresholds.",
         "summaryKo": "이 프로그램은 레빗·로브·에이지의 거리 관찰과 키아로스타미의 마을 여정을 함께 상영한다. 아이들이 공공 공간에서 즉흥적으로 만드는 세계와 한 아이가 지리적·심리적 경계를 통과하는 목적 있는 움직임을 연결한다.",
         "boundary": "A documented screening juxtaposition and source-grounded synthesis, not an asserted stylistic influence.",
-        "filmKeys": ["in-the-street-1952-levitt-loeb-agee", "wheres-friends-house-1987-kiarostami"],
-        "subjects": ["children in public space", "street observation", "journey", "ordinary gesture"],
+        "filmKeys": [
+          "in-the-street-1952-levitt-loeb-agee",
+          "wheres-friends-house-1987-kiarostami"
+        ],
+        "subjects": [
+          "children in public space",
+          "street observation",
+          "journey",
+          "ordinary gesture"
+        ],
         "kind": "co_programming",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -372,7 +450,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Programme note, final sentence comparing three Dreyer films",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -380,7 +458,9 @@
         "title": "Day of Wrath",
         "year": 1943,
         "director": "Carl Theodor Dreyer",
-        "aliases": ["Vredens dag"],
+        "aliases": [
+          "Vredens dag"
+        ],
         "externalIds": []
       },
       {
@@ -388,7 +468,9 @@
         "title": "The Passion of Joan of Arc",
         "year": 1928,
         "director": "Carl Theodor Dreyer",
-        "aliases": ["La Passion de Jeanne d'Arc"],
+        "aliases": [
+          "La Passion de Jeanne d'Arc"
+        ],
         "externalIds": []
       },
       {
@@ -413,10 +495,21 @@
         "summary": "The note places Day of Wrath with The Passion of Joan of Arc and Vampyr through Dreyer’s ability to create severe moral drama with economical but forceful means. Landscape and architecture give the later film political terror and spiritual conflict an atmospheric body.",
         "summaryKo": "이 노트는 절제됐지만 강력한 영화적 수단으로 혹독한 도덕극을 만든다는 점에서 <분노의 날>을 <잔 다르크의 수난>, <뱀파이어>와 연결한다. 풍경과 건축은 정치적 공포와 영적 갈등에 물질적 분위기를 부여한다.",
         "boundary": "An oeuvre-level formal comparison, not a claim that the three narratives share the same historical meaning.",
-        "filmKeys": ["day-of-wrath-1943-dreyer", "passion-joan-arc-1928-dreyer", "vampyr-1932-dreyer"],
-        "subjects": ["formal economy", "moral drama", "architecture", "spiritual terror"],
+        "filmKeys": [
+          "day-of-wrath-1943-dreyer",
+          "passion-joan-arc-1928-dreyer",
+          "vampyr-1932-dreyer"
+        ],
+        "subjects": [
+          "formal economy",
+          "moral drama",
+          "architecture",
+          "spiritual terror"
+        ],
         "kind": "comparison",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -439,7 +532,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Programme note comparing El Dorado with Rio Bravo and Rio Lobo",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -480,10 +573,21 @@
         "summary": "The note groups Hawks’s three Westerns around male friendship under pressure and small collectives facing hostile forces. Against Rio Bravo’s easy mixture of comedy and action, El Dorado adds pointed violence, injury and age, turning repetition into an autumnal variation.",
         "summaryKo": "이 노트는 압박 속 남성 우정과 적대 세력에 맞서는 작은 집단을 중심으로 호크스의 세 서부극을 묶는다. <엘도라도>는 <리오 브라보>의 유연한 희극과 액션에 노화·부상·더 날카로운 폭력을 더해 반복을 만년의 변주로 만든다.",
         "boundary": "A direct oeuvre comparison; the trilogy label is thematic rather than a serialized narrative claim.",
-        "filmKeys": ["el-dorado-1966-hawks", "rio-bravo-1959-hawks", "rio-lobo-1970-hawks"],
-        "subjects": ["male friendship", "aging", "genre variation", "collective action"],
+        "filmKeys": [
+          "el-dorado-1966-hawks",
+          "rio-bravo-1959-hawks",
+          "rio-lobo-1970-hawks"
+        ],
+        "subjects": [
+          "male friendship",
+          "aging",
+          "genre variation",
+          "collective action"
+        ],
         "kind": "comparison",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -506,7 +610,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Letter from Siberia note and preceding-film note for Sunday in Peking",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -514,7 +618,9 @@
         "title": "Letter from Siberia",
         "year": 1957,
         "director": "Chris Marker",
-        "aliases": ["Lettre de Sibérie"],
+        "aliases": [
+          "Lettre de Sibérie"
+        ],
         "externalIds": []
       },
       {
@@ -522,7 +628,9 @@
         "title": "Sunday in Peking",
         "year": 1955,
         "director": "Chris Marker",
-        "aliases": ["Dimanche à Pékin"],
+        "aliases": [
+          "Dimanche à Pékin"
+        ],
         "externalIds": []
       }
     ],
@@ -539,10 +647,20 @@
         "summary": "The programme places Marker’s first solo travel essay before Letter from Siberia. Sunday in Peking’s personal mixture of impressions and facts develops into the later film’s hybrid of travelogue, self-questioning commentary, animation, still images and letter form.",
         "summaryKo": "이 프로그램은 마르케르의 첫 단독 여행 에세이를 <시베리아에서 온 편지> 앞에 둔다. 인상과 사실을 섞던 <북경의 일요일>의 방식이 여행기·자기반영적 논평·애니메이션·사진·서간 형식의 혼합으로 발전한다.",
         "boundary": "A chronological and curatorial relation within Marker’s work, not evidence that the two films represent their locations in the same way.",
-        "filmKeys": ["letter-siberia-1957-marker", "sunday-peking-1955-marker"],
-        "subjects": ["essay film", "travelogue", "voiceover", "mixed media"],
+        "filmKeys": [
+          "letter-siberia-1957-marker",
+          "sunday-peking-1955-marker"
+        ],
+        "subjects": [
+          "essay film",
+          "travelogue",
+          "voiceover",
+          "mixed media"
+        ],
         "kind": "historical_context",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -565,7 +683,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Programme note discussing Afterimage, Michael Snow and Yvonne Rainer",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -635,20 +753,44 @@
         "summary": "The programme contrasts Snow’s exploration of camera movement with Rainer’s return of autobiography and narrative through collage, while placing both inside Afterimage’s search for cinema shaped by the modern arts.",
         "summaryKo": "이 프로그램은 카메라 운동을 탐구한 스노와 콜라주로 자전성과 서사를 다시 끌어온 레이너를 대비시키면서, 두 작업을 현대 예술과 결합한 새로운 영화 가능성을 찾던 <애프터이미지>의 맥락에 놓는다.",
         "boundary": "A curatorial contrast between practices, not a claim that every listed film uses the same formal strategy.",
-        "filmKeys": ["film-about-woman-1974-rainer", "breakfast-1976-snow", "wavelength-1967-snow", "region-centrale-1971-snow"],
-        "subjects": ["camera movement", "radical collage", "modern dance", "avant-garde cinema"],
+        "filmKeys": [
+          "film-about-woman-1974-rainer",
+          "breakfast-1976-snow",
+          "wavelength-1967-snow",
+          "region-centrale-1971-snow"
+        ],
+        "subjects": [
+          "camera movement",
+          "radical collage",
+          "modern dance",
+          "avant-garde cinema"
+        ],
         "kind": "contrast",
-        "passageIds": ["p1", "p2"]
+        "passageIds": [
+          "p1",
+          "p2"
+        ]
       },
       {
         "id": "o2",
         "summary": "Within Rainer’s work, Lives of Performers, Film About a Woman Who... and Kristina Talking Pictures combine fragmented fiction, autobiography, voiceover and performance, becoming reference points in debates on feminist cinema.",
         "summaryKo": "레이너의 <퍼포머들의 삶>, <여성에 관한 영화>, <크리스티나 토킹 픽처스>는 파편적 허구·자전성·보이스오버·퍼포먼스를 결합해 급진적 페미니즘 영화 논쟁의 기준점이 된다.",
         "boundary": "The programme supplies historical and formal context, not a complete account of feminist avant-garde cinema.",
-        "filmKeys": ["lives-performers-1972-rainer", "film-about-woman-1974-rainer", "kristina-talking-1976-rainer"],
-        "subjects": ["feminist cinema", "autobiography", "fragmented narrative", "performance"],
+        "filmKeys": [
+          "lives-performers-1972-rainer",
+          "film-about-woman-1974-rainer",
+          "kristina-talking-1976-rainer"
+        ],
+        "subjects": [
+          "feminist cinema",
+          "autobiography",
+          "fragmented narrative",
+          "performance"
+        ],
         "kind": "historical_context",
-        "passageIds": ["p2"]
+        "passageIds": [
+          "p2"
+        ]
       }
     ]
   },
@@ -671,7 +813,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Opening section on the 1959–60 modernist shift",
-      "note": "Read the original BFI page; agent review only."
+      "note": "Read the original BFI page."
     },
     "films": [
       {
@@ -679,7 +821,9 @@
         "title": "L’Avventura",
         "year": 1960,
         "director": "Michelangelo Antonioni",
-        "aliases": ["L'avventura"],
+        "aliases": [
+          "L'avventura"
+        ],
         "externalIds": []
       },
       {
@@ -687,7 +831,9 @@
         "title": "Breathless",
         "year": 1960,
         "director": "Jean-Luc Godard",
-        "aliases": ["À bout de souffle"],
+        "aliases": [
+          "À bout de souffle"
+        ],
         "externalIds": []
       },
       {
@@ -695,7 +841,9 @@
         "title": "Last Year at Marienbad",
         "year": 1961,
         "director": "Alain Resnais",
-        "aliases": ["L'Année dernière à Marienbad"],
+        "aliases": [
+          "L'Année dernière à Marienbad"
+        ],
         "externalIds": []
       },
       {
@@ -703,7 +851,9 @@
         "title": "Time Stood Still",
         "year": 1959,
         "director": "Ermanno Olmi",
-        "aliases": ["Il tempo si è fermato"],
+        "aliases": [
+          "Il tempo si è fermato"
+        ],
         "externalIds": []
       }
     ],
@@ -720,10 +870,22 @@
         "summary": "Koehler situates L’Avventura within a 1959–60 break from closed plots, genre security and privileged psychology. Breathless fractures conventional crime time, Marienbad participates in the new novel’s formal dislocation, and Time Stood Still exemplifies Italy’s move beyond neorealist codes.",
         "summaryKo": "쾰러는 <정사>를 닫힌 결말·장르의 안정·심리 중심 서사에서 벗어난 1959–60년의 전환에 놓는다. <네 멋대로 해라>의 시간 파괴, <마리엔바드에서의 지난해>의 누보로망적 전위, <시간은 멈췄다>의 후기 네오리얼리즘이 이 순간을 구성한다.",
         "boundary": "A historical constellation of distinct modernisms, not a claim that the films share one style or direct influence chain.",
-        "filmKeys": ["lavventura-1960-antonioni", "breathless-1960-godard", "last-year-marienbad-1961-resnais", "time-stood-still-1959-olmi"],
-        "subjects": ["open form", "cinematic modernism", "post-neorealism", "narrative rupture"],
+        "filmKeys": [
+          "lavventura-1960-antonioni",
+          "breathless-1960-godard",
+          "last-year-marienbad-1961-resnais",
+          "time-stood-still-1959-olmi"
+        ],
+        "subjects": [
+          "open form",
+          "cinematic modernism",
+          "post-neorealism",
+          "narrative rupture"
+        ],
         "kind": "historical_context",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -746,7 +908,7 @@
     "verification": {
       "method": "web_open",
       "locator": "1975 feature introduction comparing Jaws and Jeanne Dielman",
-      "note": "Read the original BFI page; agent review only."
+      "note": "Read the original BFI page."
     },
     "films": [
       {
@@ -779,10 +941,20 @@
         "summary": "The issue uses Jaws and Jeanne Dielman as opposite poles of 1975 cinema: aggression and exhilaration against duration and repetition. One reshaped the blockbuster; the other challenged the category of the cinematic through domestic time.",
         "summaryKo": "이 특집은 <죠스>와 <잔느 딜망>을 1975년 영화의 양극으로 놓는다. 공격과 쾌감이 지속시간과 반복에 맞서고, 한 편은 블록버스터를 재편하며 다른 편은 가사노동의 시간으로 영화적인 것의 범주를 흔든다.",
         "boundary": "An editorial critical contrast, not a claim of direct influence or equal industrial conditions.",
-        "filmKeys": ["jaws-1975-spielberg", "jeanne-dielman-1975-akerman"],
-        "subjects": ["duration", "spectacle", "repetition", "cinematic scale"],
+        "filmKeys": [
+          "jaws-1975-spielberg",
+          "jeanne-dielman-1975-akerman"
+        ],
+        "subjects": [
+          "duration",
+          "spectacle",
+          "repetition",
+          "cinematic scale"
+        ],
         "kind": "contrast",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -805,7 +977,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Programme note, paragraphs on narrative form and recurring motifs",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -813,7 +985,10 @@
         "title": "On the Occasion of Remembering the Turning Gate",
         "year": 2002,
         "director": "Hong Sangsoo",
-        "aliases": ["Saenghwalui balgyeon", "Turning Gate"],
+        "aliases": [
+          "Saenghwalui balgyeon",
+          "Turning Gate"
+        ],
         "externalIds": []
       }
     ],
@@ -830,10 +1005,19 @@
         "summary": "The note distinguishes this early Hong film’s linear, episodic progression from the obliqueness of his later work, while identifying durable motifs: joyless erotic expectation, drinking, location shooting, games of truth and deceit, and cloud-like pillow shots.",
         "summaryKo": "이 노트는 초기 홍상수 영화의 선형적·에피소드적 진행을 후기의 비스듬한 서사와 구별하면서도 무감한 성적 기대, 음주, 로케이션, 진실과 기만의 게임, 구름 같은 필로숏을 지속되는 모티프로 짚는다.",
         "boundary": "An oeuvre-positioning reading of one film; it does not specify a single later film as a direct comparison.",
-        "filmKeys": ["turning-gate-2002-hong"],
-        "subjects": ["episodic narrative", "sexual expectation", "drinking", "pillow shots"],
+        "filmKeys": [
+          "turning-gate-2002-hong"
+        ],
+        "subjects": [
+          "episodic narrative",
+          "sexual expectation",
+          "drinking",
+          "pillow shots"
+        ],
         "kind": "film_reading",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   },
@@ -856,7 +1040,7 @@
     "verification": {
       "method": "web_open",
       "locator": "Programme note describing reconstructed events and contrasting viewpoints",
-      "note": "Read the original Harvard Film Archive page; agent review only."
+      "note": "Read the original Harvard Film Archive page."
     },
     "films": [
       {
@@ -864,7 +1048,9 @@
         "title": "Close-Up",
         "year": 1990,
         "director": "Abbas Kiarostami",
-        "aliases": ["Nema-ye Nazdik"],
+        "aliases": [
+          "Nema-ye Nazdik"
+        ],
         "externalIds": []
       }
     ],
@@ -881,10 +1067,19 @@
         "summary": "The note locates Close-Up’s inquiry into cinematic truth in its reconstruction of events with the real participants and its circulation among the journalist, the deceived family and Sabzian rather than one authoritative viewpoint.",
         "summaryKo": "이 노트는 실존 인물들이 사건을 재연하고 기자·피해 가족·사브지안의 상반된 관점을 순환시키는 구조에서 <클로즈업>의 영화적 진실 탐구를 찾는다.",
         "boundary": "A concise institutional reading; it does not establish every production detail or settle the film’s documentary status.",
-        "filmKeys": ["close-up-1990-kiarostami"],
-        "subjects": ["reenactment", "multiple perspectives", "cinematic truth", "self representation"],
+        "filmKeys": [
+          "close-up-1990-kiarostami"
+        ],
+        "subjects": [
+          "reenactment",
+          "multiple perspectives",
+          "cinematic truth",
+          "self representation"
+        ],
         "kind": "film_reading",
-        "passageIds": ["p1"]
+        "passageIds": [
+          "p1"
+        ]
       }
     ]
   }
