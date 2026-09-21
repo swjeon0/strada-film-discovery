@@ -60,3 +60,30 @@ test("discovery request contains only current selection and explicit exclusion h
   );
   assert.equal("preparationToken" in follow, false);
 });
+
+test("A-B-C can branch at B and repairs stale browser history of C", async () => {
+  const { restoreSnapshot } = await import("../lib/domain");
+  const { resolveTrailNavigation } = await import("../lib/client/trail-navigation");
+  const make = (id: string, trail: Film[], offset: number): Snapshot => ({
+    id, createdAt: new Date().toISOString(), seeds: [film], trail,
+    recommendations: Array.from({ length: 12 }, (_, n) => recommendation(`tmdb:${offset + n}`)),
+    sources: [], mode: "live",
+  });
+  const b = { ...film, id: "tmdb:20" }, c = { ...film, id: "tmdb:40" }, next = { ...film, id: "tmdb:21" };
+  let session = commitSnapshot(EMPTY_SESSION, make("A", [], 20), true);
+  session = commitSnapshot(session, make("B", [b], 40), false);
+  session = commitSnapshot(session, make("C", [b, c], 60), false);
+  session = restoreSnapshot(session, 1);
+  const request = discoveryInput(session, "en", "manual", next);
+  assert.equal(request.baseSnapshotId, "B");
+  assert.deepEqual(request.trail, [b.id, next.id]);
+  session = commitSnapshot(session, make("C-prime", [b, next], 80), false);
+  assert.deepEqual(session.snapshots.map(sn => sn.id), ["A", "B", "C-prime"]);
+  assert.ok(session.archivedSeenIds?.includes("tmdb:60"));
+  const restored = resolveTrailNavigation(session, { strada: true, view: "results", snapshotId: "C", filmId: "tmdb:60" });
+  assert.equal(restored.nav.snapshotId, "C-prime");
+  assert.equal(restored.nav.filmId, undefined);
+  const again = resolveTrailNavigation(session, { strada: true, view: "results", snapshotId: "B", filmId: "tmdb:41" });
+  assert.equal(again.session.cursor, 1);
+  assert.equal(again.nav.filmId, "tmdb:41");
+});

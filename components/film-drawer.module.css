@@ -1,0 +1,90 @@
+.letterboxd {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 13px;
+  font-size: 12px;
+  color: var(--foreground);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.letterboxd:hover {
+  text-decoration: underline;
+}
+.letterboxd small {
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.letterboxdMark {
+  display: inline-flex;
+  gap: 2px;
+  margin-right: 2px;
+}
+.letterboxdMark i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.letterboxdMark i:nth-child(2) {
+  opacity: 0.7;
+}
+.letterboxdMark i:nth-child(3) {
+  opacity: 0.4;
+}
+.note p {
+  margin: 0 0 1em;
+}
+.note p:last-child {
+  margin-bottom: 0;
+}
+.source {
+  padding: 17px 0;
+  border-top: 1px solid var(--border);
+}
+.sourceByline {
+  margin: 5px 0 0;
+  color: var(--muted-foreground);
+  font-size: 11px;
+  line-height: 1.65;
+}
+.sourceDetails {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.sourceDetails summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 11px;
+}
+.sourceDetails summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.sourceDetails blockquote {
+  margin: 13px 0 7px;
+  padding-left: 13px;
+  border-left: 2px solid var(--border);
+  color: var(--foreground);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.sourceDetails p {
+  margin: 10px 0 0;
+  color: var(--muted-foreground);
+}
+.sourceDetails small {
+  display: block;
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.sourceNote {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+  margin: 12px 0;
+}

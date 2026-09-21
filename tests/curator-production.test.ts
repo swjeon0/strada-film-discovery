@@ -181,13 +181,13 @@ test("production adapter performs one context read and one curator call in stabl
   assert.deepEqual(captured?.options, {
     model: "gpt-5.6-terra",
     reasoning: "none",
-    timeoutMs: 15750,
+    timeoutMs: 35000,
     maxOutputTokens: 2000,
     promptVersion: "v2",
     repair: {
       model: "gpt-5.4",
       reasoning: "none",
-      timeoutMs: 3750,
+      timeoutMs: 8000,
       maxOutputTokens: 1100,
     },
   });

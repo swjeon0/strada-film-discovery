@@ -9,10 +9,17 @@ import {
 } from "./model";
 import {
   CuratorIdentityError,
+  createResolutionSession,
   resolveCuratorOutput,
   type ProposalResolver,
 } from "./resolve";
 import type { CuratorDecision, CuratorRequest } from "./contract";
+
+export type CuratorProgress = {
+  stage: "metadata" | "context" | "curating" | "verifying" | "repairing";
+  completed?: number;
+  total?: number;
+};
 
 export type CuratorRun = {
   decision: CuratorDecision;
@@ -38,6 +45,7 @@ export type CuratorEngineInput = {
   repository: KnowledgeRepository;
   options: CuratorCallOptions;
   signal: AbortSignal;
+  onProgress?: (progress: CuratorProgress) => void;
 };
 export type CuratorDependencies = {
   curate: typeof curateOnce;
@@ -75,7 +83,21 @@ export async function runCurator(
     language: input.language,
     context,
   };
-  const result = await deps.curate(request, input.options, input.signal);
+  let generationFinished = false, verified = 0;
+  const identities = createResolutionSession(input.signal, resolver, (completed) => {
+    verified = Math.min(12, completed);
+    input.onProgress?.({
+      stage: generationFinished ? "verifying" : "curating",
+      completed: verified,
+      total: 12,
+    });
+  });
+  input.onProgress?.({ stage: "curating", completed: 0, total: 12 });
+  const result = await deps.curate(
+    request, input.options, input.signal, undefined, identities.warm,
+  );
+  generationFinished = true;
+  input.onProgress?.({ stage: "verifying", completed: verified, total: 12 });
   let output = result.output,
     usage = result.usage,
     repairMs = 0,
@@ -89,7 +111,7 @@ export async function runCurator(
       output,
       request.excludedIds,
       input.signal,
-      resolver,
+      identities.resolve,
     );
   } catch (error) {
     if (
@@ -98,6 +120,7 @@ export async function runCurator(
       !error.details.invalidIndexes.length
     )
       throw error;
+    input.onProgress?.({ stage: "repairing" });
     const repairStarted = Date.now(),
       fixed = await deps.repair(
         request,
@@ -118,7 +141,7 @@ export async function runCurator(
       output,
       request.excludedIds,
       input.signal,
-      resolver,
+      identities.resolve,
     );
   }
   const resolveMs = Date.now() - resolveStarted - repairMs;

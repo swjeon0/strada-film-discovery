@@ -175,6 +175,30 @@ test("shared detail viewers use one model call and completed details reuse the c
   assert.equal(modelCalls, 1);
 });
 
+test("reissuing an identical signed connection reuses the explanation despite a new token timestamp", async (t) => {
+  isolate(t);
+  const realNow = Date.now;
+  let now = realNow();
+  t.mock.method(Date, "now", () => now);
+  let modelCalls = 0;
+  globalThis.fetch = async (input) => {
+    assert.equal(String(input), "https://api.openai.com/v1/responses");
+    modelCalls++;
+    return result();
+  };
+  const first = token("A stable connection refreshed after browsing back."),
+    signal = new AbortController().signal;
+  await explainFilm(first, "en", signal);
+  now += 1000;
+  const reissued = token("A stable connection refreshed after browsing back.");
+  assert.notEqual(reissued, first);
+  const cached = await explainFilm(reissued, "en", signal);
+  assert.equal(cached.cached, true);
+  assert.equal(modelCalls, 1);
+  await explainFilm(reissued, "ko", signal);
+  assert.equal(modelCalls, 2, "different languages still get independent explanations");
+});
+
 test("last-viewer cancellation aborts model work and neither cancellation nor failure is cached", async (t) => {
   isolate(t);
   let modelCalls = 0,

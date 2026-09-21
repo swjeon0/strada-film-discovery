@@ -45,6 +45,9 @@ const Packet = z.object({
     .array(
       z.object({
         title: z.string().max(240),
+        author: z.string().max(160).optional(),
+        publisher: z.string().max(160).optional(),
+        scope: z.string().max(240).optional(),
         url: z.string().url(),
         excerpt: z.string().max(900),
         point: z.string().max(1200),
@@ -73,6 +76,14 @@ const compact = (film: Film) => ({
   year: film.year,
   director: film.director,
 });
+const overview = (film: Film, length: number) =>
+  (
+    film.overviewEn ||
+    film.synopsisEn ||
+    film.overviewKo ||
+    film.synopsisKo ||
+    ""
+  ).slice(0, length);
 export function issueDetailToken(
   rec: Recommendation,
   selected: Film[],
@@ -83,15 +94,14 @@ export function issueDetailToken(
     issued: Date.now(),
     film: {
       ...compact(rec.film),
-      overview: (
-        rec.film.overviewEn ||
-        rec.film.synopsisEn ||
-        rec.film.overviewKo ||
-        rec.film.synopsisKo ||
-        ""
-      ).slice(0, 700),
+      overview: overview(rec.film, 700),
     },
-    selected: selected.map(compact),
+    // Share a fixed context allowance equally: long trails must not bloat the
+    // detail request, but the model still needs to distinguish each film.
+    selected: selected.map((film) => ({
+      ...compact(film),
+      overview: overview(film, Math.min(300, Math.floor(1500 / selected.length))),
+    })),
     why: rec.connections[0].why.slice(0, 1400),
     lens: (rec.curation?.lens ?? "").slice(0, 120),
     bridge: (rec.curation?.bridge ?? "").slice(0, 600),
@@ -108,11 +118,14 @@ export function issueDetailToken(
       .slice(0, 2)
       .map((s) => ({
         title: s.title.slice(0, 240),
+        author: s.author?.slice(0, 160),
+        publisher: s.publisher.slice(0, 160),
+        scope: s.scope.slice(0, 240),
         url: s.url,
         excerpt: s.excerpt!.slice(0, 900),
         point: (s.summaryKo || s.summary).slice(0, 1200),
-        boundary: s.boundary,
-        locator: s.locator,
+        boundary: s.boundary?.slice(0, 900),
+        locator: s.locator?.slice(0, 500),
         access: s.accessLevel,
         documentId: s.documentId,
         documentVersion: s.documentVersion,
@@ -216,7 +229,11 @@ export async function explainFilm(
 ): Promise<DetailResult> {
   signal.throwIfAborted();
   const packet = readDetailToken(token),
-    fingerprint = createHash("sha256").update(token).digest("hex"),
+    // Issuance time authenticates/ages a token, but is not explanation content.
+    // The same connection reissued by a refresh should reuse completed work.
+    fingerprint = createHash("sha256")
+      .update(JSON.stringify({ ...packet, issued: undefined }))
+      .digest("hex"),
     key =
       fingerprint +
       ":" +

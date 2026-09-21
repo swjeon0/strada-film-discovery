@@ -251,6 +251,8 @@ test("reasoning none is sent explicitly and compact tuples replace the verbose c
   const input = body?.input as { content: string }[];
   const user = JSON.parse(input[1].content) as Record<string, unknown>;
   assert.deepEqual(Object.keys(user).sort(), ["f", "g", "p", "s", "x"]);
+  assert.deepEqual(Object.keys(JSON.parse(input[1].content)), ["g", "s", "p", "x", "f"],
+    "stable selected-film literature precedes regeneration exclusions for prompt-prefix reuse");
   assert.ok(Array.isArray(user.p));
   assert.deepEqual(
     user.f,

@@ -1909,54 +1909,36 @@ kbd {
   }
 }
 
-.run-inspector {
-  margin: 0 0 24px;
-  color: var(--muted-foreground);
-  font-size: 12px;
-  max-width: 100%;
+/* Server-driven discovery progress; animation never implies a made-up percentage. */
+.discovery-progress { border: 1px solid var(--line, #dedbd2); background: #eeede5; border-radius: 16px; padding: 22px 24px 14px; margin: 24px 0 32px; text-align: left; overflow: hidden; }
+.progress-heading { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.progress-films { display: flex; padding-left: 8px; flex-shrink: 0; }
+.progress-films > span { width: 30px; height: 43px; margin-left: -8px; transform: rotate(-6deg); border: 2px solid #eeede5; overflow: hidden; border-radius: 3px; background: #dad7cd; }
+.progress-films > span:nth-child(even) { transform: rotate(6deg); }
+.progress-films img { width: 100%; height: 100%; object-fit: cover; }
+.progress-copy { flex: 1; min-width: 0; }
+.progress-copy strong { display: block; font-size: 14px; font-weight: 600; line-height: 1.6; }
+.progress-copy > span { display: block; font-size: 12px; color: #6e7164; line-height: 1.7; margin-top: 3px; }
+.progress-time { font-size: 12px; color: #6e7164; font-variant-numeric: tabular-nums; }
+.progress-steps { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; margin: 23px 0 16px; gap: 8px; }
+.progress-steps li { display: flex; align-items: center; gap: 6px; color: #929488; font-size: 11px; }
+.progress-steps li > span { width: 21px; height: 21px; display: grid; place-items: center; border: 1px solid #cfcec3; border-radius: 50%; font-size: 10px; flex-shrink: 0; }
+.progress-steps .done { color: #5d674a; }
+.progress-steps .done > span { background: #dce2d1; border-color: transparent; }
+.progress-steps .active { color: #3e4e2d; font-weight: 600; }
+.progress-steps .active > span { background: #586746; color: #fffdf7; border-color: transparent; }
+.progress-track { height: 2px; background: #deded1; overflow: hidden; }
+.progress-track > span { display: block; height: 100%; width: 35%; background: #7e886c; animation: progress-sweep 2.2s ease-in-out infinite alternate; }
+.progress-bottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 12px; font-size: 11px; color: #76796c; }
+@keyframes progress-sweep { from { transform: translateX(-40%); } to { transform: translateX(240%); } }
+@media (max-width: 600px) {
+  .discovery-progress { padding: 16px 14px 10px; margin: 18px 0 24px; }
+  .progress-heading { gap: 10px; }
+  .progress-copy strong { font-size: 12px; }
+  .progress-copy > span { font-size: 11px; }
+  .progress-films { display: none; }
+  .progress-steps { gap: 5px; }
+  .progress-steps li { font-size: 10px; gap: 4px; }
+  .progress-steps li > span { width: 17px; height: 17px; }
 }
-.run-inspector summary {
-  width: fit-content;
-  cursor: pointer;
-  padding: 7px 0;
-}
-.run-inspector-content {
-  border-top: 1px solid var(--border);
-  margin-top: 6px;
-  padding: 14px 0;
-  max-width: 680px;
-  overflow-wrap: anywhere;
-}
-.run-inspector-content p {
-  line-height: 1.7;
-  margin: 5px 0;
-}
-.run-inspector-content dl {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 25px;
-  margin: 12px 0;
-}
-.run-inspector-content dl div {
-  display: flex;
-  gap: 10px;
-}
-.run-inspector-content dd {
-  margin: 0;
-  color: var(--foreground);
-  font-variant-numeric: tabular-nums;
-}
-.run-inspector-content .text-button {
-  margin-top: 10px;
-}
-.run-version {
-  font-family: monospace;
-  font-size: 11px;
-}
-.source-locator {
-  font-size: 11px;
-  color: var(--muted-foreground);
-  line-height: 1.55;
-  overflow-wrap: anywhere;
-  margin-top: 9px;
-}
+@media (prefers-reduced-motion: reduce) { .progress-track > span { animation: none; width: 100%; opacity: .45; } }

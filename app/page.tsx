@@ -24,13 +24,13 @@ import {
   PopoverTrigger,
   PopoverContent,
 } from "@/components/ui/popover";
-import { Skeleton } from "@/components/ui/skeleton";
 import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
 import { FilmSearch } from "@/components/film-search";
 import { FilmPoster } from "@/components/film-poster";
 import { FilmDrawer } from "@/components/film-drawer";
-import { RunInspector } from "@/components/run-inspector";
+import { DiscoveryProgress } from "@/components/discovery-progress";
+import { requestRecommendations, RecommendationRequestError, type DiscoveryProgress as Progress } from "@/lib/client/recommendation-stream";
 import {
   collection,
   recommendCollection,
@@ -55,6 +55,7 @@ import {
 } from "@/lib/domain";
 import { LANG_KEY, translate, apiMessage } from "@/lib/i18n";
 import { discoveryInput } from "@/lib/client/discovery-input";
+import { resolveTrailNavigation, type TrailNavigation as Nav } from "@/lib/client/trail-navigation";
 import {
   mergeFilmPresentation,
   retainSelectedPosters,
@@ -65,6 +66,8 @@ type Pending = {
   id: string;
   kind: ResearchIntent;
   controller: AbortController;
+  startedAt: number;
+  films: Film[];
 };
 type ApiBatch = {
   diagnostics?: RunDiagnostics;
@@ -78,12 +81,6 @@ type ApiBatch = {
   recommendations: Recommendation[];
   sources: Source[];
   mode: "collection" | "live";
-};
-type Nav = {
-  strada: true;
-  view: "entry" | "results";
-  filmId?: string;
-  snapshotId?: string;
 };
 type ToolInput = {
   filmId?: string;
@@ -214,6 +211,7 @@ export default function Home() {
   const [pending, setPending] = useState<Pending | null>(null);
   const pendingRef = useRef<Pending | null>(null);
   const [error, setError] = useState("");
+  const [progress, setProgress] = useState<Progress>({ stage: "metadata" });
   const [credits, setCredits] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
   const [mode, setMode] = useState<"collection" | "live">("collection");
@@ -268,27 +266,14 @@ export default function Home() {
       existing?.strada &&
       (existing.view === "entry" || existing.view === "results")
     ) {
-      const showResults = existing.view === "results" && !!savedSnapshot;
-      setView(showResults ? "results" : "entry");
-      const filmId =
-        showResults &&
-        existing.filmId &&
-        savedSnapshot.recommendations.some((r) => r.film.id === existing.filmId)
-          ? existing.filmId
-          : null;
-      setDrawerId(filmId);
-      if (existing.view === "results" && !showResults)
-        history.replaceState(
-          { ...history.state, strada: true, view: "entry", filmId: undefined },
-          "",
-          location.pathname,
-        );
-      else if (existing.filmId && !filmId)
-        history.replaceState(
-          { ...history.state, filmId: undefined },
-          "",
-          showResults ? "#trail" : location.pathname,
-        );
+      const normalized = resolveTrailNavigation(saved, existing);
+      saved = normalized.session;
+      update(saved);
+      setView(normalized.nav.view);
+      setDrawerId(normalized.nav.filmId ?? null);
+      history.replaceState({ ...history.state, ...normalized.nav }, "",
+        normalized.nav.filmId ? `#film/${encodeURIComponent(normalized.nav.filmId)}`
+          : normalized.nav.view === "results" ? "#trail" : location.pathname);
     } else {
       history.replaceState(
         { ...history.state, strada: true, view: "entry" } satisfies Nav,
@@ -329,35 +314,24 @@ export default function Home() {
       })
       .catch(() => {});
     function onPop(event: PopStateEvent) {
-      cancel();
+      const normalized = resolveTrailNavigation(current.current, event.state as Nav | null);
+      const activeId = current.current.snapshots[current.current.cursor]?.id;
+      // Dismissing a sheet must not cancel discovery; changing the path must.
+      if (normalized.nav.view !== "results" || normalized.nav.snapshotId !== activeId) cancel();
       setCredits(false);
       setHistoryOpen(false);
       setManualOpen(false);
       setError("");
-      const nav = event.state as Nav | null;
-      if (!nav?.strada || nav.view === "entry") {
-        setView("entry");
-        setDrawerId(null);
-        return;
-      }
-      const state = current.current,
-        cursor = nav.snapshotId
-          ? state.snapshots.findIndex((sn) => sn.id === nav.snapshotId)
-          : -1;
-      const restored = cursor >= 0 ? restoreSnapshot(state, cursor) : state;
-      if (cursor >= 0) update(restored);
-      const snapshot = restored.snapshots[restored.cursor];
-      setView(snapshot ? "results" : "entry");
-      setDrawerId(
-        nav.filmId &&
-          snapshot?.recommendations.some((r) => r.film.id === nav.filmId)
-          ? nav.filmId
-          : null,
-      );
-      if (snapshot && !nav.filmId)
-        requestAnimationFrame(() =>
-          window.scrollTo(0, scrollBySnapshot.current[snapshot.id] ?? 0),
-        );
+      update(normalized.session);
+      setView(normalized.nav.view);
+      setDrawerId(normalized.nav.filmId ?? null);
+      // A replaced branch can survive in the browser's history stack. Repair
+      // its navigation state to the displayed snapshot before another action.
+      history.replaceState({ ...history.state, ...normalized.nav }, "",
+        normalized.nav.filmId ? `#film/${encodeURIComponent(normalized.nav.filmId)}`
+          : normalized.nav.view === "results" ? "#trail" : location.pathname);
+      if (normalized.nav.snapshotId && !normalized.nav.filmId)
+        requestAnimationFrame(() => window.scrollTo(0, scrollBySnapshot.current[normalized.nav.snapshotId!] ?? 0));
     }
 
     window.addEventListener("popstate", onPop);
@@ -426,7 +400,6 @@ export default function Home() {
     const sn = current.current.snapshots[current.current.cursor];
     if (!sn?.recommendations.some((r) => r.film.id === id))
       throw new Error("Unknown recommendation");
-    if (pendingRef.current) return;
     setError("");
     lastPoster.current = document.activeElement as HTMLElement;
     setDrawerId(id);
@@ -442,9 +415,14 @@ export default function Home() {
     else history.pushState(nav, "", `#film/${encodeURIComponent(id)}`);
   }
   function closeDrawer() {
-    cancel();
     setDrawerId(null);
-    if (history.state?.filmId) history.back();
+    if (history.state?.filmId) {
+      if (pendingRef.current) {
+        // A queued history.back() can arrive after a new batch commits and
+        // restore the old branch. Dismiss synchronously while work is pending.
+        history.replaceState({ ...history.state, filmId: undefined }, "", "#trail");
+      } else history.back();
+    }
   }
   function restore(cursor: number) {
     if (pendingRef.current) return;
@@ -523,33 +501,32 @@ export default function Home() {
     const input = discoveryInput(state, language, intent, film),
       id = input.requestId,
       controller = new AbortController(),
-      operation: Pending = { id, controller, kind: intent };
-    // The server owns the 20-second curation budget. A short transport margin
-    // prevents a stalled platform connection from leaving the UI pending.
+      operation: Pending = { id, controller, kind: intent, startedAt: Date.now(), films: [...seeds, ...trail] };
+    // Twenty seconds is the target; slower valid work can complete without
+    // losing the path. Keep a bounded transport margin over the server ceiling.
     const signal = AbortSignal.any([
         controller.signal,
-        AbortSignal.timeout(25000),
+        AbortSignal.timeout(65000),
       ]),
       requestStarted = performance.now();
     lastRequest.current = { intent, film };
     pendingRef.current = operation;
     setPending(operation);
+    setProgress({ stage: "metadata" });
     setError("");
+    if (continuing) {
+      setDrawerId(null);
+      setManualOpen(false);
+      history.replaceState({ ...history.state, filmId: undefined, snapshotId: base.id, view: "results", strada: true }, "", "#trail");
+    }
     if (base) scrollBySnapshot.current[base.id] = window.scrollY;
     try {
-      const response = await fetch("/api/recommendations", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(input),
-        signal,
+      const data = await requestRecommendations<ApiBatch>(input, signal, (next) => {
+        if (pendingRef.current?.id === id) setProgress(next);
       });
-      const data = (await response.json()) as ApiBatch;
-      if (!response.ok)
-        throw new Error(
-          apiMessage(data.error?.code, language, data.error?.message),
-        );
       if (pendingRef.current?.id !== id || controller.signal.aborted) return;
-      if (data.requestId !== id || data.baseSnapshotId !== (base?.id ?? null))
+      if (data.requestId !== id || data.baseSnapshotId !== input.baseSnapshotId ||
+        (current.current.snapshots[current.current.cursor]?.id ?? null) !== input.baseSnapshotId)
         throw new Error(
           tr(
             "This result belongs to an older path. Please retry.",
@@ -628,7 +605,9 @@ export default function Home() {
     } catch (e) {
       if (pendingRef.current?.id === id && !controller.signal.aborted)
         setError(
-          e instanceof Error && e.name === "TimeoutError"
+          e instanceof RecommendationRequestError
+            ? apiMessage(e.code, language, e.message)
+            : e instanceof Error && e.name === "TimeoutError"
             ? apiMessage("TIMEOUT", language)
             : e instanceof Error && e.name !== "ZodError"
               ? e.message
@@ -1020,19 +999,7 @@ export default function Home() {
               </button>
             )}
             {pending?.kind === "initial" && (
-              <div className="initial-progress" role="status">
-                <span>
-                  {tr(
-                    "Reading your films together, then checking the connections.",
-                    "고른 영화들을 함께 읽고, 이어지는 연결을 확인하고 있습니다.",
-                  )}
-                </span>
-                <div className="mini-skeletons">
-                  {[0, 1, 2, 3, 4, 5].map((i) => (
-                    <Skeleton key={i} className="mini-skeleton" />
-                  ))}
-                </div>
-              </div>
+              <DiscoveryProgress progress={progress} films={pending.films} language={language} startedAt={pending.startedAt} onCancel={cancel} />
             )}
           </section>
         </>
@@ -1247,31 +1214,7 @@ export default function Home() {
               </div>
             </div>
             {pending && (
-              <div className="results-status" role="status">
-                <LoaderCircle size={16} className="spinning" />
-                <div>
-                  <strong>
-                    {pending.kind === "regenerate"
-                      ? tr(
-                          "Finding a new set of connections…",
-                          "새로운 연결을 찾고 있습니다…",
-                        )
-                      : tr(
-                          "Reading the next turn in your path…",
-                          "다음 영화로 이어지는 길을 읽고 있습니다…",
-                        )}
-                  </strong>
-                  <span>
-                    {tr(
-                      "Your current films stay here until the next set is ready.",
-                      "다음 추천이 준비되면 바뀝니다. 지금 경로는 그대로 보관됩니다.",
-                    )}
-                  </span>
-                </div>
-                <button className="text-button" onClick={cancel}>
-                  {tr("Cancel", "취소")}
-                </button>
-              </div>
+              <DiscoveryProgress progress={progress} films={pending.films} language={language} startedAt={pending.startedAt} onCancel={cancel} />
             )}
             {error && !drawerId && !manualOpen && (
               <div className="results-error" role="alert">
@@ -1285,13 +1228,11 @@ export default function Home() {
                 </button>
               </div>
             )}
-            <RunInspector snapshot={active} language={language} />
             <div className="poster-grid" aria-busy={!!pending}>
               {active.recommendations.map((r) => (
                 <button
                   key={r.film.id}
                   className="film-card"
-                  disabled={!!pending}
                   onClick={() => openFilm(r.film.id)}
                   aria-label={tr(
                     `Why ${name(r.film)}, ${r.film.year}?`,
@@ -1439,7 +1380,7 @@ export default function Home() {
         onClose={closeDrawer}
         onFollow={(film) => void generate("follow", film)}
         onCancel={cancel}
-        busy={pending?.kind === "follow"}
+        busy={!!pending}
         error={error}
         replacesLater={session.cursor < session.snapshots.length - 1}
         lastPoster={lastPoster}

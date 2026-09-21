@@ -24,6 +24,8 @@ import {
 } from "@/lib/domain";
 import { translate, localizeTitles, apiMessage } from "@/lib/i18n";
 import { collection } from "@/lib/catalogue";
+import { letterboxdLink } from "@/lib/film-links";
+import styles from "./film-drawer.module.css";
 const explanationCache = new Map<string, string[]>();
 export function FilmDrawer({
   snapshot,
@@ -173,15 +175,21 @@ export function FilmDrawer({
   ].filter((selected) => anchorIds.has(selected.id));
   const label = (relation: Connection["relation"]) =>
     relation === "ai_inference"
-      ? tr("AI curation · no verified source", "AI 큐레이션 · 확인된 출처 없음")
+      ? tr("Curatorial proposal", "큐레이터의 제안")
       : relation === "direct_connection"
-        ? tr("A documented connection", "출처에서 확인한 연결")
+        ? tr("Documented connection", "문헌에서 확인한 연결")
         : relation === "curatorial_association"
-          ? tr("A curatorial route", "큐레이션으로 이어지는 길")
-          : tr(
-              "A source-informed STRADA reading",
-              "자료를 참고한 STRADA의 해석",
-            );
+          ? tr("Curatorial connection", "큐레이션으로 제안한 연결")
+          : tr("Source-informed interpretation", "문헌을 바탕으로 한 해석");
+  const linkedSources = snapshot && detail
+    ? [...new Map(
+        detail.sourceIds
+          .map((id) => snapshot.sources.find((source) => source.id === id))
+          .filter((source) => !!source)
+          .map((source) => [source.url, source]),
+      ).values()]
+    : [];
+  const letterboxd = film ? letterboxdLink(film) : undefined;
   const synopsis = film
     ? language === "ko"
       ? film.synopsisKo || film.synopsisEn
@@ -262,6 +270,23 @@ export function FilmDrawer({
                       ? ` · ${film.runtime}${tr(" min", "분")}`
                       : ""}
                   </p>
+                  {letterboxd && (
+                    <a
+                      className={styles.letterboxd}
+                      href={letterboxd.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={tr(
+                        `${letterboxd.direct ? "View" : "Find"} ${film.title} on Letterboxd`,
+                        `Letterboxd에서 ${titleOf(film, language)} ${letterboxd.direct ? "보기" : "찾기"}`,
+                      )}
+                    >
+                      <span className={styles.letterboxdMark} aria-hidden="true"><i /><i /><i /></span>
+                      <span>Letterboxd</span>
+                      <small>{tr("Ratings & reviews", "평점·리뷰 보기")}</small>
+                      <ArrowUpRight size={13} />
+                    </a>
+                  )}
                 </div>
               </div>
               <section className="synopsis-section">
@@ -349,15 +374,16 @@ export function FilmDrawer({
                     ))}
                   </div>
                 )}
-                <p className="why-text">
-                  {local(
-                    explanationParagraphs?.join("\n\n") ||
-                      (language === "ko"
-                        ? detail.connections[0].whyKo ||
-                          detail.connections[0].why
-                        : detail.connections[0].why),
-                  )}
-                </p>
+                <div className={`why-text ${styles.note}`} lang={language}>
+                  {(explanationParagraphs?.length
+                    ? explanationParagraphs
+                    : [language === "ko"
+                        ? detail.connections[0].whyKo || detail.connections[0].why
+                        : detail.connections[0].why]
+                  ).map((paragraph, index) => (
+                    <p key={index}>{local(paragraph)}</p>
+                  ))}
+                </div>
                 {explanationLoading && (
                   <p className="explanation-progress" role="status">
                     <LoaderCircle size={13} className="spinning" />
@@ -432,42 +458,21 @@ export function FilmDrawer({
               </section>
               <section className="evidence-section">
                 <div className="evidence-heading">
-                  <h2>{tr("Read the sources", "연결의 근거")}</h2>
-                  <span>{detail.sourceIds.length}</span>
+                  <h2>{tr("Reading room", "함께 읽을 자료")}</h2>
+                  <span>{linkedSources.length}</span>
                 </div>
                 {snapshot.evidenceStatus === "historical" && (
                   <p className="context-note">
-                    {tr(
-                      "This saved route predates the current source collection. Its source context has not been rechecked; generate a new route for current evidence.",
-                      "이 경로는 현재 문헌 DB보다 이전에 저장되었습니다. 당시 자료는 다시 확인되지 않았으므로, 최신 근거는 새 추천에서 확인해 주세요.",
-                    )}
+                    {tr("Sources from an older collection; generate a new route to refresh them.", "이전 문헌 모음의 자료입니다. 새 추천에서 최신 자료를 확인할 수 있습니다.")}
                   </p>
                 )}
-                {!detail.sourceIds.length && (
-                  <p className="ai-evidence-note">
-                    {discoveryScope
-                      ? tr(
-                          "AI read the films you chose together. This is a curatorial proposal; no supporting source was verified for this request.",
-                          "지금까지 고른 영화들을 함께 읽어 제안한 큐레이션입니다. 이번 요청에서 이 연결을 뒷받침하는 출처는 확인하지 못했습니다.",
-                        )
-                      : tr(
-                          "We could not verify a supporting source for this route. This recommendation is the AI’s own curatorial proposal, offered as another direction to explore.",
-                          "이 연결을 뒷받침하는 출처를 확인하지 못했습니다. AI가 제안한 큐레이션이며, 다음 탐색 방향으로 살펴볼 수 있습니다.",
-                        )}
+                {!linkedSources.length && (
+                  <p className={styles.sourceNote}>
+                    {tr("This curatorial proposal has no verified supporting source attached.", "이 큐레이션 제안에 첨부된 검증 문헌은 없습니다.")}
                   </p>
                 )}
-                {detail.sourceIds
-                  .map((id) => snapshot.sources.find((s) => s.id === id))
-                  .filter((s) => !!s)
-                  .map((s, i) => (
-                    <article className="evidence-card" key={s.id}>
-                      <div className="evidence-kicker">
-                        <span>{String(i + 1).padStart(2, "0")}</span>
-                        <span>{typeLabel[s.type]}</span>
-                        {s.accessLevel === "abstract" && (
-                          <em>{tr("Abstract", "초록")}</em>
-                        )}
-                      </div>
+                {linkedSources.map((s) => (
+                    <article className={styles.source} key={s.id}>
                       <a
                         href={s.url}
                         target="_blank"
@@ -477,64 +482,22 @@ export function FilmDrawer({
                         {s.title}
                         <ArrowUpRight size={17} />
                       </a>
-                      <p className="source-byline">
-                        {[s.author, s.publisher, s.date?.slice(0, 4)]
+                      <p className={styles.sourceByline}>
+                        {[s.publisher, s.author, s.date?.slice(0, 4), typeLabel[s.type]]
                           .filter(Boolean)
                           .join(" · ")}
                       </p>
-                      <p className="source-summary">
-                        {local(
-                          language === "ko"
-                            ? s.summaryKo || s.summary
-                            : s.summary,
-                        )}
-                      </p>
-                      {s.locator && (
-                        <p className="source-locator">{s.locator}</p>
-                      )}
-                      {s.boundary && (
-                        <p className="context-note">
-                          <strong>
-                            {tr(
-                              "Scope of this reading · STRADA annotation",
-                              "해석 범위 · STRADA의 정리",
-                            )}
-                          </strong>
-                          <br />
-                          {s.boundary}
-                        </p>
-                      )}
-                      {s.excerpt && (
-                        <div className="source-excerpt">
-                          <span>{tr("From the source", "원문 발췌")}</span>
-                          <blockquote>{s.excerpt}</blockquote>
-                        </div>
-                      )}
-                      {s.scope === "interpretive_context" && (
-                        <small className="context-note">
-                          {tr(
-                            "A reading of a film discussed here. The connection between films is STRADA’s interpretation.",
-                            "작품을 이해하는 자료입니다. 영화 사이의 연결은 STRADA의 해석입니다.",
-                          )}
-                        </small>
-                      )}
-                      {s.scope === "programme_context" && (
-                        <small className="context-note">
-                          {tr(
-                            "Programme context, not evidence of similarity.",
-                            "영화제의 맥락이며, 유사성을 입증하는 근거는 아닙니다.",
-                          )}
-                        </small>
+                      {(s.excerpt || s.boundary || s.locator) && (
+                        <details className={styles.sourceDetails}>
+                          <summary>{s.excerpt ? tr("Read the excerpt", "발췌문 보기") : tr("Source details", "자료 정보")}</summary>
+                          {s.excerpt && <blockquote>{s.excerpt}</blockquote>}
+                          {s.locator && <small>{s.locator}</small>}
+                          {s.boundary && <p>{s.boundary}</p>}
+                        </details>
                       )}
                     </article>
                   ))}
               </section>
-              <p className="evidence-footnote">
-                {tr(
-                  "Documented connections, STRADA readings, and source-free AI proposals are labeled separately. A connection does not imply direct influence.",
-                  "출처에서 확인한 연결, STRADA의 해석, 출처 없이 제안한 AI 큐레이션을 구분합니다. 연결이 곧 직접적인 영향 관계를 뜻하지는 않습니다.",
-                )}
-              </p>
             </div>
             <div className="drawer-action">
               {replacesLater && (

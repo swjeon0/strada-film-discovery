@@ -11,7 +11,7 @@ import { RecommendationInput } from "../recommendation-input";
 import { AppError } from "../config";
 import { getFilms } from "../metadata";
 import { issueDetailToken } from "../curation-detail";
-import { runCurator } from "./engine";
+import { runCurator, type CuratorProgress } from "./engine";
 import type {
   CuratorDecision,
   ContextBundle,
@@ -63,6 +63,9 @@ export type CuratorProductionResult = {
 };
 
 const productionSettings = curatorSettings().stages;
+// Twenty seconds is the response target, not a point at which useful work is
+// discarded. Keep a bounded recovery window for slower upstream responses.
+export const CURATOR_COMPLETION_TIMEOUT_MS = 55_000;
 export const PRODUCTION_CURATOR_SETTINGS = {
   ...productionSettings.list,
   promptVersion: "v2" as const,
@@ -265,11 +268,13 @@ export async function runCuratorProduction(
   input: CuratorProductionInput,
   requestSignal: AbortSignal,
   dependencies: Partial<CuratorProductionDependencies> = {},
+  onProgress?: (progress: CuratorProgress) => void,
 ): Promise<CuratorProductionResult> {
   const deps = { ...defaultDependencies(), ...dependencies },
     started = Date.now();
-  const signal = AbortSignal.any([requestSignal, AbortSignal.timeout(20_000)]),
+  const signal = AbortSignal.any([requestSignal, AbortSignal.timeout(CURATOR_COMPLETION_TIMEOUT_MS)]),
     selectedIds = [...input.seeds, ...input.trail];
+  onProgress?.({ stage: "metadata" });
   const metadataStarted = Date.now(),
     selected = await deps.getFilms(selectedIds, { remaining: 160, signal }),
     metadataMs = Date.now() - metadataStarted;
@@ -299,6 +304,7 @@ export async function runCuratorProduction(
   const forbiddenFilms = input.discoveredFilms.filter((film) =>
     excludedSet.has(film.id),
   );
+  onProgress?.({ stage: "context" });
   const contextStarted = Date.now(),
     context = await deps.repository.buildContext(
       curatorSelected,
@@ -317,6 +323,7 @@ export async function runCuratorProduction(
     repository: fixedRepository,
     options: PRODUCTION_CURATOR_SETTINGS,
     signal,
+    onProgress,
   });
   const batch = curatorDecisionBatch(
     result.decision,

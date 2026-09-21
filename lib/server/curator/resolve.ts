@@ -2,11 +2,61 @@ import type { Film } from "../../domain";
 import { resolveCandidates } from "../metadata";
 import type { Budget } from "../tmdb";
 import type { CuratorDecision, CuratorOutput } from "./contract";
+import type { ProposalIdentity } from "./response-stream";
 
 export type ProposalResolver = (
   candidates: { title: string; year: number; director: string }[],
   budget: Budget,
 ) => Promise<(Film | null)[]>;
+
+/** Request-scoped identity work starts while the curator is still writing.
+ * The final validator and repair pass reuse the same results, without changing
+ * ranking, excluding obscure titles, or accepting an unverified identity. */
+export function createResolutionSession(
+  signal: AbortSignal,
+  resolver: ProposalResolver = resolveCandidates,
+  onResolved?: (completed: number) => void,
+) {
+  const budget: Budget = { remaining: 100, signal },
+    pending = new Map<string, Promise<Film | null>>(),
+    queue: (() => Promise<void>)[] = [];
+  let running = 0, completed = 0;
+  const pump = () => {
+    while (running < 4 && queue.length) {
+      running++;
+      void queue.shift()!().finally(() => { running--; pump(); });
+    }
+  };
+  const resolveOne = (candidate: ProposalIdentity) => {
+    const key = JSON.stringify([candidate.title, candidate.year, candidate.director]);
+    const cached = pending.get(key);
+    if (cached) return cached;
+    const task = new Promise<Film | null>((resolve, reject) => {
+      queue.push(async () => {
+        try {
+          signal.throwIfAborted();
+          const film = (await resolver([candidate], budget))[0] ?? null;
+          if (film) { completed++; onResolved?.(completed); }
+          resolve(film);
+        } catch (error) {
+          // An upstream transport error is retryable when final verification
+          // reaches this row. A true identity miss stays cached for repair.
+          pending.delete(key);
+          reject(error);
+        }
+      });
+    });
+    pending.set(key, task);
+    // Speculative work may fail before the final reader awaits it.
+    void task.catch(() => {});
+    pump();
+    return task;
+  };
+  return {
+    warm: (candidate: ProposalIdentity) => { void resolveOne(candidate).catch(() => {}); },
+    resolve: (async (candidates) => Promise.all(candidates.map(resolveOne))) as ProposalResolver,
+  };
+}
 export class CuratorIdentityError extends Error {
   constructor(
     public details: {

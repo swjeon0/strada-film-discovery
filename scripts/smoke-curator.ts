@@ -1,7 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import nextEnv from "@next/env";
-import { runCuratorProduction } from "../lib/server/curator/production";
 import { CuratorIdentityError } from "../lib/server/curator/resolve";
 import { explainFilm } from "../lib/server/curation-detail";
 import {
@@ -13,6 +12,10 @@ import {
 import { z } from "zod";
 
 nextEnv.loadEnvConfig(process.cwd());
+// Stage settings read environment overrides at module initialization.
+const { runCuratorProduction, CURATOR_COMPLETION_TIMEOUT_MS } = await import(
+  "../lib/server/curator/production"
+);
 const args = process.argv.slice(2),
   get = (name: string) => {
     const at = args.indexOf(name);
@@ -89,7 +92,7 @@ async function run(
             Origin: new URL(url).origin,
           },
           body: JSON.stringify(input),
-          signal: AbortSignal.timeout(26_000),
+          signal: AbortSignal.timeout(65_000),
         },
       );
       if (!response.ok) {
@@ -102,7 +105,7 @@ async function run(
     } else {
       const result = await runCuratorProduction(
         input,
-        AbortSignal.timeout(21_000),
+        AbortSignal.timeout(CURATOR_COMPLETION_TIMEOUT_MS + 1000),
       );
       data = {
         ...result.batch,

@@ -115,6 +115,9 @@ test("detail tokens retain verified identities and only evidence actually linked
   assert.deepEqual(packet.evidence, [
     {
       title: source.title,
+      author: source.author,
+      publisher: source.publisher,
+      scope: source.scope,
       url: source.url,
       excerpt: source.excerpt,
       point: source.summary,
@@ -125,6 +128,21 @@ test("detail tokens retain verified identities and only evidence actually linked
     },
   ]);
   assert.equal("poster" in packet.film, false);
+});
+
+test("detail context keeps equally bounded film summaries and attributed source context", (t) => {
+  isolate(t);
+  const selectedFilms = Array.from({ length: 6 }, (_, index) => ({
+    ...selected,
+    id: `tmdb:${index + 10}`,
+    overviewEn: `Film ${index}: ${"A specific piece of identity context. ".repeat(30)}`,
+  }));
+  const packet = readDetailToken(issueDetailToken(rec, selectedFilms, [source])!);
+  assert.equal(packet.selected.length, 6);
+  assert.ok(packet.selected.every((film) => film.overview?.length === 250));
+  assert.equal(packet.evidence[0].author, source.author);
+  assert.equal(packet.evidence[0].publisher, source.publisher);
+  assert.equal(packet.evidence[0].scope, source.scope);
 });
 
 test("source-free interpretations receive valid detail tokens without invented citations", (t) => {
