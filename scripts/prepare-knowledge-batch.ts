@@ -4,7 +4,7 @@ import { dirname, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import type { CollectionManifest } from "./collect-knowledge";
 
-const schema = {
+export const knowledgeCandidateSchema = {
   type: "object",
   additionalProperties: false,
   required: ["admit", "accessAssessment", "document", "films", "observations", "rejectionReasons"],
@@ -31,6 +31,7 @@ const schema = {
     },
     films: {
       type: "array",
+      maxItems: 6,
       items: {
         type: "object",
         additionalProperties: false,
@@ -46,6 +47,7 @@ const schema = {
     },
     observations: {
       type: "array",
+      maxItems: 3,
       items: {
         type: "object",
         additionalProperties: false,
@@ -142,7 +144,7 @@ export function batchLine(
           type: "json_schema",
           name: "strada_source_extraction_candidate",
           strict: true,
-          schema,
+          schema: knowledgeCandidateSchema,
         },
       },
     },

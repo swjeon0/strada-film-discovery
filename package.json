@@ -20,9 +20,11 @@
     "knowledge:collect": "node --import tsx scripts/collect-knowledge.ts",
     "knowledge:prepare-batch": "node --import tsx scripts/prepare-knowledge-batch.ts",
     "knowledge:run-batch": "node --import tsx scripts/run-knowledge-batch.ts",
+    "knowledge:run-codex": "node --import tsx scripts/run-knowledge-codex.ts",
     "knowledge:validate-batch": "node --import tsx scripts/validate-knowledge-batch.ts",
     "knowledge:publish": "python3 scripts/publish-knowledge.py",
     "knowledge:embed": "node --import tsx scripts/embed-knowledge.ts",
+    "knowledge:embed-local": "node --import tsx scripts/embed-knowledge-local.ts",
     "knowledge:audit": "node --import tsx scripts/audit-knowledge-sources.ts",
     "knowledge:test": "python3 -m unittest discover -s research/knowledge/tests"
   },

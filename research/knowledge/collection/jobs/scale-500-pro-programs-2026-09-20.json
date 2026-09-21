@@ -1,0 +1,4188 @@
+{
+  "version": 1,
+  "id": "scale-500-pro-programs-2026-09-20",
+  "createdAt": "2026-09-21T01:00:00.000Z",
+  "description": "ChatGPT-authenticated Codex expansion seed: unpublished Harvard Film Archive programme pages from the older archive range.",
+  "targets": [
+    {
+      "id": "harvard-film-archive-2x-straub-huillet-a89ea07020",
+      "url": "https://harvardfilmarchive.org/programs/2x-straub-huillet",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-4th-annual-boston-latino-international-film-festival-680433b100",
+      "url": "https://harvardfilmarchive.org/programs/4th-annual-boston-latino-international-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-tribute-to-pacific-street-films-7275164939",
+      "url": "https://harvardfilmarchive.org/programs/a-tribute-to-pacific-street-films",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-tribute-to-ron-mann-35a131bbef",
+      "url": "https://harvardfilmarchive.org/programs/a-tribute-to-ron-mann",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-tribute-to-zacharias-kunuk-fecf6bf671",
+      "url": "https://harvardfilmarchive.org/programs/a-tribute-to-zacharias-kunuk",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-tribute-to-zeitgeist-films-d875ccfb4f",
+      "url": "https://harvardfilmarchive.org/programs/a-tribute-to-zeitgeist-films",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-adaptation-47d5e809b9",
+      "url": "https://harvardfilmarchive.org/programs/adaptation",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-adventures-in-surrealism-2-351451941e",
+      "url": "https://harvardfilmarchive.org/programs/adventures-in-surrealism-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alain-resnais-f53ca41c4c",
+      "url": "https://harvardfilmarchive.org/programs/alain-resnais",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-all-together-now-the-cinematerpsichorean-world-of-busby-berk-807dbf754c",
+      "url": "https://harvardfilmarchive.org/programs/all-together-now-the-cinematerpsichorean-world-of-busby-berk",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-abigail-child-f14c980f7c",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-abigail-child",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-edward-klosinski-622dda198c",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-edward-klosinski",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-gina-kim-2872e2ba43",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-gina-kim",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-hara-kazuo-f615777cfb",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-hara-kazuo",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-henri-herre-00b4f34150",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-henri-herre",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-john-marshall-9d3ececc00",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-john-marshall",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-lauren-greenfield-813478160d",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-lauren-greenfield",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-michaela-pavlatova-8eb72b4390",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-michaela-pavlatova",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-neco-celik-a17f8c154d",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-neco-celik",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-robert-fenz-94a6e1ef8f",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-robert-fenz",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-rodney-evans-eae2d2bee1",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-rodney-evans",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-shyam-benegal-543cbd009e",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-shyam-benegal",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-stephen-prina-b3afcea798",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-stephen-prina",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-the-beijing-film-academy-538e022264",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-the-beijing-film-academy",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-todd-solondz-3a9e679081",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-todd-solondz",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-tsai-ming-222cbea021",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-tsai-ming",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-yusup-razykov-9b6d8ebed6",
+      "url": "https://harvardfilmarchive.org/programs/an-evening-with-yusup-razykov",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-andy-warhol-and-the-factory-selected-works-cb701a883a",
+      "url": "https://harvardfilmarchive.org/programs/andy-warhol-and-the-factory-selected-works",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-arts-first-3d06fd247a",
+      "url": "https://harvardfilmarchive.org/programs/arts-first",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-arts-first-2-13af759766",
+      "url": "https://harvardfilmarchive.org/programs/arts-first-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beautiful-music-michel-legrand-on-film-cd5e1ce233",
+      "url": "https://harvardfilmarchive.org/programs/beautiful-music-michel-legrand-on-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-before-normalization-the-czech-new-wave-887a00942d",
+      "url": "https://harvardfilmarchive.org/programs/before-normalization-the-czech-new-wave",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ben-shahns-cinematic-world-357a62cf19",
+      "url": "https://harvardfilmarchive.org/programs/ben-shahns-cinematic-world",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-black-and-white-on-screen-52d099c886",
+      "url": "https://harvardfilmarchive.org/programs/black-and-white-on-screen",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-black-and-white-on-screen-2-3356be92c7",
+      "url": "https://harvardfilmarchive.org/programs/black-and-white-on-screen-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bulgarian-and-macedonian-film-series-b213bfac09",
+      "url": "https://harvardfilmarchive.org/programs/bulgarian-and-macedonian-film-series",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-buried-treasures-film-archives-in-focus-26a320a47f",
+      "url": "https://harvardfilmarchive.org/programs/buried-treasures-film-archives-in-focus",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-california-stars-los-angeles-on-film-850f2be6a1",
+      "url": "https://harvardfilmarchive.org/programs/california-stars-los-angeles-on-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-celebrating-national-french-week-b8155511f3",
+      "url": "https://harvardfilmarchive.org/programs/celebrating-national-french-week",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-charlotte-zwerin-straight-no-chaser-1a5392ae7e",
+      "url": "https://harvardfilmarchive.org/programs/charlotte-zwerin-straight-no-chaser",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-a-to-z-treasures-from-the-harvard-film-archive-431515e471",
+      "url": "https://harvardfilmarchive.org/programs/cinema-a-to-z-treasures-from-the-harvard-film-archive",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-a-to-z-treasures-from-the-harvard-film-archive-2-8a7693f15d",
+      "url": "https://harvardfilmarchive.org/programs/cinema-a-to-z-treasures-from-the-harvard-film-archive-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-a-to-z-treasures-from-the-harvard-film-archive-3-8561afdd3e",
+      "url": "https://harvardfilmarchive.org/programs/cinema-a-to-z-treasures-from-the-harvard-film-archive-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-a-to-z-treasures-from-the-harvard-film-archive-4-b01aaae6d7",
+      "url": "https://harvardfilmarchive.org/programs/cinema-a-to-z-treasures-from-the-harvard-film-archive-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-a-to-z-treasures-from-the-harvard-film-archive-5-b4015d01eb",
+      "url": "https://harvardfilmarchive.org/programs/cinema-a-to-z-treasures-from-the-harvard-film-archive-5",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-a-to-z-treasures-from-the-harvard-film-archive-6-693f3c6bbd",
+      "url": "https://harvardfilmarchive.org/programs/cinema-a-to-z-treasures-from-the-harvard-film-archive-6",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-az-treasures-from-the-harvard-film-archive-b2b426b16b",
+      "url": "https://harvardfilmarchive.org/programs/cinema-az-treasures-from-the-harvard-film-archive",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-francais-f417f3963c",
+      "url": "https://harvardfilmarchive.org/programs/cinema-francais",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-verite-26e72980a6",
+      "url": "https://harvardfilmarchive.org/programs/cinema-verite",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-without-borders-32385491a3",
+      "url": "https://harvardfilmarchive.org/programs/cinema-without-borders",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-b3bf58ab6e",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-10-7bae6e5222",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-2-ad7802cfe5",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-2001-86fbc52f68",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-2001",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-3-7a72597f96",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-4-0e28a1efe9",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-5-829092a8f0",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-5",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-6-ac17d1bceb",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-6",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-7-b54122f84b",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-7",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-8-3ce98a7c1c",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-8",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-9-1b04923d0a",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-9",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-donald-richie-lucia-rocha-94b3edbe69",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-donald-richie-lucia-rocha",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-reverend-edward-mark-10c1872c68",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-reverend-edward-mark",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-encounters-reverend-peter-gomes-and-howard-zinn-8c44134f45",
+      "url": "https://harvardfilmarchive.org/programs/close-encounters-reverend-peter-gomes-and-howard-zinn",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cold-war-chronicles-the-films-of-emile-de-antonio-567aae2096",
+      "url": "https://harvardfilmarchive.org/programs/cold-war-chronicles-the-films-of-emile-de-antonio",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-conservators-choice-5fca2a650e",
+      "url": "https://harvardfilmarchive.org/programs/conservators-choice",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-conservators-choice-2-0ec47b2599",
+      "url": "https://harvardfilmarchive.org/programs/conservators-choice-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-conservators-choice-directors-in-short-5705073c4f",
+      "url": "https://harvardfilmarchive.org/programs/conservators-choice-directors-in-short",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contemporary-french-cinema-0edcad1c82",
+      "url": "https://harvardfilmarchive.org/programs/contemporary-french-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contemporary-hollywood-cinema-48d1400c80",
+      "url": "https://harvardfilmarchive.org/programs/contemporary-hollywood-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contemporary-hollywood-cinema-2-2b0adf7a76",
+      "url": "https://harvardfilmarchive.org/programs/contemporary-hollywood-cinema-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contemporary-hollywood-cinema-3-72b2271735",
+      "url": "https://harvardfilmarchive.org/programs/contemporary-hollywood-cinema-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contemporary-turkish-documentaries-d9d8f51b2a",
+      "url": "https://harvardfilmarchive.org/programs/contemporary-turkish-documentaries",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contemporary-turkish-documentaries-2-a7144cd1d5",
+      "url": "https://harvardfilmarchive.org/programs/contemporary-turkish-documentaries-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-control-room-b620cf8e98",
+      "url": "https://harvardfilmarchive.org/programs/control-room",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-curatorand-146s-choice-e034874888",
+      "url": "https://harvardfilmarchive.org/programs/curatorand-146s-choice",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-curious-cinema-an-errol-morris-retrospective-575a412d08",
+      "url": "https://harvardfilmarchive.org/programs/curious-cinema-an-errol-morris-retrospective",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-deleuze-philosophy-and-film-189dba9b52",
+      "url": "https://harvardfilmarchive.org/programs/deleuze-philosophy-and-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-direct-democracy-the-presidential-election-on-screen-331cf2bdf6",
+      "url": "https://harvardfilmarchive.org/programs/direct-democracy-the-presidential-election-on-screen",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-director-jurgen-bottcher-in-person-9773485ca8",
+      "url": "https://harvardfilmarchive.org/programs/director-jurgen-bottcher-in-person",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-a-53255e38a3",
+      "url": "https://harvardfilmarchive.org/programs/directors-a",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-a-2-5fd537db55",
+      "url": "https://harvardfilmarchive.org/programs/directors-a-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-a-3-a67eab41ce",
+      "url": "https://harvardfilmarchive.org/programs/directors-a-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-a-4-026a002434",
+      "url": "https://harvardfilmarchive.org/programs/directors-a-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-a-5-e5058099de",
+      "url": "https://harvardfilmarchive.org/programs/directors-a-5",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-876e4c012a",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-2-039a5fc19f",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-3-a56c6f4bc8",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-4-41390e4e63",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-a-dymanic-duo-05f1681d26",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-a-dymanic-duo",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-african-perspectives-med-hondo-6387c5f83e",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-african-perspectives-med-hondo",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-alexander-payne-american-allegories-55056beb8e",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-alexander-payne-american-allegories",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-american-gothic-films-by-harmony-korine-e9c6e6e4b7",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-american-gothic-films-by-harmony-korine",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-beyond-boundaries-the-cinema-of-amos-gita-1b6514cfb9",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-beyond-boundaries-the-cinema-of-amos-gita",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-clint-eastwood-an-american-master-41dc0affa8",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-clint-eastwood-an-american-master",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-dick-rogers-in-retrospect-2525dc20d9",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-dick-rogers-in-retrospect",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-fosse-7a6f8d24fa",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-fosse",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-gaston-kabore-0126344c44",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-gaston-kabore",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-hartmut-bitomsky-x-2-97cfd7ea14",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-hartmut-bitomsky-x-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-henri-alekan-master-of-light-and-shadow-6b1edae988",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-henri-alekan-master-of-light-and-shadow",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-high-passion-the-films-of-ritwik-ghatak-541a4194fe",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-high-passion-the-films-of-ritwik-ghatak",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-in-retrospect-charles-burnett-316bed7d91",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-in-retrospect-charles-burnett",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-living-with-your-eyes-the-world-according-d8edff1d87",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-living-with-your-eyes-the-world-according",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-maziar-bahari-fc934cc7a3",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-maziar-bahari",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-nanni-moretti-3d8a60064d",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-nanni-moretti",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-of-flesh-of-spirit-the-cinema-of-jean-eus-aa8c59c10f",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-of-flesh-of-spirit-the-cinema-of-jean-eus",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-ousmane-sembeneand-151the-father-e62e735985",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-ousmane-sembeneand-151the-father",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-patwardhan-0833e4ca13",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-patwardhan",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-poland-through-the-prism-of-andrzej-wajda-c34aaa81a3",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-poland-through-the-prism-of-andrzej-wajda",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-rediscovering-the-films-of-jean-gremillon-6d4d6e882b",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-rediscovering-the-films-of-jean-gremillon",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-requiem-the-visionary-films-of-alexander-c30da67471",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-requiem-the-visionary-films-of-alexander",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-rituals-of-desire-the-films-of-daniel-sch-becb98b868",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-rituals-of-desire-the-films-of-daniel-sch",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-salaam-cambridge-mira-nair-in-retrospect-b3018e36f6",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-salaam-cambridge-mira-nair-in-retrospect",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-stan-brakhage-in-memoriam-8585e56c17",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-stan-brakhage-in-memoriam",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-sympathetic-magic-the-cinema-of-souleyman-992916fa5a",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-sympathetic-magic-the-cinema-of-souleyman",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-the-divine-comedy-of-federico-fellini-b370a06ebe",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-the-divine-comedy-of-federico-fellini",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focus-the-films-of-elio-petri-95a2ad9056",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focus-the-films-of-elio-petri",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusabroad-in-the-world-the-art-of-sandra-kogu-0859333e87",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusabroad-in-the-world-the-art-of-sandra-kogu",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusanne-dec78933f5",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusanne",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusbeing-michael-snow-4a2eb87acd",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusbeing-michael-snow",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusbreaking-the-mirror-the-films-of-maya-dere-73cd6c6490",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusbreaking-the-mirror-the-films-of-maya-dere",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focuscinematic-dreams-five-films-by-omer-kavur-0e8b9d22ab",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focuscinematic-dreams-five-films-by-omer-kavur",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusgregory-j-markopoulos-toward-the-temenos-2666be7ffb",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusgregory-j-markopoulos-toward-the-temenos",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focushal-hartley-the-last-auteur-d9edaa3892",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focushal-hartley-the-last-auteur",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focushieroglyphs-of-armenia-films-by-don-askari-a7cde61b18",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focushieroglyphs-of-armenia-films-by-don-askari",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusmarcel-ophuls-the-interrogating-eye-acd6361fc1",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusmarcel-ophuls-the-interrogating-eye",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusstories-from-another-realm-films-by-herber-a1b0b34c59",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusstories-from-another-realm-films-by-herber",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusthe-dark-worlds-of-fritz-lang-8bd3b45dd6",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusthe-dark-worlds-of-fritz-lang",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusthe-films-of-sarunas-bartas-6864bc4307",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusthe-films-of-sarunas-bartas",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusthe-films-of-yilmaz-guney-b5a7b909b3",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusthe-films-of-yilmaz-guney",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focusuncomfortable-truths-the-cinema-of-peter-w-cfa5cc6a3e",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focusuncomfortable-truths-the-cinema-of-peter-w",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-directors-in-focuswild-at-heart-the-films-of-julio-medem-e851d93d46",
+      "url": "https://harvardfilmarchive.org/programs/directors-in-focuswild-at-heart-the-films-of-julio-medem",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dk-usa-danish-filmmakers-look-at-our-america-e0652e47a8",
+      "url": "https://harvardfilmarchive.org/programs/dk-usa-danish-filmmakers-look-at-our-america",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-double-shinoda-0d0a3b3fae",
+      "url": "https://harvardfilmarchive.org/programs/double-shinoda",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-eight-weeks-of-film-history1980-57402a9030",
+      "url": "https://harvardfilmarchive.org/programs/eight-weeks-of-film-history1980",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-family-bonds-new-films-from-europe-5184072a3b",
+      "url": "https://harvardfilmarchive.org/programs/family-bonds-new-films-from-europe",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-farewell-20th-century-2c2cae17d5",
+      "url": "https://harvardfilmarchive.org/programs/farewell-20th-century",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fashion-and-film-6349a3542d",
+      "url": "https://harvardfilmarchive.org/programs/fashion-and-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fashion-and-film-3-f220ed174a",
+      "url": "https://harvardfilmarchive.org/programs/fashion-and-film-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fassbinder-65849d56b3",
+      "url": "https://harvardfilmarchive.org/programs/fassbinder",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fifth-annual-new-films-from-europe-6ecca8ec49",
+      "url": "https://harvardfilmarchive.org/programs/fifth-annual-new-films-from-europe",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-architectures-92d97bbd40",
+      "url": "https://harvardfilmarchive.org/programs/film-architectures",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-architectures-2-8cacd670e9",
+      "url": "https://harvardfilmarchive.org/programs/film-architectures-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-architectures-3-dcf28793ed",
+      "url": "https://harvardfilmarchive.org/programs/film-architectures-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-architectures-4-8b77d08f39",
+      "url": "https://harvardfilmarchive.org/programs/film-architectures-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-architectures-5-d3025bf64d",
+      "url": "https://harvardfilmarchive.org/programs/film-architectures-5",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-architectures-6-bbd023da0f",
+      "url": "https://harvardfilmarchive.org/programs/film-architectures-6",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-architectures-7-1a0d189ff6",
+      "url": "https://harvardfilmarchive.org/programs/film-architectures-7",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-architectures-the-moving-image-489a591a55",
+      "url": "https://harvardfilmarchive.org/programs/film-architectures-the-moving-image",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-in-the-third-reich-the-power-of-images-and-illusions-33e4319f29",
+      "url": "https://harvardfilmarchive.org/programs/film-in-the-third-reich-the-power-of-images-and-illusions",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-five-directors-ce5efec5a2",
+      "url": "https://harvardfilmarchive.org/programs/five-directors",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frames-of-mind-d775c1e9e2",
+      "url": "https://harvardfilmarchive.org/programs/frames-of-mind",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frames-of-mind-3-41a6fa21bb",
+      "url": "https://harvardfilmarchive.org/programs/frames-of-mind-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frames-of-mind-4-ab39170eb9",
+      "url": "https://harvardfilmarchive.org/programs/frames-of-mind-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frames-of-mind-5-a57fbf1f32",
+      "url": "https://harvardfilmarchive.org/programs/frames-of-mind-5",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frames-of-mind-6-75fa00a575",
+      "url": "https://harvardfilmarchive.org/programs/frames-of-mind-6",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frames-of-mind-7-ccf5a22aec",
+      "url": "https://harvardfilmarchive.org/programs/frames-of-mind-7",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-from-china-with-love-the-films-of-ning-ying-ab88790cc2",
+      "url": "https://harvardfilmarchive.org/programs/from-china-with-love-the-films-of-ning-ying",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-from-cinematic-to-digital-culture-449d6314e5",
+      "url": "https://harvardfilmarchive.org/programs/from-cinematic-to-digital-culture",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-from-dogme-to-dogville-the-films-of-lars-von-trier-7aa321e0a3",
+      "url": "https://harvardfilmarchive.org/programs/from-dogme-to-dogville-the-films-of-lars-von-trier",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-from-the-hfa-vaultsuncensored-selections-from-the-grove-pres-81e22aa15d",
+      "url": "https://harvardfilmarchive.org/programs/from-the-hfa-vaultsuncensored-selections-from-the-grove-pres",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-further-pursuits-recent-activist-cinema-70b7483ca4",
+      "url": "https://harvardfilmarchive.org/programs/further-pursuits-recent-activist-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-german-retro-2-10676054a8",
+      "url": "https://harvardfilmarchive.org/programs/german-retro-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-re-2eab30f8e6",
+      "url": "https://harvardfilmarchive.org/programs/global-re",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-c9f1a2f2d4",
+      "url": "https://harvardfilmarchive.org/programs/global-visions",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-2-72aa733041",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-3-6886871e8a",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-40th-anniversary-celebration-of-international-93a8dcf4d8",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-40th-anniversary-celebration-of-international",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-alexander-payne-american-allegories-d9d1a3196e",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-alexander-payne-american-allegories",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-black-arts-film-festival-a-salute-to-independ-6d912c206e",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-black-arts-film-festival-a-salute-to-independ",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-children-of-the-arab-world-7eb6686722",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-children-of-the-arab-world",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-documenta11-an-accented-cinema-b8cd3ffed2",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-documenta11-an-accented-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-iranian-cinema-new-directors-new-directions-db944db723",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-iranian-cinema-new-directors-new-directions",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-landscape-and-desire-reports-from-a-contested-a41aa3186f",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-landscape-and-desire-reports-from-a-contested",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-magnetic-north-canadian-experimental-video-445aef9c43",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-magnetic-north-canadian-experimental-video",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-margaret-mead-film-festival-b9ff6523e5",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-margaret-mead-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-new-films-from-sweden-8642c6b7e5",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-new-films-from-sweden",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-once-upon-a-time-in-india-images-of-the-colon-4149d25f34",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-once-upon-a-time-in-india-images-of-the-colon",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-pursuits-of-liberty-recent-activist-cinema-b1aa1c4bc3",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-pursuits-of-liberty-recent-activist-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-the-fourth-annual-boston-irish-film-festival-f3b9060ed0",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-the-fourth-annual-boston-irish-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-the-second-annual-boston-irish-film-festival-f050179bfb",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-the-second-annual-boston-irish-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-third-annual-boston-irish-film-festival-8f85eec80b",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-third-annual-boston-irish-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-undercurrents-neglected-works-from-the-french-7ee08eb2dc",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-undercurrents-neglected-works-from-the-french",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions-zanzibar-films-and-the-dandies-of-may-1968-68de32f15d",
+      "url": "https://harvardfilmarchive.org/programs/global-visions-zanzibar-films-and-the-dandies-of-may-1968",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visions28th-annual-new-england-film-and-video-festiva-0ec9469edd",
+      "url": "https://harvardfilmarchive.org/programs/global-visions28th-annual-new-england-film-and-video-festiva",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsblack-arts-festival-a-salute-to-independent-fi-ef5b7e0a6b",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsblack-arts-festival-a-salute-to-independent-fi",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionscrossing-borders-new-films-from-europe-37ef31816c",
+      "url": "https://harvardfilmarchive.org/programs/global-visionscrossing-borders-new-films-from-europe",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsdivided-we-fall-films-on-power-and-union-ec2f993978",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsdivided-we-fall-films-on-power-and-union",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsfifth-annual-boston-irish-film-festival-47cb054b68",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsfifth-annual-boston-irish-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsfreeze-frames-23b51c4fe3",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsfreeze-frames",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsharvard-black-arts-film-festival-28f6aa72c7",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsharvard-black-arts-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionslands-of-promise-the-refugee-experience-in-cin-85004ecd1d",
+      "url": "https://harvardfilmarchive.org/programs/global-visionslands-of-promise-the-refugee-experience-in-cin",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsmartin-scorseses-voyage-in-italy-0c7166c73c",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsmartin-scorseses-voyage-in-italy",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsmexperimental-cinema-60-years-of-avant-937099cb10",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsmexperimental-cinema-60-years-of-avant",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsnew-films-from-europe-1aefdad7eb",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsnew-films-from-europe",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsnorthern-exposures-new-cinema-from-canada-abf2b1fee1",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsnorthern-exposures-new-cinema-from-canada",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsthe-gulf-war-ten-years-after-f40bc3cd3b",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsthe-gulf-war-ten-years-after",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-global-visionsurban-environs-mexico-city-on-film-aa36e52494",
+      "url": "https://harvardfilmarchive.org/programs/global-visionsurban-environs-mexico-city-on-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-halloween-special-918db0a8c2",
+      "url": "https://harvardfilmarchive.org/programs/halloween-special",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-hanne-darboven-and-film-57e9b934b1",
+      "url": "https://harvardfilmarchive.org/programs/hanne-darboven-and-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-haunted-visions-the-films-of-fw-murnau-550da6d9d5",
+      "url": "https://harvardfilmarchive.org/programs/haunted-visions-the-films-of-fw-murnau",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-heimatfilm-7c4a041eb5",
+      "url": "https://harvardfilmarchive.org/programs/heimatfilm",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-hubert-sauper-in-person-7540eea1d1",
+      "url": "https://harvardfilmarchive.org/programs/hubert-sauper-in-person",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-humanist-masterworks-the-films-of-satyajit-ray-00dc20163c",
+      "url": "https://harvardfilmarchive.org/programs/humanist-masterworks-the-films-of-satyajit-ray",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-im-kwon-805d282d79",
+      "url": "https://harvardfilmarchive.org/programs/im-kwon",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-imagining-the-city-fdb1cdceaf",
+      "url": "https://harvardfilmarchive.org/programs/imagining-the-city",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-immaterial-monuments-dd0c4693d9",
+      "url": "https://harvardfilmarchive.org/programs/immaterial-monuments",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-in-the-company-of-light-sven-nykvist-200e2f9d73",
+      "url": "https://harvardfilmarchive.org/programs/in-the-company-of-light-sven-nykvist",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-in-the-trenches-filming-world-war-i-55f111263c",
+      "url": "https://harvardfilmarchive.org/programs/in-the-trenches-filming-world-war-i",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ingmar-bergman-early-works-2ced5c0a76",
+      "url": "https://harvardfilmarchive.org/programs/ingmar-bergman-early-works",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-into-great-silence-ced193ecdd",
+      "url": "https://harvardfilmarchive.org/programs/into-great-silence",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-italian-cinema-a41a253752",
+      "url": "https://harvardfilmarchive.org/programs/italian-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-jack-smiths-aesthetic-of-delirium-4d86c1766d",
+      "url": "https://harvardfilmarchive.org/programs/jack-smiths-aesthetic-of-delirium",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-james-schamus-111a5d6424",
+      "url": "https://harvardfilmarchive.org/programs/james-schamus",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-jazz-in-summertime-33129fe14a",
+      "url": "https://harvardfilmarchive.org/programs/jazz-in-summertime",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-jehane-noujaim-55e75fbd2e",
+      "url": "https://harvardfilmarchive.org/programs/jehane-noujaim",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-john-ford-a-major-retrospective-5ca0856022",
+      "url": "https://harvardfilmarchive.org/programs/john-ford-a-major-retrospective",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-kafka-goes-to-the-movies-053ce6474b",
+      "url": "https://harvardfilmarchive.org/programs/kafka-goes-to-the-movies",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-korean-cinema-22922d1407",
+      "url": "https://harvardfilmarchive.org/programs/korean-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-kubrick-11f4534967",
+      "url": "https://harvardfilmarchive.org/programs/kubrick",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-lgbt-film-series-23a4df7942",
+      "url": "https://harvardfilmarchive.org/programs/lgbt-film-series",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-life-stories-film-and-autobiography-19274d9885",
+      "url": "https://harvardfilmarchive.org/programs/life-stories-film-and-autobiography",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-love-and-anarchy-films-by-vera-chytilova-and-juraj-jakubisko-0aad0dc6f0",
+      "url": "https://harvardfilmarchive.org/programs/love-and-anarchy-films-by-vera-chytilova-and-juraj-jakubisko",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-luis-bunuel-a-centennial-celebration-5d478e3421",
+      "url": "https://harvardfilmarchive.org/programs/luis-bunuel-a-centennial-celebration",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-madcat-womenand-146s-international-film-festival-4580dc0a98",
+      "url": "https://harvardfilmarchive.org/programs/madcat-womenand-146s-international-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-magners-irish-film-festival-ecfd2532b1",
+      "url": "https://harvardfilmarchive.org/programs/magners-irish-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-man-with-a-movie-camera-robert-kramer-d7159b72fd",
+      "url": "https://harvardfilmarchive.org/programs/man-with-a-movie-camera-robert-kramer",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-mapping-and-fashioning-space-b5c5e97be2",
+      "url": "https://harvardfilmarchive.org/programs/mapping-and-fashioning-space",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-mapping-and-fashioning-space-2-f74bd3ea35",
+      "url": "https://harvardfilmarchive.org/programs/mapping-and-fashioning-space-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-masters-of-animation-d010e1e648",
+      "url": "https://harvardfilmarchive.org/programs/masters-of-animation",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-masters-of-animation-jules-engel-and-christian-boustani-fdeb6fb46c",
+      "url": "https://harvardfilmarchive.org/programs/masters-of-animation-jules-engel-and-christian-boustani",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-masters-of-animation-oskar-fischinger-a-centennial-celebrati-3c1e4a1a1a",
+      "url": "https://harvardfilmarchive.org/programs/masters-of-animation-oskar-fischinger-a-centennial-celebrati",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-masters-of-international-animation-19bb223c29",
+      "url": "https://harvardfilmarchive.org/programs/masters-of-international-animation",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-masters-of-international-animation-2-d7ae3ce6ab",
+      "url": "https://harvardfilmarchive.org/programs/masters-of-international-animation-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-masters-of-international-animation-jazz-and-abstraction-in-b-8a3e672585",
+      "url": "https://harvardfilmarchive.org/programs/masters-of-international-animation-jazz-and-abstraction-in-b",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-masterworks-of-modern-cinema-3e1235cc4b",
+      "url": "https://harvardfilmarchive.org/programs/masterworks-of-modern-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-masterworks-of-modern-cinema-2-7c2554d8f8",
+      "url": "https://harvardfilmarchive.org/programs/masterworks-of-modern-cinema-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-matters-of-life-and-death-the-films-of-bruno-ganz-d48a33b8b7",
+      "url": "https://harvardfilmarchive.org/programs/matters-of-life-and-death-the-films-of-bruno-ganz",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-melancholy-resistance-the-rainy-worlds-of-laszlo-krasznahork-5d12456443",
+      "url": "https://harvardfilmarchive.org/programs/melancholy-resistance-the-rainy-worlds-of-laszlo-krasznahork",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-merzak-allouache-cinema-from-the-other-world-42f2d50b60",
+      "url": "https://harvardfilmarchive.org/programs/merzak-allouache-cinema-from-the-other-world",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-mikio-naruse-a-centennial-tribute-439d5ae4ab",
+      "url": "https://harvardfilmarchive.org/programs/mikio-naruse-a-centennial-tribute",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-moufida-tlatli-the-season-of-women-104986e75b",
+      "url": "https://harvardfilmarchive.org/programs/moufida-tlatli-the-season-of-women",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-movie-love-almodovar-and-his-inspirations-0ee6b2f55f",
+      "url": "https://harvardfilmarchive.org/programs/movie-love-almodovar-and-his-inspirations",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-new-documentaries-on-the-war-on-terror-52f0bec0e0",
+      "url": "https://harvardfilmarchive.org/programs/new-documentaries-on-the-war-on-terror",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-new-films-from-the-european-union-9b1e65a360",
+      "url": "https://harvardfilmarchive.org/programs/new-films-from-the-european-union",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-new-german-cinema-alternative-visions-and-utopian-designs-f2393db253",
+      "url": "https://harvardfilmarchive.org/programs/new-german-cinema-alternative-visions-and-utopian-designs",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-new-german-cinema-alternative-visions-and-utopian-designs-2-50c88b2d6c",
+      "url": "https://harvardfilmarchive.org/programs/new-german-cinema-alternative-visions-and-utopian-designs-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-new-italian-cinema-4f5378f9f6",
+      "url": "https://harvardfilmarchive.org/programs/new-italian-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-new-york-stories-the-films-of-morris-engel-and-ruth-orkin-d9e9e5467a",
+      "url": "https://harvardfilmarchive.org/programs/new-york-stories-the-films-of-morris-engel-and-ruth-orkin",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-nonfiction-film-8d1fd2e9d5",
+      "url": "https://harvardfilmarchive.org/programs/nonfiction-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-not-d77b6f1ee7",
+      "url": "https://harvardfilmarchive.org/programs/not",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-on-set-with-french-cinema-bruno-dumont-c28baf3882",
+      "url": "https://harvardfilmarchive.org/programs/on-set-with-french-cinema-bruno-dumont",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-out-of-the-blue-and-into-the-black-pop-epitaphs-407ad55c72",
+      "url": "https://harvardfilmarchive.org/programs/out-of-the-blue-and-into-the-black-pop-epitaphs",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ozu-poet-of-the-everyday-9edee0387f",
+      "url": "https://harvardfilmarchive.org/programs/ozu-poet-of-the-everyday",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-past-imperfect-the-cinema-of-terence-davies-ef554df469",
+      "url": "https://harvardfilmarchive.org/programs/past-imperfect-the-cinema-of-terence-davies",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-people-we-like-john-malkovich-ca0190895f",
+      "url": "https://harvardfilmarchive.org/programs/people-we-like-john-malkovich",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-people-we-likeharvey-keitel-ab13644057",
+      "url": "https://harvardfilmarchive.org/programs/people-we-likeharvey-keitel",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-peter-lorre-a-sinister-centennial-3c23619a85",
+      "url": "https://harvardfilmarchive.org/programs/peter-lorre-a-sinister-centennial",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-philosophy-and-film-deleuze-80aa5492b8",
+      "url": "https://harvardfilmarchive.org/programs/philosophy-and-film-deleuze",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-philosophy-and-film-theory-c9b8d4602a",
+      "url": "https://harvardfilmarchive.org/programs/philosophy-and-film-theory",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-pictures-at-an-exhibition-301be26c27",
+      "url": "https://harvardfilmarchive.org/programs/pictures-at-an-exhibition",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-pictures-at-an-exhibition-ed-ruscha-two-films-a60d3e0177",
+      "url": "https://harvardfilmarchive.org/programs/pictures-at-an-exhibition-ed-ruscha-two-films",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-pictures-at-an-exhibition-goethe-on-filmcoulisse-andcompany-f026c6d03c",
+      "url": "https://harvardfilmarchive.org/programs/pictures-at-an-exhibition-goethe-on-filmcoulisse-andcompany",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-portrait-of-an-artist-john-cassavetes-4aafd1d779",
+      "url": "https://harvardfilmarchive.org/programs/portrait-of-an-artist-john-cassavetes",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-8afea4204e",
+      "url": "https://harvardfilmarchive.org/programs/premieres",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-2-1e891e9eaf",
+      "url": "https://harvardfilmarchive.org/programs/premieres-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-2000-4273cf4d41",
+      "url": "https://harvardfilmarchive.org/programs/premieres-2000",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-3-201e0a6612",
+      "url": "https://harvardfilmarchive.org/programs/premieres-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-4-a6981e98c8",
+      "url": "https://harvardfilmarchive.org/programs/premieres-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-5-2fbe9d782e",
+      "url": "https://harvardfilmarchive.org/programs/premieres-5",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-6-141a360654",
+      "url": "https://harvardfilmarchive.org/programs/premieres-6",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-julian-schnabeland-146s-before-night-falls-liv-ull-74d747ced4",
+      "url": "https://harvardfilmarchive.org/programs/premieres-julian-schnabeland-146s-before-night-falls-liv-ull",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-reprises-new-by-nina-davenport-c88133a92f",
+      "url": "https://harvardfilmarchive.org/programs/premieres-reprises-new-by-nina-davenport",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieres-twelfth-annual-boston-jewish-film-festival-0a35ab9801",
+      "url": "https://harvardfilmarchive.org/programs/premieres-twelfth-annual-boston-jewish-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-premieresbela-tarrand-146s-werckmeister-harmonies-julien-duv-e8abb2d7be",
+      "url": "https://harvardfilmarchive.org/programs/premieresbela-tarrand-146s-werckmeister-harmonies-julien-duv",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-raging-bill-william-kleins-works-on-film-c3e0fb9361",
+      "url": "https://harvardfilmarchive.org/programs/raging-bill-william-kleins-works-on-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-re-screening-shakespeare-9b96075568",
+      "url": "https://harvardfilmarchive.org/programs/re-screening-shakespeare",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-realist-escapes-two-by-dominique-cabrera-79fb07aa9c",
+      "url": "https://harvardfilmarchive.org/programs/realist-escapes-two-by-dominique-cabrera",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-rebels-with-a-cause-the-cinema-of-east-germany-cf3c0c0773",
+      "url": "https://harvardfilmarchive.org/programs/rebels-with-a-cause-the-cinema-of-east-germany",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-recent-restorations-before-and-after-the-code-d25e6bf3e1",
+      "url": "https://harvardfilmarchive.org/programs/recent-restorations-before-and-after-the-code",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-remembering-romy-6edfc3269e",
+      "url": "https://harvardfilmarchive.org/programs/remembering-romy",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-remembering-truffaut-1be762be08",
+      "url": "https://harvardfilmarchive.org/programs/remembering-truffaut",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-renoir-reprise-934d3f7091",
+      "url": "https://harvardfilmarchive.org/programs/renoir-reprise",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ride-lonesome-the-films-of-budd-boetticher-5867d32c24",
+      "url": "https://harvardfilmarchive.org/programs/ride-lonesome-the-films-of-budd-boetticher",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-rudolf-anheim-centennial-celebration-e4445df923",
+      "url": "https://harvardfilmarchive.org/programs/rudolf-anheim-centennial-celebration",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-saturday-night-fever-e1e88b2c7a",
+      "url": "https://harvardfilmarchive.org/programs/saturday-night-fever",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-screening-modern-china-f246ae6bb2",
+      "url": "https://harvardfilmarchive.org/programs/screening-modern-china",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-b1fe877d66",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-10-58b181cb8f",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-11-8147fc1d1d",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-12-af2be53b38",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-13-b0a06d0c87",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-13",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-14-4e4c5d02ad",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-14",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-15-f747e98f8b",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-15",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-2-fb4520d4dd",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-3-b1fb19a894",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-4-0b52095261",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-5-2e4c8bfda5",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-5",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-6-3010565430",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-6",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-7-556f1c327c",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-7",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-8-ff89d06555",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-8",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-seance-screenings-9-172f132474",
+      "url": "https://harvardfilmarchive.org/programs/seance-screenings-9",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-selected-films-of-roy-andersson-d14920f3c6",
+      "url": "https://harvardfilmarchive.org/programs/selected-films-of-roy-andersson",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-serge-daney-lhomme-cinema-5eacd3df0d",
+      "url": "https://harvardfilmarchive.org/programs/serge-daney-lhomme-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-setting-up-the-document-artists-working-in-the-ethnographic-fbc38b692a",
+      "url": "https://harvardfilmarchive.org/programs/setting-up-the-document-artists-working-in-the-ethnographic",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-sharon-lockhart-four-films-4260c89cc8",
+      "url": "https://harvardfilmarchive.org/programs/sharon-lockhart-four-films",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-short-shorts-introduced-by-film-conservator-julie-buck-73139b5ce9",
+      "url": "https://harvardfilmarchive.org/programs/short-shorts-introduced-by-film-conservator-julie-buck",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-sixth-annual-boston-irish-film-festival-a7a79723b5",
+      "url": "https://harvardfilmarchive.org/programs/sixth-annual-boston-irish-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-sixth-annual-new-films-from-europe-35a2fcc2af",
+      "url": "https://harvardfilmarchive.org/programs/sixth-annual-new-films-from-europe",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-special-benefit-screening-clint-eastwoods-mystic-river-6ce171abfc",
+      "url": "https://harvardfilmarchive.org/programs/special-benefit-screening-clint-eastwoods-mystic-river",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-special-event-6449be697d",
+      "url": "https://harvardfilmarchive.org/programs/special-event",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-special-events-efd896e8b7",
+      "url": "https://harvardfilmarchive.org/programs/special-events",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-special-events-2001-arts-first-2001-7c524ebea0",
+      "url": "https://harvardfilmarchive.org/programs/special-events-2001-arts-first-2001",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ten-years-after-contemporary-south-african-cinema-bd27e0ca07",
+      "url": "https://harvardfilmarchive.org/programs/ten-years-after-contemporary-south-african-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-texture-analysis-fashion-and-film-2-a89bce2ed2",
+      "url": "https://harvardfilmarchive.org/programs/texture-analysis-fashion-and-film-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-archival-imagination-found-footage-in-experimental-film-853f2a8d43",
+      "url": "https://harvardfilmarchive.org/programs/the-archival-imagination-found-footage-in-experimental-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-best-of-the-1999-nantucket-film-festival-shorts-a8a6620e33",
+      "url": "https://harvardfilmarchive.org/programs/the-best-of-the-1999-nantucket-film-festival-shorts",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-boston-trilogy-of-jan-egleson-42485f7441",
+      "url": "https://harvardfilmarchive.org/programs/the-boston-trilogy-of-jan-egleson",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-cutting-edge-746923b3f1",
+      "url": "https://harvardfilmarchive.org/programs/the-cutting-edge",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-dark-worlds-of-fritz-lang-15009fd184",
+      "url": "https://harvardfilmarchive.org/programs/the-dark-worlds-of-fritz-lang",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-death-of-the-sixties-eecf4aed4a",
+      "url": "https://harvardfilmarchive.org/programs/the-death-of-the-sixties",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-dreaming-mind-b2f5479bb1",
+      "url": "https://harvardfilmarchive.org/programs/the-dreaming-mind",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-early-films-of-atom-egoyan-fca46b7840",
+      "url": "https://harvardfilmarchive.org/programs/the-early-films-of-atom-egoyan",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-film-experience-existentialist-adaptations-d285b28749",
+      "url": "https://harvardfilmarchive.org/programs/the-film-experience-existentialist-adaptations",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-films-of-christian-petzold-f4bd7c1989",
+      "url": "https://harvardfilmarchive.org/programs/the-films-of-christian-petzold",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-films-of-hirokazu-koreeda-4d4d6cc57b",
+      "url": "https://harvardfilmarchive.org/programs/the-films-of-hirokazu-koreeda",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-films-of-sergei-paradjanov-deae277518",
+      "url": "https://harvardfilmarchive.org/programs/the-films-of-sergei-paradjanov",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-late-films-of-akira-kurosawa-fac53de6d3",
+      "url": "https://harvardfilmarchive.org/programs/the-late-films-of-akira-kurosawa",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-left-bank-revisited-marker-resnais-varda-da0a553253",
+      "url": "https://harvardfilmarchive.org/programs/the-left-bank-revisited-marker-resnais-varda",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-moving-image-and-visual-representation-caacc91e40",
+      "url": "https://harvardfilmarchive.org/programs/the-moving-image-and-visual-representation",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-moving-image-and-visual-representation-2-d136ac5ef4",
+      "url": "https://harvardfilmarchive.org/programs/the-moving-image-and-visual-representation-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-moving-image-film-and-visual-representation-1021006182",
+      "url": "https://harvardfilmarchive.org/programs/the-moving-image-film-and-visual-representation",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-moving-image-film-and-visual-representation-2-86d6169326",
+      "url": "https://harvardfilmarchive.org/programs/the-moving-image-film-and-visual-representation-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-moving-image-film-and-visual-representation-3-1d647588c8",
+      "url": "https://harvardfilmarchive.org/programs/the-moving-image-film-and-visual-representation-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-moving-image-film-and-visual-representation-4-2a1e425fa0",
+      "url": "https://harvardfilmarchive.org/programs/the-moving-image-film-and-visual-representation-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-new-german-cinema-revisited-4b0ccaf6d3",
+      "url": "https://harvardfilmarchive.org/programs/the-new-german-cinema-revisited",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-new-german-cinema-revisited-2-3c7e28942a",
+      "url": "https://harvardfilmarchive.org/programs/the-new-german-cinema-revisited-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-pleasure-of-cinema-a-conversation-with-pedro-almodovar-6f7a9d6124",
+      "url": "https://harvardfilmarchive.org/programs/the-pleasure-of-cinema-a-conversation-with-pedro-almodovar",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-silent-lubitsch-touch-a8ec128436",
+      "url": "https://harvardfilmarchive.org/programs/the-silent-lubitsch-touch",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-the-urban-generation-chinese-cinema-and-society-in-transform-c8aa88412b",
+      "url": "https://harvardfilmarchive.org/programs/the-urban-generation-chinese-cinema-and-society-in-transform",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-theater-into-film-f2a2fef2a4",
+      "url": "https://harvardfilmarchive.org/programs/theater-into-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-theater-into-film-2-883c307cd1",
+      "url": "https://harvardfilmarchive.org/programs/theater-into-film-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-theater-into-film-3-ca47e53b4e",
+      "url": "https://harvardfilmarchive.org/programs/theater-into-film-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-theater-into-film-4-38c0edd5bb",
+      "url": "https://harvardfilmarchive.org/programs/theater-into-film-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-theater-into-film-5-e64c9f3a4c",
+      "url": "https://harvardfilmarchive.org/programs/theater-into-film-5",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-theater-into-film-antigone-rites-of-passion-and-oedipus-rex-d09a69a6fe",
+      "url": "https://harvardfilmarchive.org/programs/theater-into-film-antigone-rites-of-passion-and-oedipus-rex",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-theater-into-film-galileo-woyzeck-326ac3b5e0",
+      "url": "https://harvardfilmarchive.org/programs/theater-into-film-galileo-woyzeck",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-third-annual-boston-latino-international-film-festival-bfa518c26d",
+      "url": "https://harvardfilmarchive.org/programs/third-annual-boston-latino-international-film-festival",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-times-up-three-films-by-tsai-ming-ccbcf72748",
+      "url": "https://harvardfilmarchive.org/programs/times-up-three-films-by-tsai-ming",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-too-human-the-films-of-louis-malle-810c45a9a3",
+      "url": "https://harvardfilmarchive.org/programs/too-human-the-films-of-louis-malle",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-9f1afbd0bf",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-2-3569ae45b0",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-3-dcd301efe4",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-4-2ea00b7859",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-adventures-in-surrealism-6260a0fdc8",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-adventures-in-surrealism",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-adventures-in-surrealism-2-29adc7b145",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-adventures-in-surrealism-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-cold-war-paranoia-9530720b1d",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-cold-war-paranoia",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-film-and-the-third-reich-98830560be",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-film-and-the-third-reich",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-film-architectures-f4032065c0",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-film-architectures",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-film-architectures-2-08c5f6c6ac",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-film-architectures-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-film-architectures-3-e560dcb1d3",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-film-architectures-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-film-in-the-third-reich-the-power-of-images-a-f9e5a28298",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-film-in-the-third-reich-the-power-of-images-a",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-films-in-the-third-reich-the-power-of-images-a9e4403e99",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-films-in-the-third-reich-the-power-of-images",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-five-directors-part-i-5780004721",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-five-directors-part-i",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-five-directors-part-ii-c8cdf452db",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-five-directors-part-ii",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-frames-of-mind-51f8da1246",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-frames-of-mind",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-frames-of-mind-2-68c081a5cf",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-frames-of-mind-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-frames-of-mind-3-fd7d178f99",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-frames-of-mind-3",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-frames-of-mind-4-a43e34388f",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-frames-of-mind-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-hellenic-encounters-bfe5b5e357",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-hellenic-encounters",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-imag-in-ing-the-middle-east-9360491be9",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-imag-in-ing-the-middle-east",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-italian-cinema-054f262393",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-italian-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-jonah-x-2-743a115e73",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-jonah-x-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-literature-and-film-bbaf9e702e",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-literature-and-film",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-mapping-and-fashioning-space-9f8fa3a6d8",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-mapping-and-fashioning-space",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-non-b861a28043",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-non",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-the-moving-image-film-and-visual-representati-177008a1e4",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-the-moving-image-film-and-visual-representati",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-film-the-moving-image-film-and-visual-representati-2-84120c3700",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-film-the-moving-image-film-and-visual-representati-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-filmafter-the-war-before-the-wall-german-film-1945-e45b6f8eba",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-filmafter-the-war-before-the-wall-german-film-1945",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-topics-in-filmclassics-of-world-cinema-28dea5b000",
+      "url": "https://harvardfilmarchive.org/programs/topics-in-filmclassics-of-world-cinema",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    }
+  ]
+}

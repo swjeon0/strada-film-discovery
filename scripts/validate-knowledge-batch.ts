@@ -157,24 +157,42 @@ async function resolveFilm(
   film: CandidateValue["films"][number],
   token: string,
 ): Promise<TmdbFilm | null> {
-  const query = new URLSearchParams({ query: film.title, include_adult: "false", language: "en-US" });
-  if (film.year) query.set("year", String(film.year));
-  const search = (await tmdb(`/search/movie?${query}`, token)) as {
-    results?: { id: number; title: string; original_title: string; release_date?: string }[];
-  };
-  const ranked = (search.results ?? [])
+  const queries = [
+      new URLSearchParams({ query: film.title, include_adult: "false", language: "en-US" }),
+    ],
+    equivalent = (actual: string, proposed: string) => {
+      const left = identity(actual), right = identity(proposed);
+      return (
+        left === right ||
+        (Math.min(left.length, right.length) >= 8 &&
+          (left.includes(right) || right.includes(left)))
+      );
+    },
+    rank = (rows: { id: number; title: string; original_title: string; release_date?: string }[]) => rows
     .map((row) => ({
       ...row,
       year: Number.parseInt(row.release_date?.slice(0, 4) ?? "0", 10),
       titleMatch:
-        identity(row.title) === identity(film.title) ||
-        identity(row.original_title) === identity(film.title) ||
+        equivalent(row.title, film.title) ||
+        equivalent(row.original_title, film.title) ||
         film.aliases.some(
-          (alias) => identity(row.title) === identity(alias) || identity(row.original_title) === identity(alias),
+          (alias) => equivalent(row.title, alias) || equivalent(row.original_title, alias),
         ),
     }))
     .filter((row) => row.titleMatch && (!film.year || Math.abs(row.year - film.year) <= 1))
     .slice(0, 4);
+  if (film.year) queries[0].set("year", String(film.year));
+  let ranked: ReturnType<typeof rank> = [];
+  for (const query of queries) {
+    const search = (await tmdb(`/search/movie?${query}`, token)) as {
+      results?: { id: number; title: string; original_title: string; release_date?: string }[];
+    };
+    ranked = rank(search.results ?? []);
+    if (ranked.length || !query.has("year")) break;
+    const fallback = new URLSearchParams(query);
+    fallback.delete("year");
+    queries.push(fallback);
+  }
   for (const row of ranked) {
     const details = (await tmdb(`/movie/${row.id}/credits?language=en-US`, token)) as {
       crew?: { job?: string; name?: string }[];

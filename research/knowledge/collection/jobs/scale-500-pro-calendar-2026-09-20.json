@@ -1,0 +1,5728 @@
+{
+  "version": 1,
+  "id": "scale-500-pro-calendar-2026-09-20",
+  "createdAt": "2026-09-21T01:05:00.000Z",
+  "description": "ChatGPT-authenticated Codex expansion seed: individual film programme notes linked from unpublished Harvard Film Archive programmes.",
+  "targets": [
+    {
+      "id": "harvard-film-archive-1942-a-love-story-2004-05-76c7c2ad67",
+      "url": "https://harvardfilmarchive.org/calendar/1942-a-love-story-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-20-feet-over-belfast-the-war-of-art-in-northern-ireland-2003-04-5f66d128c3",
+      "url": "https://harvardfilmarchive.org/calendar/20-feet-over-belfast-the-war-of-art-in-northern-ireland-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-2003-shorts-program-2003-04-7a264376d8",
+      "url": "https://harvardfilmarchive.org/calendar/2003-shorts-program-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-2261690-2002-04-6db95e4f7d",
+      "url": "https://harvardfilmarchive.org/calendar/2261690-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-23-1999-09-0f044a6c14",
+      "url": "https://harvardfilmarchive.org/calendar/23-1999-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-2x4-2000-03-615ce07430",
+      "url": "https://harvardfilmarchive.org/calendar/2x4-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-30-years-to-life-2002-03-fd4e252a32",
+      "url": "https://harvardfilmarchive.org/calendar/30-years-to-life-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-42nd-street-2005-05-4fc3880e91",
+      "url": "https://harvardfilmarchive.org/calendar/42nd-street-2005-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-66-scenes-from-america-2000-02-b87cb2b5dd",
+      "url": "https://harvardfilmarchive.org/calendar/66-scenes-from-america-2000-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-8-1-2-2000-01-461eafa17b",
+      "url": "https://harvardfilmarchive.org/calendar/8-1-2-2000-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-8-1-2-2001-06-20a45f31cf",
+      "url": "https://harvardfilmarchive.org/calendar/8-1-2-2001-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-8-1-2-2002-05-6591f019de",
+      "url": "https://harvardfilmarchive.org/calendar/8-1-2-2002-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-8x8-2001-11-f2b5e1a7ea",
+      "url": "https://harvardfilmarchive.org/calendar/8x8-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-90-minutes-of-the-90s-2001-10-2f7ba23f5d",
+      "url": "https://harvardfilmarchive.org/calendar/90-minutes-of-the-90s-2001-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-beautiful-new-world-2001-02-87a5a38beb",
+      "url": "https://harvardfilmarchive.org/calendar/a-beautiful-new-world-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-brief-history-of-time-1999-12-e44cb977da",
+      "url": "https://harvardfilmarchive.org/calendar/a-brief-history-of-time-1999-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-call-girl-named-rosemarie-2003-03-f2db217306",
+      "url": "https://harvardfilmarchive.org/calendar/a-call-girl-named-rosemarie-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-clockwork-orange-2005-11-73c86b54a6",
+      "url": "https://harvardfilmarchive.org/calendar/a-clockwork-orange-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-constant-forge-2000-10-f5a746f0b4",
+      "url": "https://harvardfilmarchive.org/calendar/a-constant-forge-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-dirty-story-2001-05-413c5d54ec",
+      "url": "https://harvardfilmarchive.org/calendar/a-dirty-story-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-fistful-of-dollars-2000-07-fd07ead7fe",
+      "url": "https://harvardfilmarchive.org/calendar/a-fistful-of-dollars-2000-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-flame-in-my-heart-2001-07-087fd7fcba",
+      "url": "https://harvardfilmarchive.org/calendar/a-flame-in-my-heart-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-grin-without-a-cat-scenes-from-the-third-world-war-1967-1977-2-79f4f9c6a2",
+      "url": "https://harvardfilmarchive.org/calendar/a-grin-without-a-cat-scenes-from-the-third-world-war-1967-1977-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-happy-mothers-day-2000-10-5240a0bfe5",
+      "url": "https://harvardfilmarchive.org/calendar/a-happy-mothers-day-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-hungarian-passport-2003-04-6a8d8362cb",
+      "url": "https://harvardfilmarchive.org/calendar/a-hungarian-passport-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-is-for-american-tragedy-2003-07-53d2e640d2",
+      "url": "https://harvardfilmarchive.org/calendar/a-is-for-american-tragedy-2003-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-lesson-in-love-2004-12-7904af5068",
+      "url": "https://harvardfilmarchive.org/calendar/a-lesson-in-love-2004-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-love-in-germany-2001-03-3237e382ad",
+      "url": "https://harvardfilmarchive.org/calendar/a-love-in-germany-2001-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-love-in-germany-2004-05-49c4e3f0f5",
+      "url": "https://harvardfilmarchive.org/calendar/a-love-in-germany-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-matter-of-life-and-death-2001-07-bf4d69a247",
+      "url": "https://harvardfilmarchive.org/calendar/a-matter-of-life-and-death-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-matter-of-life-and-death-2003-07-7bf063e978",
+      "url": "https://harvardfilmarchive.org/calendar/a-matter-of-life-and-death-2003-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-midwifes-tale-2002-04-ade75a580c",
+      "url": "https://harvardfilmarchive.org/calendar/a-midwifes-tale-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-new-leaf-2000-07-615f1a1a4d",
+      "url": "https://harvardfilmarchive.org/calendar/a-new-leaf-2000-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-new-leaf-2002-04-56bc8cf4b7",
+      "url": "https://harvardfilmarchive.org/calendar/a-new-leaf-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-night-of-prophecy-2002-10-27dfe88fea",
+      "url": "https://harvardfilmarchive.org/calendar/a-night-of-prophecy-2002-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-page-out-of-order-2001-10-678cd526f9",
+      "url": "https://harvardfilmarchive.org/calendar/a-page-out-of-order-2001-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-poet-2002-04-cd5653579f",
+      "url": "https://harvardfilmarchive.org/calendar/a-poet-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-propos-de-nice-2000-10-0fd9c4abf5",
+      "url": "https://harvardfilmarchive.org/calendar/a-propos-de-nice-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-quiet-place-in-the-country-2003-05-df20c56d54",
+      "url": "https://harvardfilmarchive.org/calendar/a-quiet-place-in-the-country-2003-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-river-called-titash-2001-04-628baa6312",
+      "url": "https://harvardfilmarchive.org/calendar/a-river-called-titash-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-room-with-a-view-2001-07-ac4f7439fe",
+      "url": "https://harvardfilmarchive.org/calendar/a-room-with-a-view-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-sense-of-loss-2003-04-0fc26bb6b8",
+      "url": "https://harvardfilmarchive.org/calendar/a-sense-of-loss-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-sigh-2002-11-40f49b2ff3",
+      "url": "https://harvardfilmarchive.org/calendar/a-sigh-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-simple-story-2002-06-1edb0cd1a2",
+      "url": "https://harvardfilmarchive.org/calendar/a-simple-story-2002-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-soldiers-dream-2002-03-f0fd41462a",
+      "url": "https://harvardfilmarchive.org/calendar/a-soldiers-dream-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-story-of-floating-weeds-1999-10-0da66523b7",
+      "url": "https://harvardfilmarchive.org/calendar/a-story-of-floating-weeds-1999-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-swedish-love-story-2004-10-2b6c2f69d9",
+      "url": "https://harvardfilmarchive.org/calendar/a-swedish-love-story-2004-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-tale-of-archers-at-the-sanjusangendo-2005-10-407da25c18",
+      "url": "https://harvardfilmarchive.org/calendar/a-tale-of-archers-at-the-sanjusangendo-2005-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-taste-of-honey-d55b2f8392",
+      "url": "https://harvardfilmarchive.org/calendar/a-taste-of-honey",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-tree-called-karite-wend-kuuni-2002-10-f5493cadd6",
+      "url": "https://harvardfilmarchive.org/calendar/a-tree-called-karite-wend-kuuni-2002-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-tribute-to-black-queer-filmmakers-2003-03-5076eefd23",
+      "url": "https://harvardfilmarchive.org/calendar/a-tribute-to-black-queer-filmmakers-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-trick-of-the-light-1999-09-0ecd7103bd",
+      "url": "https://harvardfilmarchive.org/calendar/a-trick-of-the-light-1999-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-trick-of-the-light-2001-02-46ab73b7d1",
+      "url": "https://harvardfilmarchive.org/calendar/a-trick-of-the-light-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-trick-of-the-light-2002-02-4ee95c788f",
+      "url": "https://harvardfilmarchive.org/calendar/a-trick-of-the-light-2002-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-trip-to-the-country-2002-10-0f5e7e222f",
+      "url": "https://harvardfilmarchive.org/calendar/a-trip-to-the-country-2002-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-very-long-engagement-2005-11-66961d5d38",
+      "url": "https://harvardfilmarchive.org/calendar/a-very-long-engagement-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-very-private-affair-2005-09-77d0b929d7",
+      "url": "https://harvardfilmarchive.org/calendar/a-very-private-affair-2005-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-walk-through-h-2000-04-584c01e8ef",
+      "url": "https://harvardfilmarchive.org/calendar/a-walk-through-h-2000-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-walk-through-h-2001-04-f60051a683",
+      "url": "https://harvardfilmarchive.org/calendar/a-walk-through-h-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-wanderers-notebook-horoki-2005-10-700bd226e7",
+      "url": "https://harvardfilmarchive.org/calendar/a-wanderers-notebook-horoki-2005-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-woman-is-a-woman-2004-05-55b7fae149",
+      "url": "https://harvardfilmarchive.org/calendar/a-woman-is-a-woman-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-woman-under-the-influence-2004-04-48b3ae307c",
+      "url": "https://harvardfilmarchive.org/calendar/a-woman-under-the-influence-2004-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-a-zed-and-two-noughts-1999-10-8d62a072d2",
+      "url": "https://harvardfilmarchive.org/calendar/a-zed-and-two-noughts-1999-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-abc-africa-2001-11-86bd128912",
+      "url": "https://harvardfilmarchive.org/calendar/abc-africa-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aberdeen-2000-12-057606e6aa",
+      "url": "https://harvardfilmarchive.org/calendar/aberdeen-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-about-schmidt-2002-11-c5aff7ebe2",
+      "url": "https://harvardfilmarchive.org/calendar/about-schmidt-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-absolut-warhola-2004-02-8d0c471cbf",
+      "url": "https://harvardfilmarchive.org/calendar/absolut-warhola-2004-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-acephale-2001-05-057a8ab40e",
+      "url": "https://harvardfilmarchive.org/calendar/acephale-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-adam-and-paul-2005-11-6080308e8e",
+      "url": "https://harvardfilmarchive.org/calendar/adam-and-paul-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-adieu-philippine-2002-06-576c97c9e1",
+      "url": "https://harvardfilmarchive.org/calendar/adieu-philippine-2002-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-adiu-monde-or-pierre-and-claires-story-2003-04-752a87c39d",
+      "url": "https://harvardfilmarchive.org/calendar/adiu-monde-or-pierre-and-claires-story-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-adrift-1999-10-3cd76e1da7",
+      "url": "https://harvardfilmarchive.org/calendar/adrift-1999-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ae-fond-kiss-2005-01-452b4b884e",
+      "url": "https://harvardfilmarchive.org/calendar/ae-fond-kiss-2005-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aelita-queen-of-mars-2004-11-c580f5248f",
+      "url": "https://harvardfilmarchive.org/calendar/aelita-queen-of-mars-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aelita-queen-of-mars-2005-11-325afa17d7",
+      "url": "https://harvardfilmarchive.org/calendar/aelita-queen-of-mars-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aesthetic-of-delirium-part-1-2006-02-84ca6ed041",
+      "url": "https://harvardfilmarchive.org/calendar/aesthetic-of-delirium-part-1-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aesthetic-of-delirium-part-2-2006-02-0b5cf3f40f",
+      "url": "https://harvardfilmarchive.org/calendar/aesthetic-of-delirium-part-2-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-after-life-2005-02-217e4ade54",
+      "url": "https://harvardfilmarchive.org/calendar/after-life-2005-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-after-the-day-before-2005-01-d2ae132f5f",
+      "url": "https://harvardfilmarchive.org/calendar/after-the-day-before-2005-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-after-the-rain-2000-01-f68bbb2676",
+      "url": "https://harvardfilmarchive.org/calendar/after-the-rain-2000-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aguirre-the-wrath-of-god-2000-10-e01293f6de",
+      "url": "https://harvardfilmarchive.org/calendar/aguirre-the-wrath-of-god-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aguirre-the-wrath-of-god-2003-10-e3058a6e29",
+      "url": "https://harvardfilmarchive.org/calendar/aguirre-the-wrath-of-god-2003-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aidan-walsh-master-of-the-universe-2002-04-c3e617dae1",
+      "url": "https://harvardfilmarchive.org/calendar/aidan-walsh-master-of-the-universe-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-akira-kurusawas-dream-2000-01-1c920bfdd5",
+      "url": "https://harvardfilmarchive.org/calendar/akira-kurusawas-dream-2000-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alambrista-2002-05-75d10d48f6",
+      "url": "https://harvardfilmarchive.org/calendar/alambrista-2002-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alambrista-2003-01-364d1725ce",
+      "url": "https://harvardfilmarchive.org/calendar/alambrista-2003-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alamo-bay-2005-09-192733ea42",
+      "url": "https://harvardfilmarchive.org/calendar/alamo-bay-2005-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alaskade-2001-12-dc37193aec",
+      "url": "https://harvardfilmarchive.org/calendar/alaskade-2001-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alexei-and-the-spring-2002-12-8a08965bca",
+      "url": "https://harvardfilmarchive.org/calendar/alexei-and-the-spring-2002-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-algeria-the-children-speak-2002-01-f3089599cc",
+      "url": "https://harvardfilmarchive.org/calendar/algeria-the-children-speak-2002-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ali-fear-eats-the-soul-1999-11-0a9d9968c1",
+      "url": "https://harvardfilmarchive.org/calendar/ali-fear-eats-the-soul-1999-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ali-fear-eats-the-soul-2000-10-a3e94b9155",
+      "url": "https://harvardfilmarchive.org/calendar/ali-fear-eats-the-soul-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ali-fear-eats-the-soul-2003-10-3412865c8c",
+      "url": "https://harvardfilmarchive.org/calendar/ali-fear-eats-the-soul-2003-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alice-in-the-cities-2000-10-73d8ffff96",
+      "url": "https://harvardfilmarchive.org/calendar/alice-in-the-cities-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alive-alive-o-a-requiem-for-dublin-2005-11-b308d2251c",
+      "url": "https://harvardfilmarchive.org/calendar/alive-alive-o-a-requiem-for-dublin-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-all-about-eve-2004-10-90c4ca2601",
+      "url": "https://harvardfilmarchive.org/calendar/all-about-eve-2004-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-all-about-my-mother-2004-10-300fdbdd3a",
+      "url": "https://harvardfilmarchive.org/calendar/all-about-my-mother-2004-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-all-boys-are-called-patrick-2002-06-e5834e7e2a",
+      "url": "https://harvardfilmarchive.org/calendar/all-boys-are-called-patrick-2002-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-all-night-long-2003-11-ef6fce4ac7",
+      "url": "https://harvardfilmarchive.org/calendar/all-night-long-2003-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-all-quiet-on-the-western-front-2005-11-68c13d6fa4",
+      "url": "https://harvardfilmarchive.org/calendar/all-quiet-on-the-western-front-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-all-that-jazz-2003-05-a5275df884",
+      "url": "https://harvardfilmarchive.org/calendar/all-that-jazz-2003-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alone-2000-12-b43b12e4a4",
+      "url": "https://harvardfilmarchive.org/calendar/alone-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alphaville-2001-11-ddf30ca8ab",
+      "url": "https://harvardfilmarchive.org/calendar/alphaville-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-alternative-works-by-hal-hartley-2001-02-80b0a5ef69",
+      "url": "https://harvardfilmarchive.org/calendar/alternative-works-by-hal-hartley-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-am-i-beautiful-2000-10-d3b9849663",
+      "url": "https://harvardfilmarchive.org/calendar/am-i-beautiful-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-amandla-a-revolution-in-four-part-harmony-2004-01-15bf9d6f2d",
+      "url": "https://harvardfilmarchive.org/calendar/amandla-a-revolution-in-four-part-harmony-2004-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-amarcord-2001-06-c078332f39",
+      "url": "https://harvardfilmarchive.org/calendar/amarcord-2001-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-amarcord-2003-07-5f6811a398",
+      "url": "https://harvardfilmarchive.org/calendar/amarcord-2003-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-amateur-2001-02-4192e48f53",
+      "url": "https://harvardfilmarchive.org/calendar/amateur-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ambiguous-homecomings-journeys-to-budapest-2003-04-4829d24070",
+      "url": "https://harvardfilmarchive.org/calendar/ambiguous-homecomings-journeys-to-budapest-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-america-central-2004-12-5219f760cd",
+      "url": "https://harvardfilmarchive.org/calendar/america-central-2004-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-america-is-hard-to-see-2004-09-40c9b4f75e",
+      "url": "https://harvardfilmarchive.org/calendar/america-is-hard-to-see-2004-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-america-the-strange-2004-05-d7962d8f38",
+      "url": "https://harvardfilmarchive.org/calendar/america-the-strange-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-american-mythologies-2000-11-4d90db47d2",
+      "url": "https://harvardfilmarchive.org/calendar/american-mythologies-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-american-splendor-2005-02-987d1d0284",
+      "url": "https://harvardfilmarchive.org/calendar/american-splendor-2005-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-amsterdam-global-village-2001-06-781e72e631",
+      "url": "https://harvardfilmarchive.org/calendar/amsterdam-global-village-2001-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-ambiguous-report-about-the-end-of-the-world-2000-06-91d825cec8",
+      "url": "https://harvardfilmarchive.org/calendar/an-ambiguous-report-about-the-end-of-the-world-2000-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-approximation-of-alain-resnais-discreet-revolutionary-2000-06-662dd81d7a",
+      "url": "https://harvardfilmarchive.org/calendar/an-approximation-of-alain-resnais-discreet-revolutionary-2000-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-autumn-afternoon-1999-10-4c86c48765",
+      "url": "https://harvardfilmarchive.org/calendar/an-autumn-afternoon-1999-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-autumn-afternoon-2005-03-e4e147c9c4",
+      "url": "https://harvardfilmarchive.org/calendar/an-autumn-afternoon-2005-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-archivist-jose-llufrio-2002-11-9c27ea4d09",
+      "url": "https://harvardfilmarchive.org/calendar/an-evening-with-archivist-jose-llufrio-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-christian-boustani-2000-11-8d21151741",
+      "url": "https://harvardfilmarchive.org/calendar/an-evening-with-christian-boustani-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-composer-normand-roger-2001-02-1e70f880c6",
+      "url": "https://harvardfilmarchive.org/calendar/an-evening-with-composer-normand-roger-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-jules-engel-2000-11-415c97873f",
+      "url": "https://harvardfilmarchive.org/calendar/an-evening-with-jules-engel-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-mira-nair-2003-05-88fa252b7e",
+      "url": "https://harvardfilmarchive.org/calendar/an-evening-with-mira-nair-2003-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-vlada-petric-film-curator-as-video-artist-2002-0-8ba5f7f676",
+      "url": "https://harvardfilmarchive.org/calendar/an-evening-with-vlada-petric-film-curator-as-video-artist-2002-0",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-wendy-clark-2001-05-58da15a5e3",
+      "url": "https://harvardfilmarchive.org/calendar/an-evening-with-wendy-clark-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-an-evening-with-zacharias-kunuk-2004-02-fb05c2b40a",
+      "url": "https://harvardfilmarchive.org/calendar/an-evening-with-zacharias-kunuk-2004-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-and-life-goes-on-2004-05-63db238990",
+      "url": "https://harvardfilmarchive.org/calendar/and-life-goes-on-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-and-the-fifth-horseman-is-fear-1999-10-f9220666d5",
+      "url": "https://harvardfilmarchive.org/calendar/and-the-fifth-horseman-is-fear-1999-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-and-the-pursuit-of-happiness-2005-09-641732dc09",
+      "url": "https://harvardfilmarchive.org/calendar/and-the-pursuit-of-happiness-2005-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-andrei-rublev-2000-04-e0f82e07e8",
+      "url": "https://harvardfilmarchive.org/calendar/andrei-rublev-2000-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-andriesh-1999-12-eab1896a15",
+      "url": "https://harvardfilmarchive.org/calendar/andriesh-1999-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-angels-of-the-universe-2000-12-65183d9f82",
+      "url": "https://harvardfilmarchive.org/calendar/angels-of-the-universe-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-annie-hall-2004-01-2-f353069c32",
+      "url": "https://harvardfilmarchive.org/calendar/annie-hall-2004-01-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-anonymous-women-in-irish-history-2005-11-83eac43fc3",
+      "url": "https://harvardfilmarchive.org/calendar/anonymous-women-in-irish-history-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-another-girl-another-planet-2000-05-280cec41cc",
+      "url": "https://harvardfilmarchive.org/calendar/another-girl-another-planet-2000-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-antigone-rites-of-passion-2000-12-656010caad",
+      "url": "https://harvardfilmarchive.org/calendar/antigone-rites-of-passion-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-antonio-des-mortes-2001-10-68a9f50f39",
+      "url": "https://harvardfilmarchive.org/calendar/antonio-des-mortes-2001-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-anything-for-jazz-jaki-byard-1999-07-67cade3c89",
+      "url": "https://harvardfilmarchive.org/calendar/anything-for-jazz-jaki-byard-1999-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-aparajito-2004-11-acf32c5f11",
+      "url": "https://harvardfilmarchive.org/calendar/aparajito-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-apple-2002-01-530993cfd8",
+      "url": "https://harvardfilmarchive.org/calendar/apple-2002-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-april-2000-12-48325884a6",
+      "url": "https://harvardfilmarchive.org/calendar/april-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-april-2001-09-234a455f4c",
+      "url": "https://harvardfilmarchive.org/calendar/april-2001-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-arabian-nights-2000-07-4d372fdb00",
+      "url": "https://harvardfilmarchive.org/calendar/arabian-nights-2000-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-arrival-of-a-train-at-la-ciotat-2005-09-70e40dba9c",
+      "url": "https://harvardfilmarchive.org/calendar/arrival-of-a-train-at-la-ciotat-2005-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-art-for-teachers-of-children-1999-06-079d8f4242",
+      "url": "https://harvardfilmarchive.org/calendar/art-for-teachers-of-children-1999-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-art-of-vision-2006-01-87a016a36e",
+      "url": "https://harvardfilmarchive.org/calendar/art-of-vision-2006-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-as-i-was-moving-ahead-occasionally-i-saw-brief-glimpses-of-beaut-40aba2787d",
+      "url": "https://harvardfilmarchive.org/calendar/as-i-was-moving-ahead-occasionally-i-saw-brief-glimpses-of-beaut",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-asik-kerib-1999-12-08e23109f3",
+      "url": "https://harvardfilmarchive.org/calendar/asik-kerib-1999-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-asylum-on-the-bosphorus-2005-11-b92cf0b43d",
+      "url": "https://harvardfilmarchive.org/calendar/asylum-on-the-bosphorus-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-atlantic-city-2001-07-2c45a21fab",
+      "url": "https://harvardfilmarchive.org/calendar/atlantic-city-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-atlantic-city-2004-05-d312f0a5cf",
+      "url": "https://harvardfilmarchive.org/calendar/atlantic-city-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-atlantic-city-2005-10-e9967ed508",
+      "url": "https://harvardfilmarchive.org/calendar/atlantic-city-2005-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-au-bonheur-des-dames-2001-04-772d7a1a55",
+      "url": "https://harvardfilmarchive.org/calendar/au-bonheur-des-dames-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-august-without-him-2005-02-c9c6379975",
+      "url": "https://harvardfilmarchive.org/calendar/august-without-him-2005-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-avetik-2002-01-8d07df934f",
+      "url": "https://harvardfilmarchive.org/calendar/avetik-2002-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-b-is-for-behind-bars-2003-07-f604612df9",
+      "url": "https://harvardfilmarchive.org/calendar/b-is-for-behind-bars-2003-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bab-el-oued-2006-02-7c658d0144",
+      "url": "https://harvardfilmarchive.org/calendar/bab-el-oued-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bab-el-oued-city-2006-02-97dbf6fac7",
+      "url": "https://harvardfilmarchive.org/calendar/bab-el-oued-city-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-babes-in-arms-2005-05-e387f68305",
+      "url": "https://harvardfilmarchive.org/calendar/babes-in-arms-2005-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-babes-on-broadway-2005-05-814ebbd5a4",
+      "url": "https://harvardfilmarchive.org/calendar/babes-on-broadway-2005-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-babettes-feast-2000-09-f6da71ee1a",
+      "url": "https://harvardfilmarchive.org/calendar/babettes-feast-2000-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bad-company-2001-05-dd9e0e145a",
+      "url": "https://harvardfilmarchive.org/calendar/bad-company-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bad-luck-2002-09-a83c1bfae6",
+      "url": "https://harvardfilmarchive.org/calendar/bad-luck-2002-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bamboozled-2002-05-a53d6259eb",
+      "url": "https://harvardfilmarchive.org/calendar/bamboozled-2002-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-band-of-outsiders-2004-05-c54636eac7",
+      "url": "https://harvardfilmarchive.org/calendar/band-of-outsiders-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-barra-2001-11-e5c7fd79ad",
+      "url": "https://harvardfilmarchive.org/calendar/barra-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bashu-the-little-stranger-0000-00-b362afa1b1",
+      "url": "https://harvardfilmarchive.org/calendar/bashu-the-little-stranger-0000-00",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-basic-training-2000-10-5dd02a5d13",
+      "url": "https://harvardfilmarchive.org/calendar/basic-training-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-batman-2004-07-6d184220c8",
+      "url": "https://harvardfilmarchive.org/calendar/batman-2004-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-batman-2004-11-6921edcb7c",
+      "url": "https://harvardfilmarchive.org/calendar/batman-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-battle-of-the-sacred-tree-1999-10-252e8a539f",
+      "url": "https://harvardfilmarchive.org/calendar/battle-of-the-sacred-tree-1999-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-battle-of-the-sacred-tree-2000-04-22c1c9f40a",
+      "url": "https://harvardfilmarchive.org/calendar/battle-of-the-sacred-tree-2000-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-battleship-potemkin-2001-02-30f58b1c9a",
+      "url": "https://harvardfilmarchive.org/calendar/battleship-potemkin-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-battleship-potemkin-2002-02-98d8da48a1",
+      "url": "https://harvardfilmarchive.org/calendar/battleship-potemkin-2002-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-battleship-potemkin-2002-10-96f162d7b9",
+      "url": "https://harvardfilmarchive.org/calendar/battleship-potemkin-2002-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-battleship-potemkin-2004-02-c3c916b8df",
+      "url": "https://harvardfilmarchive.org/calendar/battleship-potemkin-2004-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-battleship-potemkin-2005-02-011adc1ae6",
+      "url": "https://harvardfilmarchive.org/calendar/battleship-potemkin-2005-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-battleship-potemkin-2006-02-1616ea5f18",
+      "url": "https://harvardfilmarchive.org/calendar/battleship-potemkin-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bay-of-the-angels-2004-05-b304877070",
+      "url": "https://harvardfilmarchive.org/calendar/bay-of-the-angels-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beat-the-devil-2004-06-06b82fbe78",
+      "url": "https://harvardfilmarchive.org/calendar/beat-the-devil-2004-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beau-travail-2005-11-4504afb791",
+      "url": "https://harvardfilmarchive.org/calendar/beau-travail-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beauty-and-the-beast-2000-07-80c33223a8",
+      "url": "https://harvardfilmarchive.org/calendar/beauty-and-the-beast-2000-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beauty-and-the-beast-2001-10-badc538a7e",
+      "url": "https://harvardfilmarchive.org/calendar/beauty-and-the-beast-2001-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beauty-and-the-beast-2004-11-09035d7509",
+      "url": "https://harvardfilmarchive.org/calendar/beauty-and-the-beast-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bed-and-sofa-1999-06-4be8231196",
+      "url": "https://harvardfilmarchive.org/calendar/bed-and-sofa-1999-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bed-and-sofa-2001-04-47c9a49cba",
+      "url": "https://harvardfilmarchive.org/calendar/bed-and-sofa-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bed-and-sofa-2002-03-c88bca447b",
+      "url": "https://harvardfilmarchive.org/calendar/bed-and-sofa-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beer-battle-2001-04-5d1bf10c93",
+      "url": "https://harvardfilmarchive.org/calendar/beer-battle-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-before-night-falls-2001-01-e2e0b744d4",
+      "url": "https://harvardfilmarchive.org/calendar/before-night-falls-2001-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-before-the-rain-1999-08-d324645491",
+      "url": "https://harvardfilmarchive.org/calendar/before-the-rain-1999-08",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-before-the-storm-2001-10-447d1ad42f",
+      "url": "https://harvardfilmarchive.org/calendar/before-the-storm-2001-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-behind-me-2005-06-cc0dae41e3",
+      "url": "https://harvardfilmarchive.org/calendar/behind-me-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beijing-bicycle-2002-11-3f4cd683a4",
+      "url": "https://harvardfilmarchive.org/calendar/beijing-bicycle-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-being-human-2003-03-ee4fc937d7",
+      "url": "https://harvardfilmarchive.org/calendar/being-human-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-being-osama-persons-of-interest-6b9c8a6220",
+      "url": "https://harvardfilmarchive.org/calendar/being-osama-persons-of-interest",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-belle-de-jour-2000-12-15fba0fc3e",
+      "url": "https://harvardfilmarchive.org/calendar/belle-de-jour-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-benjamin-smoke-2006-02-54cd343ecd",
+      "url": "https://harvardfilmarchive.org/calendar/benjamin-smoke-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beresina-or-the-last-days-of-switzerland-2000-03-a229a82a3c",
+      "url": "https://harvardfilmarchive.org/calendar/beresina-or-the-last-days-of-switzerland-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-berlin-alexanderplatz-2003-10-08fb588ba5",
+      "url": "https://harvardfilmarchive.org/calendar/berlin-alexanderplatz-2003-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-berlin-cinema-2000-02-1c2dec3eef",
+      "url": "https://harvardfilmarchive.org/calendar/berlin-cinema-2000-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-berlin-cinema-2000-02-2-7756abc9b2",
+      "url": "https://harvardfilmarchive.org/calendar/berlin-cinema-2000-02-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-berlin-cinema-2001-02-fe2f128163",
+      "url": "https://harvardfilmarchive.org/calendar/berlin-cinema-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-berlin-jerusalem-2000-11-22756dac08",
+      "url": "https://harvardfilmarchive.org/calendar/berlin-jerusalem-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-berlin-symphony-of-a-great-city-2003-09-9e611ccd21",
+      "url": "https://harvardfilmarchive.org/calendar/berlin-symphony-of-a-great-city-2003-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beyond-film-criticism-a-symposium-in-homage-to-serge-daney-2004-8ce9510c48",
+      "url": "https://harvardfilmarchive.org/calendar/beyond-film-criticism-a-symposium-in-homage-to-serge-daney-2004-",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beyond-the-border-2003-12-0f0e8490ec",
+      "url": "https://harvardfilmarchive.org/calendar/beyond-the-border-2003-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-beyond-the-pale-2001-04-66a804c76a",
+      "url": "https://harvardfilmarchive.org/calendar/beyond-the-pale-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bicycle-thieves-2000-02-64e38cac22",
+      "url": "https://harvardfilmarchive.org/calendar/bicycle-thieves-2000-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-billy-budd-2001-07-ab5dcf667d",
+      "url": "https://harvardfilmarchive.org/calendar/billy-budd-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-billy-in-the-lowlands-2001-02-cd814c7746",
+      "url": "https://harvardfilmarchive.org/calendar/billy-in-the-lowlands-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bird-2000-09-89f1288587",
+      "url": "https://harvardfilmarchive.org/calendar/bird-2000-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bird-2002-11-95f1a68302",
+      "url": "https://harvardfilmarchive.org/calendar/bird-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bird-2004-01-2-6c25d1c44b",
+      "url": "https://harvardfilmarchive.org/calendar/bird-2004-01-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-birds-orphans-and-fools-2000-06-8b47dc26d4",
+      "url": "https://harvardfilmarchive.org/calendar/birds-orphans-and-fools-2000-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-black-forest-girl-2005-02-93c9ffe0de",
+      "url": "https://harvardfilmarchive.org/calendar/black-forest-girl-2005-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-black-light-2000-04-f6976c5a6c",
+      "url": "https://harvardfilmarchive.org/calendar/black-light-2000-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-black-moon-2005-09-163fd04417",
+      "url": "https://harvardfilmarchive.org/calendar/black-moon-2005-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-blade-runner-2000-12-ff595f97b6",
+      "url": "https://harvardfilmarchive.org/calendar/blade-runner-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-blood-of-a-poet-2001-12-28f7ca8df0",
+      "url": "https://harvardfilmarchive.org/calendar/blood-of-a-poet-2001-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-blood-of-the-beasts-2004-01-4-269201ea02",
+      "url": "https://harvardfilmarchive.org/calendar/blood-of-the-beasts-2004-01-4",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bloody-sunday-2004-03-d823cd14ca",
+      "url": "https://harvardfilmarchive.org/calendar/bloody-sunday-2004-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-blow-job-2004-02-22058ce9e2",
+      "url": "https://harvardfilmarchive.org/calendar/blow-job-2004-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-blow-up-2001-07-4477c05904",
+      "url": "https://harvardfilmarchive.org/calendar/blow-up-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-blow-up-2004-03-59b700169a",
+      "url": "https://harvardfilmarchive.org/calendar/blow-up-2004-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-blue-shorts-2003-08-dc519795d2",
+      "url": "https://harvardfilmarchive.org/calendar/blue-shorts-2003-08",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bluehill-avenue-2002-03-64fef09c90",
+      "url": "https://harvardfilmarchive.org/calendar/bluehill-avenue-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-borderline-2004-02-1a28c47931",
+      "url": "https://harvardfilmarchive.org/calendar/borderline-2004-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-born-at-home-2002-04-2b7339e847",
+      "url": "https://harvardfilmarchive.org/calendar/born-at-home-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-born-in-45-2006-02-13fafc4304",
+      "url": "https://harvardfilmarchive.org/calendar/born-in-45-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-borom-sarret-2001-05-3224f775c2",
+      "url": "https://harvardfilmarchive.org/calendar/borom-sarret-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-boseman-and-lena-2001-03-1b4011bebb",
+      "url": "https://harvardfilmarchive.org/calendar/boseman-and-lena-2001-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-boston-rock-videos-1999-07-ebb7885bdf",
+      "url": "https://harvardfilmarchive.org/calendar/boston-rock-videos-1999-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-boxed-2003-04-7905efa2ec",
+      "url": "https://harvardfilmarchive.org/calendar/boxed-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-boys-dont-cry-2005-11-ac0a92c15a",
+      "url": "https://harvardfilmarchive.org/calendar/boys-dont-cry-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-boyz-n-the-hood-2004-07-4488a83651",
+      "url": "https://harvardfilmarchive.org/calendar/boyz-n-the-hood-2004-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-boyz-n-the-hood-2004-11-ede7e802e7",
+      "url": "https://harvardfilmarchive.org/calendar/boyz-n-the-hood-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-brakhage-2003-05-f51e2a389d",
+      "url": "https://harvardfilmarchive.org/calendar/brakhage-2003-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-brakhage-short-films-2003-05-daf1a84bf8",
+      "url": "https://harvardfilmarchive.org/calendar/brakhage-short-films-2003-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bread-and-roses-2000-12-9c013e2635",
+      "url": "https://harvardfilmarchive.org/calendar/bread-and-roses-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bread-and-tulips-2005-06-fb76b31659",
+      "url": "https://harvardfilmarchive.org/calendar/bread-and-tulips-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-breakfast-2003-04-4579f99665",
+      "url": "https://harvardfilmarchive.org/calendar/breakfast-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-breaking-the-waves-2006-03-51f6c84c07",
+      "url": "https://harvardfilmarchive.org/calendar/breaking-the-waves-2006-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-breathing-together-revolution-of-the-electric-family-2001-03-3b3faf71c7",
+      "url": "https://harvardfilmarchive.org/calendar/breathing-together-revolution-of-the-electric-family-2001-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-breathless-2000-03-428ab89d1a",
+      "url": "https://harvardfilmarchive.org/calendar/breathless-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bremen-freedom-2003-10-d2d7707c4e",
+      "url": "https://harvardfilmarchive.org/calendar/bremen-freedom-2003-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-broken-blossoms-1999-07-1fe0295698",
+      "url": "https://harvardfilmarchive.org/calendar/broken-blossoms-1999-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bronco-billy-2002-11-bd0ac551e5",
+      "url": "https://harvardfilmarchive.org/calendar/bronco-billy-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-buchanan-rides-alone-2005-12-734d38d0ab",
+      "url": "https://harvardfilmarchive.org/calendar/buchanan-rides-alone-2005-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-budd-boetticher-a-man-can-do-that-2005-12-92bf3e92a3",
+      "url": "https://harvardfilmarchive.org/calendar/budd-boetticher-a-man-can-do-that-2005-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bullitt-2001-08-a8aeb7c7f9",
+      "url": "https://harvardfilmarchive.org/calendar/bullitt-2001-08",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bury-me-in-kern-county-1999-07-71d22c00d0",
+      "url": "https://harvardfilmarchive.org/calendar/bury-me-in-kern-county-1999-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bus-riders-union-2000-01-99a288c7d4",
+      "url": "https://harvardfilmarchive.org/calendar/bus-riders-union-2000-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-but-im-a-cheerleader-2005-11-ea6c40bfc4",
+      "url": "https://harvardfilmarchive.org/calendar/but-im-a-cheerleader-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-bye-bye-america-1999-11-7eec24b66d",
+      "url": "https://harvardfilmarchive.org/calendar/bye-bye-america-1999-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-c-is-for-children-of-war-2003-07-dfc40facbd",
+      "url": "https://harvardfilmarchive.org/calendar/c-is-for-children-of-war-2003-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cabaret-2003-05-df317a2368",
+      "url": "https://harvardfilmarchive.org/calendar/cabaret-2003-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cage-of-dreams-2004-01-737e792412",
+      "url": "https://harvardfilmarchive.org/calendar/cage-of-dreams-2004-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-calcutta-2005-09-5341dec87b",
+      "url": "https://harvardfilmarchive.org/calendar/calcutta-2005-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-calcutta-intersection-2004-12-2de060cd4c",
+      "url": "https://harvardfilmarchive.org/calendar/calcutta-intersection-2004-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-calendar-1999-07-1cf867b46d",
+      "url": "https://harvardfilmarchive.org/calendar/calendar-1999-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-call-me-2001-02-9333fc0e58",
+      "url": "https://harvardfilmarchive.org/calendar/call-me-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-camila-42ce84fc5d",
+      "url": "https://harvardfilmarchive.org/calendar/camila",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-camouflage-2001-08-78ba0142d9",
+      "url": "https://harvardfilmarchive.org/calendar/camouflage-2001-08",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-canary-season-1999-08-5db2c72329",
+      "url": "https://harvardfilmarchive.org/calendar/canary-season-1999-08",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-caravaggio-2001-07-18d1988b75",
+      "url": "https://harvardfilmarchive.org/calendar/caravaggio-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-careful-1999-07-10e1271694",
+      "url": "https://harvardfilmarchive.org/calendar/careful-1999-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-carriage-trade-2006-01-928ca073c4",
+      "url": "https://harvardfilmarchive.org/calendar/carriage-trade-2006-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-casablanca-2004-06-2be15a48a0",
+      "url": "https://harvardfilmarchive.org/calendar/casablanca-2004-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-casanova-2001-06-8d2884f541",
+      "url": "https://harvardfilmarchive.org/calendar/casanova-2001-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cassandra-cat-2000-03-2ada6197e1",
+      "url": "https://harvardfilmarchive.org/calendar/cassandra-cat-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-caution-cleanliness-consumerism-selections-from-the-prelinger-ar-5dcb92d82d",
+      "url": "https://harvardfilmarchive.org/calendar/caution-cleanliness-consumerism-selections-from-the-prelinger-ar",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cavafy-2002-03-00ec94ac2e",
+      "url": "https://harvardfilmarchive.org/calendar/cavafy-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ceddo-2001-05-a86faf1e96",
+      "url": "https://harvardfilmarchive.org/calendar/ceddo-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ceddo-2004-04-9a6dfb3ea2",
+      "url": "https://harvardfilmarchive.org/calendar/ceddo-2004-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-charulata-aka-the-lonely-wife-2004-11-6102544e0d",
+      "url": "https://harvardfilmarchive.org/calendar/charulata-aka-the-lonely-wife-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cheyenne-autumn-1999-06-3d56e6f475",
+      "url": "https://harvardfilmarchive.org/calendar/cheyenne-autumn-1999-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-children-of-paradise-2000-07-6d6724688a",
+      "url": "https://harvardfilmarchive.org/calendar/children-of-paradise-2000-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-children-of-paradise-2004-01-2-bd84994052",
+      "url": "https://harvardfilmarchive.org/calendar/children-of-paradise-2004-01-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-childrens-animation-program-2001-05-aceabec6dd",
+      "url": "https://harvardfilmarchive.org/calendar/childrens-animation-program-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-chimes-at-midnight-2001-06-84d6069da7",
+      "url": "https://harvardfilmarchive.org/calendar/chimes-at-midnight-2001-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-chocolate-babies-2003-03-fe7787f9bb",
+      "url": "https://harvardfilmarchive.org/calendar/chocolate-babies-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-choose-me-2001-07-30d14f9f91",
+      "url": "https://harvardfilmarchive.org/calendar/choose-me-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-chungking-express-1999-11-930cf7a506",
+      "url": "https://harvardfilmarchive.org/calendar/chungking-express-1999-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-chunhyang-chihwaseon-2005-03-3b83070b8d",
+      "url": "https://harvardfilmarchive.org/calendar/chunhyang-chihwaseon-2005-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cinema-verite-defining-the-moment-2000-03-7cd3230dab",
+      "url": "https://harvardfilmarchive.org/calendar/cinema-verite-defining-the-moment-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-circle-of-deceit-2005-06-d1a6e35c87",
+      "url": "https://harvardfilmarchive.org/calendar/circle-of-deceit-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-citizen-ruth-2002-11-831859b0b0",
+      "url": "https://harvardfilmarchive.org/calendar/citizen-ruth-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-city-of-women-2001-06-dbc20401de",
+      "url": "https://harvardfilmarchive.org/calendar/city-of-women-2001-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-clandeacuteo-de-5-andagrave-7-2004-05-3e7b1bec06",
+      "url": "https://harvardfilmarchive.org/calendar/clandeacuteo-de-5-andagrave-7-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-class-relations-2005-06-8cbc40542c",
+      "url": "https://harvardfilmarchive.org/calendar/class-relations-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-clavigo-2002-03-d34ce52d9d",
+      "url": "https://harvardfilmarchive.org/calendar/clavigo-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cleo-from-5-to-7-2000-06-9bdf1f7fcc",
+      "url": "https://harvardfilmarchive.org/calendar/cleo-from-5-to-7-2000-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-clint-eastwood-out-of-the-shadows-2000-09-179494a959",
+      "url": "https://harvardfilmarchive.org/calendar/clint-eastwood-out-of-the-shadows-2000-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-close-up-b8bcdf4d5c",
+      "url": "https://harvardfilmarchive.org/calendar/close-up",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-closely-watched-trains-2000-01-6f238b332c",
+      "url": "https://harvardfilmarchive.org/calendar/closely-watched-trains-2000-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-comanche-station-2005-12-efa06ee6e1",
+      "url": "https://harvardfilmarchive.org/calendar/comanche-station-2005-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-come-and-go-2003-12-abc7225d3d",
+      "url": "https://harvardfilmarchive.org/calendar/come-and-go-2003-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-comedia-infantil-2000-04-6874fba4fe",
+      "url": "https://harvardfilmarchive.org/calendar/comedia-infantil-2000-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-comic-book-confidential-1999-06-c5ea4361a1",
+      "url": "https://harvardfilmarchive.org/calendar/comic-book-confidential-1999-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-coming-apart-2005-04-26b29979d5",
+      "url": "https://harvardfilmarchive.org/calendar/coming-apart-2005-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-coney-island-at-night-2005-10-60c4989f70",
+      "url": "https://harvardfilmarchive.org/calendar/coney-island-at-night-2005-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-confession-2002-03-68c8847ac4",
+      "url": "https://harvardfilmarchive.org/calendar/confession-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contemporary-works-of-abstraction-2003-02-44159a1769",
+      "url": "https://harvardfilmarchive.org/calendar/contemporary-works-of-abstraction-2003-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contempt-1999-12-4642d8f057",
+      "url": "https://harvardfilmarchive.org/calendar/contempt-1999-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contempt-2000-11-dd398bd398",
+      "url": "https://harvardfilmarchive.org/calendar/contempt-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contempt-2001-11-20dab4b8c8",
+      "url": "https://harvardfilmarchive.org/calendar/contempt-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contempt-2002-05-fe2f8e4ff2",
+      "url": "https://harvardfilmarchive.org/calendar/contempt-2002-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-contempt-2003-11-ef884a7407",
+      "url": "https://harvardfilmarchive.org/calendar/contempt-2003-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cool-and-crazy-2001-12-07896fad96",
+      "url": "https://harvardfilmarchive.org/calendar/cool-and-crazy-2001-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-coolockland-2002-04-e0d8d52972",
+      "url": "https://harvardfilmarchive.org/calendar/coolockland-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-couch-2004-02-777e967251",
+      "url": "https://harvardfilmarchive.org/calendar/couch-2004-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-coulisse-and-company-2002-04-55012ddad0",
+      "url": "https://harvardfilmarchive.org/calendar/coulisse-and-company-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cows-2001-04-48817c55a5",
+      "url": "https://harvardfilmarchive.org/calendar/cows-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-crackers-2005-09-aee87a6491",
+      "url": "https://harvardfilmarchive.org/calendar/crackers-2005-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cradle-of-genius-2005-11-ac1eb42009",
+      "url": "https://harvardfilmarchive.org/calendar/cradle-of-genius-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-craigand-146s-wife-2004-11-0794e3fcf4",
+      "url": "https://harvardfilmarchive.org/calendar/craigand-146s-wife-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-craigs-wife-1999-11-9c4057b0a1",
+      "url": "https://harvardfilmarchive.org/calendar/craigs-wife-1999-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-craigs-wife-2000-11-2ebbb95aee",
+      "url": "https://harvardfilmarchive.org/calendar/craigs-wife-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-craigs-wife-2001-10-15f904b50a",
+      "url": "https://harvardfilmarchive.org/calendar/craigs-wife-2001-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-craigs-wife-2003-10-161618124e",
+      "url": "https://harvardfilmarchive.org/calendar/craigs-wife-2003-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-crazy-as-hell-2003-03-fbe07e6228",
+      "url": "https://harvardfilmarchive.org/calendar/crazy-as-hell-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cries-and-whispers-2000-02-9c82131528",
+      "url": "https://harvardfilmarchive.org/calendar/cries-and-whispers-2000-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-crime-and-punishment-2006-01-20496b9855",
+      "url": "https://harvardfilmarchive.org/calendar/crime-and-punishment-2006-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-crimes-and-misdemeanors-2000-05-ea8b72d2ca",
+      "url": "https://harvardfilmarchive.org/calendar/crimes-and-misdemeanors-2000-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-crimes-and-misdemeanors-2001-07-67eb08a904",
+      "url": "https://harvardfilmarchive.org/calendar/crimes-and-misdemeanors-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-crossmaheart-2000-04-64320ceeef",
+      "url": "https://harvardfilmarchive.org/calendar/crossmaheart-2000-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cuba-libre-2004-09-3a7cf2623f",
+      "url": "https://harvardfilmarchive.org/calendar/cuba-libre-2004-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-cyberman-2002-02-f6f84e8562",
+      "url": "https://harvardfilmarchive.org/calendar/cyberman-2002-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-d-is-for-divine-intervention-2003-07-e60f3164df",
+      "url": "https://harvardfilmarchive.org/calendar/d-is-for-divine-intervention-2003-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-daisies-2000-06-69f6211dc8",
+      "url": "https://harvardfilmarchive.org/calendar/daisies-2000-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-damage-2005-09-57ce9f4624",
+      "url": "https://harvardfilmarchive.org/calendar/damage-2005-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dames-2005-05-ff3d753ea0",
+      "url": "https://harvardfilmarchive.org/calendar/dames-2005-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-damnation-2006-01-24785717b4",
+      "url": "https://harvardfilmarchive.org/calendar/damnation-2006-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dancer-in-the-dark-2006-03-31b373b5d1",
+      "url": "https://harvardfilmarchive.org/calendar/dancer-in-the-dark-2006-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dangerous-liaisons-2003-02-f3fa176d27",
+      "url": "https://harvardfilmarchive.org/calendar/dangerous-liaisons-2003-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-daniele-huillet-jean-maris-straub-filmmakers-where-has-your-hidd-66b8969785",
+      "url": "https://harvardfilmarchive.org/calendar/daniele-huillet-jean-maris-straub-filmmakers-where-has-your-hidd",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-darkroom-2003-04-d600922902",
+      "url": "https://harvardfilmarchive.org/calendar/darkroom-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-darkroom-2005-11-4bffbe62fd",
+      "url": "https://harvardfilmarchive.org/calendar/darkroom-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-daughters-of-the-sun-2001-11-836c45d96f",
+      "url": "https://harvardfilmarchive.org/calendar/daughters-of-the-sun-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-david-holzmans-diary-2005-02-be177ade43",
+      "url": "https://harvardfilmarchive.org/calendar/david-holzmans-diary-2005-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-day-after-day-2000-11-973083d42c",
+      "url": "https://harvardfilmarchive.org/calendar/day-after-day-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-day-of-wrath-2003-12-3dbaa5e1bb",
+      "url": "https://harvardfilmarchive.org/calendar/day-of-wrath-2003-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-days-and-nights-in-the-forest-2000-03-7ef9e73d3a",
+      "url": "https://harvardfilmarchive.org/calendar/days-and-nights-in-the-forest-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-days-and-nights-in-the-forest-2004-11-acabd73697",
+      "url": "https://harvardfilmarchive.org/calendar/days-and-nights-in-the-forest-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-days-of-heaven-2000-07-ad46874614",
+      "url": "https://harvardfilmarchive.org/calendar/days-of-heaven-2000-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-days-of-the-eclipse-2002-03-aa39a5bd74",
+      "url": "https://harvardfilmarchive.org/calendar/days-of-the-eclipse-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dazzling-2002-11-fe1404d97c",
+      "url": "https://harvardfilmarchive.org/calendar/dazzling-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-de-kooning-noguchi-e0d1ee04f3",
+      "url": "https://harvardfilmarchive.org/calendar/de-kooning-noguchi",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dealer-2000-10-bfe773875e",
+      "url": "https://harvardfilmarchive.org/calendar/dealer-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dear-boy-the-story-of-michael-macliammoir-2001-04-58ca6824a4",
+      "url": "https://harvardfilmarchive.org/calendar/dear-boy-the-story-of-michael-macliammoir-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dear-diary-2001-09-1ad2e30e0b",
+      "url": "https://harvardfilmarchive.org/calendar/dear-diary-2001-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-death-in-venice-2000-04-fc409acdb6",
+      "url": "https://harvardfilmarchive.org/calendar/death-in-venice-2000-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-death-of-a-neapolitan-mathematician-2000-05-010c07ef5e",
+      "url": "https://harvardfilmarchive.org/calendar/death-of-a-neapolitan-mathematician-2000-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-decision-at-sundown-2005-12-dd110bdd7f",
+      "url": "https://harvardfilmarchive.org/calendar/decision-at-sundown-2005-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-delbaran-2002-01-4ef93e492a",
+      "url": "https://harvardfilmarchive.org/calendar/delbaran-2002-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-delbaran-2003-01-34c7933654",
+      "url": "https://harvardfilmarchive.org/calendar/delbaran-2003-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-demonlover-2004-11-2699af6a44",
+      "url": "https://harvardfilmarchive.org/calendar/demonlover-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dersu-uzala-2000-01-5fbe8d12ab",
+      "url": "https://harvardfilmarchive.org/calendar/dersu-uzala-2000-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-design-for-living-2001-07-2ffc0ba447",
+      "url": "https://harvardfilmarchive.org/calendar/design-for-living-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-desire-to-know-2000-11-687f75df98",
+      "url": "https://harvardfilmarchive.org/calendar/desire-to-know-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-despair-2003-10-4001cc4335",
+      "url": "https://harvardfilmarchive.org/calendar/despair-2003-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dest-2005-12-3bea2f525c",
+      "url": "https://harvardfilmarchive.org/calendar/dest-2005-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dest-andnbsp-2002-10-56be8fcaea",
+      "url": "https://harvardfilmarchive.org/calendar/dest-andnbsp-2002-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-destiny-2002-02-2566077ffe",
+      "url": "https://harvardfilmarchive.org/calendar/destiny-2002-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-determination-2002-12-4c21f0cad2",
+      "url": "https://harvardfilmarchive.org/calendar/determination-2002-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-detour-2001-07-d0b0c3ace1",
+      "url": "https://harvardfilmarchive.org/calendar/detour-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-deux-fois-2001-05-eb8002fa7e",
+      "url": "https://harvardfilmarchive.org/calendar/deux-fois-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-devarim-2000-11-f8cab1b5de",
+      "url": "https://harvardfilmarchive.org/calendar/devarim-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-devdas-2004-05-16e2237894",
+      "url": "https://harvardfilmarchive.org/calendar/devdas-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-devi-2000-03-3e4e1277f4",
+      "url": "https://harvardfilmarchive.org/calendar/devi-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-devi-2004-11-4bd2c31399",
+      "url": "https://harvardfilmarchive.org/calendar/devi-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-devi-the-postmaster-2004-11-445c533a4f",
+      "url": "https://harvardfilmarchive.org/calendar/devi-the-postmaster-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-devotion-a-film-about-ogawa-productions-2003-11-cae956239c",
+      "url": "https://harvardfilmarchive.org/calendar/devotion-a-film-about-ogawa-productions-2003-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dialogue-with-a-woman-departed-2000-06-b6c2bb1146",
+      "url": "https://harvardfilmarchive.org/calendar/dialogue-with-a-woman-departed-2000-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-die-nibelungen-part-i-siegfried-2002-02-40f0860ee2",
+      "url": "https://harvardfilmarchive.org/calendar/die-nibelungen-part-i-siegfried-2002-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-die-nibelungen-part-ii-kriemhilds-revenge-2002-02-24c09ca07e",
+      "url": "https://harvardfilmarchive.org/calendar/die-nibelungen-part-ii-kriemhilds-revenge-2002-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-disco-pigs-2003-04-0763fb4456",
+      "url": "https://harvardfilmarchive.org/calendar/disco-pigs-2003-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-distance-2005-02-d617670ba0",
+      "url": "https://harvardfilmarchive.org/calendar/distance-2005-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-distant-lights-2003-12-08da5b5384",
+      "url": "https://harvardfilmarchive.org/calendar/distant-lights-2003-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-distant-voices-still-lives-2000-09-8b7b79217b",
+      "url": "https://harvardfilmarchive.org/calendar/distant-voices-still-lives-2000-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-divorce-iranian-style-2001-11-88516ce5c2",
+      "url": "https://harvardfilmarchive.org/calendar/divorce-iranian-style-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dmitri-shostakovich-sonata-for-viola-2002-03-8f2fe85ec9",
+      "url": "https://harvardfilmarchive.org/calendar/dmitri-shostakovich-sonata-for-viola-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-docs-kingdom-2000-01-53075ebf5d",
+      "url": "https://harvardfilmarchive.org/calendar/docs-kingdom-2000-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dodeska-den-2000-01-55a8f2df54",
+      "url": "https://harvardfilmarchive.org/calendar/dodeska-den-2000-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dodsworth-2000-07-e05f191a15",
+      "url": "https://harvardfilmarchive.org/calendar/dodsworth-2000-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dog-star-man-2003-05-1a432f34b2",
+      "url": "https://harvardfilmarchive.org/calendar/dog-star-man-2003-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dogville-2006-03-1952ab2b57",
+      "url": "https://harvardfilmarchive.org/calendar/dogville-2006-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dommi-i-colore-2004-12-5e2cc2b595",
+      "url": "https://harvardfilmarchive.org/calendar/dommi-i-colore-2004-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dont-look-back-2000-03-df255797b3",
+      "url": "https://harvardfilmarchive.org/calendar/dont-look-back-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-doos-and-donts-2002-04-3c0dfe83da",
+      "url": "https://harvardfilmarchive.org/calendar/doos-and-donts-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-double-suicide-2004-05-ab332bf4c3",
+      "url": "https://harvardfilmarchive.org/calendar/double-suicide-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-downfall-2005-06-3b7242bd38",
+      "url": "https://harvardfilmarchive.org/calendar/downfall-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dr-mabuse-the-gambler-part-i-2002-02-62bf0f4368",
+      "url": "https://harvardfilmarchive.org/calendar/dr-mabuse-the-gambler-part-i-2002-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dr-mabuse-the-gambler-part-ii-2002-02-0bba5ba8b2",
+      "url": "https://harvardfilmarchive.org/calendar/dr-mabuse-the-gambler-part-ii-2002-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bo-e820dbc18c",
+      "url": "https://harvardfilmarchive.org/calendar/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bo",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dragon-chow-1999-11-555dd1e0af",
+      "url": "https://harvardfilmarchive.org/calendar/dragon-chow-1999-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dragon-chow-2003-12-2ba4ea65ed",
+      "url": "https://harvardfilmarchive.org/calendar/dragon-chow-2003-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dream-of-light-2000-06-81cd35ec63",
+      "url": "https://harvardfilmarchive.org/calendar/dream-of-light-2000-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dreams-that-money-can-buy-2001-11-3b5ea48140",
+      "url": "https://harvardfilmarchive.org/calendar/dreams-that-money-can-buy-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-drifting-clouds-2000-03-aad6e645ae",
+      "url": "https://harvardfilmarchive.org/calendar/drifting-clouds-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-duel-in-the-sun-2004-09-be8b2f214a",
+      "url": "https://harvardfilmarchive.org/calendar/duel-in-the-sun-2004-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-duet-for-cannibals-2003-02-12ab111ee7",
+      "url": "https://harvardfilmarchive.org/calendar/duet-for-cannibals-2003-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-duotone-antics-1999-07-f87d1710ac",
+      "url": "https://harvardfilmarchive.org/calendar/duotone-antics-1999-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-dutchman-ec7a0a1cb9",
+      "url": "https://harvardfilmarchive.org/calendar/dutchman",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-e-flat-2001-04-173e255e5f",
+      "url": "https://harvardfilmarchive.org/calendar/e-flat-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-e-is-for-exploitation-2003-07-469fe54a49",
+      "url": "https://harvardfilmarchive.org/calendar/e-is-for-exploitation-2003-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-early-summer-1999-10-69a31fa60f",
+      "url": "https://harvardfilmarchive.org/calendar/early-summer-1999-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-earth-2002-10-4aaa2798bc",
+      "url": "https://harvardfilmarchive.org/calendar/earth-2002-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-earth-and-water-2000-12-c7bc5ff4f5",
+      "url": "https://harvardfilmarchive.org/calendar/earth-and-water-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-east-side-story-2000-05-5058317126",
+      "url": "https://harvardfilmarchive.org/calendar/east-side-story-2000-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-easy-rider-2004-06-f465ec9b73",
+      "url": "https://harvardfilmarchive.org/calendar/easy-rider-2004-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-easy-rider-2004-09-17abeec72c",
+      "url": "https://harvardfilmarchive.org/calendar/easy-rider-2004-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-easy-to-love-2005-05-e17b25e6ea",
+      "url": "https://harvardfilmarchive.org/calendar/easy-to-love-2005-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ecce-bombo-2001-09-77a8d4b6b6",
+      "url": "https://harvardfilmarchive.org/calendar/ecce-bombo-2001-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-edvard-munch-2001-01-c410884c71",
+      "url": "https://harvardfilmarchive.org/calendar/edvard-munch-2001-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-edward-ii-2001-05-552986dc73",
+      "url": "https://harvardfilmarchive.org/calendar/edward-ii-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-effi-briest-2000-04-166335407e",
+      "url": "https://harvardfilmarchive.org/calendar/effi-briest-2000-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-el-norte-2003-01-1ec8167c29",
+      "url": "https://harvardfilmarchive.org/calendar/el-norte-2003-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-eldridge-cleaver-black-panther-2000-02-92d6d9d9ef",
+      "url": "https://harvardfilmarchive.org/calendar/eldridge-cleaver-black-panther-2000-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-election-2002-12-ad3fb4619c",
+      "url": "https://harvardfilmarchive.org/calendar/election-2002-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-elective-affinities-2002-03-9ec2d66d6c",
+      "url": "https://harvardfilmarchive.org/calendar/elective-affinities-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-elegy-2002-03-3b29034f0b",
+      "url": "https://harvardfilmarchive.org/calendar/elegy-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-ella-fitzgerald-something-to-live-for-2003-11-14d088e59e",
+      "url": "https://harvardfilmarchive.org/calendar/ella-fitzgerald-something-to-live-for-2003-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-emak-bakia-2005-04-10ce4e2848",
+      "url": "https://harvardfilmarchive.org/calendar/emak-bakia-2005-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-emiles-friends-1999-08-7b43c5f043",
+      "url": "https://harvardfilmarchive.org/calendar/emiles-friends-1999-08",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-enlightenment-guaranteed-2000-10-29b2561675",
+      "url": "https://harvardfilmarchive.org/calendar/enlightenment-guaranteed-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-epidemic-2006-03-33e8428e1d",
+      "url": "https://harvardfilmarchive.org/calendar/epidemic-2006-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-episodes-from-first-person-2001-12-8a872ac6ee",
+      "url": "https://harvardfilmarchive.org/calendar/episodes-from-first-person-2001-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-epsteins-night-2005-06-5fdacd39a0",
+      "url": "https://harvardfilmarchive.org/calendar/epsteins-night-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-equinox-flower-1999-10-d7b9407f8e",
+      "url": "https://harvardfilmarchive.org/calendar/equinox-flower-1999-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-eraserhead-2001-10-b85076f794",
+      "url": "https://harvardfilmarchive.org/calendar/eraserhead-2001-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-eroica-the-men-of-the-blue-cross-2002-09-fbacc7b4d5",
+      "url": "https://harvardfilmarchive.org/calendar/eroica-the-men-of-the-blue-cross-2002-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-eskimo-2002-01-3ea3d262c3",
+      "url": "https://harvardfilmarchive.org/calendar/eskimo-2002-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-essential-cinema-2005-04-79ee15a720",
+      "url": "https://harvardfilmarchive.org/calendar/essential-cinema-2005-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-esther-2000-11-4b08764f70",
+      "url": "https://harvardfilmarchive.org/calendar/esther-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-eternity-and-a-day-2005-06-7234b518e0",
+      "url": "https://harvardfilmarchive.org/calendar/eternity-and-a-day-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-europa-51-2002-05-a324042910",
+      "url": "https://harvardfilmarchive.org/calendar/europa-51-2002-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-europa-europa-1999-12-22dd4d3d51",
+      "url": "https://harvardfilmarchive.org/calendar/europa-europa-1999-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-eva-2004-05-0b5eb8507b",
+      "url": "https://harvardfilmarchive.org/calendar/eva-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-evening-land-2001-01-44769694f1",
+      "url": "https://harvardfilmarchive.org/calendar/evening-land-2001-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-everythings-for-you-2000-11-24f8f35d88",
+      "url": "https://harvardfilmarchive.org/calendar/everythings-for-you-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-evil-2003-12-f29362ffd2",
+      "url": "https://harvardfilmarchive.org/calendar/evil-2003-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-f-for-fake-2000-09-11674d867b",
+      "url": "https://harvardfilmarchive.org/calendar/f-for-fake-2000-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-f-for-fake-2004-05-ee5ae6c2f8",
+      "url": "https://harvardfilmarchive.org/calendar/f-for-fake-2004-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-f-is-for-forbidden-love-2003-07-fe491ddc44",
+      "url": "https://harvardfilmarchive.org/calendar/f-is-for-forbidden-love-2003-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-faat-kine-2001-05-e0a007d8e6",
+      "url": "https://harvardfilmarchive.org/calendar/faat-kine-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fahrenheit-451-2002-06-bf30b24476",
+      "url": "https://harvardfilmarchive.org/calendar/fahrenheit-451-2002-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fail-safe-2003-06-abc056b5dd",
+      "url": "https://harvardfilmarchive.org/calendar/fail-safe-2003-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-faithless-2001-02-efa465432e",
+      "url": "https://harvardfilmarchive.org/calendar/faithless-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fallen-2006-01-500772a089",
+      "url": "https://harvardfilmarchive.org/calendar/fallen-2006-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-family-viewing-1999-06-6a32946c75",
+      "url": "https://harvardfilmarchive.org/calendar/family-viewing-1999-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fanfares-of-love-2003-03-c3a353e1cd",
+      "url": "https://harvardfilmarchive.org/calendar/fanfares-of-love-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fanny-and-alexander-2000-02-4018adcfd2",
+      "url": "https://harvardfilmarchive.org/calendar/fanny-and-alexander-2000-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fanny-and-alexander-2004-01-2-0a430db54b",
+      "url": "https://harvardfilmarchive.org/calendar/fanny-and-alexander-2004-01-2",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-faraway-so-close-2005-06-5f71d26e8c",
+      "url": "https://harvardfilmarchive.org/calendar/faraway-so-close-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-farewell-2000-10-e078e858cf",
+      "url": "https://harvardfilmarchive.org/calendar/farewell-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-farewell-home-sweet-home-2000-09-2fc98c06ef",
+      "url": "https://harvardfilmarchive.org/calendar/farewell-home-sweet-home-2000-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fassbinder-in-hollywood-2003-10-fe248173a8",
+      "url": "https://harvardfilmarchive.org/calendar/fassbinder-in-hollywood-2003-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fast-cheap-and-out-of-control-1999-12-27941c9234",
+      "url": "https://harvardfilmarchive.org/calendar/fast-cheap-and-out-of-control-1999-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fat-city-2000-07-948e473e64",
+      "url": "https://harvardfilmarchive.org/calendar/fat-city-2000-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fate-2000-10-d6dc0d8086",
+      "url": "https://harvardfilmarchive.org/calendar/fate-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fate-2006-01-fd728c3efe",
+      "url": "https://harvardfilmarchive.org/calendar/fate-2006-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-father-son-and-holy-war-2002-09-2353499e66",
+      "url": "https://harvardfilmarchive.org/calendar/father-son-and-holy-war-2002-09",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-faust-1999-06-67d3c1c13a",
+      "url": "https://harvardfilmarchive.org/calendar/faust-1999-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-faust-2004-10-5f0e943202",
+      "url": "https://harvardfilmarchive.org/calendar/faust-2004-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-feed-2004-10-fd8dc8f402",
+      "url": "https://harvardfilmarchive.org/calendar/feed-2004-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fellini-narrates-a-discoveed-self-portrait-2001-05-edad094f26",
+      "url": "https://harvardfilmarchive.org/calendar/fellini-narrates-a-discoveed-self-portrait-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fellini-satyricon-2001-05-7ee251aaf9",
+      "url": "https://harvardfilmarchive.org/calendar/fellini-satyricon-2001-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fellinis-roma-2001-06-0b97cbc1c9",
+      "url": "https://harvardfilmarchive.org/calendar/fellinis-roma-2001-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-few-of-us-2003-03-fd74d6a6b2",
+      "url": "https://harvardfilmarchive.org/calendar/few-of-us-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-field-diary-2000-11-eb7881b1c6",
+      "url": "https://harvardfilmarchive.org/calendar/field-diary-2000-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-2004-02-f52fc2342e",
+      "url": "https://harvardfilmarchive.org/calendar/film-2004-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-portrait-2000-03-d83ab8448f",
+      "url": "https://harvardfilmarchive.org/calendar/film-portrait-2000-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-film-without-a-title-2003-03-baf20011f4",
+      "url": "https://harvardfilmarchive.org/calendar/film-without-a-title-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-films-by-women-artists-2002-03-fa64df334a",
+      "url": "https://harvardfilmarchive.org/calendar/films-by-women-artists-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-films-from-the-academy-film-archive-2005-04-3f8de75c2f",
+      "url": "https://harvardfilmarchive.org/calendar/films-from-the-academy-film-archive-2005-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-films-from-the-beijing-film-academy-2002-11-7ce742bc29",
+      "url": "https://harvardfilmarchive.org/calendar/films-from-the-beijing-film-academy-2002-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-finye-2001-11-67cd0e0fcf",
+      "url": "https://harvardfilmarchive.org/calendar/finye-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-first-name-carmen-2001-07-6b271188fd",
+      "url": "https://harvardfilmarchive.org/calendar/first-name-carmen-2001-07",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-first-name-carmen-2005-04-bd5fa9c782",
+      "url": "https://harvardfilmarchive.org/calendar/first-name-carmen-2005-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-first-program-of-the-lumiere-brothers-2005-02-a4908418eb",
+      "url": "https://harvardfilmarchive.org/calendar/first-program-of-the-lumiere-brothers-2005-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-first-program-of-the-lumiere-brothers-2006-02-18b74ffbf1",
+      "url": "https://harvardfilmarchive.org/calendar/first-program-of-the-lumiere-brothers-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fisimatenten-2000-10-cb8a24ac5d",
+      "url": "https://harvardfilmarchive.org/calendar/fisimatenten-2000-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fleurs-de-sang-2005-01-9cd5145c1e",
+      "url": "https://harvardfilmarchive.org/calendar/fleurs-de-sang-2005-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-flirt-2001-02-430465fb75",
+      "url": "https://harvardfilmarchive.org/calendar/flirt-2001-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-floating-clouds-2005-10-b355bdc2ac",
+      "url": "https://harvardfilmarchive.org/calendar/floating-clouds-2005-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-flowers-of-shanghai-2001-04-aba068e674",
+      "url": "https://harvardfilmarchive.org/calendar/flowers-of-shanghai-2001-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-flowing-2005-10-0d2fdfad83",
+      "url": "https://harvardfilmarchive.org/calendar/flowing-2005-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fluent-dysphasia-2005-11-9529296fa1",
+      "url": "https://harvardfilmarchive.org/calendar/fluent-dysphasia-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-foolish-wives-2005-03-8e3bf5cd06",
+      "url": "https://harvardfilmarchive.org/calendar/foolish-wives-2005-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-footlight-parade-8b385b8611",
+      "url": "https://harvardfilmarchive.org/calendar/footlight-parade",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-for-fun-2003-11-f46183f206",
+      "url": "https://harvardfilmarchive.org/calendar/for-fun-2003-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-for-me-and-my-gal-2005-05-b87e35e29f",
+      "url": "https://harvardfilmarchive.org/calendar/for-me-and-my-gal-2005-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-forest-2003-12-0f7e8c3894",
+      "url": "https://harvardfilmarchive.org/calendar/forest-2003-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-forest-of-bliss-2000-12-702b814e69",
+      "url": "https://harvardfilmarchive.org/calendar/forest-of-bliss-2000-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-forrest-gump-2003-11-f669253866",
+      "url": "https://harvardfilmarchive.org/calendar/forrest-gump-2003-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fort-apache-1999-06-8fe375212a",
+      "url": "https://harvardfilmarchive.org/calendar/fort-apache-1999-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fortini-cani-2005-04-217bbc59d5",
+      "url": "https://harvardfilmarchive.org/calendar/fortini-cani-2005-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-four-of-andy-warhols-most-beautiful-women-2004-02-29fc488ee6",
+      "url": "https://harvardfilmarchive.org/calendar/four-of-andy-warhols-most-beautiful-women-2004-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-franz-kafka-2005-06-f0e975b63c",
+      "url": "https://harvardfilmarchive.org/calendar/franz-kafka-2005-06",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-freedom-2003-03-a376ac97de",
+      "url": "https://harvardfilmarchive.org/calendar/freedom-2003-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-freedom-highway-2002-04-bd7e92e1bb",
+      "url": "https://harvardfilmarchive.org/calendar/freedom-highway-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frenzy-hets-2004-12-f84a2f210e",
+      "url": "https://harvardfilmarchive.org/calendar/frenzy-hets-2004-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-friday-night-2004-11-40c65edded",
+      "url": "https://harvardfilmarchive.org/calendar/friday-night-2004-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-friday-night-2005-03-ec7463d6e3",
+      "url": "https://harvardfilmarchive.org/calendar/friday-night-2005-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-friendly-persuasion-iranian-cinema-after-the-revolution-2001-11-92a42b72cb",
+      "url": "https://harvardfilmarchive.org/calendar/friendly-persuasion-iranian-cinema-after-the-revolution-2001-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-friends-in-high-places-2002-04-bdc958af8e",
+      "url": "https://harvardfilmarchive.org/calendar/friends-in-high-places-2002-04",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-from-swastika-to-jim-crow-2005-01-d6379c7f27",
+      "url": "https://harvardfilmarchive.org/calendar/from-swastika-to-jim-crow-2005-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-from-the-life-of-the-marionettes-2000-05-fa597ebb85",
+      "url": "https://harvardfilmarchive.org/calendar/from-the-life-of-the-marionettes-2000-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-from-the-other-side-2002-10-e68cdb112e",
+      "url": "https://harvardfilmarchive.org/calendar/from-the-other-side-2002-10",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-from-today-until-tomorrow-1999-12-c3888169e4",
+      "url": "https://harvardfilmarchive.org/calendar/from-today-until-tomorrow-1999-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frontiers-of-dreams-and-fears-2002-01-f92485c478",
+      "url": "https://harvardfilmarchive.org/calendar/frontiers-of-dreams-and-fears-2002-01",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-frost-2001-12-be1b2ef713",
+      "url": "https://harvardfilmarchive.org/calendar/frost-2001-12",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fruitlands-1843-2000-05-e8c9b69a7e",
+      "url": "https://harvardfilmarchive.org/calendar/fruitlands-1843-2000-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-full-circle-2006-02-399519b1f4",
+      "url": "https://harvardfilmarchive.org/calendar/full-circle-2006-02",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-funeral-procession-of-roses-2005-11-f3274495b4",
+      "url": "https://harvardfilmarchive.org/calendar/funeral-procession-of-roses-2005-11",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-funny-ha-ha-2003-05-9b4b9b32f2",
+      "url": "https://harvardfilmarchive.org/calendar/funny-ha-ha-2003-05",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    },
+    {
+      "id": "harvard-film-archive-fury-2002-03-4bc7a405c2",
+      "url": "https://harvardfilmarchive.org/calendar/fury-2002-03",
+      "sourceFamily": "harvard-film-archive",
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "individual film note",
+        "pro tranche"
+      ]
+    }
+  ]
+}

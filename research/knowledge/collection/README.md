@@ -31,6 +31,25 @@ npm run knowledge:build
 npm run knowledge:embed -- --run
 ```
 
+For one-off local corpus construction charged to the signed-in ChatGPT/Codex plan rather than the API Platform, use `knowledge:run-codex` instead of the two Batch commands. The runner refuses to start unless `codex login status` reports ChatGPT authentication and removes API-key and workload-identity variables from every child process:
+
+```sh
+npm run knowledge:run-codex -- \
+  --manifest research/knowledge/collection/manifests/scale-500-pro-2026-09-20.json \
+  --model gpt-5.6-terra --effort low --run
+```
+
+This path is resumable and writes the same validation input format as the Batch runner. It is appropriate for operator-run ingestion, not for STRADA's deployed request path.
+
+After publishing a ChatGPT-plan tranche, rebuild semantic neighbors without an embeddings API call:
+
+```sh
+npm run knowledge:build
+npm run knowledge:embed-local
+```
+
+The local index uses deterministic multilingual word, word-bigram and character-trigram TF-IDF feature hashing. Its artifact records `apiCalls: 0`; the deployed retriever consumes the resulting bounded neighbor graph rather than running this embedding model online.
+
 Every command is restartable. Discovery excludes canonical URLs already in `records/`. Collection checkpoints after every target and reuses terminal results. The Batch runner stores its file and batch IDs without credentials and resumes polling the same input hash. Validation resolves unique films once and admits exactly the requested number; it fails instead of silently publishing fewer records. Publication is immutable and rejects duplicate IDs or URLs.
 
 OpenAI's Batch API accepts Responses API requests and lowers asynchronous cost, while the local preparer enforces the documented 50,000-request and 200 MB input limits. Sol models remain disabled. The 500-document plan uses Terra because extraction quality matters more than using the smallest model.

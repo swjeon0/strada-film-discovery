@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "scale-500-pro-programs-2026-09-20",
+  "createdAt": "2026-09-21T01:00:00.000Z",
+  "description": "ChatGPT-authenticated Codex expansion seed: unpublished Harvard Film Archive programme pages from the older archive range.",
+  "targetDocuments": 380,
+  "families": [
+    {
+      "sourceFamily": "harvard-film-archive",
+      "seeds": [
+        "https://harvardfilmarchive.org/programs?page={page}"
+      ],
+      "pageStart": 37,
+      "pageEnd": 53,
+      "includePathPrefixes": [
+        "/programs/"
+      ],
+      "quota": 500,
+      "proposedType": "programme",
+      "tags": [
+        "cinematheque",
+        "programme note",
+        "pro tranche"
+      ]
+    }
+  ]
+}
